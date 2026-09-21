@@ -16,6 +16,11 @@
       "name": "cece-bid-assembly",
       "source": "./plugins/cece-bid-assembly",
       "description": "Bid document assembly specialist that extracts text and images in place from sample or historical bid DOCX files, re-inserts them into bid Markdown by section, and renders illustrated Word deliverables with zero image loss."
+    },
+    {
+      "name": "venture-blueprint-team",
+      "source": "./plugins/venture-blueprint-team",
+      "description": "A venture blueprint team for emerging niche tracks: track deconstruction, business model design, unit economics, landing simulation, and AI-governance risk audit, delivering an actionable business plan."
     }
   ]
 }
