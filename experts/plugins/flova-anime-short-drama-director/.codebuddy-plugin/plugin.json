@@ -1,0 +1,76 @@
+{
+  "name": "flova-anime-short-drama-director",
+  "version": "0.1.2",
+  "description": "Creates animated AI video and image content from scripts and prompts, including text-to-image, text-to-video, image-to-video, anime, Chinese animation, short dramas, and serialized stories.",
+  "author": {
+    "name": "Flova",
+    "email": "developer@flova.ai"
+  },
+  "homepage": "https://www.flova.ai",
+  "agents": [
+    "./agents/flova-anime-short-drama-director.md"
+  ],
+  "skills": [
+    "./skills/flova-project-runtime",
+    "./skills/gta6-life-demo",
+    "./skills/shinkai-anime-film",
+    "./skills/soft-3d-healing-animation",
+    "./skills/ai-short-drama",
+    "./skills/3d-guoman-costume-drama",
+    "./skills/ancient-sweet-romance-drama"
+  ],
+  "expertType": "agent",
+  "agentName": "flova-anime-short-drama-director",
+  "displayName": {
+    "zh": "动漫短剧创作",
+    "en": "Flova Animation and Short Drama Director"
+  },
+  "profession": {
+    "zh": "Flova 漫剧专家",
+    "en": "Animation and Short Drama Director"
+  },
+  "displayDescription": {
+    "zh": "支持视频、图片、剧本、短片、短剧、漫剧、电影、广告、商品 TVC 与设计等 AI 内容生成，覆盖文生图、文生视频、图生视频及连续短剧成片。",
+    "en": "Creates animated AI video and image content from scripts and prompts, including text-to-image, text-to-video, image-to-video, anime, Chinese animation, short dramas, and serialized stories."
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "用 Flova 把我的故事制作成 AI 短剧或漫剧",
+    "en": "Use Flova to turn my story into an AI short drama or motion comic"
+  },
+  "plugin": "flova-anime-short-drama-director",
+  "tags": [
+    {
+      "zh": "AI 内容生成",
+      "en": "AI Content Generation"
+    },
+    {
+      "zh": "视频图片创作",
+      "en": "Video and Image Creation"
+    },
+    {
+      "zh": "短剧漫剧",
+      "en": "Short Drama and Motion Comics"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "用 Flova 把我的故事制作成 AI 短剧或漫剧",
+      "en": "Use Flova to turn my story into an AI short drama or motion comic"
+    },
+    {
+      "zh": "设计一支治愈系 3D 动画",
+      "en": "Create a comforting 3D animation"
+    },
+    {
+      "zh": "从剧本开始制作多镜头 AI 短剧",
+      "en": "Create a multi-shot AI short drama from my script"
+    }
+  ],
+  "dependencies": {
+    "connectors": [
+      "flova"
+    ]
+  }
+}

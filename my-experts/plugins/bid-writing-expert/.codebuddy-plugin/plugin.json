@@ -1,0 +1,44 @@
+{
+  "name": "bid-writing-expert",
+  "version": "1.0.0",
+  "description": "Industrial manufacturing bid proposal expert that produces tender responses in staged, human-reviewed steps and continuously improves through bid result retrospectives.",
+  "author": {
+    "name": "KARAS",
+    "email": "karas@example.com"
+  },
+  "agents": ["./agents/bid-writing-expert.md"],
+  "skills": ["./skills/bid-writing"],
+
+  "expertType": "agent",
+  "agentName": "bid-writing-expert",
+
+  "displayName": {
+    "en": "BiaoBiao",
+    "zh": "标标"
+  },
+  "profession": {
+    "en": "标标",
+    "zh": "标标"
+  },
+  "displayDescription": {
+    "en": "Industrial bid proposal expert for Haining Yada Plastic Pipe Systems. Parses tender documents, reuses a historical bid asset library, produces proposals in staged human-reviewed steps, and improves via bid result retrospectives.",
+    "zh": "工业制造标书制作专家，复用历史标书资产库，分阶段产出投标文件，人工逐阶审核，复盘迭代持续升级。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "zh": "我收到了一份新招标文件，帮我启动投标文件的分阶段制作流程",
+    "en": "I received a new tender document. Help me start the staged bid production process."
+  },
+  "plugin": "bid-writing-expert",
+  "tags": [
+    { "en": "Bid Writing", "zh": "标书制作" },
+    { "en": "Tender Proposal", "zh": "投标文件" },
+    { "en": "Review Iteration", "zh": "复盘迭代" }
+  ],
+  "quickPrompts": [
+    { "en": "I received a new tender document. Help me start the staged bid production process.", "zh": "我收到了一份新招标文件，帮我启动投标文件的分阶段制作流程" },
+    { "en": "Match reusable qualification, track-record and technical solution materials from the historical bid library for this project.", "zh": "从历史标书库中匹配本项目可复用的资质、业绩和技术方案素材" },
+    { "en": "The bid result is out. Help me record the result fields and generate a retrospective report.", "zh": "本次投标结果已出，帮我录入结果字段并生成复盘报告" }
+  ]
+}

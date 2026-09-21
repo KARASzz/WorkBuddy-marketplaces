@@ -1,0 +1,50 @@
+{
+  "name": "tender-bid-reviewer",
+  "version": "1.1.5",
+  "description": "Document-grounded tender and bid evaluation expert powered by TextIn xParse.",
+  "author": {
+    "name": "TextIn",
+    "email": "support@textin.com"
+  },
+  "agents": ["./agents/tender-bid-reviewer.md"],
+  "skills": [
+    "./skills/tender-analysis",
+    "./skills/bid-precheck",
+    "./skills/bid-evaluation",
+    "./skills/amendment-and-special-review"
+  ],
+  "dependencies": {
+    "connectors": ["textin-xparse"]
+  },
+  "expertType": "agent",
+  "agentName": "tender-bid-reviewer",
+  "displayName": {
+    "en": "Tender & Bid Review Expert",
+    "zh": "标衡"
+  },
+  "profession": {
+    "en": "Tender & Bid Review Expert",
+    "zh": "招投标审阅专家"
+  },
+  "displayDescription": {
+    "en": "A document-grounded tender and bid review expert. It parses new documents with TextIn xParse before conducting traceable tender analysis, bid pre-checks, scoring-model review, and addendum impact analysis.",
+    "zh": "招投标评估专家，擅长解读招标文件、预审投标材料、解析评标办法并核验补遗风险；结合TextIn xParse高精度文档解析技术，提供更精确的文档处理结果，尤其适用于页面复杂和扫描档的招投标文件。"
+  },
+  "avatar": "avatars/expert-market.jpg",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "请解读这份招标文件，提取资格条件、关键时间、否决风险和评分策略",
+    "en": "Review this tender document and extract qualification requirements, key dates, rejection risks, and scoring strategy"
+  },
+  "plugin": "tender-bid-reviewer",
+  "tags": [
+    { "en": "Tender Analysis", "zh": "招标文件解读" },
+    { "en": "Bid Pre-check", "zh": "投标文件预审" },
+    { "en": "Traceable Review", "zh": "证据可追溯" }
+  ],
+  "quickPrompts": [
+    { "en": "Review this tender document and extract qualification requirements, key dates, rejection risks, and scoring strategy", "zh": "请解读这份招标文件，提取资格条件、关键时间、否决风险和评分策略" },
+    { "en": "Pre-check my bid documents against this tender and list missing or risky items with evidence", "zh": "请按招标文件预审我的投标材料，列出缺失项和风险项并给出证据位置" },
+    { "en": "Compare the addendum with the original tender and identify every required update to the bid", "zh": "请比对补遗与原招标文件，列出投标文件必须同步修改的全部事项" }
+  ]
+}

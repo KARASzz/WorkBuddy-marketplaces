@@ -1,0 +1,44 @@
+{
+  "name": "cece-bid-assembly",
+  "version": "1.0.0",
+  "description": "Bid document assembly specialist that extracts text and images in place from sample or historical bid DOCX files, re-inserts them into bid Markdown by section, and renders illustrated Word deliverables with zero image loss.",
+  "author": {
+    "name": "KARAS",
+    "email": "karas@example.com"
+  },
+  "agents": ["./agents/cece-bid-assembly.md"],
+  "skills": ["./skills/bid-docx-assembly"],
+
+  "expertType": "agent",
+  "agentName": "cece-bid-assembly",
+
+  "displayName": {
+    "en": "Cece",
+    "zh": "册册·亚大装册专家"
+  },
+  "profession": {
+    "en": "Bid Document Assembly Specialist",
+    "zh": "册册·亚大装册专家"
+  },
+  "displayDescription": {
+    "en": "Extracts text and images in place from sample or historical bid DOCX files, re-inserts them into bid Markdown by section, and renders illustrated Word deliverables with zero image loss and traceable placement.",
+    "zh": "从历史标书原位抽取文字与图片，按章节定点插回标书，渲染成带图正式文档，图片零丢失、位置可追溯。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "zh": "从历史标书 docx 抽取素材，按章节插回我的标书 Markdown，生成带图 Word",
+    "en": "Extract materials from the historical bid DOCX, insert them into my bid Markdown by section, and generate an illustrated Word document."
+  },
+  "plugin": "cece-bid-assembly",
+  "tags": [
+    { "en": "Bid Assembly", "zh": "标书装册" },
+    { "en": "Asset Reuse", "zh": "素材复用" },
+    { "en": "Illustrated Rendering", "zh": "图文排版" }
+  ],
+  "quickPrompts": [
+    { "en": "Extract materials from the historical bid DOCX, insert them into my bid Markdown by section, and generate an illustrated Word document.", "zh": "从历史标书 docx 抽取素材，按章节插回我的标书 Markdown，生成带图 Word" },
+    { "en": "Parse this sample DOCX and list all sections with their image counts so I can write the mapping table.", "zh": "解析这份样板 docx，列出全部章节及各自图片数，我要写映射表" },
+    { "en": "My Markdown already contains image markers. Assemble it into a formal Word file and verify the image count matches the source.", "zh": "我的 Markdown 已带图片标记，帮我装册成正式 Word 并核对图片数量" }
+  ]
+}

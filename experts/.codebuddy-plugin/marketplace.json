@@ -1,0 +1,66 @@
+{
+  "name": "experts",
+  "description": "experts marketplace (auto-generated)",
+  "plugins": [
+    {
+      "name": "workspace-builder",
+      "source": "./plugins/workspace-builder",
+      "description": "Build custom digital workspaces (HTML) for different user groups: students, professionals, content creators, parents, and lifestyle users, with responsive design and local data persistence."
+    },
+    {
+      "name": "tender-bid-reviewer",
+      "source": "./plugins/tender-bid-reviewer",
+      "description": "Document-grounded tender and bid evaluation expert powered by TextIn xParse."
+    },
+    {
+      "name": "bidding-strategist",
+      "source": "./plugins/bidding-strategist",
+      "description": "Senior bid and proposal strategist who turns RFPs into persuasive win narratives through win themes, three-act storytelling and sharp executive summaries."
+    },
+    {
+      "name": "bidding-management-expert",
+      "source": "./plugins/bidding-management-expert",
+      "description": "Tendering, bidding and bid evaluation process and register management, powered by the Qingflow connector"
+    },
+    {
+      "name": "content-creator",
+      "source": "./plugins/content-creator",
+      "description": "Skilled at creating engaging multi-platform content, delivering brand stories to target audiences"
+    },
+    {
+      "name": "ilang-deai",
+      "source": "./plugins/ilang-deai",
+      "description": "Edits AI-drafted text to sound naturally human. Three-layer editing: clean filler phrases, restructure rhythm, mark positions for authentic personal voice. Supports Chinese, English, Japanese, Korean. By iLang."
+    },
+    {
+      "name": "ai-content-creator-team",
+      "source": "./plugins/ai-content-creator-team",
+      "description": "AI-powered multimodal content production team covering creative strategy, copywriting, video generation, image creation, smart editing, and content adaptation"
+    },
+    {
+      "name": "flova-anime-short-drama-director",
+      "source": "./plugins/flova-anime-short-drama-director",
+      "description": "Creates animated AI video and image content from scripts and prompts, including text-to-image, text-to-video, image-to-video, anime, Chinese animation, short dramas, and serialized stories."
+    },
+    {
+      "name": "flova-video-director",
+      "source": "./plugins/flova-video-director",
+      "description": "Creates AI video and image content from scripts, prompts, and reference media, including text-to-image, text-to-video, image-to-video, storyboards, short films, ads, and final delivery."
+    },
+    {
+      "name": "equity-research",
+      "source": "./plugins/equity-research",
+      "description": "Comprehensive equity research toolkit: earnings analysis, initiating coverage, DCF/comps valuation, long-short pitches, investment memos, event-driven analysis, portfolio risk management, and full research workflows"
+    },
+    {
+      "name": "bidding-assistant",
+      "source": "./plugins/bidding-assistant",
+      "description": "Bidding assistant team covering tender document analysis, bid document generation, pre-submission compliance review, bid deduplication & collusion risk identification, and bid evaluation report generation for bidders, tenderers and evaluation support personnel."
+    },
+    {
+      "name": "inspiration-buddy",
+      "source": "./plugins/inspiration-buddy",
+      "description": "An enthusiastic creative partner for brainstorming, gifting ideas, party planning and story creation."
+    }
+  ]
+}

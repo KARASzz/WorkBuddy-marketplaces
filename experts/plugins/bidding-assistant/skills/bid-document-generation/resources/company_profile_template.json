@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "企业资料库字段模板，用于投标文件生成",
+    "last_updated": "",
+    "store_path": "~/.bid_toolkit/company_profile.json"
+  },
+  "basic": {
+    "company_name": "",
+    "unified_social_credit_code": "",
+    "legal_representative": "",
+    "authorized_representative": {
+      "name": "",
+      "title": ""
+    },
+    "registered_capital": "",
+    "established_date": "",
+    "contact": {
+      "address": "",
+      "phone": "",
+      "fax": "",
+      "email": "",
+      "postal_code": ""
+    }
+  },
+  "qualifications": [
+    {
+      "name": "",
+      "cert_number": "",
+      "issuing_authority": "",
+      "valid_from": "",
+      "valid_to": "",
+      "level": ""
+    }
+  ],
+  "performance": [
+    {
+      "project_name": "",
+      "client": "",
+      "contract_amount": "",
+      "contract_amount_num": 0,
+      "start_date": "",
+      "end_date": "",
+      "description": "",
+      "contact_person": "",
+      "contact_phone": ""
+    }
+  ],
+  "honors": [
+    {
+      "name": "",
+      "issuing_authority": "",
+      "date": "",
+      "description": ""
+    }
+  ],
+  "key_personnel": {
+    "project_manager": {
+      "name": "",
+      "title": "",
+      "cert_number": "",
+      "years_of_experience": 0,
+      "related_projects": []
+    },
+    "technical_members": [
+      {
+        "name": "",
+        "title": "",
+        "role": "",
+        "cert_number": "",
+        "years_of_experience": 0
+      }
+    ]
+  },
+  "iso_certifications": [
+    {
+      "standard": "",
+      "cert_number": "",
+      "scope": "",
+      "valid_to": ""
+    }
+  ],
+  "bank_info": {
+    "bank_name": "",
+    "account_name": "",
+    "account_number": "",
+    "bank_branch": ""
+  }
+}

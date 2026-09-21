@@ -1,0 +1,13 @@
+{
+  "id": "投标文件生成",
+  "marketId": "",
+  "name": "投标文件生成",
+  "version": "",
+  "description": "投标文件生成技能。基于 tender_analysis.json 和企业资料生成投标业务内容，保留技术/商务偏离表原子化与 P0 门禁；所有 DOCX 创建、格式和结构统一交由系统预置 word-document-processing 技能处理。",
+  "author": "法大大法律AI产品线",
+  "tags": "招投标,投标文件生成,写标书,技术标,商务标,偏离表,原子化响应,Word文档处理",
+  "skillType": "custom",
+  "skillSource": "",
+  "skillSourceName": "法大大法律AI产品线",
+  "iconTag": ""
+}

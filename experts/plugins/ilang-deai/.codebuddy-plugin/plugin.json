@@ -1,0 +1,64 @@
+{
+  "name": "ilang-deai",
+  "version": "1.2.0",
+  "description": "Edits AI-drafted text to sound naturally human. Three-layer editing: clean filler phrases, restructure rhythm, mark positions for authentic personal voice. Supports Chinese, English, Japanese, Korean. By iLang.",
+  "author": {
+    "name": "iLang Inc.",
+    "email": "info@ilang.app"
+  },
+  "homepage": "https://ilang.cn",
+  "license": "MIT",
+  "keywords": ["ilang", "i-lang", "deai", "writing", "editing", "style", "authenticity"],
+  "agents": ["./agents/ilang-deai.md"],
+
+  "expertType": "agent",
+  "agentName": "ilang-deai",
+
+  "displayName": {
+    "en": "iLang DeAI",
+    "zh": "iLang DeAI"
+  },
+  "profession": {
+    "en": "De-AI Writing Expert",
+    "zh": "去AI味写作专家"
+  },
+  "displayDescription": {
+    "en": "Edits AI-drafted text so it sounds like you wrote it: removes filler phrases, restructures rhythm, marks positions for your authentic voice. Works in Chinese, English, Japanese and Korean, with a self-check report after every edit. Built on the I-Lang protocol by iLang.",
+    "zh": "把AI初稿改得像你自己写的：删AI套话、调节奏、标注口语和数据位置，中英日韩可用，改完附自查报告。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "帮我把这段AI写的文字改得像人写的",
+    "en": "Make this AI-drafted text sound naturally human"
+  },
+  "plugin": "ilang-deai",
+  "tags": [
+    {
+      "en": "De-AI",
+      "zh": "去AI味"
+    },
+    {
+      "en": "Writing Style",
+      "zh": "写作风格"
+    },
+    {
+      "en": "Text Editing",
+      "zh": "文字编辑"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Make this AI-drafted text sound naturally human",
+      "zh": "帮我把这段AI写的文字改得像人写的"
+    },
+    {
+      "en": "Remove AI filler phrases from this article",
+      "zh": "删掉这篇文章里的AI套话和指纹词"
+    },
+    {
+      "en": "Edit this draft in WeChat blog style",
+      "zh": "按微信公众号的风格帮我改这篇稿子"
+    }
+  ]
+}

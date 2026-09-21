@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "bid_version": {
+    "document_path": "/mnt/user-data/outputs/示例项目_投标文件.docx",
+    "document_sha256": "source-document-sha256"
+  },
+  "final_layout": {
+    "physical_pages_available": true,
+    "rendered_pdf_path": "/mnt/user-data/outputs/示例项目_投标文件.pdf",
+    "rendered_pdf_sha256": "rendered-pdf-sha256",
+    "page_count": 100
+  },
+  "document_state": "draft_blocked",
+  "checks": [
+    {"rule_id": "BQ01", "status": "pass", "risk_level": "none", "physical_pdf_pages": [3], "displayed_page_numbers": ["1"], "section": "响应索引", "anchor": "资格要求", "evidence": ["要求—应答矩阵无缺项"]},
+    {"rule_id": "BQ02", "status": "pass", "risk_level": "none", "physical_pdf_pages": [8], "displayed_page_numbers": ["6"], "section": "投标函", "anchor": "投标有效期", "evidence": ["原文与投标值一致"]},
+    {"rule_id": "BQ03", "status": "pass", "risk_level": "none", "physical_pdf_pages": [45], "displayed_page_numbers": ["43"], "section": "业绩证明", "anchor": "图9-1", "evidence": ["材料名、图号、章节完整"]},
+    {"rule_id": "BQ04", "status": "pass", "risk_level": "none", "physical_pdf_pages": [30], "displayed_page_numbers": ["28"], "section": "技术响应", "anchor": "见图10-2", "evidence": ["唯一目标存在"]},
+    {"rule_id": "BQ05", "status": "fail", "risk_level": "P1", "physical_pdf_pages": [31], "displayed_page_numbers": ["29"], "section": "10.1 CEMS系统技术描述", "anchor": "图10-2", "evidence": ["图10-2在本章重复两次"], "expected": "图表编号按最终顺序连续且唯一", "fix_instruction": "由 Word 技能将第二个图10-2及其全部引用改为图10-3，保持图题与图片同页", "retest_condition": "重新渲染新版本并核对图表索引无重号、无断号、引用一致", "repair_owner": "word-document-processing"},
+    {"rule_id": "BQ06", "status": "pass", "risk_level": "none", "physical_pdf_pages": [1], "displayed_page_numbers": ["无"], "section": "全文", "anchor": "占位扫描", "evidence": ["候选终稿未关闭占位为0"]},
+    {"rule_id": "BQ07", "status": "pass", "risk_level": "none", "physical_pdf_pages": [20], "displayed_page_numbers": ["18"], "section": "全文章节", "anchor": "标题—正文清单", "evidence": ["无空标题"]},
+    {"rule_id": "BQ08", "status": "pass", "risk_level": "none", "physical_pdf_pages": [50], "displayed_page_numbers": ["48"], "section": "资格证明", "anchor": "敏感信息台账", "evidence": ["必要披露有招标依据"]},
+    {"rule_id": "BQ09", "status": "pass", "risk_level": "none", "physical_pdf_pages": [12], "displayed_page_numbers": ["10"], "section": "响应检索表", "anchor": "初步评审响应检索表", "evidence": ["逐表检查通过"]},
+    {"rule_id": "BQ10", "status": "pass", "risk_level": "none", "physical_pdf_pages": [1], "displayed_page_numbers": ["无"], "section": "全文", "anchor": "逐页检查", "evidence": ["无异常空白页、孤行或图注分家"]},
+    {"rule_id": "BQ11", "status": "pass", "risk_level": "none", "physical_pdf_pages": [2], "displayed_page_numbers": ["i"], "section": "目录", "anchor": "目录末项", "evidence": ["含附件、页码正确、无旧条目"]},
+    {"rule_id": "BQ12", "status": "pass", "risk_level": "none", "physical_pdf_pages": [8], "displayed_page_numbers": ["6"], "section": "全文", "anchor": "可见文本检查", "evidence": ["标点成对且型号未被改写"]},
+    {"rule_id": "BQ13", "status": "pass", "risk_level": "none", "physical_pdf_pages": [8], "displayed_page_numbers": ["6"], "section": "投标函", "anchor": "投标有效期90天", "evidence": ["承诺台账全文一致且达到阈值"]},
+    {"rule_id": "BQ14", "status": "pass", "risk_level": "none", "physical_pdf_pages": [8], "displayed_page_numbers": ["6"], "section": "投标函", "anchor": "日期台账", "evidence": ["日期语义无冲突"]},
+    {"rule_id": "BQ15", "status": "pass", "risk_level": "none", "physical_pdf_pages": [8], "displayed_page_numbers": ["6"], "section": "签章清单", "anchor": "投标函签章", "evidence": ["签章主体、类型及页码齐全"]}
+  ]
+}

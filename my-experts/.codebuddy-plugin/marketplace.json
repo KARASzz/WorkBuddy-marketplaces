@@ -1,0 +1,21 @@
+{
+  "name": "my-experts",
+  "description": "my-experts marketplace (auto-generated)",
+  "plugins": [
+    {
+      "name": "bid-writing-expert",
+      "source": "./plugins/bid-writing-expert",
+      "description": "Industrial manufacturing bid proposal expert that produces tender responses in staged, human-reviewed steps and continuously improves through bid result retrospectives."
+    },
+    {
+      "name": "biaobiao-bid-team",
+      "source": "./plugins/biaobiao-bid-team",
+      "description": "Bid production team for Haining Yada Plastic Pipe Systems, with evidence-grounded tender analysis, staged Markdown drafting, independent review, WorkBuddy final document generation, and bid retrospectives."
+    },
+    {
+      "name": "cece-bid-assembly",
+      "source": "./plugins/cece-bid-assembly",
+      "description": "Bid document assembly specialist that extracts text and images in place from sample or historical bid DOCX files, re-inserts them into bid Markdown by section, and renders illustrated Word deliverables with zero image loss."
+    }
+  ]
+}

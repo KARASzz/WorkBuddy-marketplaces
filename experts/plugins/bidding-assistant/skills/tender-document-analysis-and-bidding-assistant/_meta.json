@@ -1,0 +1,48 @@
+{
+  "name": "招标文件解析与投标辅助",
+  "display_name": "招标文件解析与投标辅助",
+  "version": "1.2.0",
+  "author": "法大大法律AI产品线",
+  "copyright": "© 深圳市法大大网络科技有限公司 版权所有",
+  "description": "招标文件智能解析与投标辅助工具：仅在用户提供招标文件、采购公告、RFP 等招标侧材料并要求解析、提取评分标准、梳理投标 SOP 或生成投标工作台时触发。",
+  "trigger_keywords": [
+    "解析招标文件", "招标文件分析", "分析招标文件", "读取招标文件",
+    "提取评分标准", "梳理废标风险", "标书辅助", "投标 SOP",
+    "生成投标工作台", "帮我看招标文件", "这个标怎么投", "投标辅助",
+    "RFP分析", "采购公告分析"
+  ],
+  "negative_triggers": [
+    "生成投标文件", "写标书", "编制投标文件", "投标文件审核",
+    "合规检查", "标书查重", "围串标检测", "评标报告", "推荐中标候选人"
+  ],
+  "routing": {
+    "primary_intent": "解析招标侧材料并生成投标辅助交付物",
+    "required_context": ["招标文件", "采购公告", "RFP", "招标侧文本"],
+    "handoff": {
+      "投标文件生成": "用户要求生成、编制或撰写投标文件正文",
+      "投标文件合规检查": "用户要求审查已完成投标文件或做提交前合规检查",
+      "标书查重": "用户要求标书查重、重复率、抄袭或围串标检测",
+      "评标报告生成": "用户要求多家投标人评分排名、推荐中标候选人或生成评标报告"
+    }
+  },
+  "inputs": ["PDF", "Word (.docx/.doc)"],
+  "outputs": ["Word 分析报告 (.docx)", "HTML 投标工作台 (.html)"],
+  "scripts": {
+    "analysis_schema":        "scripts/analysis_schema.py",
+    "extract_pdf":             "scripts/extract_pdf.py",
+    "extract_word":            "scripts/extract_word.py",
+    "save_analysis":           "scripts/save_analysis.py",
+    "generate_html_workbench": "scripts/generate_html_workbench.py",
+    "write_html":              "scripts/write_html.py"
+  },
+  "dependencies": {
+    "python": ">=3.8",
+    "pip": ["pdfplumber>=0.10.0", "docx2python>=2.0.0", "python-docx>=1.1.0"]
+  },
+  "output_dir": "/mnt/user-data/outputs/",
+  "created_at": "2026-05-13",
+  "word_skill": "word-document-processing",
+  "updated_at": "2026-08-11",
+  "skill_type": "custom",
+  "tags": ["招投标", "文档解析", "投标辅助", "政府采购", "Word报告", "HTML工作台"]
+}

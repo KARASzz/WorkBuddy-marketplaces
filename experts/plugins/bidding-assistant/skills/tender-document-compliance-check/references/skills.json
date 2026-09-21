@@ -1,0 +1,13 @@
+{
+  "id": "投标文件合规检查",
+  "marketId": "",
+  "name": "投标文件合规检查",
+  "version": "",
+  "description": "投标文件评审与自查自纠技能。执行 W01-W08 业务完整性、E01-E06 有效应答性和风险识别，覆盖偏离表原子化、泛化响应 P0、资质报价和提交风险；不执行 DOCX 深度排版门禁。",
+  "author": "法大大法律AI产品线",
+  "tags": "招投标,标书评审,投标人自查自纠,偏离表,原子化响应,有效应答性,风险识别,Word文档处理",
+  "skillType": "custom",
+  "skillSource": "",
+  "skillSourceName": "法大大法律AI产品线",
+  "iconTag": ""
+}

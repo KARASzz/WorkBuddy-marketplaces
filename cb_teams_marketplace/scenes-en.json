@@ -1,0 +1,844 @@
+[
+  {
+    "id": 5,
+    "unified_id": 100,
+    "name": "Documentation",
+    "icon": "documentation",
+    "mode": "working",
+    "interactionModes": [
+      "craft",
+      "plan"
+    ],
+    "plugins": [
+      {
+        "id": 0,
+        "name": "tencent-docx",
+        "marketplaceName": "workbuddy-builtin"
+      }
+    ],
+    "prompts": [
+      "Download the full PDF of Tencent's 2025 interim report (complete financial report). Extract the financial data from the PDF, build an Excel financial model (including formulas and formatting), then create a presentation using an Ocean Gradient color scheme, and finally generate a Word report containing the full analysis (with a table of contents and headers/footers).",
+      "Convert my uploaded Markdown file into a beautifully formatted PDF document. Requirements: custom cover page (title + author + date), auto-generated table of contents, syntax-highlighted code blocks, tables with alternating row colors, and page numbers in the footer.",
+      "Extract key information from these 3 competitive analysis PDFs, compile an Excel competitive comparison matrix (feature dimensions x competitors), and generate a Word competitive analysis report including: market positioning comparison, feature gap analysis, strengths/weaknesses summary, and recommended action items.",
+      "Based on my uploaded weekly project report Excel, auto-generate a Word-format project status report including: project overview dashboard (progress percentage, risk level, milestone status), this week's completed items, next week's plan, risks and blockers, resource needs. Use a professional project report template layout."
+    ],
+    "promptTitles": [
+      "Earnings Report Pipeline",
+      "Markdown to PDF",
+      "Competitor Comparison",
+      "Weekly Report to Word"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 29,
+    "unified_id": 101,
+    "name": "Financial Services",
+    "icon": "financial-services",
+    "mode": "working",
+    "interactionModes": [
+      "craft",
+      "plan"
+    ],
+    "plugins": [
+      {
+        "id": 0,
+        "name": "financial-analysis",
+        "marketplaceName": "cb_teams_marketplace"
+      },
+      {
+        "id": 1,
+        "name": "investment-banking",
+        "marketplaceName": "cb_teams_marketplace"
+      },
+      {
+        "id": 2,
+        "name": "equity-research",
+        "marketplaceName": "cb_teams_marketplace"
+      },
+      {
+        "id": 3,
+        "name": "private-equity",
+        "marketplaceName": "cb_teams_marketplace"
+      },
+      {
+        "id": 4,
+        "name": "wealth-management",
+        "marketplaceName": "cb_teams_marketplace"
+      },
+      {
+        "id": 5,
+        "name": "lseg",
+        "marketplaceName": "cb_teams_marketplace"
+      },
+      {
+        "id": 6,
+        "name": "spglobal",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Build a comparable company analysis for Snowflake (SNOW), focusing on cloud data platform peers, including EV/Revenue, EV/GP, Rule of 40 and other key metrics.",
+      "Build a complete DCF model for NVIDIA considering Bear/Base/Bull scenarios for AI chip demand. Base case assumes 25% revenue CAGR over 5 years. Output an Excel with WACC sensitivity and terminal value sensitivity analysis.",
+      "Analyze Meta's (META) latest quarterly earnings, focusing on: ad revenue vs street expectations, Reality Labs loss trends, AI investment ROI (Capex guidance), user growth and engagement data. Output an 8-10 page Earnings Update Report with charts.",
+      "We are preparing to sell 'DataFlow Analytics' (enterprise data platform, ARR $200M). Please prepare the full deal package: 1. Comparable company analysis to determine valuation range 2. Validate with DCF and LBO 3. Prepare an anonymous one-pager teaser 4. Write a complete CIM 5. Compile potential buyer list",
+      "Create a comprehensive financial plan for client Mr. Zhang: age 45, married, 2 children (ages 10 and 14), household income $800K, liquid assets $5M. Goals: early retirement at 55, college education funds for both children, estate planning. Risk tolerance: moderate-conservative. Cover retirement planning, education planning, tax optimization, and estate arrangements."
+    ],
+    "promptTitles": [
+      "Comparable Company Analysis",
+      "DCF Valuation Model",
+      "Meta Earnings Analysis",
+      "M&A Sale Materials",
+      "Personal Financial Plan"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 42,
+    "unified_id": 102,
+    "name": "Visualization",
+    "icon": "data-visualization",
+    "mode": "working",
+    "interactionModes": [
+      "craft",
+      "plan"
+    ],
+    "plugins": [
+      {
+        "id": 0,
+        "name": "data",
+        "marketplaceName": "cb_teams_marketplace",
+        "marketplaceUrl": "https://cnb.cool/codebuddy/cbteamsmarketplace"
+      },
+      {
+        "id": 1,
+        "name": "sheetagent",
+        "marketplaceName": "workbuddy-builtin"
+      }
+    ],
+    "prompts": [
+      "Please conduct a complete “E-commerce business health + customer value” analysis based on UCI’s Online Retail.xlsx dataset (line-item order transactions).\r\rObjectives:\r\r1. Build a data dictionary\r\r* Explain each field’s meaning\r* Identify the data granularity (what one row represents)\r* Propose potential primary keys / unique identifiers\r* Identify time fields, monetary fields, and country fields\r* Include your business-meaning hypotheses, and clearly label any uncertainties\r\r2. Data quality audit\r\r* Missingness and outliers (e.g., extreme values in Quantity and UnitPrice, negative values, cancelled invoices where InvoiceNo starts with “C”, etc.)\r* Duplicate records and abnormal country/time distributions\r* Produce a “cleaning rules checklist” where each rule includes: rationale, impact scope, and a rollback strategy\r\r3. Core KPI dashboard (monthly)\r\r* GMV (excluding cancelled orders), number of orders, AOV, number of active purchasing users, repeat purchase rate, refund/cancellation rate\r* Use Plotly to build interactive charts (trends, distributions, Top countries/products)\r\r4. Segmentation and LTV\r\r* RFM segmentation (including justification for parameter choices)\r* A simplified cohort-based LTV: first-purchase month → subsequent-month contributions\r\r5. Anomaly detection\r\r* Detect unusual fluctuations in GMV and/or order volume\r* For each anomaly, provide: the specific dates, plausible root-cause hypotheses, and how to validate them with additional data or checks\r\r6. Conclusions and actions\r\r* Provide 5 executable recommendations. For each recommendation include: expected impact metrics, an experiment/validation design, and key risks or caveats\r\rDeliverables:\r\r* A structured report (Executive Summary + key charts + conclusions)\r\rData download link:\r[https://archive.ics.uci.edu/static/public/352/online+retail.zip](https://archive.ics.uci.edu/static/public/352/online+retail.zip)\r",
+      "Produce a complete analysis report on “macro labor market conditions + regional divergence” based on the USDA ERS county-level Unemployment & Median Household Income Excel dataset (2000–2023).\r\rPlease follow these steps in your output:\r\rData exploration\r\rData dictionary (field definitions)\r\rMissingness rate (overall and by key fields)\r\rTime span coverage\r\rAvailability and consistency checks for county/state identifiers (e.g., FIPS / state / county fields)\r\rMetric construction\r\rUnemployment rate: YoY, MoM, and 3-year moving average\r\rMedian household income: level vs YoY growth (if CPI is not provided, do a nominal analysis and explicitly state the limitation)\r\rRegional divergence: within-state percentile gap, and national Gini / Theil index (compute if feasible)\r\rIdentify “anomalous counties”\r\rTop N counties with the largest unemployment shock from 2020 to 2021\r\rTop N counties with the slowest recovery from 2022 to 2023 (define your own recovery metric and explain it clearly)\r\rVisualization (Plotly)\r\rNational trend with quantile bands\r\rState-level / county-level heatmaps (if geographic boundaries are unavailable, use Top-N tables + bar charts instead)\r\rPolicy / business implications\r\rProvide 5 actionable conclusions with clear reasoning grounded in the data\r\rDownload link:\rhttps://www.ers.usda.gov/media/5494/unemployment-and-median-household-income-for-the-united-states-states-and-counties-2000-23.xlsx?v=67259",
+      "Based on the USDA ERS county-level Poverty Estimates (2023) Excel dataset, please conduct an analysis on \"poverty distribution + anomalous-county diagnosis + hypotheses linking poverty with unemployment/income.\"\r\rRequirements:\r\r1) Field interpretation and definition checks\r\rClarify which fields are estimates vs. rates/percentages\r\rIdentify whether the dataset includes confidence intervals, standard errors, margins of error, or sample-size fields (and use them if available)\r\rConfirm key definitions/denominators (e.g., population groups, time period, geography)\r\r2) Distribution analysis\r\rNational distribution of poverty (levels and rates)\r\rWithin-state distributions: Top/Bottom states and outlier counties within each state\r\r3) Anomalous-county diagnosis\r\rIdentify counties where the poverty rate is high but the unemployment rate is not high\r\rYou must define the thresholding/method (e.g., percentile rules, z-scores, or joint-condition cutoffs) and explain it\r\rOutput the Top 20 counties meeting this condition\r\rProvide plausible root-cause hypotheses and recommended external data to validate them\r\r4) Output a \"minimum viable dashboard\" design\r\r4 KPI cards\r\r3 charts (if only 2023 is available, use comparisons/distributions/correlation charts instead of time trends)\r\r1 Top-N detail table\r\r5) Multi-year data pipeline plan\r\rPropose a star schema (fact table + dimension tables) suitable for multi-year updates\r\rOutline ETL steps: ingestion, validation, cleaning, normalization, and incremental updates\r\rData download link: https://www.ers.usda.gov/media/5493/poverty-estimates-for-the-united-states-states-and-counties-2023.xlsx?v=78848",
+      "Using World Bank World Development Indicators data (fetchable online), conduct a 'Global GDP per Capita vs. Human Development Index (HDI) Correlation Analysis' covering 2000–2023.\r\rRequirements:\r1) Data acquisition and cleaning: Retrieve GDP per capita (PPP) and HDI data from the World Bank API or UNDP data sources; handle missing countries/years and report data coverage rates\r2) Interactive scatter plot: X-axis GDP per capita (log scale), Y-axis HDI, colored by continent (Asia/Europe/Africa/Americas/Oceania), bubble size representing population; hover to show country name and exact values\r3) Time slider animation: Draggable slider to view the global distribution for each year from 2000 to 2023\r4) Trend line analysis: HDI trend comparison for the Top 10 fastest-improving countries vs. the Bottom 10 stagnating/declining countries\r5) Correlation quantification: Calculate GDP–HDI correlation coefficients by income group (low/lower-middle/upper-middle/high income); analyze the 'diminishing HDI returns at higher income' phenomenon\r6) Output 3 policy recommendations based on data findings, tailored to countries at different development stages",
+      "Using United Nations Population Division data (fetchable online), conduct a 'Global Population Structure Transition' visualization analysis covering 1950–2100 (including projections).\r\rRequirements:\r1) Data acquisition: Retrieve age-structure, fertility rate, and urbanization data from the UN Population Division; document data sources and projection methodology\r2) Population pyramid animation: One frame per decade (1950/1960/.../2050/2100), with China/India/USA/Japan displayed side by side, showing the structural shift from 'pyramid' to 'inverted pyramid'\r3) Aging rate trend lines: Percentage of population aged 65+, grouped by country, with key inflection points annotated (e.g., Japan crossing into super-aged society in 2005, China projected to enter deep aging by 2035)\r4) Fertility rate vs. urbanization scatter plot: Analyze the correlation between the two, colored by development level, with anomalous countries labeled (e.g., Israel: high income yet high fertility)\r5) Demographic dividend window annotations: Define the dividend period as 'working-age population share > 65%', and mark each country's window opening and closing on the timeline\r6) Regional population growth contribution waterfall chart: Show each continent/region's share of global population growth from 2024 to 2050"
+    ],
+    "promptTitles": [
+      "E-commerce Value Analysis",
+      "Labor Market Analysis",
+      "County Poverty Analysis",
+      "GDP vs HDI Analysis",
+      "Global Population Analysis"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 43,
+    "unified_id": 122,
+    "name": "Personal Workspace",
+    "icon": "tool-case",
+    "mode": "working",
+    "interactionModes": [
+      "craft",
+      "plan"
+    ],
+    "plugins": [],
+    "expert": {
+      "id": "ex_kXnGMfUfWS6d",
+      "name": "小台",
+      "profession": "工作台搭建师",
+      "expertType": "agent",
+      "source": "expert-marketplace"
+    },
+    "prompts": [
+      "Create an integrated life-management workbench for a broad everyday audience and deliver it as a single HTML file. Inline all CSS, JavaScript, icons, and assets; use no external components; make it reliable on both desktop and mobile.\n\nThe workbench should include at least: a daily life score; personal finance tracking with income and expenses, budgets, monthly comparison, category filters, spending breakdown, and Excel export; habit tracking where users can add or delete habits and choose check, counter, or numeric tracking with a 30-day heatmap; weight-loss tracking with weight and body-fat entries, a 7-day average, BMI, goal progress, calorie deficit guidance, and customizable weekly plans; schedule planning; a shopping list; and a books/film/series/anime library with status, star rating, short review, wall/list views, and annual statistics.\n\nSave input immediately to localStorage so it remains after closing the page. Provide JSON backup export and unlimited import, remind users to back up after 20 new items, clearly report storage failures or corrupted data, and allow recovery. Include a small set of removable demo entries. Keep the visual direction restrained, polished, and warm rather than using a generic AI-card template.",
+      "Build a learning workspace called 'Baby Learning Playground' for a 4-year-old. Include 5 modules:\n1. Alphabet Park: 26 letter cards with tap-to-speak (Web Speech API), uppercase-lowercase matching game\n2. Poem Garden: 8 classic Chinese poems with pinyin annotation and read-aloud\n3. Number Kingdom: 0-20 number recognition + arithmetic within 10 + counting game\n4. Logic Challenge: pattern finding / shape matching / sorting, 3-4 options each\n5. Adventure Quest: mixed-topic quizzes + star rewards + badge wall\n\nUse rainbow candy colors (pink, teal, yellow, green, purple). Lively and cute style. PC sidebar nav + mobile bottom tabs. Data in localStorage with persistent progress. Buttons ≥ 44px for small hands. Deploy online for mobile scanning.",
+      "Create an offline personal dashboard named “Worker Ledger” as a single HTML/CSS/JS file. Inline every resource, use no CDN, backend, or online chart library, and make the file runnable by double-clicking it. Include: a real-hourly-wage calculator that combines take-home salary, pay months, work-related costs, office time, commuting, and overtime while showing the full formula; ten-second expense logging with amount, category, and note, immediately converting each expense into work time; the latest four entries on the home dashboard; monthly income plus fixed and flexible expense summaries; a freedom-fund goal with safety-buffer milestones; a native SVG savings chart; and commute, overtime, and salary-increase scenario simulations. Persist data in localStorage, support JSON import/export, and safely clear only sample data. Provide demonstration data relative to the current date and label it clearly as sample data. Use a refined, playful cream-and-mint journal aesthetic with a consistent inline SVG icon set and a piggy-bank illustration. Use a sidebar on desktop, bottom tabs on mobile, and touch-friendly controls throughout.",
+      "Build a learning-goal workspace specifically for finite, measurable goals such as learning 2,000 words or finishing a 440-page book, not endless habit tracking such as drinking water. Implement everything in one HTML file, with no external services and no user-provided materials.\n\nEach goal needs a name, unit, total amount, deadline, color, and two optional fields: the most likely obstacle and an If it happens, I will response. Calculate today's suggested amount as remaining amount divided by remaining days and prefill it during check-in while allowing edits. Show completion rate, streak, and estimated finish date. Estimate the finish date from the most recent seven-day average and compare it with the deadline to show days ahead or behind. When there is not enough activity, show No estimate instead of inventing a number.\n\nAllow one automatic rest day per Monday-to-Sunday week: the first missed day does not break the streak, while the second does. Put goals missed yesterday at the top today, using a gentle amber card when the rest day was used and a red card when work rolls into today. Show overdue days and provide Check in now and Adjust plan actions. Display the user's obstacle response on these cards. Allow multiple entries per day, optional minutes, and backdated entries within the previous six days. Mark backdated entries and use their real dates in streak and forecast calculations.\n\nUse four tabs. 1) Today: show New Goal in the first screen, a Today to Handle section, directly editable check-in cards, another prominent New Goal action at the bottom, plus edit and two-step delete. 2) Dashboard: show a progress ring, three key numbers, obstacle response, and the latest ten deletable records for each goal, plus a hand-written SVG 14-day stacked chart of minutes by goal without inventing minutes for entries that omitted them. 3) Weekly Review: summarize amount, active days, and minutes from Monday to Sunday, compare with the previous week using the same method, browse historical weeks, store Keep, Problem, Try, and Next-week response fields, and generate copyable review text containing comparisons and all four fields. 4) Me: export JSON, import after overwrite confirmation, migrate old backups, clear samples, clear all only after typing Clear, and show three steps for adding the page to the phone home screen.\n\nInclude three sample goals—English vocabulary, reading Sapiens, and a Python introductory course—with sample labels and several days of records covering backdated entries, a rest day, consecutive misses, and an obstacle response. After 20 check-in records, show a gentle export-ready backup banner at the top.\n\nUse a cool-white background, purple gradient, green for success, red for overdue, and amber for rest days. Celebrate completed goals with confetti. Use inline SVG icons and no emoji. Use four bottom tabs and one column on mobile, horizontal top navigation on tablet, and a fixed left sidebar with multi-column content on desktop. Persist all input immediately in localStorage. Deliver one fully self-contained offline HTML file with all resources inline and no external libraries.",
+      "Create a pure static exercise tracker website (HTML/CSS/JS) with responsive PC/mobile support. Requirements: 1) Multi-page structure (Home, Check-in, Dashboard, History); 2) Cyberpunk neon UI style with particle background and CSS entry animations; 3) localStorage data storage with Chart.js charts; 4) Mobile bottom tab bar, PC sidebar; 5) All resources inlined into a single HTML file, works offline."
+    ],
+    "promptTitles": [
+      "Life Workbench",
+      "Kids Learning Playground",
+      "Worker Ledger",
+      "Learning Goal Workspace",
+      "CyberFit Exercise Tracker"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 1,
+    "unified_id": 105,
+    "name": "Slides Creation",
+    "icon": "slides-creation",
+    "mode": "working",
+    "interactionModes": [
+      "craft",
+      "plan"
+    ],
+    "plugins": [
+      {
+        "id": 0,
+        "name": "tencent-pptx",
+        "marketplaceName": "workbuddy-builtin"
+      }
+    ],
+    "prompts": [
+      "Create a popular-science PPT on the history of AI, organized as a timeline covering symbolism, expert systems, machine learning, deep learning, and large models, highlighting key figures, technologies, and events. Use a \"Tech Archive\" style: deep navy-black (#0B1020) paired with electric blue (#3478F6) and orange-red (#FF6B4A). Focus on a vertical timeline, historical event cards, and technology evolution diagrams; use Source Han Sans for Chinese text, combining historical depth with a futuristic tech feel.",
+      "Create a 2026 AI trends analysis PPT for industry research and executive reporting. Research online the trends in agents, multimodal AI, on-device AI, embodied intelligence, AI coding, and compute chips, presenting the latest progress, business value, and future outlook. Use a \"Future Intelligence Briefing\" style: black-blue (#090D18) paired with neon cyan (#38E8D4) and digital purple (#846BFF). Use trend matrices, vendor comparisons, and market forecast charts—cutting-edge, precise, and opinionated.",
+      "Create a 10-page personal or team year-end review PPT covering annual goals, key projects, core achievements, problem retrospectives, and next-year plans; use placeholders for missing information. Use a clean business style: white background paired with deep blue (#173A63) and warm orange (#F08A4B). Express one core takeaway per page, presented through big numbers, project cards, milestones, and quarterly roadmaps—clear and restrained, highlighting results, contributions, and growth.",
+      "Create a cultural introduction PPT for \"Journey to the West\", covering its creation background, main storyline, key characters, classic episodes, the pantheon of gods and demons, and its cultural influence. Use an \"Eastern Mythology Scroll\" style: rice-paper off-white (#F3E8D2) paired with cinnabar red (#B83A32), ink black, and gilded gold (#C89B4B). Feature the pilgrimage route, character relationship maps, magical-artifact cards, and ink-wash illustrations; design page numbers as seal stamps—classical and vivid, combining storytelling with cultural depth.",
+      "Create a Pop Mart brand analysis PPT; research online the brand's development, core IPs, blind-box mechanics, user profiles, channel layout, overseas markets, and business model. Use a \"Designer Toy Exhibition Catalog\" style: cream white (#F7F3EE) paired with Pop pink (#F4A8C4), bright red (#E94752), and lagoon blue (#64C9D4). Feature large IP images, rounded cards, sticker labels, an IP matrix, and an overseas map—young, vivid, and collectible without being childish."
+    ],
+    "promptTitles": [
+      "AI History PPT",
+      "AI Trends PPT",
+      "Year-End Review PPT",
+      "Journey to the West PPT",
+      "Pop Mart PPT"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 3,
+    "unified_id": 103,
+    "name": "Deep Research",
+    "icon": "deep-research",
+    "mode": "working",
+    "interactionModes": [
+      "craft",
+      "plan"
+    ],
+    "plugins": [
+      {
+        "id": 0,
+        "name": "deep-research",
+        "marketplaceName": "cb_teams_marketplace",
+        "marketplaceUrl": "https://cnb.cool/codebuddy/cbteamsmarketplace"
+      }
+    ],
+    "prompts": [
+      "Research the 10 best-performing AI models globally in 2026, conduct a comparative analysis of their key capabilities (including coding and multimodal performance), and summarize each model’s technical characteristics and best-fit use cases.",
+      "Analyze how business models in the AI Coding industry have evolved from 2023 to the present, identifying key inflection points and the underlying drivers.",
+      "Study the survival challenges and current conservation status of cheetah populations across the African savanna.",
+      "Study global gold price trends over the past decade, identify key drivers and the outlook ahead, and analyze how geopolitics, monetary policy, inflation, and other factors influence gold prices."
+    ],
+    "promptTitles": [
+      "Top AI Models Review",
+      "AI Coding Business Model",
+      "Cheetah Conservation Study",
+      "Gold Price Study"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 27,
+    "unified_id": 104,
+    "name": "Video Generation",
+    "icon": "video-generation",
+    "mode": "working",
+    "interactionModes": [
+      "craft",
+      "plan"
+    ],
+    "plugins": [
+      {
+        "id": 0,
+        "name": "remotion-video-generator",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "expert": {
+      "id": "ex_HwSX2ZgPg1EG",
+      "name": "Motio",
+      "profession": "Video Generation Expert"
+    },
+    "insertSceneTag": false,
+    "prompts": [
+      "Create a 20-second vertical video (1080x1920, 30fps) showcasing the Global Top 10 AI Models leaderboard.\rData source: OpenRouter.\rRequirements:\r- Each entry 1.5–2s with a bar chart animating from 0 to its value\r- Rank changes should be smooth (no jumping), numbers should have a counting animation\r- Clean background, consistent fonts, restrained color palette (max 2 primary colors)\r- 2s intro: title + data source in small text\r- 2s outro: one key insight summary",
+      "Generate an introduction video for OpenClaw",
+      "Create a 20-second 'Weekly AI News Roundup' video (1920x1080, 30fps).\rContent: 5 important AI news items from this week, fetched from real sources online.\rRequirements:\r- 2s intro: 'AI Weekly' title + this week's date range, title bounces in from top (spring effect)\r- Each news item 3s: headline slides in from the left, source and date in small text fades in from the bottom, a theme-related emoji or icon scales up on the right side\r- News items connected by a vertical timeline, timeline nodes light up as transition animation\r- 2s outro: 'Follow for more' CTA text with breathing animation\r- Dark solid background, white text, headlines use a bright accent color (e.g. #00D4FF) to highlight keywords\r- Overall pacing should be tight and information-dense",
+      "Create a 30-second programming language popularity decade-of-change video (1920x1080, 30fps).\rData source: TIOBE or GitHub Octoverse, fetch real data online.\rRequirements:\r- Use a dynamic bar chart race to show Top 10 programming language ranking changes from 2015 to 2025\r- Each year stays for 2.5s, bars smoothly slide to their new positions (no jump cuts)\r- Bar colors match each language's official brand color (Python blue-yellow, JavaScript yellow, Rust orange, etc.)\r- Language name + real-time score with counting animation shown at the end of each bar\r- Year number in the top-right corner uses a flip transition effect\r- 2s intro: title 'Programming Language Trends' + data source in small text\r- 2s outro: freeze on the final ranking + one trend summary sentence (e.g. 'Python tops the chart for N consecutive years')\r- Dark gradient background (#0D1117 to #161B22), white text, overall style similar to GitHub dark theme"
+    ],
+    "promptTitles": [
+      "Top Models Video",
+      "OpenClaw Intro Video",
+      "AI News Video",
+      "Language Trends Video"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 11,
+    "unified_id": 106,
+    "name": "Product",
+    "icon": "product-management",
+    "mode": "working",
+    "interactionModes": [
+      "craft",
+      "plan"
+    ],
+    "plugins": [
+      {
+        "id": 0,
+        "name": "product-management",
+        "marketplaceName": "cb_teams_marketplace",
+        "marketplaceUrl": "https://cnb.cool/codebuddy/cbteamsmarketplace"
+      },
+      {
+        "id": 1,
+        "name": "tencent-docx",
+        "marketplaceName": "workbuddy-builtin"
+      }
+    ],
+    "prompts": [
+      "I need to write a complete PRD for our B2B SaaS product. The feature is a “Team Collaboration Whiteboard”.\r\rBackground:\r\r* Target users: product teams, design teams, remote teams\r* Problem: existing tools (Miro, FigJam) are too complex. Our users want a simpler collaboration experience integrated directly into our product.\r* We have notes from 5 user interviews. Users said:\r\r  * “Switching between tools is a hassle — I want to get everything done in one place.”\r  * “Miro has too many features. We only need basic sticky notes and connectors.”\r  * “Real-time collaboration matters, but we don’t need video/audio.”\r  * “I want to link directly to other objects in our product (tasks, docs).”\r  * “Mobile support isn’t important — we mainly use it on desktop.”\r\rConstraints:\r\r* Tech: must be compatible with our existing real-time sync architecture\r* Timeline: release MVP in Q2, full version in Q3\r* Team: 1 frontend engineer + 1 backend engineer, full-time for 3 months\r* Competitive positioning: simpler than Miro, more capable than Google Jamboard\r\rSuccess metrics:\r\r* At least 30% of active teams use the whiteboard weekly\r* Average whiteboard session duration > 15 minutes (indicating deep usage)\r* Teams migrated from other collaboration tools (e.g., Miro) > 20%\r\rPlease generate a complete PRD, including:\r\r* Problem statement and goals / non-goals\r* User stories (grouped by product teams, design teams, remote teams)\r* Requirements (MVP vs future)\r* Success metrics (leading and lagging indicators)\r* Technical considerations and dependencies\r* Open questions (engineering, design, legal, data)\r",
+      "I need to reprioritize the Q2 product roadmap. Here are the current five roadmap items:\r\r1. Mobile Offline Mode\r\r   * Description: Allow viewing and editing data without a network connection, then sync once back online\r   * Current status: Not started\r   * Estimated effort: 8 weeks (2 engineers)\r   * Request source: Mentioned by 20% of users in customer research\r\r2. Advanced Permission Management\r\r   * Description: Role-based access control (RBAC), with support for custom roles\r   * Current status: Not started\r   * Estimated effort: 6 weeks (2 engineers)\r   * Request source: Explicitly required by 5 enterprise customers; it is a deal blocker\r\r3. Data Visualization Dashboard\r\r   * Description: Built-in chart library so users can create custom dashboards\r   * Current status: Not started\r   * Estimated effort: 10 weeks (1 frontend + 1 backend)\r   * Request source: A strategic feature in the product vision, but not an urgent user need\r\r4. API Rate Limiting Optimization\r\r   * Description: Improve API performance to support higher concurrency\r   * Current status: In design\r   * Estimated effort: 4 weeks (1 backend engineer)\r   * Request source: Technical debt impacting 15% of large customers\r\r5. Slack Integration (Two-way Sync)\r\r   * Description: Create tasks from Slack, and push task updates back into Slack\r   * Current status: Not started\r   * Estimated effort: 5 weeks (1 backend engineer)\r   * Request source: Requested by 10 customers, including 2 high-intent prospects willing to pay\r\rRecent changes:\r\r* Last week, Sales reported that 3 large customers (total ARR $180K) delayed signing because RBAC is missing\r* Our North Star metric is ARR growth, and enterprise customers are the primary growth driver\r* Engineering capacity: 10 weeks, 3 engineers\r\rPlease help me:\r\r1. Score each project using the RICE framework (Reach, Impact, Confidence, Effort)\r2. Reorder priorities based on RICE scores and our current strategy (ARR growth)\r3. Produce the updated roadmap, indicating what ships in Q2 and what moves to Q3\r4. Draft an update to the engineering team explaining why the priorities changed\r",
+      "We're planning a new feature: 'AI Auto-Generated Weekly Reports.' Help me create a comprehensive competitive analysis report.\r\rAnalyze 5 competitors: Notion AI, Coda AI, ClickUp AI, Monday.com AI, Linear.\r\rOutput:\r- Feature comparison matrix (dimensions: auto-generation capability, data source integration, custom templates, collaboration features, pricing)\r- User review summary (collect positive/negative feedback from G2, ProductHunt, etc.)\r- Differentiation strategy analysis for each product\r- Our opportunity areas: which needs are competitors not serving well?\r- Recommended differentiation direction (with rationale and validation suggestions)",
+      "Help me write quarterly product OKRs for Q3.\r\rBackground:\r- We are a B2B collaboration tool\r- Q2 results: ARR $2M, 150 enterprise customers, NPS 42\r- Board mandate for Q3: double enterprise customer count, raise NPS to 50+\r\rOutput:\r- 3 Objectives, each with 3-4 Key Results (following the SMART principle)\r- Responsible team and key initiatives for each KR\r- Risk factors and mitigation plans\r- Dependencies between OKRs"
+    ],
+    "promptTitles": [
+      "Write PRD",
+      "Roadmap Prioritization",
+      "Competitor Analysis Report",
+      "Quarterly Product OKRs"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 16,
+    "unified_id": 107,
+    "name": "Daily Development",
+    "icon": "daily-development",
+    "mode": "coding",
+    "plugins": [],
+    "prompts": [
+      "Help me add a new feature to the current project: [Feature description].",
+      "Help me refactor this code to improve readability and maintainability.",
+      "Help me fix this bug: [Bug description].",
+      "Help me optimize the performance of this feature. Current issue: [Performance issue description].",
+      "Help me add unit tests to this module, covering core logic.",
+      "Help me investigate this error: [Error message], find the cause and fix it."
+    ],
+    "promptTitles": [
+      "Add New Feature",
+      "Refactor Code",
+      "Fix Bug",
+      "Optimize Performance",
+      "Add Unit Tests",
+      "Debug Error"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 17,
+    "unified_id": 108,
+    "name": "Website Development",
+    "icon": "website-development",
+    "mode": "coding",
+    "plugins": [
+      {
+        "id": 0,
+        "name": "modern-webapp",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Help me develop a corporate website. Company name: [Company name], main business: [Business description]. Requirements: Include homepage, about us, products/services, and contact us pages with a clean, professional style, and publish it online.",
+      "Help me develop an admin dashboard for managing [Content to manage]. Requirements: Include login page, data dashboard, list management, form editing with responsive layout, and publish it online.",
+      "Help me develop a personal blog website. Blog theme: [Blog theme]. Requirements: Include article list, article detail, tag categories, and about page with Markdown rendering support, and publish it online.",
+      "Help me develop an e-commerce homepage selling [Product type]. Requirements: Include carousel, product categories, featured products, promotional sections, and publish it online."
+    ],
+    "promptTitles": [
+      "Corporate Website",
+      "Admin Dashboard",
+      "Personal Blog",
+      "E-commerce Homepage"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 18,
+    "unified_id": 109,
+    "name": "Agent Apps",
+    "icon": "agent-apps",
+    "mode": "coding",
+    "plugins": [
+      {
+        "id": 0,
+        "name": "codebuddy-chat-web",
+        "marketplaceName": "cb_teams_marketplace"
+      },
+      {
+        "id": 1,
+        "name": "agent-sdk-dev",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Help me create a Knowledge Q&A Agent web application that allows users to enter questions and receive answers based on content from a knowledge base. Integrate a large language model (LLM) and deploy the application online.",
+      "Help me create an AI Customer Support Agent web application with support for multi-turn conversations, FAQ knowledge base retrieval, automatic user intent recognition (such as refunds, order inquiries, and technical support), automatic escalation to a human agent when an issue cannot be resolved, persistent conversation history storage, and an admin dashboard for viewing conversation records and customer satisfaction statistics. Store data in the cloud, integrate a large language model (LLM), and deploy the application online.",
+      "Help me create a Personal Information Manager Agent web application that allows users to capture scattered thoughts, reference materials, and to-do items, and automatically categorize, summarize, and connect related information. Support keyword search, intelligent Q&A, key information extraction, and task organization, and generate periodic summaries and suggested next actions based on existing content. Store data in the cloud, integrate a large language model (LLM), and deploy the application online.",
+      "Help me create a Data Analysis Agent web application that allows users to upload or enter data and use natural language to perform data queries, trend analysis, anomaly detection, and metric comparisons, while automatically generating analytical insights and data visualizations. Store data in a cloud database, integrate a large language model (LLM), and deploy the application online."
+    ],
+    "promptTitles": [
+      "Knowledge Q&A Agent",
+      "AI Customer Support Agent",
+      "Personal Information Manager Agent",
+      "Data Analysis Agent"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 19,
+    "unified_id": 110,
+    "name": "Skill Development",
+    "icon": "skill-development",
+    "mode": "coding",
+    "plugins": [
+      {
+        "id": 0,
+        "name": "skill-creator",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Help me create a Skill with functionality: [Describe Skill functionality]. Requirements: Define clear trigger words and execution logic.",
+      "Help me develop a file processing Skill that can [Describe file processing capabilities, e.g., batch rename, format conversion].",
+      "Help me develop a code generation Skill that auto-generates code based on [Describe input, e.g., database schema, API definitions].",
+      "Help me develop an automation Skill that implements [Describe automation task, e.g., scheduled backup, batch deployment]."
+    ],
+    "promptTitles": [
+      "Create Skill",
+      "File Processing Skill",
+      "Code Generation Skill",
+      "Automation Skill"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 23,
+    "unified_id": 111,
+    "name": "CI/CD",
+    "icon": "ci-cd",
+    "mode": "coding",
+    "plugins": [],
+    "prompts": [
+      "Analyze the current project architecture and help me write a GitHub Actions workflow for automated build, test, and deployment.",
+      "Analyze the current project architecture and help me write a Dockerfile with optimized image size and multi-stage builds.",
+      "Analyze the current project architecture and help me write a Kubernetes Helm Chart including Deployment, Service, and ConfigMap."
+    ],
+    "promptTitles": [
+      "GitHub Actions Workflow",
+      "Write Dockerfile",
+      "K8s Helm Chart"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 25,
+    "unified_id": 112,
+    "name": "Documentation",
+    "icon": "documentation-tools",
+    "mode": "coding",
+    "plugins": [],
+    "prompts": [
+      "Analyze the current project's API endpoints and generate an OpenAPI v3 spec with complete descriptions and examples.",
+      "Analyze the current project and help me improve the README documentation with installation steps, usage examples, and contribution guidelines.",
+      "Analyze the current project architecture and help me create system architecture diagrams and design docs explaining core modules and data flow."
+    ],
+    "promptTitles": [
+      "Generate OpenAPI Spec",
+      "Improve README",
+      "Architecture Docs"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 30,
+    "unified_id": 113,
+    "name": "Web Design",
+    "icon": "web",
+    "mode": "design",
+    "plugins": [
+      {
+        "id": 0,
+        "name": "ardot-design-generator",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Design a cyberpunk-style personal portfolio website. The primary palette is pure black background plus neon pink (#FF2E93) and neon cyan (#00F0FF), with headings featuring a glitch-art animation effect. The hero section is a large '> HELLO_WORLD' typewriter effect, with 6 projects shown below in a grid of cards. On hover, card borders emit a neon glow. The overall atmosphere should feel like Blade Runner 2049.",
+      "Design a sneaker culture introduction website page, including a Hero section, a timeline of iconic sneaker evolution, street culture stories, and signature brand collaborations — streetwear, bold, and full of attitude.",
+      "Design a creative design website page from a Neo-Brutalism designer's perspective, combining brutalism's hard edges with saturated candy color blocks, bold outlines, and offset shadows. Visual design concept: thick borders, large rounded corners or hard-angled blocks, saturated pink/yellow/blue/green, bold sans-serif or monospace fonts; prominent offset shadows. Use sticker/hand-drawn elements to add playfulness while keeping layout divisions clear. Material and texture: solid fills, noise/stripe backgrounds, sticker/graffiti symbols; shadows are short but with clear offset, borders 2-4px. Avoid excessive glass and gradients. Overall mood: bold, playful yet orderly, like an interface made of colorful building blocks."
+    ],
+    "promptTitles": [
+      "Cyberpunk Portfolio",
+      "Sneaker Culture Website",
+      "Neo-Brutalism Website"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 31,
+    "unified_id": 114,
+    "name": "Mobile App",
+    "icon": "phone",
+    "mode": "design",
+    "plugins": [
+      {
+        "id": 0,
+        "name": "ardot-design-generator",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Design a fitness App. Create a complete user registration flow and a workout data dashboard page for a fitness tracking App, with charts that display daily exercise data.",
+      "Referencing Xiaohongshu's (Little Red Book) design style, help me design a discovery page for a content community App, featuring a waterfall card layout and search/filter functionality.",
+      "Design a youth-oriented city check-in social App called 'CityGo' with a bold, vibrant, Y2K retro-futuristic style. The primary colors are fluorescent green, electric purple, and bright yellow, with extensive use of bold sans-serif fonts and irregular sticker elements. The home page features a city map scattered with bubbles marking user-captured check-in spots; tapping a bubble opens a 3x3 photo grid. The post interface supports adding hand-drawn doodles, stickers, and glitch-art filters to photos. All buttons are large rounded pill shapes with a bouncy tap animation. The overall feel is like a digital doodle-and-sticker book."
+    ],
+    "promptTitles": [
+      "Fitness App Design",
+      "Community Discovery Page",
+      "Y2K Social App"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 32,
+    "unified_id": 115,
+    "name": "Design System",
+    "icon": "paint",
+    "mode": "design",
+    "plugins": [
+      {
+        "id": 0,
+        "name": "ardot-design-generator",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Help me build a complete Design System, including a color system, typography hierarchy, spacing rules, and foundational component specification documentation.",
+      "Referencing Ant Design's style, design a component library specification for my admin management system, including button, form, table, and modal components.",
+      "Create a Design Token system for a mobile App that supports light/dark theme switching, and output a complete variable table for colors, border radii, and shadows."
+    ],
+    "promptTitles": [
+      "Complete Design System",
+      "Admin Component Library",
+      "Design Token System"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 33,
+    "unified_id": 116,
+    "name": "Web App",
+    "icon": "tools",
+    "mode": "design",
+    "plugins": [
+      {
+        "id": 0,
+        "name": "ardot-design-generator",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Design a complete interface for a project management WebApp, including a dashboard overview, task kanban, team member management, and project settings pages. Style inspired by Linear—clean and efficient.",
+      "Design a resume-building Web App called 'Resume.io' with a clean, efficient, WYSIWYG style. Use a split-screen layout: the left side is the form editing area (collapsible panels for personal info, education, work experience, skills, etc.), and the right side displays a live preview of an A4-sized resume (with realistic shadows). The top bar allows switching between 6 template styles (minimalist black-and-white, business blue, designer colorful, academic serif, etc.), and the top-right corner has 'Download PDF' and 'Share Link' buttons. The preview on the right updates in real time as users edit, with modified fields briefly highlighted. The overall goal is to let users produce a high-quality resume within 10 minutes.",
+      "Design a SaaS data analytics platform WebApp interface, including data source connections, a visualization chart editor, report generation, and permission management modules. Professional business color scheme."
+    ],
+    "promptTitles": [
+      "Project Management WebApp",
+      "Resume Builder WebApp",
+      "Data Analytics Platform"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 34,
+    "unified_id": 117,
+    "name": "PPT Design",
+    "icon": "slide",
+    "mode": "design",
+    "plugins": [
+      {
+        "id": 0,
+        "name": "ardot-design-generator",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Help me generate a set of launch event slide mockups for a Chinese-style wuxia open-world exploration game, including 6 main pages. The layout should be large and suitable for big-screen playback at the venue. Boldly use SVG decorations on the slides, keep page elements rich and refined, and showcase the game's art design, UI design, rich content, and other elements. Use \"ai\" mode wherever images need to be generated.",
+      "Create a 6-page PPT introducing Minecraft, with a cool and rich pixel-style layout and a pixel-themed design style.",
+      "Create a master's thesis defense PPT, 10 pages total, in a rigorous academic style. The main colors use dark navy (#0F172A) for titles, charcoal gray (#334155) for body text, and academic red (#B91C1C) to highlight key findings, with a pure white background. The page structure is: cover, research background and significance, literature review, research questions and hypotheses, research methodology, experimental design, data analysis, main conclusions, limitations and future work, and acknowledgments. Charts use classic black-white-gray colors, with no gradients. Each page has a chapter number in the top-right corner to help the defense committee navigate quickly. Chinese fonts use SimSun; English uses Times New Roman. The footer includes the school logo, name, student ID, and date. The overall feel is restrained and professional, highlighting the academic value of the research.",
+      "Create a streamlined roadshow PPT for a Web3 NFT project, 9 pages total, in a 'Cyberpunk × Y2K Retro-Future' style. Use pure black (#000000) as the background, with acid fluorescent green (#C6FF00) and electric magenta (#FF006E) as the dual primary accent colors, and metallic silver (#C0C0C0) as a supporting color. The cover uses ASCII character art to spell out the project name, with a background of grid perspective lines extending toward a vanishing point to create a cyberspace feel. Title characters are randomly offset and split into RGB chromatic-aberration layers. Inner page layouts break the conventional grid, with text carried on 45-degree skewed color blocks, and data displayed using seven-segment digital-tube fonts like an old calculator. The roadmap page uses a subway-map style with hexagonal nodes outlined with glowing strokes. On the team page, each member is shown as a 3D low-poly avatar placeholder (labeled 'Pixel Avatar') with an abbreviated wallet address below the name. The footer has a scrolling ticker showing '//TRANSMITTING DATA//' on loop. The overall vibe is rebellious, gritty, and rooted in internet underground culture.",
+      "Create an investment pitch PPT for an Omakase Japanese cuisine franchise, 10 pages total, in a 'Wabi-sabi aesthetic × Extreme negative space' style. Use rice-white washi paper color (#F5F0E8) as the main background, with ink black (#1A1A1A) and cinnabar red (#B8292E) accents in key positions. Negative space occupies more than 70% of each page; text is sparse and restrained, often with just a single line plus a stamp-like mark per page. The cover features only a hand-brushed calligraphy character '鮨' (in cinnabar red) in the bottom-left corner, with a vertical line of small text in the top-right noting the brand name — the rest is blank. Titles use a Japanese calligraphy style mixing kana and kanji; body text uses an ultra-thin sans-serif. All divider lines are replaced with hand-drawn ink brushstrokes. Data pages break conventional charts, presenting key numbers as haiku-style short phrases arranged vertically, such as '一期一会 / 八席 / 三十六道'. The franchise policy page unfolds as a Japanese scroll, read from right to left. Image placeholders use Japanese square-seal styles and irregular ink-blot shapes (labeled 'Dish Photo', 'Chef Portrait'). The overall feel is tranquil, restrained, and zen-like, conveying brand tone over information density.",
+      "Create a PPT for an AI hardware product launch event, 10 pages total, in a 'Minimalist Futurism × Dieter Rams homage' style. Use pure light gray-white (#F5F5F7) as the main background, near-black (#1D1D1F) for text, and the product's signature bright orange (#FF5C1A) as the sole accent color used only for key data. The entire deck follows the 'less is more' principle: each page has at most 7 characters as the title, with body text under 20 characters. The cover shows only the three-letter product name 'ORB' centered, at a font size occupying 1/3 of the screen height, with a small '2026 - 04 - 15' line below. The product showcase page uses a fully centered single-element composition: the product image placeholder is a perfect circle at the center (labeled 'Product Hero Shot'), surrounded by abundant breathing space, with a small model number line at the bottom. The spec comparison page uses ultra-fine 1px divider lines to split the page into an equal grid, with each cell containing only one number and one word (such as '12h' and 'Battery Life'). The overall feel is calm, premium, and full of breathing space, making the product itself the sole protagonist."
+    ],
+    "promptTitles": [
+      "Game Launch Slides",
+      "Pixel-style Minecraft PPT",
+      "Thesis Defense PPT",
+      "NFT Roadshow PPT",
+      "Omakase Pitch PPT",
+      "AI Hardware Launch PPT"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 35,
+    "unified_id": 118,
+    "name": "Interactive Prototype",
+    "icon": "mouse",
+    "mode": "design",
+    "plugins": [
+      {
+        "id": 0,
+        "name": "ardot-design-generator",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Help me design an interactive prototype for a task management tool, including switching between board view and list view, as well as task drag-and-drop reordering.",
+      "Design a personal health data Dashboard with a minimalist medical style. Use pale cyan-white (#F0F7F7) as the main background, with tech blue (#0EA5E9) and vibrant green (#22C55E) as accent colors to indicate positive health metrics. The top section is a 'Today Overview' card with four circular progress rings for steps, heart rate, sleep, and calories. Below are a weekly trend line chart and a monthly calendar check-in view that can be toggled. Cards are uniformly white with a light blue border and 12px rounded corners. Use a clear sans-serif font, with large prominent type for data values. The overall feel is fresh and trustworthy, emphasizing clear data presentation.",
+      "Design an interactive prototype for a data visualization large-screen display, supporting time-range filtering, chart drill-down, and full-screen display mode switching."
+    ],
+    "promptTitles": [
+      "Task Management Prototype",
+      "Health Data Dashboard",
+      "Data Wall Prototype"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 36,
+    "unified_id": 119,
+    "name": "Brand Design",
+    "icon": "mouse",
+    "mode": "design",
+    "plugins": [
+      {
+        "id": 0,
+        "name": "ardot-design-generator",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Design a tech-style brand Logo with deep blue as the primary color, suitable for an AI product. It should be simple and recognizable, and also provide standard color values and usage guidelines.",
+      "Design a complete visual identity system for my coffee brand, including Logo, color palette, typography guidelines, and business card style, with a warm and artistic style.",
+      "Referencing the design styles of Apple and Stripe, design the brand identity for my SaaS product, including the main Logo, icon variations, and brand color palette."
+    ],
+    "promptTitles": [
+      "Tech Brand Logo",
+      "Coffee Brand Identity",
+      "SaaS Brand Identity"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 37,
+    "unified_id": 120,
+    "name": "Icons & Illustrations",
+    "icon": "mouse",
+    "mode": "design",
+    "plugins": [
+      {
+        "id": 0,
+        "name": "ardot-design-generator",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Help me design a set of 24 linear-style general-purpose icons suitable for a backend management system, covering common scenarios such as Home, Users, Settings, and Data.",
+      "Design a set of cute-style illustrated icons for a children's education App, covering 12 scenes across the themes of reading, math, music, and science.",
+      "Design a set of flat-style financial icons covering 16 scenarios such as payment, billing, wallet, transfer, and wealth management, with a unified color scheme."
+    ],
+    "promptTitles": [
+      "Admin Line Icons",
+      "Kids Education Illustrations",
+      "Flat Finance Icons"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 38,
+    "unified_id": 121,
+    "name": "Visual Posters",
+    "icon": "mouse",
+    "mode": "design",
+    "plugins": [
+      {
+        "id": 0,
+        "name": "ardot-design-generator",
+        "marketplaceName": "cb_teams_marketplace"
+      }
+    ],
+    "prompts": [
+      "Help me design a promotional poster for a product launch event with the theme of AI innovation, size 1080x1920, highlighting the launch date and product highlights.",
+      "Design a set of e-commerce Banners for the Double 11 sales event, 3 banners in different sizes with a unified style, emphasizing discount information and a limited-time flash sale atmosphere.",
+      "Design an event poster for a tech summit, highlighting the headshots of three speakers, the event time and location, and the registration QR code."
+    ],
+    "promptTitles": [
+      "Product Launch Poster",
+      "Double 11 Banners",
+      "Tech Summit Poster"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 44,
+    "unified_id": 123,
+    "name": "Latest News",
+    "icon": "wb-view",
+    "mode": "working",
+    "interactionModes": [
+      "quick"
+    ],
+    "plugins": [],
+    "prompts": [
+      "Summarize the three most noteworthy news stories today in plain language.",
+      "Tell me how the weather has changed recently and what to watch out for.",
+      "Explain recent new regulations that affect ordinary people.",
+      "Tell me what topics people have been discussing lately.",
+      "Share a few warm and interesting small news stories from recently."
+    ],
+    "promptTitles": [
+      "Today's top stories",
+      "Recent weather changes",
+      "New rules for daily life",
+      "Trending topics",
+      "Heartwarming news"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 45,
+    "unified_id": 124,
+    "name": "Writing Help",
+    "icon": "wb-ai-edit",
+    "mode": "working",
+    "interactionModes": [
+      "quick"
+    ],
+    "plugins": [],
+    "prompts": [
+      "Write a short leave-of-absence message to send to my manager.",
+      "Write a polite message reminding someone to finish on time.",
+      "Write a natural, not-awkward birthday wish for a friend.",
+      "Write a sincere apology text that is not overly formal.",
+      "Write a short social media post based on today's mood."
+    ],
+    "promptTitles": [
+      "Write a leave message",
+      "Politely follow up",
+      "Write a birthday wish",
+      "Write an apology text",
+      "Write a social post"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 46,
+    "unified_id": 125,
+    "name": "Daily Translation",
+    "icon": "wb-translate",
+    "mode": "working",
+    "interactionModes": [
+      "quick"
+    ],
+    "plugins": [],
+    "prompts": [
+      "Translate this English sentence into natural, easy-to-understand Chinese.",
+      "Translate this menu and explain what each dish is.",
+      "Translate this delivery update and tell me where my package is.",
+      "Tell me in simple terms what this email is mainly about.",
+      "Teach me how to ask how to get somewhere in simple English."
+    ],
+    "promptTitles": [
+      "What does this mean",
+      "Translate a menu",
+      "Read a delivery update",
+      "Summarize this email",
+      "Ask for directions"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 47,
+    "unified_id": 126,
+    "name": "Everyday Know-how",
+    "icon": "search",
+    "mode": "working",
+    "interactionModes": [
+      "quick"
+    ],
+    "plugins": [],
+    "prompts": [
+      "Why do staircases usually have an odd number of steps like 7, 9 or 11?",
+      "How should eggs be stored so they stay fresh longer?",
+      "My clothes shrank in the wash. Any simple ways to fix them?",
+      "What charge level is best for protecting my phone battery?",
+      "Why does cutting onions make you cry, and how can I avoid it?"
+    ],
+    "promptTitles": [
+      "Why odd-numbered stairs",
+      "Keep eggs fresh longer",
+      "Fix shrunken clothes",
+      "Best phone charge level",
+      "Why onions make you cry"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 48,
+    "unified_id": 127,
+    "name": "Work Tips",
+    "icon": "powerpoint",
+    "mode": "working",
+    "interactionModes": [
+      "quick"
+    ],
+    "plugins": [],
+    "prompts": [
+      "When there is a lot to do, how should I order my tasks for the day?",
+      "I get nervous speaking up in meetings. Any simple ways to ease that?",
+      "How do I quickly note down what really matters while someone is talking?",
+      "When my plate is full, how do I politely decline extra last-minute tasks?",
+      "My computer has more and more files. How should I sort them to find things easily?"
+    ],
+    "promptTitles": [
+      "Plan my workday",
+      "Nervous in meetings",
+      "Capture key points fast",
+      "Decline extra tasks",
+      "Organize too many files"
+    ],
+    "target": "all"
+  },
+  {
+    "id": 49,
+    "unified_id": 128,
+    "name": "Travel Guide",
+    "icon": "wb-publish",
+    "mode": "working",
+    "interactionModes": [
+      "quick"
+    ],
+    "plugins": [],
+    "prompts": [
+      "Recommend short, low-effort trips that are good for relaxing on a weekend.",
+      "It is my first time taking a high-speed train. What should I prepare and note?",
+      "What should I bring for a three-day trip, and how do I pack light?",
+      "What practical items should I prepare for a day at the beach?",
+      "How do I pick travel dates to avoid long queues and crowds?"
+    ],
+    "promptTitles": [
+      "Relaxing weekend ideas",
+      "First high-speed rail trip",
+      "Pack for a 3-day trip",
+      "What to bring to the beach",
+      "Avoid tourist crowds"
+    ],
+    "target": "all"
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "name": "bidding-assistant",
+  "version": "1.0.0",
+  "description": "Bidding assistant team covering tender document analysis, bid document generation, pre-submission compliance review, bid deduplication & collusion risk identification, and bid evaluation report generation for bidders, tenderers and evaluation support personnel.",
+  "author": {
+    "name": "RicheeAI",
+    "email": "legal@richeeai.com"
+  },
+  "agents": [
+    "./agents/bidding-assistant-team-lead.md",
+    "./agents/subagent-tender-analysis.md",
+    "./agents/subagent-bid-drafting.md",
+    "./agents/subagent-bid-compliance.md",
+    "./agents/subagent-bid-integrity.md",
+    "./agents/subagent-bid-evaluation.md"
+  ],
+  "skills": [
+    "./skills/tender-document-analysis-and-bidding-assistant",
+    "./skills/bid-document-generation",
+    "./skills/tender-document-compliance-check",
+    "./skills/bid-document-deduplication",
+    "./skills/bid-evaluation-report-generation",
+    "./skills/word-document-processing"
+  ],
+  "expertType": "team",
+  "agentName": "bidding-assistant-team-lead",
+  "teamInfo": {
+    "leadAgent": "bidding-assistant-team-lead",
+    "memberAgents": [
+      "subagent-tender-analysis",
+      "subagent-bid-drafting",
+      "subagent-bid-compliance",
+      "subagent-bid-integrity",
+      "subagent-bid-evaluation"
+    ]
+  },
+  "displayName": {
+    "en": "Bidding Assistant developed by Fadada·Richee",
+    "zh": "法大大·睿契提供的招投标专家"
+  },
+  "profession": {
+    "en": "Bidding Assistant",
+    "zh": "招投标专家团"
+  },
+  "displayDescription": {
+    "en": "[Fadada·Richee]Bidding team dispatching tender analysis, bid drafting, pre-submission compliance review, bid deduplication & collusion risk identification, and bid evaluation across the full bidding lifecycle.",
+    "zh": "【法大大·睿契】面向投标人、招标人和评标人员，覆盖招标解析、投标编制、合规审查、标书查重和评标报告全流程。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "解析这份招标文件，提取资格、评分和否决条款",
+    "en": "Analyze this tender document and extract qualification, scoring and rejection items"
+  },
+  "plugin": "bidding-assistant",
+  "dependencies": {
+    "mcpServers": "./.mcp.json"
+  },
+  "tags": [
+    { "en": "Tender Analysis", "zh": "招标解析" },
+    { "en": "Bid Drafting", "zh": "投标编制" },
+    { "en": "Bid Review", "zh": "标书评审" }
+  ],
+  "quickPrompts": [
+    { "en": "Analyze this tender document and extract qualification, scoring and rejection items", "zh": "解析这份招标文件，提取资格、评分和否决条款" },
+    { "en": "Generate a bid document based on the tender analysis and company materials", "zh": "基于招标分析和企业资料生成投标文件" },
+    { "en": "Check this bid document for compliance risks before submission", "zh": "检查这份投标文件的废标风险和合规问题" }
+  ],
+  "members": [
+    {
+      "id": "bidding-assistant-team-lead",
+      "name": { "en": "Zhong", "zh": "钟招衡" },
+      "profession": { "en": "Chief Bidding Dispatch Coordinator", "zh": "首席招投标调度官" },
+      "avatar": "avatars/bidding-assistant-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "subagent-tender-analysis",
+      "name": { "en": "Chu", "zh": "楚析真" },
+      "profession": { "en": "Tender Document Analyst", "zh": "招标文件分析员" },
+      "avatar": "avatars/subagent-tender-analysis.png",
+      "role": "member"
+    },
+    {
+      "id": "subagent-bid-drafting",
+      "name": { "en": "Pei", "zh": "裴编衡" },
+      "profession": { "en": "Bid Document Drafter", "zh": "投标文件编制员" },
+      "avatar": "avatars/subagent-bid-drafting.png",
+      "role": "member"
+    },
+    {
+      "id": "subagent-bid-compliance",
+      "name": { "en": "Min", "zh": "闵审慎" },
+      "profession": { "en": "Bid Compliance Reviewer", "zh": "投标合规审查员" },
+      "avatar": "avatars/subagent-bid-compliance.png",
+      "role": "member"
+    },
+    {
+      "id": "subagent-bid-integrity",
+      "name": { "en": "Zhen", "zh": "甄查鉴" },
+      "profession": { "en": "Bid Integrity Analyst", "zh": "标书一致性分析员" },
+      "avatar": "avatars/subagent-bid-integrity.png",
+      "role": "member"
+    },
+    {
+      "id": "subagent-bid-evaluation",
+      "name": { "en": "Duan", "zh": "段评衡" },
+      "profession": { "en": "Bid Evaluation Analyst", "zh": "评标分析员" },
+      "avatar": "avatars/subagent-bid-evaluation.png",
+      "role": "member"
+    }
+  ]
+}

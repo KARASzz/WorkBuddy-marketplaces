@@ -1,0 +1,119 @@
+{
+  "skill_name": "投标文件合规检查",
+  "version": "2.6.0",
+  "author": "法大大法律AI产品线",
+  "copyright": "© 深圳市法大大网络科技有限公司 版权所有",
+  "description": "投标文件评审与自查自纠：从编写规范性、有效应答性、风险识别三维审查，执行 BQ01-BQ15 并输出双页码证据、整改责任分流和复验标准。",
+  "trigger_keywords": [
+    "合规检查", "标书审查", "废标风险排查", "投标文件审核",
+    "格式检查", "实质性响应核查", "提交前检查", "投标前审查",
+    "报价合规", "资质完整性检查", "检查标书有没有问题", "废标风险复核",
+    "标书评审", "投标人自查自纠", "编写规范性", "有效应答性", "风险识别",
+    "技术偏离表检查", "商务偏离表检查", "泛化响应检查", "十五项质量检查", "图表编号检查", "签章页面清单"
+  ],
+  "negative_triggers": [
+    "解析招标文件", "招标文件分析", "生成投标文件", "写标书",
+    "标书查重", "重复率", "围串标检测", "评标报告", "推荐中标候选人"
+  ],
+  "routing": {
+    "primary_intent": "对已完成投标文件做提交前多维合规审查",
+    "required_context": ["投标文件", "tender_analysis.json 或招标文件原件"],
+    "handoff": {
+      "招标文件解析与投标辅助": "用户要求解析招标文件、提取评分标准或生成投标工作台",
+      "投标文件生成": "用户要求生成、编制或撰写投标文件正文",
+      "标书查重": "用户要求标书查重、重复率、抄袭或围串标检测",
+      "评标报告生成": "用户要求多家投标人评分排名、推荐中标候选人或生成评标报告"
+    }
+  },
+  "scripts": {
+    "extract_bid": {
+      "path": "scripts/extract_bid.py",
+      "description": "从 Word/PDF 提取投标文件文本及结构；内容不足时自动 OCR 降级",
+      "deps": ["python-docx>=1.1.0", "pdfplumber>=0.9.0"],
+      "inputs": ["<投标文件路径>"],
+      "outputs": ["/tmp/bid_raw.txt", "/tmp/bid_structure.json"]
+    },
+    "check_format": {
+      "path": "scripts/check_format.py",
+      "description": "D1 格式合规规则引擎（规则库驱动）",
+      "deps": ["stdlib"],
+      "inputs": ["/tmp/bid_raw.txt", "/tmp/bid_structure.json", "resources/bid_format_rules.json"],
+      "outputs": ["/tmp/d1_result.json"]
+    },
+    "check_response": {
+      "path": "scripts/check_response.py",
+      "description": "D2 实质性响应检查；支持 --mode rule / --mode llm",
+      "deps": ["stdlib"],
+      "inputs": ["/tmp/bid_raw.txt", "tender_analysis.json"],
+      "outputs": ["/tmp/d2_result.json"]
+    },
+    "check_deviation_tables": {
+      "path": "scripts/check_deviation_tables.py",
+      "description": "E05/E06 技术/商务偏离表原子行匹配、泛化响应阻断与关键要素完整性检查",
+      "deps": ["python-docx>=1.1.0"],
+      "inputs": ["tender_analysis.json", "<最终投标 DOCX 或 deviation_tables.json>"],
+      "outputs": ["/tmp/deviation_review_result.json"]
+    },
+    "check_risk": {
+      "path": "scripts/check_risk.py",
+      "description": "D3 废标风险规避检查；支持 --mode rule / --mode llm",
+      "deps": ["stdlib"],
+      "inputs": ["/tmp/bid_raw.txt", "tender_analysis.json"],
+      "outputs": ["/tmp/d3_result.json"]
+    },
+    "check_price": {
+      "path": "scripts/check_price.py",
+      "description": "D4 报价合规算术校验（超限价 / 大小写一致 / 分项求和）",
+      "deps": ["stdlib"],
+      "inputs": ["/tmp/bid_raw.txt", "tender_analysis.json"],
+      "outputs": ["/tmp/d4_result.json"]
+    },
+    "check_qualification": {
+      "path": "scripts/check_qualification.py",
+      "description": "D5 资质完整性检查；支持 --mode rule / --mode llm / --include-bonus",
+      "deps": ["stdlib"],
+      "inputs": ["/tmp/bid_raw.txt", "tender_analysis.json"],
+      "outputs": ["/tmp/d5_result.json"]
+    },
+    "validate_bid_quality_artifacts": {
+      "path": "scripts/validate_bid_quality_artifacts.py",
+      "description": "校验 BQ01-BQ15 评审结果与定点整改计划的数据契约，不读取或修改 Word",
+      "deps": ["stdlib"],
+      "inputs": ["/tmp/bid_quality_review.json", "/tmp/bid_repair_plan.json"],
+      "outputs": ["stdout validation result"]
+    }
+  },
+  "resources": {
+    "bid_quality_rules": "resources/bid_quality_rules.json",
+    "bid_quality_review_example": "resources/bid_quality_review.example.json",
+    "bid_repair_plan_example": "resources/bid_repair_plan.example.json"
+  },
+  "report_chapters": [
+    "一、检查总览",
+    "二、三维审查总览",
+    "三、编写规范性审查",
+    "四、有效应答性审查",
+    "五、风险识别审查",
+    "六、优化建议方案与自查清单",
+    "七、BQ01-BQ15 十五项质量检查与定点整改",
+    "附录A-F：D1-D5 与原五维整改清单"
+  ],
+  "severity_levels": {
+    "废标": "提交前必须处理，否则直接废标",
+    "扣分": "建议处理，影响评分但不废标",
+    "提醒": "可选优化项",
+    "通过": "当前规则与证据范围内未发现异常"
+  },
+  "llm_mode": {
+    "supported_scripts": ["check_response", "check_risk", "check_qualification"],
+    "env_vars": ["RICHEEAI_TOKEN", "RICHEEAI_API_BASE", "RICHEEAI_LLM_MODEL"],
+    "fallback": "API 失败时自动降级到 rule 模式"
+  },
+  "bundled_deps": {
+    "llm_client":  "scripts/llm_client.py",
+    "ocr_extract": "scripts/ocr_extract.py",
+    "proxy_utils": "scripts/proxy_utils.py"
+  },
+  "requirements": ["python-docx>=1.1.0", "pdfplumber>=0.9.0"],
+  "word_skill": "word-document-processing"
+}

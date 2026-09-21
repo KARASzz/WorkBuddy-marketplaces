@@ -1,0 +1,68 @@
+{
+  "skill_name": "评标报告生成",
+  "version": "1.1.0",
+  "author": "法大大法律AI产品线",
+  "copyright": "© 深圳市法大大网络科技有限公司 版权所有",
+  "description": "评标报告智能生成（S6）：仅在用户要求汇聚多家投标人 D1–D5 检查结果、围串标结果和评分数据，执行废标判定、综合评分、排名或推荐中标候选人时触发。",
+  "trigger_keywords": [
+    "评标报告", "综合评分", "评标汇总", "投标人排名", "废标判定",
+    "推荐中标", "评委报告", "评标结果", "中标候选人",
+    "综合评分排名", "生成评审报告", "评分大屏"
+  ],
+  "negative_triggers": [
+    "解析招标文件", "招标文件分析", "生成投标文件", "写标书",
+    "单份投标文件审核", "合规检查", "标书查重", "围串标检测"
+  ],
+  "routing": {
+    "primary_intent": "汇聚多家投标人结果并生成评标报告或候选人排名",
+    "required_context": ["bidders_manifest.json", "多家投标人 D1-D5 结果", "评分数据"],
+    "handoff": {
+      "招标文件解析与投标辅助": "用户要求解析招标文件、提取评分标准或生成投标工作台",
+      "投标文件生成": "用户要求生成、编制或撰写投标文件正文",
+      "投标文件合规检查": "用户要求审查单份已完成投标文件或做提交前合规检查",
+      "标书查重": "用户要求标书查重、重复率、抄袭或围串标检测"
+    }
+  },
+  "scripts": {
+    "score_bidder": {
+      "path": "scripts/score_bidder.py",
+      "description": "综合评分引擎：废标判定 + D1~D5 加权评分 + 价格分 + 评分排名",
+      "deps": ["stdlib"],
+      "inputs": ["bidders_manifest.json"],
+      "outputs": ["/tmp/evaluation_scores.json"]
+    },
+    "generate_evaluation_dashboard": {
+      "path": "scripts/generate_evaluation_dashboard.py",
+      "description": "评分结果可视化大屏（HTML）：投标人排名表 + 分项得分柱状图 + 废标原因 + 围串标摘要",
+      "deps": ["stdlib", "Chart.js 4.4.0 CDN（自包含 HTML）"],
+      "inputs": ["/tmp/evaluation_scores.json"],
+      "outputs": ["/mnt/user-data/outputs/<项目名>_评标大屏_<date>.html"]
+    }
+  },
+  "manifest_format": {
+    "tender_analysis": "招标分析 JSON 路径（含 scoring 权重、project_overview）",
+    "collusion_result": "围串标检测结果 JSON 路径",
+    "bidders": [
+      {
+        "name": "投标人名称",
+        "d1": "D1 格式检查结果 JSON",
+        "d2": "D2 实质性响应结果 JSON",
+        "d3": "D3 废标风险结果 JSON",
+        "d4": "D4 报价合规结果 JSON",
+        "d5": "D5 资质完整性结果 JSON"
+      }
+    ]
+  },
+  "report_chapters": [
+    "一、项目基本信息",
+    "二、开标记录（报价汇总表）",
+    "三、资格审查（D5 必要资质）",
+    "四、符合性审查（D1 格式 + D3 废标风险）",
+    "五、详细评审（技术/商务/价格）",
+    "六、综合评分排名表",
+    "七、推荐中标候选人",
+    "八、围串标风险附录"
+  ],
+  "requirements": [],
+  "word_skill": "word-document-processing"
+}

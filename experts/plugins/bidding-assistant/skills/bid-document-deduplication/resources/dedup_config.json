@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "description": "标书查重配置文件，可按项目需要调整阈值",
+    "version": "1.0"
+  },
+  "simhash_high_threshold": 10,
+  "jaccard_dup_threshold": 0.60,
+  "jaccard_similar_threshold": 0.30,
+  "minhash_threshold": 0.40,
+  "min_para_chars": 50,
+  "max_para_pairs": 5000,
+  "boilerplate_density_threshold": 0.40,
+  "boilerplate_window": 200,
+  "ignore_section_keywords": [
+    "目录", "附件", "封面", "页眉", "资质证书", "营业执照", "法定代表人"
+  ],
+  "_notes": {
+    "simhash_high_threshold": "Hamming 距离阈值，≤此值触发段落精细比对（建议 5-15）",
+    "jaccard_dup_threshold": "Jaccard ≥ 此值判定为重复（建议 0.6-0.8）",
+    "jaccard_similar_threshold": "Jaccard ≥ 此值判定为相似（建议 0.3-0.5）",
+    "minhash_threshold": "MinHash 快速筛选阈值，低于此值跳过精细比对（建议 0.3-0.5）",
+    "min_para_chars": "段落最小字符数，过短段落不参与比对（建议 30-80）",
+    "max_para_pairs": "内部段落两两比对上限，防止超时（建议 2000-10000）",
+    "boilerplate_density_threshold": "套话密度热区判定阈值（建议 0.3-0.5）",
+    "boilerplate_window": "套话密度检测滑动窗口字符数（建议 150-300）"
+  }
+}

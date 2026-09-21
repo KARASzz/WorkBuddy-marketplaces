@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "source_document_sha256": "source-document-sha256",
+  "current_round": 0,
+  "max_auto_rounds": 2,
+  "requires_manual": false,
+  "target_document_path": "/mnt/user-data/outputs/示例项目_投标文件_优化V1.docx",
+  "items": [
+    {
+      "rule_id": "BQ05",
+      "owner": "word-document-processing",
+      "action": "将第二个图10-2及其全部引用改为图10-3，保持图题与图片同页",
+      "retest_condition": "重新渲染新版本并核对图表索引无重号、无断号、引用一致"
+    }
+  ]
+}

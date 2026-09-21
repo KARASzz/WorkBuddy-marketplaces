@@ -1,0 +1,81 @@
+{
+  "name": "bidding-management-expert",
+  "version": "1.0.0",
+  "description": "Tendering, bidding and bid evaluation process and register management, powered by the Qingflow connector",
+  "author": {
+    "name": "Qingflow",
+    "email": "support@qingflow.com"
+  },
+  "agents": [
+    "./agents/bidding-management-expert.md"
+  ],
+  "skills": [
+    "./skills/bidding-management-core",
+    "./skills/qingflow-bidding-builder",
+    "./skills/qingflow-bidding-handoff"
+  ],
+  "expertType": "agent",
+  "agentName": "bidding-management-expert",
+  "displayName": {
+    "en": "Bidding Management Expert",
+    "zh": "招投标管理专家"
+  },
+  "profession": {
+    "en": "Bidding & Tendering Consultant",
+    "zh": "招投标管理顾问"
+  },
+  "displayDescription": {
+    "en": "Connect the Qingflow connector to unlock full tendering process diagrams, registers and bid evaluation scoring.",
+    "zh": "连接轻流连接器，专注招标、投标与评标管理，输出可落地的招投标流程、台账与评审方案。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "帮我梳理招标采购流程",
+    "en": "Help me map out the tendering and procurement process"
+  },
+  "plugin": "bidding-management-expert",
+  "tags": [
+    {
+      "en": "Bidding Management",
+      "zh": "招投标管理"
+    },
+    {
+      "en": "Tendering",
+      "zh": "招标采购"
+    },
+    {
+      "en": "Bid Evaluation",
+      "zh": "评标"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我梳理招标采购流程",
+      "en": "Help me map out the tendering and procurement process"
+    },
+    {
+      "zh": "制定评标打分标准",
+      "en": "Create bid evaluation scoring criteria"
+    },
+    {
+      "zh": "建立投标台账",
+      "en": "Build a bidding register"
+    }
+  ],
+  "dependencies": {
+    "connectors": [
+      "qingflow"
+    ]
+  },
+  "keywords": [
+    "招投标",
+    "招标",
+    "投标",
+    "评标",
+    "采购",
+    "台账",
+    "轻流招投标"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,168 @@
+{
+  "version": "1.0.0",
+  "description": "政府采购/工程招标投标文件格式合规规则库",
+  "rules": [
+    {
+      "id": "F001",
+      "category": "必备章节",
+      "name": "投标函",
+      "description": "投标文件必须包含投标函（或投标函页）",
+      "keywords": ["投标函", "投标承诺函", "投标声明书"],
+      "match_type": "title_or_content",
+      "severity": "废标",
+      "suggestion": "在投标文件中添加独立的「投标函」章节，包含投标金额、有效期承诺、法人签字盖章"
+    },
+    {
+      "id": "F002",
+      "category": "必备章节",
+      "name": "法定代表人授权委托书",
+      "description": "非法定代表人签署时，必须附授权委托书",
+      "keywords": ["授权委托书", "法定代表人授权", "委托授权书", "授权书"],
+      "match_type": "title_or_content",
+      "severity": "废标",
+      "suggestion": "附上法定代表人签字、公章的「授权委托书」，明确被授权人姓名和授权范围"
+    },
+    {
+      "id": "F003",
+      "category": "必备章节",
+      "name": "投标报价表",
+      "description": "投标文件必须包含明确的报价表或报价单",
+      "keywords": ["报价表", "报价单", "价格表", "投标报价", "报价明细"],
+      "match_type": "title_or_content",
+      "severity": "废标",
+      "suggestion": "添加「投标报价表」章节，包含项目明细、单价、数量、合计及税率"
+    },
+    {
+      "id": "F004",
+      "category": "必备章节",
+      "name": "技术方案",
+      "description": "投标文件必须包含技术方案或技术响应",
+      "keywords": ["技术方案", "技术响应", "解决方案", "技术建议书", "技术标"],
+      "match_type": "title_or_content",
+      "severity": "废标",
+      "suggestion": "添加「技术方案」章节，按照招标文件技术要求逐项响应"
+    },
+    {
+      "id": "F005",
+      "category": "必备章节",
+      "name": "资质证明文件",
+      "description": "投标文件必须包含营业执照等资质证明文件清单或附件",
+      "keywords": ["营业执照", "资质证书", "证明文件", "附件清单", "证照"],
+      "match_type": "content",
+      "severity": "废标",
+      "suggestion": "在附件部分列明并附上所有资质证明文件"
+    },
+    {
+      "id": "F006",
+      "category": "签章要求",
+      "name": "法定代表人或授权代表签字",
+      "description": "投标函等关键文件须有签字声明",
+      "keywords": ["签字", "签署", "法定代表人", "授权代表", "盖章", "公章"],
+      "match_type": "content",
+      "severity": "废标",
+      "suggestion": "确保投标函、授权委托书、报价表封面均有法定代表人或被授权人签字及公章位置"
+    },
+    {
+      "id": "F007",
+      "category": "签章要求",
+      "name": "单位公章声明",
+      "description": "投标文件应声明需加盖单位公章的位置",
+      "keywords": ["公章", "单位公章", "盖章处", "（盖章）", "（公章）"],
+      "match_type": "content",
+      "severity": "废标",
+      "suggestion": "在投标函封面、报价表、资质证明文件复印件上设置公章位置"
+    },
+    {
+      "id": "F008",
+      "category": "报价规范",
+      "name": "大小写金额",
+      "description": "投标总价应同时写明大写金额和阿拉伯数字",
+      "keywords": ["人民币", "大写", "万元", "元整", "¥", "RMB"],
+      "match_type": "content",
+      "severity": "废标",
+      "suggestion": "在投标函和报价表中同时填写大写金额（如：人民币壹佰万元整）和阿拉伯数字（¥1,000,000.00）"
+    },
+    {
+      "id": "F009",
+      "category": "报价规范",
+      "name": "税率声明",
+      "description": "报价应明确说明含税或不含税及适用税率",
+      "keywords": ["含税", "不含税", "增值税", "税率", "税额", "税金"],
+      "match_type": "content",
+      "severity": "扣分",
+      "suggestion": "在报价表备注中注明「以上报价含增值税 X%」或「以上报价不含税，税率 X%」"
+    },
+    {
+      "id": "F010",
+      "category": "有效期",
+      "name": "投标有效期声明",
+      "description": "投标函应明确写明投标文件有效期",
+      "keywords": ["有效期", "投标有效期", "日历天", "工作日", "有效至"],
+      "match_type": "content",
+      "severity": "扣分",
+      "suggestion": "在投标函中写明「本投标文件自开标之日起 XX 日历天内有效」"
+    },
+    {
+      "id": "F011",
+      "category": "文件组织",
+      "name": "目录/章节结构",
+      "description": "投标文件应有清晰目录",
+      "keywords": ["目录", "章节", "第一章", "第一部分", "一、"],
+      "match_type": "structure",
+      "severity": "提醒",
+      "suggestion": "在投标文件开头添加完整目录，方便评审专家快速定位"
+    },
+    {
+      "id": "F012",
+      "category": "文件组织",
+      "name": "正副本标注",
+      "description": "投标文件应区分正本和副本",
+      "keywords": ["正本", "副本", "正本一份", "副本X份"],
+      "match_type": "content",
+      "severity": "提醒",
+      "suggestion": "在文件封面注明「正本」或「副本」，并在投标函中说明提交的正副本份数"
+    },
+    {
+      "id": "F013",
+      "category": "资质证明",
+      "name": "投标保证金说明",
+      "description": "若招标文件要求投标保证金，投标文件应有相关说明或附件",
+      "keywords": ["投标保证金", "保函", "保证金", "银行保函", "担保函"],
+      "match_type": "content",
+      "severity": "废标",
+      "suggestion": "附上银行保函原件或转账凭证，并在投标文件中列明保证金缴纳情况"
+    },
+    {
+      "id": "F014",
+      "category": "商务响应",
+      "name": "合同条款响应",
+      "description": "投标文件应对招标文件中的合同主要条款进行响应",
+      "keywords": ["合同条款", "合同响应", "商务条款", "合同偏差", "偏差表"],
+      "match_type": "content",
+      "severity": "扣分",
+      "suggestion": "添加「商务条款响应表」，逐条注明是否接受招标合同条款，有偏差的注明偏差内容"
+    },
+    {
+      "id": "F015",
+      "category": "商务响应",
+      "name": "交货/服务期限承诺",
+      "description": "投标文件应明确承诺交货期或服务期限",
+      "keywords": ["交货期", "交付期", "服务期", "工期", "完工时间", "实施周期"],
+      "match_type": "content",
+      "severity": "扣分",
+      "suggestion": "在技术方案或商务响应中明确承诺交货/服务期限，并说明进度计划"
+    }
+  ],
+  "required_sections_default": [
+    "投标函",
+    "授权委托书",
+    "投标报价",
+    "技术方案",
+    "资质证明"
+  ],
+  "severity_levels": {
+    "废标": "提交前必须处理，否则导致废标",
+    "扣分": "影响评分，强烈建议处理",
+    "提醒": "不影响合规，建议完善以提升评分"
+  }
+}

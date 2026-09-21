@@ -1,0 +1,70 @@
+{
+  "name": "flova-video-director",
+  "version": "0.1.2",
+  "description": "Creates AI video and image content from scripts, prompts, and reference media, including text-to-image, text-to-video, image-to-video, storyboards, short films, ads, and final delivery.",
+  "author": {
+    "name": "Flova",
+    "email": "developer@flova.ai"
+  },
+  "homepage": "https://www.flova.ai",
+  "agents": [
+    "./agents/flova-video-director.md"
+  ],
+  "skills": [
+    "./skills/flova-project-runtime"
+  ],
+  "expertType": "agent",
+  "agentName": "flova-video-director",
+  "displayName": {
+    "zh": "全能视频创作",
+    "en": "Flova Video Director"
+  },
+  "profession": {
+    "zh": "Flova 视频专家",
+    "en": "AI Video Creation Director"
+  },
+  "displayDescription": {
+    "zh": "支持视频、图片、剧本、短片、短剧、漫剧、电影、广告、商品 TVC 与设计等 AI 内容生成，覆盖文生图、文生视频、图生视频及完整成片。",
+    "en": "Creates AI video and image content from scripts, prompts, and reference media, including text-to-image, text-to-video, image-to-video, storyboards, short films, ads, and final delivery."
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "用 Flova 把我的想法制作成完整视频",
+    "en": "Use Flova to turn my idea into a complete video"
+  },
+  "plugin": "flova-video-director",
+  "tags": [
+    {
+      "zh": "AI 内容生成",
+      "en": "AI Content Generation"
+    },
+    {
+      "zh": "视频图片创作",
+      "en": "Video and Image Creation"
+    },
+    {
+      "zh": "剧本成片",
+      "en": "Script to Film"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "用 Flova 把我的想法制作成完整视频",
+      "en": "Use Flova to turn my idea into a complete video"
+    },
+    {
+      "zh": "帮我规划这段素材最适合的视频方案",
+      "en": "Plan the best video approach for this material"
+    },
+    {
+      "zh": "继续推进我已有的 Flova 项目",
+      "en": "Continue my existing Flova project"
+    }
+  ],
+  "dependencies": {
+    "connectors": [
+      "flova"
+    ]
+  }
+}

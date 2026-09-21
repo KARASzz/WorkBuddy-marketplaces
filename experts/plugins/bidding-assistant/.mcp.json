@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "richee-mcp-server": {
+      "type": "streamableHttp",
+      "url": "https://claw.richee.cn/claw-api/mcp/workbuddy",
+      "x-workbuddy": {
+        "displayName": {
+          "zh": "法大大睿契",
+          "en": "Fadada Richee"
+        },
+        "description": {
+          "zh": "连接后可调用法大大睿契（RicheeAI）平台的法律法规检索与智能服务，用于招标合规依据检索、投标文件法律核验等场景。",
+          "en": "After connecting, provides access to Fadada Richee (RicheeAI) legal search and intelligent services for tender compliance research and bid document legal verification."
+        }
+      }
+    }
+  }
+}

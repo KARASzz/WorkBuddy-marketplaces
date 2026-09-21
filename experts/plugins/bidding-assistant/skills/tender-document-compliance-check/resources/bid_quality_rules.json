@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "status_values": ["pass", "fail", "insufficient_evidence"],
+  "rules": [
+    {"rule_id": "BQ01", "name": "应答完整性", "default_owner": "bid-document-generation", "allowed_owners": ["bid-document-generation", "manual"]},
+    {"rule_id": "BQ02", "name": "与招标原文一致", "default_owner": "bid-document-generation", "allowed_owners": ["bid-document-generation", "manual"]},
+    {"rule_id": "BQ03", "name": "举证材料具体到图号", "default_owner": "bid-document-generation", "allowed_owners": ["bid-document-generation", "manual"]},
+    {"rule_id": "BQ04", "name": "交叉引用均存在且唯一", "default_owner": "bid-document-generation", "allowed_owners": ["bid-document-generation", "manual"]},
+    {"rule_id": "BQ05", "name": "图表编号连续无重号", "default_owner": "word-document-processing", "allowed_owners": ["word-document-processing"]},
+    {"rule_id": "BQ06", "name": "占位标注统一且候选终稿清零", "default_owner": "bid-document-generation", "allowed_owners": ["bid-document-generation", "word-document-processing", "manual"]},
+    {"rule_id": "BQ07", "name": "每个小节标题下有内容", "default_owner": "bid-document-generation", "allowed_owners": ["bid-document-generation", "manual"]},
+    {"rule_id": "BQ08", "name": "敏感信息按提交版优先脱敏", "default_owner": "bid-document-generation", "allowed_owners": ["bid-document-generation", "manual"]},
+    {"rule_id": "BQ09", "name": "表格格式", "default_owner": "word-document-processing", "allowed_owners": ["word-document-processing"]},
+    {"rule_id": "BQ10", "name": "分页质量", "default_owner": "word-document-processing", "allowed_owners": ["word-document-processing"]},
+    {"rule_id": "BQ11", "name": "目录完整准确", "default_owner": "word-document-processing", "allowed_owners": ["word-document-processing"]},
+    {"rule_id": "BQ12", "name": "标点与文字规范", "default_owner": "bid-document-generation", "allowed_owners": ["bid-document-generation", "word-document-processing"]},
+    {"rule_id": "BQ13", "name": "关键承诺数字一致且达标", "default_owner": "bid-document-generation", "allowed_owners": ["bid-document-generation", "manual"]},
+    {"rule_id": "BQ14", "name": "日期一致", "default_owner": "bid-document-generation", "allowed_owners": ["bid-document-generation", "manual"]},
+    {"rule_id": "BQ15", "name": "需签章页面清单", "default_owner": "bid-document-generation", "allowed_owners": ["bid-document-generation", "manual"]}
+  ]
+}

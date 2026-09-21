@@ -1,0 +1,65 @@
+{
+  "skill_name": "投标文件生成",
+  "version": "1.6.0",
+  "author": "法大大法律AI产品线",
+  "copyright": "© 深圳市法大大网络科技有限公司 版权所有",
+  "description": "投标文件生成技能：基于招标分析、招标要求和企业资料编制投标内容，生成 BQ01-BQ15 质量台账并将 DOCX 生成交给 Word 文档处理技能。",
+  "trigger_keywords": [
+    "生成投标文件", "写标书", "编制投标文件", "生成技术标",
+    "生成商务标", "帮我写投标方案", "投标文件生成", "写投标",
+    "做标书", "起草投标响应", "根据评分项写方案", "生成技术偏离表", "生成商务偏离表", "标书十五项自检"
+  ],
+  "negative_triggers": [
+    "解析招标文件", "招标文件分析", "投标工作台", "合规检查",
+    "投标文件审核", "标书查重", "围串标检测", "评标报告", "推荐中标候选人"
+  ],
+  "routing": {
+    "primary_intent": "生成或编制投标文件正文",
+    "required_context": ["tender_analysis.json", "招标要求", "企业资料", "投标素材"],
+    "handoff": {
+      "招标文件解析与投标辅助": "用户要求解析招标文件、提取评分标准或生成投标工作台",
+      "投标文件合规检查": "用户要求审查已完成投标文件或做提交前合规检查",
+      "标书查重": "用户要求标书查重、重复率、抄袭或围串标检测",
+      "评标报告生成": "用户要求多家投标人评分排名、推荐中标候选人或生成评标报告"
+    }
+  },
+  "upstream": "招标文件解析与投标辅助",
+  "upstream_output": "/tmp/tender_analysis.json",
+  "scripts": {
+    "load_company_profile": {
+      "path": "scripts/load_company_profile.py",
+      "description": "企业资料库加载/保存/检查",
+      "deps": ["stdlib"],
+      "outputs": ["/tmp/company_profile.json"]
+    },
+    "build_outline": {
+      "path": "scripts/build_outline.py",
+      "description": "三级目录解析为叶子节点任务队列",
+      "deps": ["stdlib"],
+      "outputs": ["/tmp/bid_task_queue.json"]
+    },
+    "build_deviation_tables": {
+      "path": "scripts/build_deviation_tables.py",
+      "description": "技术/商务要求原子化，一条要求一行；泛化响应或关键要素缺失形成 P0 阻断",
+      "deps": ["stdlib"],
+      "outputs": ["/tmp/deviation_tables.json"]
+    }
+  },
+  "resources": {
+    "company_profile_template": "resources/company_profile_template.json",
+    "response_index_map_example": "resources/response_index_map.example.json",
+    "bid_quality_manifest_example": "resources/bid_quality_manifest.example.json"
+  },
+  "tmp_paths": {
+    "company_profile": "/tmp/company_profile.json",
+    "bid_outline":     "/tmp/bid_outline.json",
+    "bid_task_queue":  "/tmp/bid_task_queue.json",
+    "bid_sections_dir": "/tmp/bid_sections/",
+    "deviation_responses": "/tmp/deviation_responses.json",
+    "deviation_tables": "/tmp/deviation_tables.json",
+    "bid_quality_manifest": "/tmp/bid_quality_manifest.json"
+  },
+  "store_path": "~/.bid_toolkit/company_profile.json",
+  "requirements": [],
+  "word_skill": "word-document-processing"
+}

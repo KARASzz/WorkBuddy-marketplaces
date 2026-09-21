@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "project": {"name": "示例项目", "tender_no": "TENDER-001"},
+  "bid_version": {
+    "document_path": "/mnt/user-data/outputs/示例项目_投标文件_优化V1.docx",
+    "document_sha256": "replace-with-current-document-sha256",
+    "state": "candidate_for_compliance"
+  },
+  "requirements": [],
+  "evidence_refs": [],
+  "cross_references": [],
+  "figures_tables": [],
+  "placeholders": [],
+  "section_content": [],
+  "sensitive_items": [],
+  "commitments": [],
+  "dates": [],
+  "signature_targets": [],
+  "word_acceptance_requests": [],
+  "checks": [
+    {"rule_id": "BQ01", "status": "pass", "evidence": ["requirements:all-mapped"]},
+    {"rule_id": "BQ02", "status": "pass", "evidence": ["requirements:no-conflict"]},
+    {"rule_id": "BQ03", "status": "pass", "evidence": ["evidence_refs:all-located"]},
+    {"rule_id": "BQ04", "status": "pass", "evidence": ["cross_references:all-unique"]},
+    {"rule_id": "BQ05", "status": "pass", "evidence": ["figures_tables:index-ready"]},
+    {"rule_id": "BQ06", "status": "pass", "evidence": ["placeholders:open=0"]},
+    {"rule_id": "BQ07", "status": "pass", "evidence": ["section_content:empty=0"]},
+    {"rule_id": "BQ08", "status": "pass", "evidence": ["sensitive_items:decisions-recorded"]},
+    {"rule_id": "BQ09", "status": "pass", "evidence": ["word_acceptance_requests:tables"]},
+    {"rule_id": "BQ10", "status": "pass", "evidence": ["word_acceptance_requests:pagination"]},
+    {"rule_id": "BQ11", "status": "pass", "evidence": ["word_acceptance_requests:toc"]},
+    {"rule_id": "BQ12", "status": "pass", "evidence": ["word_acceptance_requests:visible-text"]},
+    {"rule_id": "BQ13", "status": "pass", "evidence": ["commitments:no-conflict"]},
+    {"rule_id": "BQ14", "status": "pass", "evidence": ["dates:no-conflict"]},
+    {"rule_id": "BQ15", "status": "pass", "evidence": ["signature_targets:list-ready"]}
+  ],
+  "blockers": []
+}

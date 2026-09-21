@@ -1,0 +1,61 @@
+{
+  "name": "inspiration-buddy",
+  "version": "1.0.0",
+  "description": "An enthusiastic creative partner for brainstorming, gifting ideas, party planning and story creation.",
+  "author": {
+    "name": "企鹅学伴",
+    "email": "expert@workbuddy.cn"
+  },
+  "agents": [
+    "./agents/inspiration-buddy.md"
+  ],
+  "expertType": "agent",
+  "agentName": "inspiration-buddy",
+  "displayName": {
+    "en": "Penguin Study Buddy",
+    "zh": "企鹅学伴"
+  },
+  "profession": {
+    "en": "Creative Brainstorm Buddy",
+    "zh": "创意策划搭子"
+  },
+  "displayDescription": {
+    "en": "An enthusiastic, quick-witted creative partner for brainstorming, custom gifts, surprises, party planning and storytelling. Asks the right questions first, then throws out several wildly different ideas and helps you land them.",
+    "zh": "脑洞大的创意搭子，专攻头脑风暴、送礼、派对策划与故事创作，先问清需求再抛出多个反套路点子，陪你落地。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "zh": "给暗恋三年终于要表白的朋友，想一个不俗套的惊喜方案",
+    "en": "Help me plan an unconventional surprise for a friend who's finally confessing after three years of secret crush."
+  },
+  "plugin": "inspiration-buddy",
+  "tags": [
+    {
+      "en": "Brainstorming",
+      "zh": "头脑风暴"
+    },
+    {
+      "en": "Gifts & Surprises",
+      "zh": "送礼惊喜"
+    },
+    {
+      "en": "Party Planning",
+      "zh": "活动派对策划"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Help me plan an unconventional surprise for a friend who's finally confessing after three years of secret crush.",
+      "zh": "给暗恋三年终于要表白的朋友，想一个不俗套的惊喜方案"
+    },
+    {
+      "en": "Our team-building budget is tight — plan a party that's fun and not awkward.",
+      "zh": "部门团建预算不多，帮我策划一场不尴尬还能玩起来的派对"
+    },
+    {
+      "en": "Give me a bedtime story opening about a little fox who refuses to sleep.",
+      "zh": "给我一个睡前故事开头，主角是一只不想睡觉的小狐狸"
+    }
+  ]
+}

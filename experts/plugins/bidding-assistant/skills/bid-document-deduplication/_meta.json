@@ -1,0 +1,71 @@
+{
+  "skill_name": "标书查重",
+  "version": "2.1.0",
+  "author": "法大大法律AI产品线",
+  "copyright": "© 深圳市法大大网络科技有限公司 版权所有",
+  "description": "标书查重与围串标智能识别：仅在用户要求对一份或多份投标文件做重复率、相似度、抄袭、模板套话、同错性、报价规律或元数据溯源检测时触发，输出查重报告和围串标风险报告。",
+  "trigger_keywords": [
+    "标书查重", "检查重复率", "投标文件查重", "检查抄袭",
+    "相似度检测", "查重报告", "标书相似度", "投标查重",
+    "围串标", "围串标检测", "同错性分析", "报价规律", "串标检测",
+    "围标", "元数据溯源", "模板套话", "多家投标文件相似"
+  ],
+  "negative_triggers": [
+    "解析招标文件", "招标文件分析", "生成投标文件", "写标书",
+    "合规检查", "投标文件审核", "综合评分", "评标报告", "推荐中标候选人"
+  ],
+  "routing": {
+    "primary_intent": "检测投标文件重复率、相似度和围串标风险",
+    "required_context": ["投标文件", "历史标书库或多家投标文件（可选）"],
+    "handoff": {
+      "招标文件解析与投标辅助": "用户要求解析招标文件、提取评分标准或生成投标工作台",
+      "投标文件生成": "用户要求生成、编制或撰写投标文件正文",
+      "投标文件合规检查": "用户要求审查已完成投标文件或做提交前合规检查",
+      "评标报告生成": "用户要求多家投标人评分排名、推荐中标候选人或生成评标报告"
+    }
+  },
+  "scripts": {
+    "extract_text": {
+      "path": "scripts/extract_text.py",
+      "description": "文档文本提取，支持单文件和批量模式；内容不足时自动 OCR 降级（需 RICHEEAI_TOKEN）",
+      "deps": ["python-docx>=1.1.0", "pdfplumber>=0.10.0"],
+      "outputs": ["/tmp/dedup_main.txt", "/tmp/dedup_structure.json", "/tmp/dedup_corpus/"]
+    },
+    "simhash_engine": {
+      "path": "scripts/simhash_engine.py",
+      "description": "SimHash + MinHash + Jaccard 相似度计算引擎",
+      "deps": ["stdlib"],
+      "outputs": []
+    },
+    "check_dedup": {
+      "path": "scripts/check_dedup.py",
+      "description": "三层查重主控（L1 跨文档/L2 内部/L3 套话），输出结构化 JSON",
+      "deps": ["stdlib"],
+      "outputs": ["/tmp/dedup_result.json"]
+    },
+    "check_collusion": {
+      "path": "scripts/check_collusion.py",
+      "description": "三层围串标检测（L4 同错性 / L5 报价规律 / L6 Word元数据）；接受 2+ 个投标文件路径",
+      "deps": ["python-docx>=1.1.0"],
+      "inputs": ["<bid_file_1>", "<bid_file_2>", "..."],
+      "outputs": ["/tmp/collusion_result.json"]
+    }
+  },
+  "bundled_deps": {
+    "ocr_extract": "scripts/ocr_extract.py",
+    "proxy_utils": "scripts/proxy_utils.py"
+  },
+  "resources": {
+    "boilerplate_phrases": "resources/boilerplate_phrases.json",
+    "dedup_config":        "resources/dedup_config.json"
+  },
+  "tmp_paths": {
+    "main_text":        "/tmp/dedup_main.txt",
+    "structure":        "/tmp/dedup_structure.json",
+    "corpus_dir":       "/tmp/dedup_corpus/",
+    "dedup_result":     "/tmp/dedup_result.json",
+    "collusion_result": "/tmp/collusion_result.json"
+  },
+  "requirements": ["python-docx>=1.1.0", "pdfplumber>=0.10.0"],
+  "word_skill": "word-document-processing"
+}

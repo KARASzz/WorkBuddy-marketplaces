@@ -1,0 +1,121 @@
+{
+  "name": "biaobiao-bid-team",
+  "version": "2.0.0",
+  "description": "Bid production team for Haining Yada Plastic Pipe Systems, with evidence-grounded tender analysis, staged Markdown drafting, independent review, WorkBuddy final document generation, and bid retrospectives.",
+  "author": {
+    "name": "KARAS",
+    "email": "karas@example.com"
+  },
+  "agents": [
+    "./agents/biaobiao-team-lead.md",
+    "./agents/tender-requirement-analyst.md",
+    "./agents/evidence-strategy-specialist.md",
+    "./agents/pipe-technical-specialist.md",
+    "./agents/commercial-pricing-specialist.md",
+    "./agents/independent-quality-reviewer.md"
+  ],
+  "skills": [
+    "./skills/bid-project-orchestration",
+    "./skills/tender-analysis",
+    "./skills/evidence-strategy",
+    "./skills/pipe-technical-drafting",
+    "./skills/commercial-pricing-drafting",
+    "./skills/bid-compliance-review",
+    "./skills/final-docx-assembly",
+    "./skills/bid-retrospective"
+  ],
+  "expertType": "agent",
+  "agentName": "biaobiao-team-lead",
+  "teamInfo": {
+    "leadAgent": "biaobiao-team-lead",
+    "memberAgents": [
+      "tender-requirement-analyst",
+      "evidence-strategy-specialist",
+      "pipe-technical-specialist",
+      "commercial-pricing-specialist",
+      "independent-quality-reviewer"
+    ]
+  },
+  "displayName": {
+    "en": "BiaoBiao Yada Bid Team",
+    "zh": "标标·亚大投标专家团"
+  },
+  "profession": {
+    "en": "BiaoBiao Yada Bid Team",
+    "zh": "标标·亚大投标专家团"
+  },
+  "displayDescription": {
+    "en": "A Haining Yada bid team for tender analysis, evidence matching, technical and commercial drafting, independent final review, and retrospective learning.",
+    "zh": "海宁亚大专属投标专家团，分工完成研标、证据匹配、技术商务编制、独立终审、终稿生成与复盘沉淀。"
+  },
+  "avatar": "avatars/guan-zhong.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "我收到了一份新招标文件，请标标启动本项目的分阶段投标制作流程",
+    "en": "I received a new tender document. Start the staged bid production workflow for this project."
+  },
+  "plugin": "biaobiao-bid-team",
+  "tags": [
+    { "en": "Tender Analysis", "zh": "招标解析" },
+    { "en": "Bid Production", "zh": "标书编制" },
+    { "en": "Evidence Review", "zh": "证据终审" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我收到了一份新招标文件，请标标启动本项目的分阶段投标制作流程",
+      "en": "I received a new tender document. Start the staged bid production workflow for this project."
+    },
+    {
+      "zh": "读取项目状态台账，从上次通过的人工门禁继续制作当前标书",
+      "en": "Read the project status ledger and continue from the last approved human gate."
+    },
+    {
+      "zh": "投标结果已经公布，请录入结果字段、生成复盘报告并更新经验库",
+      "en": "The bid result is available. Record the outcome, create the retrospective, and update the knowledge base."
+    }
+  ],
+  "members": [
+    {
+      "id": "biaobiao-team-lead",
+      "name": { "en": "BiaoBiao", "zh": "标标" },
+      "profession": { "en": "Chief Bid Production Lead", "zh": "投标制作总负责人" },
+      "avatar": "avatars/guan-zhong.png",
+      "role": "lead"
+    },
+    {
+      "id": "tender-requirement-analyst",
+      "name": { "en": "Tender Analyst", "zh": "研标官" },
+      "profession": { "en": "Tender Requirement Analyst", "zh": "招标要求分析专家" },
+      "avatar": "avatars/guan-zhong.png",
+      "role": "member"
+    },
+    {
+      "id": "evidence-strategy-specialist",
+      "name": { "en": "Evidence Strategist", "zh": "素材证据官" },
+      "profession": { "en": "Bid Evidence Strategist", "zh": "投标证据策略专家" },
+      "avatar": "avatars/guan-zhong.png",
+      "role": "member"
+    },
+    {
+      "id": "pipe-technical-specialist",
+      "name": { "en": "Pipe Technical Specialist", "zh": "管道技术标专家" },
+      "profession": { "en": "Plastic Pipe Technical Bid Specialist", "zh": "塑料管道技术标专家" },
+      "avatar": "avatars/guan-zhong.png",
+      "role": "member"
+    },
+    {
+      "id": "commercial-pricing-specialist",
+      "name": { "en": "Commercial Specialist", "zh": "商务报价专家" },
+      "profession": { "en": "Commercial and Pricing Specialist", "zh": "商务与报价编制专家" },
+      "avatar": "avatars/guan-zhong.png",
+      "role": "member"
+    },
+    {
+      "id": "independent-quality-reviewer",
+      "name": { "en": "Independent Reviewer", "zh": "独立终审官" },
+      "profession": { "en": "Bid Compliance and Quality Reviewer", "zh": "投标合规与质量终审专家" },
+      "avatar": "avatars/guan-zhong.png",
+      "role": "member"
+    }
+  ]
+}
