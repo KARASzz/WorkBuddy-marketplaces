@@ -1,10 +1,10 @@
-# 策策 · 商业模式探索到落地专家团（Venture Blueprint Team）
+# 策策商业策划团（Cece Venture Blueprint）
 
 面向新兴细分赛道的商业模式探索团队：把一个陌生的行业方向拆解成可判断的赛道，设计可落地的商业模式，算清单位经济，推演实施路径，并在执行前完成风险与 AI 治理审计，最终输出一份可落地、可审计、可止损的商业策划案。
 
 ## 类型
 
-Team 型（多角色协作团队）：1 名主理人 + 5 名专业成员，按 SOP 分阶段串并行协作。
+Team 型（多角色协作团队）：1 名主理人 + 5 名专业成员，按 SOP 分阶段串并行协作。编排契约见 `skills/venture-blueprint-orchestration/`。
 
 ## 团队成员
 
@@ -21,8 +21,9 @@ Team 型（多角色协作团队）：1 名主理人 + 5 名专业成员，按 S
 
 | 阶段 | 内容 | 执行方式 |
 |---|---|---|
-| Phase 0 | 任务定义：赛道、操盘主体、资源约束、成功判据 | 主理人 |
+| Phase 0 | 任务定义：7 槽任务简报 | 主理人 |
 | Phase 1 | 赛道基线：赛道地图 + 行业基准参数库 | track-scanner ∥ unit-economics-analyst |
+| Phase 1b | 轻量信号校验（Workflow B 固定步骤） | track-scanner |
 | Phase 2 | 模式设计：3 套候选方案 + 推荐与假设清单 | business-architect |
 | Phase 3 | 经济性测算：单位经济、现金流、敏感性与翻转点 | unit-economics-analyst |
 | Phase 4 | 落地推演：MVP、里程碑门禁、前置条件、止损线 | landing-simulator |
@@ -31,7 +32,7 @@ Team 型（多角色协作团队）：1 名主理人 + 5 名专业成员，按 S
 
 ## 输出物标准
 
-最终《商业策划案》必须包含：结论摘要、赛道判断、推荐商业模式、经济性结论、落地路线、风险与预案、待验证假设清单、待人工确认事项。
+最终《商业策划案》必须包含：结论摘要、赛道判断、推荐商业模式、经济性结论、落地路线、风险与预案、待验证假设清单、待人工确认事项。模板：`skills/venture-blueprint-orchestration/templates/business-plan.md`。
 
 每条事实性结论标注来源类型：`[实测]` / `[可比]` / `[推算]` / `[假设]`。
 
@@ -49,6 +50,17 @@ Team 型（多角色协作团队）：1 名主理人 + 5 名专业成员，按 S
 - 尺寸：512×512 px
 - 大小：单张不超过 500KB
 
+## 安装前校验
+
+```bash
+python3 ~/.workbuddy/plugins/marketplaces/workbuddy-builtin/skills/expert-manager/scripts/validate_expert.py \
+  ~/.workbuddy/plugins/marketplaces/my-experts/plugins/venture-blueprint-team
+```
+
+期望输出：`✅ Expert package is valid!`
+
+Team 根目录须有 `settings.json`，且 `"agent"` 等于 `venture-blueprint-team-lead`。
+
 ## 安装
 
 将专家包目录放到专家目录下：
@@ -57,14 +69,16 @@ Team 型（多角色协作团队）：1 名主理人 + 5 名专业成员，按 S
 ~/.workbuddy/plugins/marketplaces/my-experts/plugins/venture-blueprint-team/
 ```
 
-然后运行注册命令使其可见：
+然后运行注册命令使其可见（会写入 marketplace.json）：
 
 ```bash
-python3 scripts/register_expert.py <expert-dir>
+python3 ~/.workbuddy/plugins/marketplaces/workbuddy-builtin/skills/expert-manager/scripts/register_expert.py \
+  ~/.workbuddy/plugins/marketplaces/my-experts/plugins/venture-blueprint-team
 ```
 
 ## 打包分享
 
 ```bash
-python3 scripts/package_expert.py <expert-dir>
+python3 ~/.workbuddy/plugins/marketplaces/workbuddy-builtin/skills/expert-manager/scripts/package_expert.py \
+  ~/.workbuddy/plugins/marketplaces/my-experts/plugins/venture-blueprint-team
 ```

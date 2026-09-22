@@ -1,6 +1,6 @@
 {
   "name": "venture-blueprint-team",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A venture blueprint team for emerging niche tracks: track deconstruction, business model design, unit economics, landing simulation, and AI-governance risk audit, delivering an actionable business plan.",
   "author": {
     "name": "KARAS",
@@ -14,6 +14,7 @@
     "./agents/landing-simulator.md",
     "./agents/risk-audit-officer.md"
   ],
+  "skills": ["./skills/venture-blueprint-orchestration"],
 
   "expertType": "team",
   "agentName": "venture-blueprint-team-lead",
@@ -29,16 +30,16 @@
   },
 
   "displayName": {
-    "en": "Cece",
-    "zh": "策策"
+    "en": "Cece Venture Blueprint",
+    "zh": "策策商业策划团"
   },
   "profession": {
-    "en": "Cece",
-    "zh": "策策"
+    "en": "Cece Venture Blueprint",
+    "zh": "策策商业策划团"
   },
   "displayDescription": {
-    "en": "A venture blueprint team that deconstructs emerging niche tracks, designs landable business models, and stress-tests unit economics, rollout paths and risk contingencies.",
-    "zh": "系统拆解新兴细分赛道，设计可落地商业模式，完成单位经济测算、实施路径推演与风险审计。"
+    "en": "Deconstruct emerging niche tracks, design landable models, and stress-test unit economics, rollout paths and AI-governance risk.",
+    "zh": "拆解新兴细分赛道，设计可落地商业模式，完成单位经济测算、落地推演与AI治理审计。"
   },
   "avatar": "avatars/team.png",
   "categoryId": "12-IndustryConsultant",
@@ -69,42 +70,42 @@
   "members": [
     {
       "id": "venture-blueprint-team-lead",
-      "displayName": { "en": "Shen Lice", "zh": "沈立策" },
+      "displayName": { "en": "Shen", "zh": "沈立策" },
       "profession": { "en": "Chief Venture Architect", "zh": "商业操盘总策划" },
       "avatar": "avatars/venture-blueprint-team-lead.png",
       "role": "lead"
     },
     {
       "id": "track-scanner",
-      "displayName": { "en": "Wen Shixin", "zh": "温识新" },
+      "displayName": { "en": "Wen", "zh": "温识新" },
       "profession": { "en": "Emerging Track Researcher", "zh": "新兴赛道研究员" },
       "avatar": "avatars/track-scanner.png",
       "role": "member"
     },
     {
       "id": "business-architect",
-      "displayName": { "en": "Gu Zhishang", "zh": "谷知商" },
+      "displayName": { "en": "Gu", "zh": "谷知商" },
       "profession": { "en": "Business Model Architect", "zh": "商业模式架构师" },
       "avatar": "avatars/business-architect.png",
       "role": "member"
     },
     {
       "id": "unit-economics-analyst",
-      "displayName": { "en": "Zhong Hengzhi", "zh": "钟衡之" },
+      "displayName": { "en": "Zhong", "zh": "钟衡之" },
       "profession": { "en": "Unit Economics Analyst", "zh": "单位经济测算师" },
       "avatar": "avatars/unit-economics-analyst.png",
       "role": "member"
     },
     {
       "id": "landing-simulator",
-      "displayName": { "en": "Cheng Keda", "zh": "程可达" },
+      "displayName": { "en": "Cheng", "zh": "程可达" },
       "profession": { "en": "Landing Simulation Officer", "zh": "落地推演官" },
       "avatar": "avatars/landing-simulator.png",
       "role": "member"
     },
     {
       "id": "risk-audit-officer",
-      "displayName": { "en": "Zeng Wuyu", "zh": "曾无虞" },
+      "displayName": { "en": "Zeng", "zh": "曾无虞" },
       "profession": { "en": "Risk and AI Governance Auditor", "zh": "风险与AI治理审计官" },
       "avatar": "avatars/risk-audit-officer.png",
       "role": "member"
