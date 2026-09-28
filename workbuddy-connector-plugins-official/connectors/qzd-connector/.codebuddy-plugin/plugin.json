@@ -1,0 +1,55 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to QZD enterprise data service to query company profiles and basic corporate information through natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to QZD enterprise data service to query company profiles and basic corporate information through natural language.",
+        "description_zh": "接入企智多企业数据服务，支持通过自然语言查询企业基本概况等企业信息，快速了解企业背景。",
+        "examples_en": [
+          "Query the basic information of Tencent Technology (Shenzhen) Co., Ltd.",
+          "Look up the basic profile of Kweichow Moutai",
+          "Query the basic information of ZTE Corporation to learn about its business scope"
+        ],
+        "examples_zh": [
+          "查询腾讯科技（深圳）有限公司的企业基本信息",
+          "帮我查一下贵州茅台的企业基本概况",
+          "查询中兴通讯的企业基本信息，了解其经营范围"
+        ],
+        "name": "企智多",
+        "name_en": "QZD",
+        "name_zh": "企智多"
+      },
+      "policy": {
+        "mcpServers": {
+          "qzd": {
+            "timeout": 300000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "qzd": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "qzd-connector",
+  "version": "1.0.0+wb.5a540d950d369f6a"
+}

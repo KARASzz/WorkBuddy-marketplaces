@@ -1,0 +1,59 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "An all-in-one China market data query service covering enterprise due diligence & risk assessment (registration, equity structure, financials, financing, litigation, penalties), stock/bond/fund data, regional economy & macro rates, news/sentiment & regulations, with multi-dimensional enterprise and bond screening.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "An all-in-one China market data query service covering enterprise due diligence & risk assessment (registration, equity structure, financials, financing, litigation, penalties), stock/bond/fund data, regional economy & macro rates, news/sentiment & regulations, with multi-dimensional enterprise and bond screening.",
+        "description_zh": "财汇 MCP 提供专业金融与风险数据服务，覆盖境内企业工商、上市公司、债券、基金、金融机构、宏观与区域经济、监管与司法风险、新闻公告及法规等多维度数据，支撑金融数据查询、风险评估、分析研究、投资交易、舆情监测、投行尽调、信贷管理、合规审查等业务场景。",
+        "examples_en": [
+          "Query BOC's balance sheet and operating metrics for the past three years",
+          "List of green bonds issued in the past month",
+          "NFRA penalties on banks 2026, summarize for me",
+          "Shanghai 2025 economic, fiscal, and debt indicators",
+          "Companies that completed IPOs in 2026"
+        ],
+        "examples_zh": [
+          "中国银行的近三年年报的资产负债表和银行经营指标",
+          "近一月发行的绿色债券列表",
+          "银行业2026年受到金监总局的处罚事件汇总",
+          "上海市2025年的经济、财政、债务指标",
+          "2026年科创板IPO的企业"
+        ],
+        "name": "财汇金融与风险数据",
+        "name_en": "FinChina MCP",
+        "name_zh": "财汇金融与风险数据"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "caihui-mcp": {
+            "auth": {
+              "headers": {
+                "x-api-key": {
+                  "field": "API_KEY"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "caihui-mcp",
+  "version": "1.0.0+wb.347ef177e3eb788e"
+}

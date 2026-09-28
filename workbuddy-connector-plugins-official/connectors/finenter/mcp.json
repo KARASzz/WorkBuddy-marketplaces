@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "mcp-server-brm": {
+      "type": "streamable-http",
+      "url": "https://mcp-server-global.comein.cn/mcp-servers/mcp-server-brm"
+    }
+  }
+}

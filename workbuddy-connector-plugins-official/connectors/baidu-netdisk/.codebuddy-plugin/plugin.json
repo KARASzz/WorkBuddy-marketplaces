@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to Baidu Netdisk to browse and search files, manage folders and files, create share links, check storage usage, and save content or files from URLs.",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "server-side",
+        "provider_id": "baidu-netdisk"
+      },
+      "display": {
+        "description_en": "Connect to Baidu Netdisk to browse and search files, manage folders and files, create share links, check storage usage, and save content or files from URLs.",
+        "description_zh": "连接百度网盘，支持文件与分类浏览、关键词及语义检索、文件和文件夹管理、创建分享链接、查询容量，以及保存文本内容或通过 URL 转存文件。",
+        "examples_en": [
+          "List the files in my Baidu Netdisk root directory and show the remaining storage space",
+          "Search file names, document contents, and text in images for files related to 'Project Contracts'",
+          "Find images and videos in my Netdisk related to sunsets by the sea",
+          "Create an 'AIGC Research Materials' folder and copy the relevant files into it",
+          "Create a password-protected share link for 'Weekly Report.docx' that expires in 7 days",
+          "Save these meeting notes to Baidu Netdisk, or transfer a file from a download URL"
+        ],
+        "examples_zh": [
+          "查看我百度网盘根目录下的文件，并告诉我还剩多少可用空间",
+          "从文件名、文档内容和图片文字中搜索与「项目合同」相关的文件",
+          "找出网盘里与海边日落相关的图片和视频",
+          "新建一个「AIGC 调研资料」文件夹，把相关文件复制进去",
+          "为「周报.docx」创建一个有效期 7 天、带提取码的分享链接",
+          "把这段会议纪要保存到百度网盘，或者通过下载链接转存文件"
+        ],
+        "name": "百度网盘",
+        "name_en": "Baidu Netdisk"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "baidu-netdisk",
+  "version": "0.0.0+wb.5a4fc9472c9f32fe"
+}

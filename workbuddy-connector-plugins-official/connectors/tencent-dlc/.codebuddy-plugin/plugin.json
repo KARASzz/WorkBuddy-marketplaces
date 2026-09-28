@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Operate Tencent Cloud Data Lake Compute (DLC) via MCP: execute SQL/Spark SQL, browse catalogs/databases/tables/partitions, manage Spark jobs, inspect tasks and logs, diagnose performance, and check engine/user permissions.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Operate Tencent Cloud Data Lake Compute (DLC) via MCP: execute SQL/Spark SQL, browse catalogs/databases/tables/partitions, manage Spark jobs, inspect tasks and logs, diagnose performance, and check engine/user permissions.",
+        "description_zh": "通过 MCP 操作腾讯云数据湖计算（DLC）：执行 SQL / Spark SQL，浏览 Catalog、数据库、表与分区，管理 Spark 作业，查询任务与日志，诊断任务性能，查看引擎与用户权限。",
+        "examples_en": [
+          "List the databases and tables available in ap-guangzhou",
+          "Run SELECT COUNT(*) FROM samuel1.orsers on the testly01 engine",
+          "Check why task xxx failed and show me the logs",
+          "Show my data and engine permissions in ap-chongqing",
+          "Create a Spark job, submit it, and show me the result"
+        ],
+        "examples_zh": [
+          "帮我查一下 ap-guangzhou 地域下有哪些数据库和表",
+          "在 testly01 引擎上执行 SELECT COUNT(*) FROM samuel1.orders",
+          "帮我看看 TaskId xxx 这个任务为什么失败了，查一下日志",
+          "查询我在 ap-chongqing 地域的数据权限和引擎权限",
+          "创建一个 Spark 作业并提交运行，帮我看看结果"
+        ],
+        "name": "腾讯云数据湖计算 DLC",
+        "name_en": "Tencent Cloud Data Lake Compute",
+        "name_zh": "腾讯云数据湖计算 DLC"
+      },
+      "policy": {
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tencent-dlc",
+  "version": "0.0.0+wb.a18083fb9dbda214"
+}

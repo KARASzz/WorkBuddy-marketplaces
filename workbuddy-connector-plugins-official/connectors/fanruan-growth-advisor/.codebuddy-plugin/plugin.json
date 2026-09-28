@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Enterprise insight and growth analysis: query public business data such as operational risks, public opinion, bidding, patents, qualifications, and policies, and call authorized MOSS Growth Advisor agents to generate analysis and reports.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Enterprise insight and growth analysis: query public business data such as operational risks, public opinion, bidding, patents, qualifications, and policies, and call authorized MOSS Growth Advisor agents to generate analysis and reports.",
+        "description_zh": "企业洞察与增长分析：查询企业经营风险、舆情、招投标、专利、资质、政策等公开商业数据，并调用已授权的 MOSS 增长谋士 Agent 生成分析与报告。",
+        "examples_en": [
+          "Check the operational risks and litigation status of this company",
+          "Analyze the latest public opinion and bidding activity in an industry",
+          "Check whether this company has received policy subsidies"
+        ],
+        "examples_zh": [
+          "帮我查询这家公司的经营风险和涉诉情况",
+          "分析某行业的最新舆情和招投标动态",
+          "查询这家企业是否获得过政策补贴"
+        ],
+        "name": "帆软增长谋士",
+        "name_en": "Fanruan Growth Advisor",
+        "name_zh": "帆软增长谋士"
+      },
+      "policy": {
+        "mcpServers": {
+          "fanruan-growth-advisor": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "fanruan-growth-advisor",
+  "version": "1.1.0+wb.e099c36201179d95"
+}

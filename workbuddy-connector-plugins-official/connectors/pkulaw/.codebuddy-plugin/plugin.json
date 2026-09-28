@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "PKULaw — Retrieve Chinese laws and judicial cases by semantic or keyword search, then verify every citation against the authoritative source. Statute and case-number recognition, article-level fact-checking and one-click deep links back to pkulaw.com.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Semantic (natural-language) + keyword dual-mode retrieval over Chinese laws, regulations and judicial cases, plus citation verification: extract and standardise statute references, validate case numbers, fact-check article text against the authoritative original, and auto-link everything back to pkulaw.com — traceable, verifiable, ready to cite.",
+        "description_zh": "检索 + 核验一体：语义（自然语言描述）与关键词双模式检索法规、法条与司法案例；并可把文本中的法条引用与案号回北大法宝库逐条比对、对齐标准名称，输出带 pkulaw.com 原文链接的可溯源结果，专治法律幻觉。",
+        "examples_en": [
+          "What are the courts' standards and review focus for accepting WeChat chat records as electronic evidence in civil litigation?",
+          "Can a company terminate an employment contract after three consecutive days of absence? Find the legal basis.",
+          "Are there similar judicial cases where a landlord refused to refund a rental deposit after the lease ended?",
+          "List currently-in-force central-level Chinese regulations on cross-border data transfer security assessment.",
+          "What is the exact text of Article 1077 of the Chinese Civil Code, and is it still in force?",
+          "Verify the statutes and case numbers cited in this passage against the authoritative source: ..."
+        ],
+        "examples_zh": [
+          "微信聊天记录作为民事诉讼电子证据，法院的认定标准和审查重点是什么？",
+          "员工连续旷工三天，公司能否解除劳动合同？请检索相关法律依据。",
+          "房屋租赁合同到期后房东拒绝退还押金，有没有类似司法案例？",
+          "查一下当前现行有效的「数据出境安全评估」中央层级法规。",
+          "《民法典》第一千零七十七条原文是什么？是否现行有效？",
+          "帮我核验这段文字里引用的法条和案号是不是真的：……"
+        ],
+        "name": "北大法宝·法律智能检索",
+        "name_en": "PKULaw · Legal Search"
+      },
+      "policy": {
+        "mcpServers": {
+          "pkulaw": {
+            "timeout": 60000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "pkulaw",
+  "version": "0.0.0+wb.54ebc130393e0c3e"
+}

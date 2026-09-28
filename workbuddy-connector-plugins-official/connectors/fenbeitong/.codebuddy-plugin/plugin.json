@@ -1,0 +1,60 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "View and switch Fenbeitong account and company context; search and manage business travel; check policies, invoices and reimbursements; analyze consumption insights, compliance and cost-reduction opportunities; and get customer support.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "View and switch Fenbeitong account and company context; search and manage business travel; check policies, invoices and reimbursements; analyze consumption insights, compliance and cost-reduction opportunities; and get customer support.",
+        "description_zh": "用自然语言查看和切换分贝通账号与企业，查询和管理企业差旅、消费规则、发票与报销，分析消费洞察、合规风险和降本机会，并获取客服支持。",
+        "examples_en": [
+          "Find hotels near Guomao, Beijing for tomorrow under 500 CNY",
+          "Find Atour hotels rated 4.5+ near West Lake, Hangzhou from next Wednesday to Friday",
+          "Which company is my current Fenbeitong account under?",
+          "Find flights from Beijing to Shanghai for tomorrow",
+          "Create a business-trip application for Shanghai next week and show me the draft preview",
+          "Show my business-travel orders from this month and the applicable travel policies",
+          "Turn my collected invoices into an expense draft and check my reimbursement forms",
+          "I have a ticket-change problem in Fenbeitong; ask customer support or help resolve it",
+          "Analyze our company's spending trends and category mix this year",
+          "Identify compliance risks in last month's hotel orders",
+          "Analyze potential flight cost savings for this quarter"
+        ],
+        "examples_zh": [
+          "帮我查下明天北京国贸附近 500 元以内的酒店",
+          "下周三到周五杭州西湖附近评分 4.5 以上的亚朵，帮我找找",
+          "我现在登录的分贝通账号是哪个公司的？",
+          "帮我查明天北京到上海的机票",
+          "帮我创建一个下周去上海的出差申请单，先预览草稿",
+          "查询我本月的商旅订单和适用的消费规则",
+          "把已归集的发票生成费用草稿并查看报销单",
+          "我在分贝通遇到改签问题，帮我咨询客服或处理",
+          "分析一下我们公司今年的消费趋势和品类结构",
+          "看下上个月酒店订单有哪些合规风险",
+          "分析本季度机票还有多少降本空间"
+        ],
+        "name": "分贝通",
+        "name_en": "Fenbeitong"
+      },
+      "policy": {
+        "mcpServers": {
+          "fenbeitong": {
+            "timeout": 120000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "fenbeitong",
+  "version": "0.0.0+wb.3f44825ed4d330e8"
+}

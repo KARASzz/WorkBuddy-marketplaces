@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Create, search, and manage your Notion workspace. Read pages, query databases, update content, and organize knowledge bases with natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Create, search, and manage your Notion workspace. Read pages, query databases, update content, and organize knowledge bases with natural language.",
+        "description_zh": "创建、搜索和管理 Notion 工作区。用自然语言读取页面、查询数据库、更新内容、整理知识库。",
+        "examples_en": [
+          "Search all pages in my Notion containing 'weekly report', sort by last edited time, and list titles with summaries",
+          "Create a new entry in my 'Project Management' database: title is Q3 Product Roadmap, status set to In Progress, assigned to me",
+          "Query all tasks in my 'Task Board' database with status 'To Do' and due date within this week, sorted by priority",
+          "Organize today's meeting notes into a new page under 'Meeting Notes', including attendees, key discussion points, and action items"
+        ],
+        "examples_zh": [
+          "搜索我 Notion 里所有包含「周报」的页面，按最近编辑时间排序，列出标题和摘要",
+          "帮我在「项目管理」数据库中新建一条记录：标题是 Q3 产品规划，状态设为进行中，负责人是我",
+          "查询「任务看板」数据库中所有状态为【待处理】且截止日期在本周内的任务，按优先级排序",
+          "把今天会议的纪要整理成一个新页面，放到「会议记录」目录下，包含参会人、讨论要点和待办事项"
+        ],
+        "name": "Notion",
+        "name_en": "Notion"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "notion",
+  "version": "0.0.0+wb.7169e1d95547ee9e"
+}

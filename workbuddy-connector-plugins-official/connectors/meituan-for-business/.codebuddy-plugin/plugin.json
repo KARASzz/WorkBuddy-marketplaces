@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect your Meituan for Business account: authorize once and keep the local login state for future enterprise services.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect your Meituan for Business account: authorize once and keep the local login state for future enterprise services.",
+        "description_zh": "连接美团企业版账号，完成授权登录并在本机维护登录态，供后续企业服务能力复用。",
+        "examples_en": [
+          "Connect my Meituan for Business",
+          "Check my login status",
+          "Re-authorize my account"
+        ],
+        "examples_zh": [
+          "连接我的美团企业版",
+          "查看我的美团企业版登录状态",
+          "重新授权美团企业版"
+        ],
+        "name": "美团企业版",
+        "name_en": "Meituan for Business",
+        "name_zh": "美团企业版"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "meituan-for-business",
+  "version": "1.0.2+wb.2b6355c3da5810fc"
+}

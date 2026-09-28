@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query business opportunity and customer data: inquiries, leads, follow-ups, customer assets and sales performance.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "NextB2B MCP. Query business opportunities and inquiries, follow-up leads, customer assets and sales performance in natural language, with owner/sales insights for opportunity follow-up, customer management and self-check. Requires MCP joint authorization.",
+        "description_zh": "NextB2B贸易通MCP。用自然语言查商机询盘、待跟进线索、客户资产家底与业务员业绩，并按老板/业务员视角解读，为商机跟进、客户经营与业绩自查提供数据；需完成 MCP 联合授权后使用。",
+        "examples_en": [
+          "Which new inquiries haven't been followed up recently?",
+          "Show customers going cold—who should I reactivate?",
+          "How's my performance this month, and who to follow up first today?",
+          "Pull the key customer asset list"
+        ],
+        "examples_zh": [
+          "最近有哪些新询盘还没跟进？",
+          "帮我看看快凉的客户有哪些，该唤醒谁？",
+          "我这个月的业绩怎么样，今天先跟谁？",
+          "重点客户资产名单拉一下"
+        ],
+        "name": "NextB2B贸易通MCP",
+        "name_en": "NextB2B MCP",
+        "name_zh": "NextB2B贸易通MCP"
+      },
+      "policy": {
+        "mcpServers": {
+          "tct-business-expert": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tct-business-expert",
+  "version": "0.10.3+wb.ab97a7b0b233e71b"
+}

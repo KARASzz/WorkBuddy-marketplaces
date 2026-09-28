@@ -1,0 +1,58 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query LeadsCloud CRM records, follow-ups, touchpoints, and WhatsApp via MCP.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query LeadsCloud CRM records, follow-ups, touchpoints, and WhatsApp via MCP.",
+        "description_zh": "通过 MCP 查询线索、客户、联系人、商机、订单、跟进、触点画像与 WhatsApp 会话。",
+        "examples_en": [
+          "Show the most recently created public-pool leads",
+          "Find the customer named Acme",
+          "Show this opportunity's follow-up timeline",
+          "Summarize WhatsApp conversations for a member"
+        ],
+        "examples_zh": [
+          "查询最近创建的公海线索",
+          "找出名为 Acme 的客户",
+          "查看这个商机的跟进时间线",
+          "汇总某个成员的 WhatsApp 会话"
+        ],
+        "name": "询盘云CRM",
+        "name_en": "Leads Cloud CRM",
+        "name_zh": "询盘云CRM"
+      },
+      "policy": {
+        "mcpServers": {
+          "leads-cloud-crm": {
+            "timeout": 120000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "leads-cloud-crm": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "LEADS_CLOUD_MCP_TOKEN",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "leads-cloud-crm",
+  "version": "1.0.0+wb.4bd99ecb9a93a1e9"
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Manage 77ircloud AI Supply Chain using natural language: supports full-lifecycle order operations, as well as query and analysis for customers, products, warehouse inventory, employee organization, financial accounts, data export, business statistics, and warning details.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Manage 77ircloud AI Supply Chain using natural language: supports full-lifecycle order operations, as well as query and analysis for customers, products, warehouse inventory, employee organization, financial accounts, data export, business statistics, and warning details.",
+        "description_zh": "通过自然语言管理铱云供应链：支持订单全链路操作，以及客户、商品、仓库库存、员工组织、资金账户、数据导出、经营统计和预警明细的查询分析。",
+        "examples_en": [
+          "Analyze this month's order trends and performance.",
+          "Review all paid orders from this week and approve them in bulk.",
+          "View this week's order records for a retail chain client, and create a new order based on their most recent order.",
+          "Show the top 10 products by sales revenue this month."
+        ],
+        "examples_zh": [
+          "分析这个月的订单趋势和业绩情况",
+          "帮我把这周已付款的待审核订单全部通过",
+          "查看深圳某连锁客户这周的订单记录，根据最近一个订单新开单",
+          "统计本月销售额前十的商品"
+        ],
+        "name": "铱云AI供应链",
+        "name_en": "77ircloud AI Supply Chain"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "77ircloud",
+  "version": "1.0.2+wb.a4d22aa62f4fb8de"
+}

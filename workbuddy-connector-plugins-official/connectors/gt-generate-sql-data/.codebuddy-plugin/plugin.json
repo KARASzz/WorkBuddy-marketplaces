@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query equipment, fault, maintenance, spare-parts inventory, and stock movement data with natural language. Supports statistics, trend analysis, category comparisons, and detail drill-down.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query equipment, fault, maintenance, spare-parts inventory, and stock movement data with natural language. Supports statistics, trend analysis, category comparisons, and detail drill-down.",
+        "description_zh": "通过自然语言查询设备信息、故障报修、维修保养、备件库存及出入库记录，支持统计、趋势分析、分类对比和明细下钻。",
+        "examples_en": [
+          "Query the number of equipment fault reports by department this month",
+          "Which devices are currently undergoing fault repair?",
+          "List spare parts below the inventory threshold and summarize stock by warehouse",
+          "Compare the repair workload of each work team last month"
+        ],
+        "examples_zh": [
+          "查询本月各部门的设备故障报修数量",
+          "当前正在维修的设备是哪些",
+          "列出当前库存低于库存下限的备件，并统计各仓库库存",
+          "统计上个月各班组的维修工作量"
+        ],
+        "name": "设备云维保",
+        "name_en": "Equipment Cloud Maintenance Data",
+        "name_zh": "设备云维保"
+      },
+      "policy": {
+        "mcpServers": {
+          "gt-generate-sql-data": {
+            "description": "云维保企业数据查询 MCP（OAuth 2.0）",
+            "disabled": false
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "gt-generate-sql-data",
+  "version": "1.0.0+wb.1ae1de6ac19f4924"
+}

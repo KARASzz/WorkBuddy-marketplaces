@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Operate NoxInfluencer creator intelligence and marketing operations through natural language: search and shortlist YouTube, TikTok, and Instagram creators, analyze audience, content, and cooperation signals, retrieve contacts, track content performance, run campaigns, CRM, email outreach, brand monitoring, and exports, and check quota and pricing.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Operate NoxInfluencer creator intelligence and marketing operations through natural language: search and shortlist YouTube, TikTok, and Instagram creators, analyze audience, content, and cooperation signals, retrieve contacts, track content performance, run campaigns, CRM, email outreach, brand monitoring, and exports, and check quota and pricing.",
+        "description_zh": "通过自然语言调用 NoxInfluencer 的红人数据与营销运营能力：在 YouTube、TikTok、Instagram 上搜索并筛选红人，分析受众画像、内容表现与合作信号，获取联系方式，追踪内容数据，并管理 Campaign、CRM、邮件触达、品牌监测与导出任务，同时可查看配额与计费。",
+        "examples_en": [
+          "Find US outdoor YouTube creators, then shortlist them in two passes",
+          "Analyze this creator's audience, recent content, and cooperation signals, and judge whether they are worth pursuing",
+          "Create an email outreach task for these creators and launch a targeted invitation",
+          "Monitor a competitor brand's creator collaborations on YouTube",
+          "Check my remaining NoxInfluencer quota and search costs"
+        ],
+        "examples_zh": [
+          "找一批适合美国户外品类的 YouTube 红人，先粗筛再精选",
+          "分析这个红人的受众画像、近期内容和合作信号，判断是否值得合作",
+          "给这批红人创建邮件触达任务并发起定向邀约",
+          "监控竞品品牌在 YouTube 上的红人合作动态",
+          "查看当前 NoxInfluencer 的剩余配额和搜索成本"
+        ],
+        "name": "NoxInfluencer 红人数据与营销运营",
+        "name_en": "NoxInfluencer Creator Intelligence & Marketing Ops"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "noxinfluencer-cli",
+  "version": "0.1.1+wb.1e21e4e025fed44d"
+}

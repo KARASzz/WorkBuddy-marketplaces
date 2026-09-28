@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "A visual creative studio inside WorkBuddy, powered by the TapNow Creative OS multi-model generation pipeline: from creative ideation to visual design, with ready-to-use, editable results. Built for office, marketing and social media scenarios.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "A visual creative studio inside WorkBuddy, powered by the TapNow Creative OS multi-model generation pipeline: from creative ideation to visual design, with ready-to-use, editable results. Built for office, marketing and social media scenarios.",
+        "description_zh": "WorkBuddy 里的视觉创意工作室：由 TapNow Creative OS 多模型生成管线驱动，覆盖从创意构思到视觉设计的完整流程，产出直接可用、可继续编辑。适用于办公、营销、自媒体等场景。",
+        "examples_en": [
+          "Create a business-style illustration for each chapter of this proposal",
+          "Turn this product photo into a full e-commerce shot suite",
+          "Find our brand key visual in the team library and match its style across this deck",
+          "Generate a WeChat cover image"
+        ],
+        "examples_zh": [
+          "帮我把这份方案的每个章节都配一张商务风格的插图",
+          "这是新品实拍图，出一套详情页用的商品图",
+          "从团队素材库找一张品牌主视觉，照着它的风格给这份方案配图",
+          "帮我出一张公众号头图"
+        ],
+        "name": "TapNow",
+        "name_en": "TapNow",
+        "name_zh": "TapNow"
+      },
+      "policy": {
+        "mcpServers": {
+          "tapnow": {
+            "timeout": 180000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tapnow",
+  "version": "0.1.2+wb.18ae3f406dbceff4"
+}

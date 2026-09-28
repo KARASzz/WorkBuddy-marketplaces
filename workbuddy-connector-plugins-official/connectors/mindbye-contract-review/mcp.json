@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "mindbye-contract-review": {
+      "type": "streamable-http",
+      "url": "https://mcp-server.mindbye.com/mcp-servers/contract-review-prod",
+      "headers": {
+        "X-Platform": "workbuddy"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "tencent-DLC": {
+      "url": "https://tcmcpserver.cloud.tencent.com/dlc/mcp",
+      "type": "streamable-http"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "连接公开行情、研报检索、行业图谱与同舟投研材料，为股市研究提供可复核证据。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connects market data, research, industry graphs, and Tongzhou evidence for public-equity analysis.",
+        "description_zh": "连接公开行情、研报检索、行业图谱与同舟投研材料，为股市研究提供可复核证据。",
+        "examples_en": [
+          "Analyze recent semiconductor-equipment conditions and valuation changes",
+          "Trace how a policy event affects an industry value chain",
+          "Compare a company's market data, announcements, and institutional views"
+        ],
+        "examples_zh": [
+          "分析半导体设备行业近期景气和估值变化",
+          "梳理一则政策事件对产业链上下游的影响",
+          "对比一家公司的行情、公告和机构观点"
+        ],
+        "name": "同舟金融研究",
+        "name_en": "Tongzhou Financial Research"
+      },
+      "policy": {
+        "mcpServers": {
+          "tongzhou-fin-research": {
+            "timeout": 180000
+          }
+        },
+        "minWorkbuddyVersion": "5.2.3",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tongzhou-fin-research",
+  "version": "0.21.2+wb.d6ae51a68172d001"
+}

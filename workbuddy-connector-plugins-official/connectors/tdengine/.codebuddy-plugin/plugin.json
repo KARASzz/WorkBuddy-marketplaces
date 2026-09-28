@@ -1,0 +1,60 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to TDengine to manage industrial data, build analyses, monitor events, create visualization panels, and drive industrial decisions with AI-powered data queries and root cause analysis.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to TDengine to manage industrial data, build analyses, monitor events, create visualization panels, and drive industrial decisions with AI-powered data queries and root cause analysis.",
+        "description_zh": "连接 TDengine，管理工业数据，建立分析，监控事件，创建可视化面板，用 AI 问数与根因分析驱动工业决策。",
+        "examples_en": [
+          "Perform an overall device scan: how many devices and monitoring metrics are defined and managed in the current TDengine environment?",
+          "Select a device with recent data updates, read its monitoring data from the last 24 hours, and display the data.",
+          "Select a visualization panel, read its chart configuration and monitoring metrics, and interpret the panel.",
+          "Scan recent alert events, select a high-severity device event, and perform an event root cause analysis using the device's historical data before and after the event. Explain the possible causes and provide recommended actions.",
+          "Select a device and build a real-time analysis that monitors changes in a key metric and generates an alert event when the metric falls outside a reasonable range. Briefly explain the proposed approach first, wait for user confirmation before creating the analysis, and then report the creation result."
+        ],
+        "examples_zh": [
+          "请对设备做一次总体扫描：当前 TDengine 环境共定义和管理了多少个设备，多少个监测指标",
+          "请选择一台近期有数据更新的设备，读取它最近 24 小时的监测数据并展示。",
+          "请选择一个可视化面板，读取它的图表配置和监测指标，并解读这个面板",
+          "请扫描最近的告警事件，挑选一条严重级别偏高的设备事件，结合该设备前后的历史数据做一次事件根因分析，可能的事件原因是什么，并提供处置建议。",
+          "请选择一台设备，为它构建一个实时分析，监控其关键指标的变化，当该指标超出合理范围时产生告警事件。请先简要说明你的方案，待用户确认后创建这个分析，最后告诉我创建结果。"
+        ],
+        "name": "TDengine",
+        "name_en": "TDengine"
+      },
+      "policy": {
+        "mcpServers": {
+          "tdengine": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "urlTemplatedMcpServers": {
+        "tdengine": {
+          "auth": {
+            "headers": {
+              "Authorization": {
+                "field": "TDENGINE_API_KEY",
+                "prefix": "Bearer "
+              }
+            },
+            "schema": "./ai.workbuddy/token-schema.json",
+            "type": "token"
+          },
+          "tokenSchema": "./ai.workbuddy/token-schema.json",
+          "type": "streamable-http",
+          "urlTemplate": "${TDENGINE_API_SCHEMA}://${TDENGINE_API_HOST}:${TDENGINE_API_PORT}/api/v1/mcp/stream"
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tdengine",
+  "version": "1.0.1+wb.b762bd07f61ff387"
+}

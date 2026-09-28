@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "qiyuan-robot": {
+      "type": "streamable-http",
+      "url": "https://47.100.55.122/robot-mcp/mcp"
+    }
+  }
+}

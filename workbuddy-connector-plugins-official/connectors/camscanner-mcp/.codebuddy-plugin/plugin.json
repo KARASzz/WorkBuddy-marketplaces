@@ -1,0 +1,56 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Smart document conversion and processing platform. Supports image/PDF conversion to Word, Excel and Markdown, images to PDF, Word/Excel/PPT to PDF, Office format upgrades (DOC to DOCX), image enhancement (shadow removal, sharpening, HD upscaling, photo restoration), OCR, image translation, formula extraction, watermark processing, multi-image merging, and cloud document saving, search, download, move and folder management.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Smart document conversion and processing platform. Supports image/PDF conversion to Word, Excel and Markdown, images to PDF, Word/Excel/PPT to PDF, Office format upgrades (DOC to DOCX), image enhancement (shadow removal, sharpening, HD upscaling, photo restoration), OCR, image translation, formula extraction, watermark processing, multi-image merging, and cloud document saving, search, download, move and folder management.",
+        "description_zh": "智能文档转换与处理平台。支持图片/PDF转Word、Excel、Markdown，图片转PDF，Word/Excel/PPT转PDF，Office文档格式升级（DOC→DOCX等），图片增强（去阴影、锐化、高清化、老照片修复），OCR文字识别、图片翻译、公式提取、水印处理、多图合并，以及云文档保存/搜索/下载/移动/文件夹管理等。",
+        "examples_en": [
+          "Convert this image to Word",
+          "Convert this PDF to Excel",
+          "Enhance this photo and make it HD",
+          "Extract text from this image with OCR",
+          "Translate the text in this image",
+          "Convert this Word document to PDF",
+          "Download my recent cloud document",
+          "Move this document to a work folder",
+          "List my cloud folders"
+        ],
+        "examples_zh": [
+          "帮我把这张图片转成Word",
+          "把这个PDF转成Excel",
+          "帮我增强一下这张照片",
+          "识别这张图片上的文字",
+          "翻译图片中的英文",
+          "帮我把这个Word文档转成PDF",
+          "下载我最近的云文档到本地",
+          "把这个文档移动到工作文件夹",
+          "列出我的云端文件夹"
+        ],
+        "name": "扫描全能王",
+        "name_en": "CamScanner"
+      },
+      "policy": {
+        "mcpServers": {
+          "connector:camscanner-mcp": {
+            "timeout": 120000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "camscanner-mcp",
+  "version": "0.0.0+wb.6be0745c656a7580"
+}

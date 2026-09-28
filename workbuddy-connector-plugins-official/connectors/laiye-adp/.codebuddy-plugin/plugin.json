@@ -1,0 +1,39 @@
+{
+  "description": "让 Agent 直接读懂并处理任何业务文档。对话上传发票、订单、合同等文件即可完成内容识别、关键信息抽取并输出结构化结果。支持中国 30+ 票据（含验真）、海外多语言发票及 11 种常用证件，覆盖 PDF、图片、Word、Excel、OFD 等格式。",
+  "extensions": {
+    "ai.workbuddy": {
+      "connector": {
+        "auth_mode": "token",
+        "description_en": "Let your Agent understand and process any business document directly. Simply upload invoices, purchase orders, contracts, and other files in the chat to identify content, extract key information, and generate structured results. Supports 30+ types of Chinese business documents with authenticity verification, multilingual overseas invoices, and 11 commonly used identity documents across PDF, image, Word, Excel, OFD, and other formats.",
+        "description_zh": "让 Agent 直接读懂并处理任何业务文档。对话上传发票、订单、合同等文件即可完成内容识别、关键信息抽取并输出结构化结果。支持中国 30+ 票据（含验真）、海外多语言发票及 11 种常用证件，覆盖 PDF、图片、Word、Excel、OFD 等格式。",
+        "examples_en": [
+          "Please use the ADP Connector to extract information from this invoice and verify its authenticity: https://mintcdn.com/laiye-adp/DcRsiKcD3aAARaIX/images/exp.jpg",
+          "Please use the ADP Connector to parse this PDF contract and extract the complete text and tables",
+          "Please use the ADP Connector to identify this ID card and extract fields such as the name and ID number",
+          "Please use the ADP Connector to batch-extract supplier, amount, and tax information from these overseas invoices",
+          "Please use the ADP Connector to parse this financial statement, extract the key data, and provide a summary"
+        ],
+        "examples_zh": [
+          "用 ADP 连接器帮我抽取这份发票的信息，并查验发票真伪：https://mintcdn.com/laiye-adp/DcRsiKcD3aAARaIX/images/exp.jpg",
+          "用 ADP 连接器帮我解析这份 PDF 合同，提取完整的文本内容和表格",
+          "用 ADP 连接器帮我识别这张身份证，提取姓名、身份证号等字段",
+          "用 ADP 连接器帮我批量抽取这批海外发票的供应商、金额和税费信息",
+          "用 ADP 连接器帮我解析这份财务报表，抽取核心数据并进行总结"
+        ],
+        "minWorkbuddyVersion": "4.23.0",
+        "name": "来也智能文档专家",
+        "name_en": "Laiye Agentic Document Expert",
+        "name_zh": "来也智能文档专家",
+        "type": "mcp"
+      },
+      "legacyReason": "stdio-env-template",
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "connector",
+    "mcp"
+  ],
+  "name": "laiye-adp",
+  "version": "0.0.0+wb.1bb7fe2db1c49977"
+}

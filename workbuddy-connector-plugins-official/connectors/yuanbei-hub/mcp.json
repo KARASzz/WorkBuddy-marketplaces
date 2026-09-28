@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "yuanbei-hub": {
+      "type": "streamable-http",
+      "url": "https://mcp.kaidian100.cn/mcp"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "DKnow Trusted Workbench focuses on trusted knowledge services for laws, policies, and standards, while supporting industry research and public-service scenarios. It breaks down complex questions into verifiable research tasks, cross-checks evidence from multiple sources, traces claims to authoritative original documents, and produces clear, source-backed answers, search results, and research materials.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "DKnow Trusted Workbench focuses on trusted knowledge services for laws, policies, and standards, while supporting industry research and public-service scenarios. It breaks down complex questions into verifiable research tasks, cross-checks evidence from multiple sources, traces claims to authoritative original documents, and produces clear, source-backed answers, search results, and research materials.",
+        "description_zh": "深知可信工作台聚焦法律、政策、标准等可信知识服务，并覆盖产业研究和公共服务场景。支持将复杂问题拆解为可验证的检索任务，综合多来源材料交叉验证，追溯权威原文及依据，形成来源清晰、可核验的问答、检索与研究结果。",
+        "examples_en": [
+          "Use DKnow Trusted Workbench to find the current eligibility conditions and required documents for housing provident fund rental withdrawal in Shenzhen. Quote the applicable policy text and provide authoritative source links.",
+          "Use DKnow Trusted Workbench to identify the requirements on personal-information retention and deletion in GB/T 35273—2020, Information Security Technology — Personal Information Security Specification. Quote the relevant clauses and provide authoritative source links.",
+          "Use DKnow Trusted Workbench to research major national policies supporting China's low-altitude economy since 2024. Break the question down by policy objectives, key tasks, and applicable fields, cross-check multiple authoritative sources, and trace the findings to original documents."
+        ],
+        "examples_zh": [
+          "请使用深知可信工作台查询：深圳市住房公积金租房提取目前需要满足哪些条件、准备哪些材料？请引用现行政策原文并附权威来源链接。",
+          "请使用深知可信工作台检索：GB/T 35273—2020《信息安全技术 个人信息安全规范》对个人信息保存期限和删除有哪些要求？请列出对应原文条款及权威来源链接。",
+          "请使用深知可信工作台研究：2024年以来国家层面支持低空经济发展的主要政策有哪些？请拆解政策目标、重点任务和适用领域，结合多份权威来源交叉验证并追溯原文。"
+        ],
+        "name": "深知可信工作台",
+        "name_en": "DKnow Trusted Workbench"
+      },
+      "policy": {
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "dknowc-mcp",
+  "version": "0.0.0+wb.8d7ad0f89ca7acf6"
+}

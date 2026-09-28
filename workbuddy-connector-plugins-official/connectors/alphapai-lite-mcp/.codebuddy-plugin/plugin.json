@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "AlphaPai Lite is an AI assistant developed by Rabyte Technology for finance professionals and investors. It provides in-depth industry and company research and analysis, along with professional insights into major asset classes and market strategies. It also supports essential financial workflows, including writing reports, creating presentations, producing charts, and drafting meeting minutes.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "AlphaPai Lite is an AI assistant developed by Rabyte Technology for finance professionals and investors. It provides in-depth industry and company research and analysis, along with professional insights into major asset classes and market strategies. It also supports essential financial workflows, including writing reports, creating presentations, producing charts, and drafting meeting minutes.",
+        "description_zh": "Alpha派·Lite版是讯兔科技为金融工作者、投资者量身打造的AI助理，掌握深度行业、公司研究分析与大类资产、市场策略专业解读能力，并具备专业的写报告、画PPT、做图表、写纪要等金融白领必备技能。",
+        "examples_en": [
+          "What important macroeconomic data releases, central bank meetings, and policy events are scheduled for next week?",
+          "Based on today's market turnover, limit-up and limit-down activity, and capital flows, which investment theme is the strongest, and what is the rationale?",
+          "What are ChangXin Technology's core competitive advantages, and why are they difficult for competitors to replicate? Does the company's moat come from technology, cost, customers, distribution channels, or licenses?",
+          "Give me a morning briefing on the most noteworthy gaps between market expectations and likely outcomes today",
+          "Create a 10-slide presentation that provides an in-depth breakdown of the major companies across each segment of the computing power rental industry, including their current market shares and the level of market concentration"
+        ],
+        "examples_zh": [
+          "下周有哪些重要宏观数据、央行会议和政策节点？",
+          "今天的成交额、涨跌停和资金流向显示哪条主线最强，逻辑是什么？",
+          "长鑫科技的核心竞争优势是什么，竞争者为什么难以复制？公司的护城河来自技术、成本、客户还是渠道、牌照？",
+          "给我一份今天值得关注的预期差晨报",
+          "画一份10页的PPT，深度拆解算力租赁行业各环节有哪些主要厂商，当前市占率和集中度是多少？"
+        ],
+        "name": "Alpha派投研助手",
+        "name_en": "AlphaPai Investment Research Assistant",
+        "name_zh": "Alpha派投研助手"
+      },
+      "policy": {
+        "mcpServers": {
+          "alphapai-lite-mcp": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "alphapai-lite-mcp",
+  "version": "1.0.0+wb.8024f2b8ec020b5d"
+}

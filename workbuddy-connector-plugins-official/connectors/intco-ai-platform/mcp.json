@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "intco-ai-platform": {
+      "type": "streamable-http",
+      "url": "https://ai-platform.intcomedical.com.cn:11443/agt_c8c1aaea4a564b0eb1878929dfbf37d2/mcp"
+    }
+  }
+}

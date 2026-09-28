@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Manage AI canvases and assets, generate media, and track tasks with natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "oauth"
+      },
+      "display": {
+        "description_en": "Manage AI canvases and assets, generate media, and track tasks with natural language.",
+        "description_zh": "通过自然语言管理 AI 画布和素材，生成图片、视频和音频，并查询任务进度。",
+        "examples_en": [
+          "List my NovAI assets and canvases",
+          "Create a product video workflow from my assets",
+          "Estimate the points required to generate this video",
+          "Check the status of my latest generation task"
+        ],
+        "examples_zh": [
+          "查看我的 NovAI 素材和画布",
+          "根据商品素材创建一个视频生成工作流",
+          "预估生成这段视频需要多少积分",
+          "查询刚才的视频生成进度"
+        ],
+        "name": "NovAI Studio",
+        "name_en": "NovAI Studio",
+        "name_zh": "NovAI Studio"
+      },
+      "policy": {
+        "mcpServers": {
+          "novai-studio": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "novai-studio",
+  "version": "1.0.0+wb.36bad3967db553a2"
+}

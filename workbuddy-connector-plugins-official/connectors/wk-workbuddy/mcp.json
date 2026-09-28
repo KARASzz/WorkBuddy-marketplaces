@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "wk-mcp": {
+      "url": "https://mcp.wkinfo.com.cn/mcp-servers/integrated/",
+      "type": "streamable-http"
+    }
+  }
+}

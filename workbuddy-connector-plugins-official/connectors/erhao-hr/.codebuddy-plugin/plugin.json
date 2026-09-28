@@ -1,0 +1,68 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query Erhao HR data across HR records, organization, attendance and payroll with natural language: employee roster/transfers/contracts, org structure and distribution, attendance/leave/overtime, and payroll/cost/tax analysis.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query Erhao HR data across HR records, organization, attendance and payroll with natural language: employee roster/transfers/contracts, org structure and distribution, attendance/leave/overtime, and payroll/cost/tax analysis.",
+        "description_zh": "通过自然语言查询人事、组织、考勤与薪酬四域数据：员工花名册/异动/合同、组织架构与维度分布、考勤/假期/加班、薪资核算/成本/个税，为人力分析提供数据支撑。",
+        "examples_en": [
+          "How many people are in each department, by level?",
+          "List employees who left this month and count leavers per department",
+          "What was last month's overall attendance rate, and which department had the most lateness?",
+          "Show this month's leave records grouped by leave type in days",
+          "What were last month's total net pay and average cost per employee by department?",
+          "Show me the job positions and job titles of the R&D department, with headcount per position",
+          "Total overtime hours by department this quarter, split by weekday, weekend and holiday",
+          "Check contract status — who has not signed a contract yet?",
+          "Query last quarter's tax records grouped by tax unit",
+          "How many people joined and how many completed probation in each department in the last six months?"
+        ],
+        "examples_zh": [
+          "查一下公司各部门有多少人，按职级分布",
+          "列出本月离职的员工，并统计各部门离职人数",
+          "上月整体出勤率是多少，迟到早退最多的部门是哪个",
+          "查一下本月的请假明细，按假期类型汇总天数",
+          "上月各部门的实发工资总额和人均成本是多少",
+          "帮我看下研发部的岗位和职务设置，以及各岗位的在职人数",
+          "统计本季度各部门的加班时长，按工作日、休息日、节假日区分",
+          "查一下员工的合同签订情况，有哪些人还没签合同",
+          "查询上个季度的个税明细，按纳税单位分组",
+          "近六个月各部门的入职和转正人数分别是多少"
+        ],
+        "name": "二号人事部",
+        "name_en": "Erhao HR"
+      },
+      "policy": {
+        "mcpServers": {
+          "erhao-hr": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "erhao-hr": {
+            "auth": {
+              "headers": {
+                "X-HR-KEY": {
+                  "field": "ERHAO_HR_KEY"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "erhao-hr",
+  "version": "0.1.9+wb.b901e869cdb6611a"
+}

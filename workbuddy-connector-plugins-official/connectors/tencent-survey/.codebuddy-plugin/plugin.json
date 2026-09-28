@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Create, manage, and analyze surveys on Tencent Survey.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Create, manage, and analyze surveys on Tencent Survey. Generate questionnaires, view responses, and configure question logic.",
+        "description_zh": "创建、管理和分析腾讯问卷。用自然语言快速生成问卷、查看回收数据、设置题目逻辑。",
+        "examples_en": [
+          "Create an employee satisfaction survey",
+          "View survey responses and generate a summary report",
+          "Add a single-choice question with skip logic"
+        ],
+        "examples_zh": [
+          "帮我创建一个员工满意度调查问卷",
+          "查看问卷的回收数据并生成汇总报告",
+          "给问卷添加一道单选题并设置跳转逻辑"
+        ],
+        "name": "腾讯问卷",
+        "name_en": "Tencent Survey"
+      },
+      "policy": {
+        "mcpServers": {
+          "tencent-survey": {
+            "timeout": 30000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tencent-survey",
+  "version": "0.0.0+wb.4c19f2ec0ac5a01f"
+}

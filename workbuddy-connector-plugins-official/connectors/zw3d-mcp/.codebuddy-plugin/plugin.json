@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "用自然语言驱动中望3D，让设计回归思考本身。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Drive ZW3D with natural language and return design to pure ideation.",
+        "description_zh": "用自然语言驱动中望3D，让设计回归思考本身。",
+        "examples_en": [
+          "Use ZW3D to create a cube with a side length of 10 cm.​",
+          "Use ZW3D to create a rectangular flange plate measuring 120 mm long, 80 mm wide, and 10 mm thick: a Ø40 mm through hole at the center, and four Ø8 mm mounting holes, one at each corner.​",
+          "(Upload engineering drawing screenshot) Please reconstruct the uploaded 2D mechanical drawing into an editable, parametric 3D model in ZW3D 2027.​"
+        ],
+        "examples_zh": [
+          "帮我用中望3D画一个边长为10cm的正方体",
+          "用中望3D创建一个长120mm、宽80mm、厚10mm的矩形法兰盘：中心开一个直径40mm的通孔，四角各开一个直径8mm的安装孔",
+          "（上传工程图截图）请根据我上传的二维机械工程图，在中望3D 2027中还原为可编辑的参数化三维模型"
+        ],
+        "name": "中望3D MCP",
+        "name_en": "ZW3D MCP",
+        "name_zh": "中望3D MCP"
+      },
+      "policy": {
+        "mcpServers": {
+          "zw3d-mcp": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "5.0.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "zw3d-mcp": {
+            "runtime": {
+              "type": "node",
+              "version": ">=16"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "zw3d-mcp",
+  "version": "0.0.0+wb.49856a84cc6edf71"
+}

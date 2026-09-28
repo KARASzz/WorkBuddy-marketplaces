@@ -1,0 +1,58 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "AI product compliance check and ecommerce image series generation.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Trademark compliance checks for copy/images, plus ecommerce product image series generation.",
+        "description_zh": "商品文案/图片商标侵权检测，以及电商套图生成与重绘。",
+        "examples_en": [
+          "Check this Amazon title for trademark risks on the US marketplace",
+          "Run image compliance check for this product photo in US",
+          "Generate an Amazon main image and A+ set from these product photos",
+          "Check the status of the product image series task I just submitted"
+        ],
+        "examples_zh": [
+          "帮我检测这段亚马逊标题在美国站是否有商标侵权风险",
+          "对这张商品主图做图片侵权检测，国家选 US",
+          "用这几张商品图生成一套亚马逊主图和 A+",
+          "查一下刚才提交的套图任务进度"
+        ],
+        "name": "易智魔方",
+        "name_en": "EasyMofang",
+        "name_zh": "易智魔方"
+      },
+      "policy": {
+        "mcpServers": {
+          "easymofang": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "easymofang": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "MOFANG_API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "easymofang",
+  "version": "1.0.0+wb.e17e4152399c7d8b"
+}

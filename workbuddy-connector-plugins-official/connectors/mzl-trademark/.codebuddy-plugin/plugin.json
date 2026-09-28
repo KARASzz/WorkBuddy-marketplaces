@@ -1,0 +1,47 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Search trademarks across China and 110+ overseas offices by name / applicant / class / status, plus image-based similarity search.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Search trademarks with natural language by name, applicant, application/registration number, Nice class, legal status and date range across China and 110+ overseas offices, with image-based similarity search.",
+        "description_zh": "用自然语言检索商标：按名称、申请人、申请号、注册号、尼斯类别、法律状态、日期范围查询，覆盖中国及 110+ 海外国家/地区商标局；并支持以图搜图的图形近似检索。",
+        "examples_en": [
+          "Check registrations of the trademark \"Maotai\" in Nice class 33",
+          "List all China trademarks filed by applicant \"Huawei Technologies\"",
+          "Trademark registrations of \"Starbucks\" in the US, EU and Japan",
+          "Find visually similar trademarks for this logo (China + Madrid)"
+        ],
+        "examples_zh": [
+          "帮我查一下「茅台」这个商标在第 33 类的注册情况",
+          "查申请人「华为技术有限公司」在中国的全部商标",
+          "「星巴克」在美国、欧盟、日本的商标注册情况",
+          "用这张图找一下图形近似的商标（中国 + 马德里）"
+        ],
+        "name": "摩知轮商标查询",
+        "name_en": "Trademark Search"
+      },
+      "policy": {
+        "mcpServers": {
+          "mzl-trademark": {
+            "timeout": 65000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "mzl-trademark",
+  "version": "1.0.0+wb.96201bd1f01a4a5a"
+}

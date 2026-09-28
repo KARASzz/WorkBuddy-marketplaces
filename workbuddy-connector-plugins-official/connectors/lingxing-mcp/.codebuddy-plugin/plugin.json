@@ -1,0 +1,64 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query and manage stores, inventory, listings, sales, profit, advertising, and operations data in LingXing ERP using natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query and manage stores, inventory, listings, sales, profit, advertising, and operations data in LingXing ERP using natural language.",
+        "description_zh": "使用自然语言查询和管理领星ERP中的店铺、库存、Listing、销售、利润、广告和运营数据。",
+        "examples_en": [
+          "Show the stores I am authorized to access",
+          "Analyze product performance by store for the last 7 days",
+          "Summarize this month's order profit and sort it by store",
+          "Analyze advertising campaign performance for the last 30 days",
+          "Show current FBA inventory and replenishment recommendations"
+        ],
+        "examples_zh": [
+          "查看我有权限访问的店铺",
+          "查询最近 7 天各店铺的产品表现",
+          "汇总本月订单利润并按店铺排序",
+          "分析最近 30 天的广告活动表现",
+          "查询当前 FBA 库存和补货建议"
+        ],
+        "name": "领星ERP",
+        "name_en": "LingXing ERP"
+      },
+      "policy": {
+        "mcpServers": {
+          "lingxing-mcp": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "lingxing-mcp": {
+            "auth": {
+              "headers": {
+                "X-Mcp-Key": {
+                  "field": "LINGXING_MCP_KEY"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "lingxing-mcp",
+  "version": "0.0.0+wb.75ef1300773af70d"
+}

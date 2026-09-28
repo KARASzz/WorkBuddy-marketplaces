@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "用 WorkRally MCP 做剧集前期、批量生图、画布整理与成片验收。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Use WorkRally MCP for series preproduction, batch image generation, canvas organization, subtitle burn-in, and delivery QC.",
+        "description_zh": "用 WorkRally MCP 做剧集前期、批量生图、画布整理、字幕烧制与资产验收。",
+        "examples_en": [
+          "I have a script and want to turn it into an XX-minute comic drama",
+          "Come up with a 2-minute episode story for me",
+          "I have a product and want a narrative short film",
+          "I want to make a 3D Chinese-animation comic drama",
+          "I have an image — use this style to make an XX-minute short film"
+        ],
+        "examples_zh": [
+          "我有一个剧本，我要生成一个 XX 分钟的漫剧",
+          "给我想一个 2 分钟的剧集故事",
+          "我有一个产品，想做一个叙事的短片",
+          "我想做一个 3D 国漫的漫剧",
+          "我有一张图片，用这个风格做成一个 XX 分钟短片"
+        ],
+        "name": "WorkRally",
+        "name_en": "WorkRally",
+        "name_zh": "WorkRally"
+      },
+      "policy": {
+        "mcpServers": {
+          "workrally": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "workrally1",
+  "version": "0.5.1+wb.d2b97b529c55a914"
+}

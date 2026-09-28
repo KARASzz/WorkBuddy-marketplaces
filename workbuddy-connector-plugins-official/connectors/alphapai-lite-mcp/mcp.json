@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "alphapai-lite-mcp": {
+      "type": "streamable-http",
+      "url": "https://alphapai-idv.rabyte.cn/alpha/open-api/v1/personal/mcp"
+    }
+  }
+}

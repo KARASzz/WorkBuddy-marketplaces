@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query Shopee site, category, product, shop, brand, trend, and search-keyword data for read-only market analysis.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query Shopee site, category, product, shop, brand, trend, and search-keyword data for read-only market analysis.",
+        "description_zh": "通过知虾数据查询 Shopee 站点、类目、商品、店铺、品牌、趋势和热搜词，支持只读市场分析。",
+        "examples_en": [
+          "List level-one categories in Malaysia",
+          "Analyze 30-day product sales trends for a Thailand category",
+          "Find best-selling products and price distribution for a Singapore brand"
+        ],
+        "examples_zh": [
+          "查询马来西亚站的一级类目",
+          "分析泰国站某三级类目近 30 天的商品销量趋势",
+          "查询新加坡站某品牌的热销商品和价格分布"
+        ],
+        "name": "知虾选品数据-Shopee虾皮大数据分析",
+        "name_en": "Shopee Market Intelligence"
+      },
+      "policy": {
+        "mcpServers": {
+          "shopee-mcp": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "urlTemplatedMcpServers": {
+        "shopee-mcp": {
+          "tokenSchema": "./ai.workbuddy/token-schema.json",
+          "type": "streamable-http",
+          "urlTemplate": "https://api.menglar.com/gateway/ai/mcp/shopee-service/mcp?key=${ACCESS_TOKEN}"
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "shopee-market-intelligence",
+  "version": "1.0.0+wb.ac22144d046a863e"
+}

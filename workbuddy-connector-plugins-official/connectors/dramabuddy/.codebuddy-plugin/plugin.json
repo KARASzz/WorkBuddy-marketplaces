@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "DramaBuddy is a general-purpose comic-drama creation tool for everyone — just provide a novel or an idea, and it automatically generates the script, characters, and storyboard videos, so you can easily create your own comic-drama.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "DramaBuddy is a general-purpose comic-drama creation tool for everyone — just provide a novel or an idea, and it automatically generates the script, characters, and storyboard videos, so you can easily create your own comic-drama.",
+        "description_zh": "阅文漫剧助手（DramaBuddy）是一个人人可用的通用漫剧制作工具——只需提供小说或创意，就能自动生成剧本、角色与分镜视频，轻松做出属于自己的漫剧。",
+        "examples_en": [
+          "Turn this novel into a sub-3-minute comic-drama with script, character trio views and storyboard videos",
+          "Generate a 9:16 anime video on the canvas, theme: a girl running in the rain",
+          "Generate a 16:9 character design with front, side and back views",
+          "Use this character image as reference to generate a 5-second talking video",
+          "Preview the point cost of all canvas nodes, confirm before running generation"
+        ],
+        "examples_zh": [
+          "把这篇小说做成 3 分钟内的漫剧，自动出剧本、角色三视图和分镜视频",
+          "帮我在画布上生成一段 9:16 的动漫视频，主题是少女在雨中奔跑",
+          "生成一张 16:9 的角色三视图设定图，含正面、侧面、背面",
+          "用这张角色图做参考，生成 5 秒的说话视频",
+          "预览当前画布所有节点的积分，确认后再执行生成"
+        ],
+        "name": "阅文漫剧助手",
+        "name_en": "DramaBuddy",
+        "name_zh": "阅文漫剧助手"
+      },
+      "policy": {
+        "mcpServers": {
+          "dramabuddy": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "dramabuddy",
+  "version": "0.1.2+wb.b3eb259c55d16bf5"
+}

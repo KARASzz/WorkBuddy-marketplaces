@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Access, download, or remove files from Weiyun, while also supporting file uploads and the creation of sharing links to help you manage your Weiyun storage.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Access, download, or remove files from Weiyun, while also supporting file uploads and the creation of sharing links to help you manage your Weiyun storage.",
+        "description_zh": "查看、下载、删除微云文件，并且提供上传文件到微云、生成分享链接能力，帮你管理微云文件",
+        "examples_en": [
+          "View my Weiyun file list",
+          "Help me upload this file to Weiyun",
+          "Generate a sharing link for the recently uploaded file and send it to the WeChat group",
+          "Download the log file from Weiyun",
+          "Delete the log file in Weiyun"
+        ],
+        "examples_zh": [
+          "查看我的微云文件列表",
+          "帮我把这个文件上传到微云",
+          "将刚刚上传的文件生成一个分享链接发到微信群",
+          "下载微云文件中的日志文件",
+          "删除微云文件中的日志文件"
+        ],
+        "name": "微云",
+        "name_en": "Weiyun"
+      },
+      "policy": {
+        "mcpServers": {
+          "weiyun": {
+            "disabled": false,
+            "timeout": 60
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tencent-weiyun",
+  "version": "0.0.0+wb.398f001986bb95bc"
+}

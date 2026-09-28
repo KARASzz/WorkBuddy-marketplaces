@@ -1,0 +1,55 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "通过自然语言批量管理 TikTok 达人建联、邀约、私信和店铺/商品/达人查询。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Use natural language to manage TikTok creator outreach, invitations, messaging, and shop/product/creator queries.",
+        "description_zh": "通过自然语言批量管理 TikTok 达人建联、邀约、私信和店铺/商品/达人查询。",
+        "examples_en": [
+          "List the shops I can access",
+          "Query public products for this shop",
+          "Find creators suitable for invitation"
+        ],
+        "examples_zh": [
+          "列出我有权限访问的店铺",
+          "查询这个店铺的公开商品",
+          "帮我筛选适合邀约的达人"
+        ],
+        "name": "达秘-TikTok批量建联&达人管理工具",
+        "name_en": "Dami TikTok Bulk Outreach & Creator Management Tool"
+      },
+      "policy": {
+        "mcpServers": {
+          "dami-external-mcp": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "dami-external-mcp": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "MCP_API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "dami-external-mcp",
+  "version": "0.0.0+wb.8ea91fbace63aaa9"
+}

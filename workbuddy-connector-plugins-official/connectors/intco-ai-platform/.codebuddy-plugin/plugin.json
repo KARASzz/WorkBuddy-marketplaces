@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Access INTCO business systems, RPA, enterprise data, and licensed data services.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Access INTCO business systems, RPA, enterprise data, and licensed data services.",
+        "description_zh": "统一访问英科内部业务系统、RPA、企业数仓及已授权的企业付费数据服务。",
+        "examples_en": [
+          "Check the current progress of order XXX",
+          "Process the abandoned order with order number XXX",
+          "Run the XXX RPA process and tell me the result",
+          "Check company XXX's registration details and risks",
+          "Analyze the price trend of raw material XXX over the last three months"
+        ],
+        "examples_zh": [
+          "帮我查一下订单 XXX 当前到哪一步了",
+          "帮我处理弃单，单号是 XXX",
+          "帮我执行一下 XXX RPA，并告诉我执行结果",
+          "帮我查一下 XXX 公司的工商信息和风险情况",
+          "分析一下最近三个月 XXX 原材料的价格走势"
+        ],
+        "name": "英科AI中台",
+        "name_en": "INTCO AI Platform",
+        "name_zh": "英科AI中台"
+      },
+      "policy": {
+        "mcpServers": {
+          "intco-ai-platform": {
+            "timeout": 30
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "intco-ai-platform",
+  "version": "0.0.0+wb.859515cbcd459cc4"
+}

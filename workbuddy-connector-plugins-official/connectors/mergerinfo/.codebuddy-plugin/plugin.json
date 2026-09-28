@@ -1,0 +1,57 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Search overseas assets for sale, cross-border M&A events, and a company's deal activity over the past year.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Search overseas assets for sale, cross-border M&A events, and a company's deal activity over the past year.",
+        "description_zh": "查询海外待售标的、并购事件与巨头动向，以及指定企业近一年的交易动态。",
+        "examples_en": [
+          "Which overseas industrial assets went up for sale today?",
+          "What cross-border semiconductor M&A happened in the last two weeks?",
+          "Which large acquirers have been active overseas recently?",
+          "What deal activity has NVIDIA had over the past year?"
+        ],
+        "examples_zh": [
+          "今天有哪些海外待售的工业制造标的？",
+          "最近两周半导体行业有哪些跨境并购事件？",
+          "最近有哪些巨头在海外出手？",
+          "NVIDIA 近一年有哪些交易动向？"
+        ],
+        "name": "MergerInfo 海外并购情报",
+        "name_en": "MergerInfo Cross-border M&A Intelligence"
+      },
+      "policy": {
+        "mcpServers": {
+          "mergerinfo": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "mergerinfo": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "MERGERINFO_CONNECT_CODE",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "mergerinfo",
+  "version": "0.2.0+wb.4b03eb4037553dbd"
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Syspetro Properties (PropMcp) chemical property database: search components by name, formula, or CAS; query identity details and molecular weight, pure-component scalar properties, and binary mixture data availability.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Syspetro Properties (PropMcp) chemical property database: search components by name, formula, or CAS; query identity details and molecular weight, pure-component scalar properties, and binary mixture data availability.",
+        "description_zh": "辛孚物性库连接器：按名称、分子式或 CAS 检索化学组分，查询身份详情与分子量、纯组分基础物性，以及二元混合物物性数据可用性。",
+        "examples_en": [
+          "Query the details of the component CH4",
+          "Help me check the physical property information of the eccentricity factor for component CH4",
+          "Check what mixture property data is available between ethanol and water",
+          "Look up the component name and molecular weight for CAS number 64-17-5"
+        ],
+        "examples_zh": [
+          "查询组分CH4详情",
+          "帮我查一下组分CH4的偏心因子物性信息",
+          "查一下乙醇和水之间有哪些混合物物性数据",
+          "把 CAS 号 64-17-5 对应到组分名称和分子量"
+        ],
+        "name": "辛孚物性库",
+        "name_en": "Syspetro Properties",
+        "name_zh": "辛孚物性库"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "urlTemplatedMcpServers": {
+        "syspetro-service-22065846": {
+          "tokenSchema": "./ai.workbuddy/token-schema.json",
+          "type": "sse",
+          "urlTemplate": "https://marketplace.syspetro.com/syspetro-mcp-marketplace/mcp/service_22065846?authkey=${SYSPETRO_MCP_API_KEY}"
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "syspetro-service-22065846",
+  "version": "1.0.0+wb.63e8da79041b6971"
+}

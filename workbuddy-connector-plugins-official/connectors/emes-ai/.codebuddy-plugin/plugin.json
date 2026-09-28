@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Dinghua eMES AI Assistant. Connects to eMES OPENAPI to provide production data queries, dispatching, equipment repair, outsourcing, and work reporting capabilities.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Dinghua eMES AI Assistant. Connects to eMES OPENAPI to provide production data queries, dispatching, equipment repair, outsourcing, and work reporting capabilities.",
+        "description_zh": "鼎华 eMES AI 助手，连接 eMES OPENAPI，提供生产数据查询、派工、设备报修、委外加工、报工等智能能力。",
+        "examples_en": [
+          "Query today's dispatch progress for equipment M01",
+          "Equipment M01 is broken, start a repair request",
+          "Check completion status of work order MO20260907001"
+        ],
+        "examples_zh": [
+          "查询今天 M01 设备的派工进度",
+          "M01 设备故障，启动报修流程",
+          "查询工单 MO20260907001 的完工情况"
+        ],
+        "name": "eMES AI 助手",
+        "name_en": "eMES AI Assistant",
+        "name_zh": "eMES AI 助手"
+      },
+      "policy": {
+        "mcpServers": {
+          "emes-ai": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "emes-ai",
+  "version": "1.0.0+wb.bfc17f6ccf291f3d"
+}

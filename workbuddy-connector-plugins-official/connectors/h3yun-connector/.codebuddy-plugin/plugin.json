@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "通过氚云连接器，将日常业务快速构建为可配置、可协同、可追踪的数字化应用。支持快速创建应用表单、管理业务数据、以流程驱动审批与任务流转，适用于客户、项目、采购、库存、售后等多类业务管理场景。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "With the H3Yun connector, businesses can quickly turn everyday operations into configurable, collaborative, and traceable digital applications. It supports rapid app creation, business data management, and workflow-driven approvals and task routing, making it suitable for a wide range of scenarios including customer, project, procurement, inventory, and after-sales management.",
+        "description_zh": "通过氚云连接器，将日常业务快速构建为可配置、可协同、可追踪的数字化应用。支持快速创建应用表单、管理业务数据、以流程驱动审批与任务流转，适用于客户、项目、采购、库存、售后等多类业务管理场景。",
+        "examples_en": [
+          "Help me review today’s to-do items",
+          "Please help me add a customer record under [Form Name]",
+          "Please help me look up the tasks under [Form Name]",
+          "Help me analyze this month’s sales performance data and generate business recommendations"
+        ],
+        "examples_zh": [
+          "帮我了解今日的待办",
+          "帮我在[表单名称]下录入一条客户数据",
+          "帮我查找一下[表单名称]下的任务",
+          "帮我分析本月的销售经营数据，生成经营建议"
+        ],
+        "name": "氚云",
+        "name_en": "h3yun",
+        "name_zh": "氚云"
+      },
+      "policy": {
+        "mcpServers": {
+          "h3yun-connector": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "h3yun-connector",
+  "version": "1.0.1+wb.e79a34ee6a4207a5"
+}

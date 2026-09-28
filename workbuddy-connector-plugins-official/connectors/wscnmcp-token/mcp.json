@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "华尔街见闻MCP": {
+      "type": "streamable-http",
+      "url": "https://xgb-mcp-api.xuangubao.cn/mcp",
+      "headers": {
+        "X-WMCP-Client": "wbwscn"
+      }
+    }
+  }
+}

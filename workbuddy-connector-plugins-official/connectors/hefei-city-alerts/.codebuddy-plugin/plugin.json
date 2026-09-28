@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query Hefei real-time public life info: weather & warnings, water/power/gas outage notices, traffic controls and government announcements.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query Hefei real-time public life info: weather & warnings, water/power/gas outage notices, traffic controls and government announcements.",
+        "description_zh": "查询合肥本地天气与预警、停水停电、燃气检修、交通管制、政府公告等实时民生信息。",
+        "examples_en": [
+          "What's the weather in Hefei tomorrow and are there any warnings?",
+          "Which Hefei areas have planned water or power outages this week?",
+          "Show recent government notices related to housing fund."
+        ],
+        "examples_zh": [
+          "合肥明天天气怎么样？有没有大风或暴雨预警？",
+          "这周合肥有哪些片区会停水或停电？",
+          "最近发布的和公积金相关的政府公告有哪些？"
+        ],
+        "name": "合肥便民通告",
+        "name_en": "Hefei City Alerts",
+        "name_zh": "合肥便民通告"
+      },
+      "policy": {
+        "mcpServers": {
+          "hefei-city-alerts": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "hefei-city-alerts",
+  "version": "0.1.0+wb.fe736670bb901f49"
+}

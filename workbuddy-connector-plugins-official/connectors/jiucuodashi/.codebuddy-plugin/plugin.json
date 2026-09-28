@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect your Jiucuo Dashi account to query your child's recent errors and generate printable review papers.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect your Jiucuo Dashi account to query your child's recent errors and generate printable review papers.",
+        "description_zh": "连接纠错大师账号，查询授权孩子的最近错题，并自动生成单学科可打印的错题复习试卷。",
+        "examples_en": [
+          "Show my child's recent math errors",
+          "What errors did my child make in the last week?",
+          "Generate a review paper from recent errors",
+          "Compile the last month's errors into a practice paper"
+        ],
+        "examples_zh": [
+          "查一下孩子最近的数学错题",
+          "最近一周有哪些错题",
+          "用错题本出一份复习试卷",
+          "把最近一个月的错题整理成练习卷"
+        ],
+        "name": "纠错大师",
+        "name_en": "Jiucuo Dashi"
+      },
+      "policy": {
+        "mcpServers": {
+          "jiucuodashi": {
+            "disabledTools": [
+              "jcds_commit_print_problem_set"
+            ],
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "jiucuodashi",
+  "version": "1.0.0+wb.5f97f901c43fe723"
+}

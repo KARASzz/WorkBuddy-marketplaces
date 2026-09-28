@@ -1,0 +1,53 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "查询中国企业工商、股权投资、经营司法风险、知识产权、招投标及新闻舆情数据。",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "server-side",
+        "provider_id": "kuaicha-search"
+      },
+      "display": {
+        "description_en": "Search Chinese company profiles, ownership, risks, intellectual property, tenders, and news.",
+        "description_zh": "查询中国企业工商、股权投资、经营司法风险、知识产权、招投标及新闻舆情数据。",
+        "examples_en": [
+          "Look up Hithink RoyalFlush Information Network's company registration details",
+          "Show Tencent's ownership structure and ultimate beneficial owners",
+          "Check Evergrande for operational penalties and legal risks",
+          "Find Huawei's patents and trademarks",
+          "Find technology companies recently established in Hangzhou"
+        ],
+        "examples_zh": [
+          "查询同花顺的工商基本信息",
+          "查一下腾讯的股东结构和最终受益人",
+          "恒大有没有经营异常、行政处罚或司法风险",
+          "华为有多少专利和商标",
+          "杭州最近新成立的科技公司有哪些"
+        ],
+        "name": "同花顺快查企业数据",
+        "name_en": "Kuaicha Enterprise Search"
+      },
+      "policy": {
+        "mcpServers": {
+          "kuaicha-search": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "kuaicha-search",
+  "version": "0.0.0+wb.dda6a94071ac0fd9"
+}

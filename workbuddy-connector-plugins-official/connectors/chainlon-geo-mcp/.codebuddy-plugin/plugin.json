@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Check whether a brand is visible in AI search, generate keyword matrices, and run GEO diagnostics with actionable advice. Results come from real retrieval sources, and it honestly reports degraded mode instead of fabricating scores.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Check whether a brand is visible in AI search, generate keyword matrices, and run GEO diagnostics with actionable advice. Results come from real retrieval sources, and it honestly reports degraded mode instead of fabricating scores.",
+        "description_zh": "查询品牌在 AI 搜索里是否被提到、生成关键词矩阵、输出 GEO 综合诊断与行动建议；数据来自真实检索，未配置数据源时如实提示降级，绝不编造分数与排名。",
+        "examples_en": [
+          "Check whether a brand is visible in AI search",
+          "Generate a keyword matrix for the hair salon industry in Hangzhou",
+          "Run a full GEO diagnosis for a brand in the hair salon industry in Beijing",
+          "Can our brand be found in Doubao and DeepSeek?"
+        ],
+        "examples_zh": [
+          "查一下某某造型在 AI 搜索里的可见度",
+          "帮我生成一份杭州美发的关键词矩阵",
+          "给某某造型做个 GEO 综合诊断，行业美发，城市北京",
+          "我们品牌在豆包和 DeepSeek 里能被搜到吗"
+        ],
+        "name": "链龙 GEO 可见度检测",
+        "name_en": "Chainlon GEO Visibility",
+        "name_zh": "链龙 GEO 可见度检测"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "chainlon-geo-mcp",
+  "version": "1.0.0+wb.26ecd686a6d7985e"
+}

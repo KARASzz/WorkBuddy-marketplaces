@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Manage XRXS HR SaaS via MCP.",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "server-side",
+        "provider_id": "xrxs"
+      },
+      "display": {
+        "description_en": "Manage XRXS HR SaaS onboarding, offboarding and attendance monthly report archive via natural language.",
+        "description_zh": "通过自然语言管理薪人薪事员工入职、离职及考勤月度报表归档等 HR 场景。",
+        "examples_en": [
+          "Check whether this week's expected new hires have any missing required information",
+          "Check pending to-do items for employees expected to leave this month",
+          "Archive this month's attendance group reports"
+        ],
+        "examples_zh": [
+          "查询本周预计入职的待入职员工是否有缺失的必填信息",
+          "检查本月预计离职员工的待处理事项",
+          "帮我归档本月考勤组报表"
+        ],
+        "name": "薪人薪事",
+        "name_en": "xrxs",
+        "name_zh": "薪人薪事"
+      },
+      "policy": {
+        "mcpServers": {
+          "xrxs": {
+            "disabled": false
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "xrxs",
+  "version": "1.0.0+wb.52e8b2ec7a28d781"
+}

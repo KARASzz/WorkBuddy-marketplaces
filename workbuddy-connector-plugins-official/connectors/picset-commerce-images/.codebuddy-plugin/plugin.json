@@ -1,0 +1,67 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Picset AI Commerce Design provides four independent capabilities, including product style replication from a style reference: ecommerce image suites (main, detail, listing, and A+ content images), single image text-to-image/image-to-image generation and editing, and Agent Canvas (canvas hosting and image return), plus a unified connector pricing panel. Covers Taobao, Tmall, JD, Pinduoduo, Douyin, 1688, Xiaohongshu, TikTok, Amazon, Shopify, Temu, OZON, Shopee, Alibaba.com with credit quoting, generation tracking, and indexed partial revisions.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Picset AI Commerce Design provides four independent capabilities, including product style replication from a style reference: ecommerce image suites (main, detail, listing, and A+ content images), single image text-to-image/image-to-image generation and editing, and Agent Canvas (canvas hosting and image return), plus a unified connector pricing panel. Covers Taobao, Tmall, JD, Pinduoduo, Douyin, 1688, Xiaohongshu, TikTok, Amazon, Shopify, Temu, OZON, Shopee, Alibaba.com with credit quoting, generation tracking, and indexed partial revisions.",
+        "description_zh": "Picset AI 电商设计：面向电商卖家、设计师和美工，提供四条独立功能线——电商套图（主图/详情图/套图/Listing/A+，含一张也走套图）、单图文生图/图生图（独立创意单图与图片编辑）、风格复刻（参考风格与商品图，含复刻电商主图）、Agent Canvas（画布承接与图片返回），以及连接器统一充值面板。覆盖淘宝、天猫、京东、拼多多、抖音、1688、小红书、TikTok、Amazon、Shopify、Temu、OZON、Shopee、阿里巴巴国际站等主流平台，支持方案规划、积分报价、生成跟踪和按编号局部修改。",
+        "examples_en": [
+          "Recreate a Taobao main image using this style reference and my product photos",
+          "Generate a coordinated set of main and detail images for my uploaded product on Taobao",
+          "Generate five Amazon main images",
+          "Change only D3 to a modern minimalist kitchen background",
+          "Generate a creative concept image of a minimalist wooden coffee cup",
+          "Open the canvas to inspect and fine-tune recently generated images"
+        ],
+        "examples_zh": [
+          "按这张风格参考图复刻一张淘宝主图，商品换成我的",
+          "用我上传的商品图生成一套淘宝主图和详情图",
+          "生成 5 张 Amazon 主图",
+          "把 D3 背景改成现代极简厨房，其他图片不要动",
+          "帮我文生图一张极简原木风咖啡杯创意概念图",
+          "打开画布查看刚才生成的商品图并进行微调"
+        ],
+        "name": "Picset AI 电商设计",
+        "name_en": "Picset AI Commerce Design"
+      },
+      "policy": {
+        "mcpServers": {
+          "picset-commerce-images": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "picset-commerce-images": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "PICSET_AGENT_SK",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "picset-commerce-images",
+  "version": "0.0.0+wb.5d5dee23b620e37e"
+}

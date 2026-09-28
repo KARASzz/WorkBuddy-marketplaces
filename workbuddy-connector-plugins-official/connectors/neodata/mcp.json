@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "neodata": {
+      "type": "streamable-http",
+      "url": "https://neodata.tencent.com/proxy/mcp"
+    }
+  }
+}

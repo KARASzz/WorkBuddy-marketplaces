@@ -1,0 +1,65 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "用于 Picset AI 视频创作和独立人物三视图生成，包括商品带货视频生成、爆款视频复刻、有人物参考图或无人物参考图的正面/侧面/背面三视图生成。支持 UGC 种草、产品口播、带货短剧、产品演示、开箱种草、痛点解决、TVC 品牌广告等类型，并支持有声或静音视频、参考音频、固定模特和多条视频生成。该 Skill 会路由到生成视频、复刻视频或人物三视图子 Skill，根据用户提供的商品图、唯一主目标视频、人物素材和创作要求，完成用户确认、素材准备、异步生成、状态恢复与结果交付。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Route Picset AI ecommerce video creation requests across product video generation, viral video recreation, and model image generation while preserving shared context.",
+        "description_zh": "用于 Picset AI 视频创作和独立人物三视图生成，包括商品带货视频生成、爆款视频复刻、有人物参考图或无人物参考图的正面/侧面/背面三视图生成。支持 UGC 种草、产品口播、带货短剧、产品演示、开箱种草、痛点解决、TVC 品牌广告等类型，并支持有声或静音视频、参考音频、固定模特和多条视频生成。该 Skill 会路由到生成视频、复刻视频或人物三视图子 Skill，根据用户提供的商品图、唯一主目标视频、人物素材和创作要求，完成用户确认、素材准备、异步生成、状态恢复与结果交付。",
+        "examples_en": [
+          "Use my uploaded product image to generate a six-second premium product showcase video with Seedance 2.0",
+          "Estimate credits for a four-second ecommerce video from this product reference image using Seedance 2.0 Fast",
+          "Create a four-second 9:16 product benefit video for this air circulator image",
+          "Generate a close-up food product video from my uploaded reference image",
+          "Check the status of my latest Picset AI video generation task"
+        ],
+        "examples_zh": [
+          "我上传一张商品图，帮我用 Seedance 2.0 生成一个 6 秒的高级质感展示视频",
+          "基于这张商品参考图，预估用 Seedance 2.0 Fast 生成 4 秒电商短视频需要多少积分",
+          "用这张空气循环扇图片生成 9:16 的 4 秒卖点视频，突出静音柔风",
+          "根据我上传的食品图生成一段近景开场视频，画面要有烟火气",
+          "查询刚才 Picset AI 视频生成任务的完成状态"
+        ],
+        "name": "Picset AI 视频创作",
+        "name_en": "Picset AI Video Generation"
+      },
+      "policy": {
+        "mcpServers": {
+          "picset-video-generation": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "picset-video-generation": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "PICSET_AGENT_SK",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "picset-video-generation",
+  "version": "0.0.0+wb.9df6a34e236b64ae"
+}

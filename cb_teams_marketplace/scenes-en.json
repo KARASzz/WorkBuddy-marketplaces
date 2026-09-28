@@ -358,6 +358,27 @@
     "target": "all"
   },
   {
+    "id": 50,
+    "unified_id": 129,
+    "name": "Mini Program",
+    "icon": "mini-program",
+    "mode": "coding",
+    "plugins": [],
+    "prompts": [
+      "Help me develop a WeChat Mini Program for event registration. The event name is [Event Name], targeting [Target Audience]. Requirements: Include an event homepage, event details page, online registration, and registration records page. Support WeChat authorized login. Store event and registration data in a cloud database, and store event images in cloud storage. The interface should adopt a clean mobile Mini Program design that fits the business scenario, highlighting core content and primary actions, maintaining a clear information hierarchy and a compact yet comfortable layout, using a consistent icon style, and avoiding Emojis.",
+      "Help me develop a WeChat Mini Program for community group buying, mainly offering [Product Type]. Requirements: Include a group buying homepage, product list, group buying details page, and order records page. Support WeChat authorized login. Store product and order data in a cloud database, and store product images in cloud storage. The interface should adopt a clean mobile Mini Program design that fits the business scenario, highlighting core content and primary actions, maintaining a clear information hierarchy and a compact yet comfortable layout, using a consistent icon style, and avoiding Emojis.",
+      "Help me develop a WeChat Mini Program for store appointments. The store name is [Store Name], providing [Service Type]. Requirements: Include a store homepage, service items, appointment time selection, and appointment records page. Support WeChat authorized login. Store appointment data in a cloud database, and store service images in cloud storage. The interface should adopt a clean mobile Mini Program design that fits the business scenario, highlighting core content and primary actions, maintaining a clear information hierarchy and a compact yet comfortable layout, using a consistent icon style, and avoiding Emojis.",
+      "Help me develop a WeChat Mini Program for restaurant ordering. The restaurant name is [Restaurant Name], specializing in [Cuisine Type]. Requirements: Include a restaurant homepage, dish categories, dish details page, shopping cart, and order records page. Support WeChat authorized login. Store dish and order data in a cloud database, and store dish images in cloud storage. The interface should adopt a clean mobile Mini Program design that fits the business scenario, highlighting core content and primary actions, maintaining a clear information hierarchy and a compact yet comfortable layout, using a consistent icon style, and avoiding Emojis."
+    ],
+    "promptTitles": [
+      "Event Registration Mini Program",
+      "Community Group Buying Mini Program",
+      "Store Appointment Mini Program",
+      "Restaurant Ordering Mini Program"
+    ],
+    "target": "all"
+  },
+  {
     "id": 18,
     "unified_id": 109,
     "name": "Agent Apps",

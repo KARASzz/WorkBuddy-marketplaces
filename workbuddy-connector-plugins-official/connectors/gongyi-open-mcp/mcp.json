@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "gongyi-open-mcp": {
+      "type": "streamable-http",
+      "url": "https://ssl.gongyi.qq.com/gygw-web/api/open/tob/mcp"
+    }
+  }
+}

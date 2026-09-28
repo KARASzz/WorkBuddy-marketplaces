@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "qibook-mcp": {
+      "type": "streamable-http",
+      "url": "https://datamcp.qibook.com/mcp/basic-ent-tools"
+    }
+  }
+}

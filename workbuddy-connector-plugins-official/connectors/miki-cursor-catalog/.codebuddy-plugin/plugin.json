@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Browse the latest cursor styles, cursor trails, cursor pets, and available pet actions from Miki Cursor.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Browse the latest cursor styles, cursor trails, cursor pets, and available pet actions from Miki Cursor.",
+        "description_zh": "查询 Miki Cursor 最新发布的光标样式、光标轨迹、光标宠物，以及不同宠物拥有的动作。",
+        "examples_en": [
+          "Show me the five latest cursor pets",
+          "Show me the five latest cursor styles",
+          "Show me the five latest cursor trails",
+          "What actions can the puppy perform?"
+        ],
+        "examples_zh": [
+          "查询最新5个宠物",
+          "查询最新5个光标",
+          "查询最新5个轨迹",
+          "小青龙有哪些动作？"
+        ],
+        "name": "Miki Cursor 素材库",
+        "name_en": "Miki Cursor Catalog"
+      },
+      "policy": {
+        "mcpServers": {
+          "miki-cursor": {
+            "timeout": 30000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "miki-cursor-catalog",
+  "version": "1.0.0+wb.679e43d78b9ecd55"
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Provides enterprise financial, tax, banking, and travel management services through Yonyou Bank-Enterprise Cloud, Tax-Enterprise Cloud, and Business Travel Cloud, enabling comprehensive fund, tax, and travel operations management via natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Provides enterprise financial, tax, banking, and travel management services through Yonyou Bank-Enterprise Cloud, Tax-Enterprise Cloud, and Business Travel Cloud, enabling comprehensive fund, tax, and travel operations management via natural language.",
+        "description_zh": "通过用友银企联、税企联、商旅云等财务服务产品，为企业提供财务税务与银行资金数据服务，并提供企业商旅运营服务和行程服务。用自然语言完成企业的资金、税务、商旅的全面运营管理。",
+        "examples_en": [
+          "List invoices over 5000 in dept_a tenant",
+          "Search customer CUST2024001 and list all its bank accounts with the latest balance snapshot",
+          "Query transactions of account 6225****1234 in the last month, credit-only and amount > 10000",
+          "Get hourly balance stats summary for account 6216****2782 in 2026-07 (peak / trough / max hourly delta)"
+        ],
+        "examples_zh": [
+          "查询 dept_a 租户下金额大于 5000 的发票清单",
+          "搜索客户 CUST2024001 并查看其所有银行账户的最新余额快照",
+          "查账户 6225****1234 最近一个月的交易明细，只看贷方（入账）且金额大于 10000 的记录",
+          "获取账户 6216****2782 在 2026-07 的小时余额统计摘要（峰值/谷值/最大单小时变动）"
+        ],
+        "name": "用友智能服务（AI BaaS）",
+        "name_en": "Yonyou AI BaaS"
+      },
+      "policy": {
+        "mcpServers": {
+          "shanglv-mcp-gateway": {
+            "timeout": 30000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "shanglv-mcp-gateway",
+  "version": "0.0.0+wb.8b84a81950eec7c9"
+}

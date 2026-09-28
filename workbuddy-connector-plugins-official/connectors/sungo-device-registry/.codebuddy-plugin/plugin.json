@@ -1,0 +1,56 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Look up a medical-device manufacturer across 14 official registries (NMPA, EUDAMED, FDA, MHRA, Health Canada, ANVISA, TFDA, MFDS, Roszdravnadzor and more): registration counts, risk-class split and device-level detail. 68,000+ manufacturers; every record re-verified against the manufacturer name. 100 free queries/day; unlimited with a free key.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Look up a medical-device manufacturer across 14 official registries (NMPA, EUDAMED, FDA, MHRA, Health Canada, ANVISA, TFDA, MFDS, Roszdravnadzor and more): registration counts, risk-class split and device-level detail. 68,000+ manufacturers; every record re-verified against the manufacturer name. 100 free queries/day; unlimited with a free key.",
+        "description_zh": "输入公司名，查它在中国 NMPA、欧盟 EUDAMED、美国 FDA、英国 MHRA、加拿大、巴西、台湾、韩国、俄罗斯等 14 个官方注册库的注册数量、风险等级分布与器械明细。收录 68,000+ 家企业，每条记录逐条回查过厂商名。免费每天 100 次，领密钥后不限次。",
+        "examples_en": [
+          "Which markets is Mindray registered in?",
+          "Does this supplier have EU EUDAMED records?",
+          "List Edan's FDA-listed devices",
+          "What markets does the database cover?"
+        ],
+        "examples_zh": [
+          "查一下迈瑞在哪些市场有注册",
+          "这家供应商在欧盟有没有注册记录",
+          "列出深圳理邦在美国 FDA 的注册器械",
+          "数据库覆盖哪些国家、各有多少家企业"
+        ],
+        "name": "医疗器械注册查询",
+        "name_en": "Medical Device Registry Lookup"
+      },
+      "policy": {
+        "mcpServers": {
+          "sungo-device-registry": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "sungo-device-registry": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "SUNGO_TIC_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "sungo-device-registry",
+  "version": "1.0.0+wb.59e52ff547580ae6"
+}

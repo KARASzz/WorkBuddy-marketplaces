@@ -1,0 +1,52 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Flova AI creation for video, images, scripts, short films, drama, advertising, product TVCs, and visual design.",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "oauth"
+      },
+      "display": {
+        "description_en": "Create video and image content with Flova AI, including scripts, short films, dramas, animation, movies, ads, product TVCs, visual design, storyboards, revisions, reviews, and exports.",
+        "description_zh": "Flova AI 视频与图片内容创作：支持剧本、短片、短剧、漫剧、电影、广告、商品 TVC 与视觉设计，覆盖文生图、文生视频、图生视频、素材生成、分镜、修改、审阅和导出。",
+        "examples_en": [
+          "Generate images from one sentence, then turn them into a vertical short video",
+          "Turn this script into an episode of an AI short drama or animated comic",
+          "Create a 30-second product TVC from these product images",
+          "Break down the reference video's shot language and remake it with a new theme",
+          "Continue my Flova project, review the storyboard, and export the final video"
+        ],
+        "examples_zh": [
+          "根据一句话生成图片，再制作成竖屏短视频",
+          "把这份剧本制作成一集 AI 短剧或漫剧",
+          "根据商品图片生成一支 30 秒 TVC 广告",
+          "分析参考视频的镜头语言，拉片并复刻成新主题",
+          "继续修改我的 Flova 项目，审阅分镜并导出成片"
+        ],
+        "name": "Flova",
+        "name_en": "Flova AI",
+        "name_zh": "Flova AI"
+      },
+      "policy": {
+        "mcpServers": {
+          "flova": {
+            "timeout": 60000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "flova",
+  "version": "1.1.1+wb.03922098c3f6e4b8"
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query and manage warehouses, inventory, products, orders, and stock movements in Gongxie ERP.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query and manage warehouses, inventory, products, orders, and stock movements in Gongxie ERP.",
+        "description_zh": "查询并管理共鞋ERP中的仓库、库存、商品、订单及出入库业务。",
+        "examples_en": [
+          "List the warehouses I can access",
+          "Check inventory for style GX123",
+          "List outbound orders from the last seven days",
+          "Preview a product inbound operation"
+        ],
+        "examples_zh": [
+          "查询我有权限的仓库",
+          "查询货号 GX123 的库存",
+          "查询最近 7 天的出库单",
+          "预览一笔商品入库操作"
+        ],
+        "name": "共鞋ERP",
+        "name_en": "Gongxie ERP"
+      },
+      "policy": {
+        "mcpServers": {
+          "gongxie-erp": {
+            "timeout": 600
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "gongxie-erp": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "ERP_TOKEN",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "gongxie-erp",
+  "version": "1.0.0+wb.712d99ea0c0fbdf3"
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "jiucuodashi": {
+      "type": "streamable-http",
+      "url": "https://workbuddy.jiucuodashi.com/mcp"
+    }
+  }
+}

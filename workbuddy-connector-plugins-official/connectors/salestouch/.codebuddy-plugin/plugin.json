@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect SalesTouch to configure organization profiles, units, role permissions, employee invitations, reporting scopes, and sales processes, then govern B2B and B2C sales execution and non-sales work with evidence-backed management reviews.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect SalesTouch to configure organization profiles, units, role permissions, employee invitations, reporting scopes, and sales processes, then govern B2B and B2C sales execution and non-sales work with evidence-backed management reviews.",
+        "description_zh": "通过自然语言连接 SalesTouch，完成组织资料、部门、角色权限、员工邀请、下属管理范围与销售流程配置，并处理 B2B/B2C 销售执行、非销售工作、绩效、内部调研和经营汇总。",
+        "examples_en": [
+          "Configure a new company's profile, units, sales and non-sales role permissions, reporting scopes, and sales process, then invite employees to activate accounts and assign their organization relationships",
+          "Summarize this week's sales, work, forms, performance, and internal research with risks, evidence gaps, and next actions",
+          "Review priority East China customers and opportunities, then create only the follow-up tasks I explicitly approve",
+          "Design a store inspection form, preview recipients, and wait for confirmation before publishing and internal distribution",
+          "Review internal research under anonymity thresholds and state findings, confidence, and unanswered interview questions"
+        ],
+        "examples_zh": [
+          "为新公司完成组织资料、部门、销售与非销售角色权限和销售流程配置，再邀请员工激活帐号、分配组织关系并设置主管的下属范围",
+          "汇总本周销售、项目任务、表单、绩效和内部调研，列出风险、证据缺口和下周动作",
+          "查一下华东区重点客户和商机，先给我风险摘要，再创建已确认的跟进任务",
+          "设计一份门店巡检表，预览收件人后等我确认再发布和内部分发",
+          "读取内部调研结果，遵守匿名阈值，说明结论、置信度和还需要补访的问题"
+        ],
+        "name": "SalesTouch 经营执行",
+        "name_en": "SalesTouch Business Operations",
+        "name_zh": "SalesTouch 经营执行"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "salestouch",
+  "version": "0.0.0+wb.d58be45ff7004d17"
+}

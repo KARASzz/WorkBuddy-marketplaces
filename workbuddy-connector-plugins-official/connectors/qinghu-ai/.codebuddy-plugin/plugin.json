@@ -1,0 +1,60 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect Qinghu AI ecommerce SaaS for data research, product sourcing, operations analysis, and LinkPix visual creation.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect Qinghu AI ecommerce SaaS for data research, product sourcing, operations analysis, and LinkPix product images, detail pages, advertising assets, and short-video creation.",
+        "description_zh": "连接青虎AI电商 SaaS，覆盖数据研究、选品与运营分析，以及 LinkPix 商品图、详情页、广告素材和短视频创作。",
+        "examples_en": [
+          "List available ecommerce data applications and suggest the right research approach",
+          "Query creator or short-video data and prepare competitor and operations insights",
+          "Create ecommerce main images and selling-point scenes from this product image",
+          "Create a product video from these selling points and show cost and parameters before submission"
+        ],
+        "examples_zh": [
+          "查看当前可用的电商数据应用，并为我的选品调研推荐合适的查询方式",
+          "查询这个达人或短视频的数据，整理竞品分析与运营复盘结论",
+          "用这张商品图生成一组电商主图和卖点场景图",
+          "根据商品卖点制作一条带货短视频，并在提交前给我报价和参数确认"
+        ],
+        "name": "青虎AI",
+        "name_en": "Qinghu AI"
+      },
+      "policy": {
+        "mcpServers": {
+          "qinghu_ai": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "qinghu_ai": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "API_KEY",
+                  "prefix": "Bearer "
+                },
+                "X-Qinghu-Env": {
+                  "field": "QINGHU_ENV"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "qinghu-ai",
+  "version": "0.0.0+wb.5b7a572afeddf5b2"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query and manage GEO analytics, content, publishing, websites, keywords, and tenant data with natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query and manage GEO analytics, content, publishing, websites, keywords, and tenant data with natural language.",
+        "description_zh": "通过自然语言查询和管理 GEO 总览、内容、发布、网站、关键词及租户相关数据。",
+        "examples_en": [
+          "Query the GEO overview for the last 7 days",
+          "List keywords for the current tenant",
+          "Query recent content publishing records"
+        ],
+        "examples_zh": [
+          "查询最近 7 天的 GEO 总览",
+          "列出当前租户的关键词",
+          "查询最近的内容发布记录"
+        ],
+        "name": "夺冠 GEO",
+        "name_en": "Duoguan GEO",
+        "name_zh": "夺冠 GEO"
+      },
+      "policy": {
+        "mcpServers": {
+          "aigeo": {
+            "timeout": 30000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "duoguan-ge",
+  "version": "0.1.0+wb.beb1be9c95d22110"
+}

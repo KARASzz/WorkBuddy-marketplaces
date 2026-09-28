@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "tencent-survey": {
+      "type": "streamable-http",
+      "url": "https://wj.qq.com/api/v2/mcp"
+    }
+  }
+}

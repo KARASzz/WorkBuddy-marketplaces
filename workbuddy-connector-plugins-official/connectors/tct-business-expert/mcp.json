@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "tct-business-expert": {
+      "type": "streamable-http",
+      "url": "https://tctmcp.zhaogang.com/mcp"
+    }
+  }
+}

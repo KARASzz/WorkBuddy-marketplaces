@@ -1,0 +1,59 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Browse the JoyRead bilingual picture-book library: find books by level or theme, read page by page with native audio narration, enjoy guided reading, vocabulary games and bedtime mode, and export books as MP4 videos with narration and bilingual subtitles.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Browse the JoyRead bilingual picture-book library: find books by level or theme, read page by page with native audio narration, enjoy guided reading, vocabulary games and bedtime mode, and export books as MP4 videos with narration and bilingual subtitles.",
+        "description_zh": "浏览 JoyRead 双语英语绘本库：按级别或主题找书，逐页点读原声朗读，支持亲子陪读、词汇复习、睡前故事三种陪读模式，并可将绘本导出为带朗读和双语字幕的 MP4 视频。",
+        "examples_en": [
+          "Find a beginner-level English picture book about animals",
+          "Is there a story about sharing or friendship?",
+          "Turn this book into an interactive click-to-read page for my child",
+          "Play a vocabulary review game from this book",
+          "Export this book as a narrated video"
+        ],
+        "examples_zh": [
+          "找一本适合零基础、关于动物的英语绘本",
+          "有没有关于分享或友谊的故事书",
+          "把这本绘本生成互动点读页面给孩子读",
+          "带孩子玩这本书里的单词复习游戏",
+          "帮我导出这本绘本的朗读视频"
+        ],
+        "name": "JoyRead 双语绘本",
+        "name_en": "JoyRead English Picture Books"
+      },
+      "policy": {
+        "mcpServers": {
+          "joyread-english": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "joyread-english": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "JOYREAD_TOKEN",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "joyread-english",
+  "version": "1.0.0+wb.b0e08f876cfed90d"
+}

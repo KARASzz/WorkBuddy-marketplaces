@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to the viaim App to search and read recordings, transcripts and AI summaries, browse recently updated records, and turn them into meeting notes and action items.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to the viaim App to search and read recordings, transcripts and AI summaries, browse recently updated records, and turn them into meeting notes and action items.",
+        "description_zh": "连接 viaim App，查询或按关键词搜索录音记录，读取转写内容与 AI 摘要，查看最近更新的记录，并整理会议纪要和待办事项。",
+        "examples_en": [
+          "List my recent viaim recordings.",
+          "Read the AI summary of this recording and extract the key conclusions.",
+          "Read the transcript of this recording and turn it into meeting notes.",
+          "Show my recently updated recordings.",
+          "Extract action items from this recording. Mark any unspecified owner or deadline as unspecified."
+        ],
+        "examples_zh": [
+          "列出我最近的 viaim 录音记录。",
+          "查看这条录音的 AI 摘要，提取关键结论。",
+          "读取这条录音的转写内容，整理成会议纪要。",
+          "查看最近更新的录音记录。",
+          "根据这条录音的内容整理待办事项；没有明确负责人或截止时间的，请标注未明确。"
+        ],
+        "name": "viaim",
+        "name_en": "viaim"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "viaim",
+  "version": "1.0.1+wb.d05d5929f3f64ae6"
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Upload Excel or CSV files to quickly generate native visual data analysis reports, dashboards, and charts.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Upload Excel or CSV files to quickly generate native visual data analysis reports, dashboards, and charts.",
+        "description_zh": "上传 Excel 或 CSV 表格，一键生成原生的可视化数据分析报告、仪表板、图表。",
+        "examples_en": [
+          "Import this Excel file and analyze signed contract amounts by sales region",
+          "Create a sales trend chart from the current project data",
+          "Show this month's sales performance by region from an existing dashboard"
+        ],
+        "examples_zh": [
+          "帮我导入这个 Excel，并分析各销售区域的签单金额",
+          "根据当前项目数据创建一个销售趋势图表",
+          "查看已有仪表板中本月各区域的销售表现"
+        ],
+        "name": "九数云BI",
+        "name_en": "Jiushuyun BI"
+      },
+      "policy": {
+        "mcpServers": {
+          "jiushuyun": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "jiushuyun",
+  "version": "0.0.0+wb.2c038a7d346fde07"
+}

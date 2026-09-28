@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Kdocs Skill. Turn conversations into actions — save knowledge instantly, organize fragmented notes, convert chain messages to tables, export docs as Markdown, beautify spreadsheets, and generate collection forms. All in one prompt.",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "server-side",
+        "provider_id": "wps"
+      },
+      "display": {
+        "description_en": "Kdocs Skill. Turn conversations into actions — save knowledge instantly, organize fragmented notes, convert chain messages to tables, export docs as Markdown, beautify spreadsheets, and generate collection forms. All in one prompt.",
+        "description_zh": "金山文档官方 Skill。对话即操作——知识一键存入、碎片内容整理、接龙转表格、文档转 Markdown、表格美化、收发表生成，全在一句话内完成。",
+        "examples_en": [
+          "Turn this chain-message content into a table",
+          "Save this webpage to my Kdocs",
+          "Help me organize these scattered notes into one document",
+          "Generate an event registration collection form",
+          "Create a smart doc titled \"Weekly Project Report\" with this week's progress"
+        ],
+        "examples_zh": [
+          "把这段接龙内容整理成表格",
+          "把这个网页存到我的金山文档里",
+          "帮我把这些零散笔记整理归档到一个文档",
+          "生成一份活动报名信息收集表",
+          "新建一个智能文档，标题为「项目周报」，写入本周进展"
+        ],
+        "name": "金山文档|WPS云文档",
+        "name_en": "kdocs"
+      },
+      "policy": {
+        "mcpServers": {
+          "kdocs": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.22.12"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills",
+    "cli"
+  ],
+  "name": "kdocs",
+  "version": "0.0.0+wb.bf702e7c3e829fc3"
+}

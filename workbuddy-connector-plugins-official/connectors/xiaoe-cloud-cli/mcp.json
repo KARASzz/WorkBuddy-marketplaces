@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "xiaoe-cloud-cli": {
+      "type": "streamable-http",
+      "url": "https://agent.xiaoe-tech.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "查询中国法律法规、司法案例、裁判文书及互联网法律实务资讯，支持法条检索、类案检索、深度法律研究、法律文书起草与诉讼可视化。",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "server-side",
+        "provider_id": "fazhi-law"
+      },
+      "display": {
+        "description_en": "Search Chinese laws and regulations, judicial cases, judgment documents, and internet legal practice information. Supports legal article search, similar case retrieval, deep legal research, legal document drafting, and litigation visualization.",
+        "description_zh": "查询中国法律法规、司法案例、裁判文书及互联网法律实务资讯，支持法条检索、类案检索、深度法律研究、法律文书起草与诉讼可视化。",
+        "examples_en": [
+          "What are the Civil Code provisions on contract termination",
+          "Find typical cases on private lending interest disputes in the last three years",
+          "Deep research on copyright ownership of AI-generated content",
+          "Draft a civil complaint based on these facts",
+          "Visualize the case facts and evidence chain of this contract dispute"
+        ],
+        "examples_zh": [
+          "民法典关于合同解除有哪些规定",
+          "帮我检索近三年民间借贷利息纠纷的典型案例",
+          "深度研究一下人工智能生成内容的著作权归属问题",
+          "根据这些事实帮我起草一份民事起诉状",
+          "把这个合同纠纷的案件事实和证据链做成可视化图表"
+        ],
+        "name": "同花顺法律AI助手",
+        "name_en": "RoyalFlush Legal AI Assistant",
+        "name_zh": "同花顺法律AI助手"
+      },
+      "policy": {
+        "mcpServers": {
+          "fazhi-law": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "fazhi-law",
+  "version": "1.0.0+wb.5c4d22bfda10d2bf"
+}

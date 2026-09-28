@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to Gaoding creative, asset, model and editor capabilities through natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to Gaoding creative, asset, model and editor capabilities through natural language.",
+        "description_zh": "连接稿定创作、素材、模型与编辑器能力，用自然语言完成设计工作。",
+        "examples_en": [
+          "Use Gaoding to create a promotional image from this product brief.",
+          "List the available models and asset repositories in my current Gaoding organization.",
+          "Connect to the current Gaoding work and add a basic shape and connector."
+        ],
+        "examples_zh": [
+          "用稿定根据这份商品资料生成一张宣传图",
+          "列出稿定当前组织中的可用模型和素材资源库",
+          "连接当前稿定作品并添加一个基础形状和连接线"
+        ],
+        "name": "稿定",
+        "name_en": "Gaoding",
+        "name_zh": "稿定"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "gaoding",
+  "version": "0.1.0+wb.031088db03bd465f"
+}

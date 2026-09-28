@@ -1,0 +1,1798 @@
+{
+  "description": "CodeBuddy 官方连接器配置索引",
+  "name": "workbuddy-connector-plugins-official",
+  "owner": {
+    "email": "codebuddy@tencent.com",
+    "name": "CodeBuddy"
+  },
+  "plugins": [
+    {
+      "description": "Query global stock data via Tongdaxin MCP, with screening and research support.",
+      "name": "tdx-connector",
+      "source": "./connectors/tdx-connector",
+      "version": "0.0.0+wb.d18fdc3baf84cae3"
+    },
+    {
+      "description": "Directly connect to WeStock for real-time market data, watchlist management, price alerts, and paper trading. Analyze personalized data with natural language and easily handle monitoring and investment decisions.",
+      "name": "westock-mcp",
+      "source": "./connectors/westock-mcp",
+      "version": "0.0.0+wb.04131d2c24318de7"
+    },
+    {
+      "description": "Send, search, and organize your QQ Mail inbox. Read emails, summarize threads, and manage folders with natural language.",
+      "name": "qq-mail",
+      "source": "./connectors/qq-mail",
+      "version": "0.0.0+wb.95f3bc1899199703"
+    },
+    {
+      "description": "腾讯AI知识管家，连接后支持搜索、读取和写入知识库资料，并可搜索和订阅教育、法律、财经、科技等20+行业专业知识",
+      "name": "ima-mcp",
+      "source": "./connectors/ima-mcp",
+      "version": "0.0.0+wb.fac085d46643602c"
+    },
+    {
+      "description": "Search, create, and manage documents in your Lexiang knowledge base. Import Markdown, organize by tags, and keep team docs up to date.",
+      "name": "lexiang",
+      "source": "./connectors/lexiang",
+      "version": "0.0.0+wb.1d9c4e9c0e41f535"
+    },
+    {
+      "description": "Create, edit, and collaborate on Tencent Docs. Manage spreadsheets, documents, and slides with natural language.",
+      "name": "tencent-docs",
+      "source": "./connectors/tencent-docs",
+      "version": "0.0.0+wb.a3dbd5d84a976131"
+    },
+    {
+      "description": "Create, edit, and collaborate on Tencent Docs. Manage spreadsheets, documents, and slides with natural language.",
+      "name": "tencent-docs-oa",
+      "source": "./connectors/tencent-docs-oa",
+      "version": "0.0.0+wb.298941b0a5778c20"
+    },
+    {
+      "description": "Create, query, and manage Tencent Meeting sessions via CLI.",
+      "name": "tmeet",
+      "source": "./connectors/tmeet",
+      "version": "0.0.0+wb.ceca5e3457ad6bea"
+    },
+    {
+      "description": "The official CLI suite for WeChat Work covers business functions such as messaging, email, documents, to-do lists, calendars, meetings, WeChat Drive, and contacts. It supports features such as proactive notifications from chatbots, creating and retrieving documents, document search, creating and managing calendars, scheduling and retrieving meeting information, creating and following up on to-do lists, uploading and retrieving WeChat Drive files, and reading and sending emails.",
+      "name": "wecom",
+      "source": "./connectors/wecom",
+      "version": "0.0.0+wb.8bc9c0561ce41ab3"
+    },
+    {
+      "description": "Manage Feishu/Lark products via CLI: IM, Mail, Calendar, Docs, Sheets, Base (Bitable), Slides, Whiteboard, Wiki, Drive, Minutes, VC, Tasks, Approvals, Attendance, Contacts, OKR, and more.",
+      "name": "feishu",
+      "source": "./connectors/feishu",
+      "version": "0.0.0+wb.8c5607d597e6fcc6"
+    },
+    {
+      "description": "Manage DingTalk products via CLI: AI Tables, Attendance, Calendar, Group Chats & Bots, Contacts, Open Platform Docs, DING messages, DingTalk Docs, Drive, AI Minutes, Mail, OA Approvals, Reports, and To-Dos.",
+      "name": "dingtalk",
+      "source": "./connectors/dingtalk",
+      "version": "0.0.0+wb.34cb414c088bcc49"
+    },
+    {
+      "description": "Create, manage, and analyze surveys on Tencent Survey.",
+      "name": "tencent-survey",
+      "source": "./connectors/tencent-survey",
+      "version": "0.0.0+wb.4c19f2ec0ac5a01f"
+    },
+    {
+      "description": "Manage stories, bugs, tasks, and iterations. Track progress, break down requirements, update statuses, and log timesheets across the full R&D lifecycle.",
+      "name": "tapd",
+      "source": "./connectors/tapd",
+      "version": "0.0.0+wb.5f18aa2f453b416d"
+    },
+    {
+      "description": "Institutional-grade financial data, queried in natural language. A free data platform powered by Tencent Financial Technology covering stocks, indices, funds, bonds, futures, forex, precious metals and macro across A-share, HK, US, UK, JP and KR markets.",
+      "name": "neodata",
+      "source": "./connectors/neodata",
+      "version": "0.0.0+wb.aa693f28189ee196"
+    },
+    {
+      "description": "Manage CNB platform with natural language: repositories, issues, pull requests, pipelines, artifact registry and more.",
+      "name": "cnb-api",
+      "source": "./connectors/cnb-api",
+      "version": "0.0.0+wb.184ada928b5e8558"
+    },
+    {
+      "description": "Access, download, or remove files from Weiyun, while also supporting file uploads and the creation of sharing links to help you manage your Weiyun storage.",
+      "name": "tencent-weiyun",
+      "source": "./connectors/tencent-weiyun",
+      "version": "0.0.0+wb.398f001986bb95bc"
+    },
+    {
+      "description": "Use FBSir identity, scenes, progress and rewards, with OAuth account and purpose-limited profile tools when available.",
+      "name": "fbs-connector",
+      "source": "./connectors/fbs-connector",
+      "version": "2026.9.25-r7+wb.17841864c3604190"
+    },
+    {
+      "description": "Kdocs Skill. Turn conversations into actions — save knowledge instantly, organize fragmented notes, convert chain messages to tables, export docs as Markdown, beautify spreadsheets, and generate collection forms. All in one prompt.",
+      "name": "kdocs",
+      "source": "./connectors/kdocs",
+      "version": "0.0.0+wb.bf702e7c3e829fc3"
+    },
+    {
+      "description": "PKULaw — Retrieve Chinese laws and judicial cases by semantic or keyword search, then verify every citation against the authoritative source. Statute and case-number recognition, article-level fact-checking and one-click deep links back to pkulaw.com.",
+      "name": "pkulaw",
+      "source": "./connectors/pkulaw",
+      "version": "0.0.0+wb.54ebc130393e0c3e"
+    },
+    {
+      "description": "Query and verify corporate registration information. Supports shareholder structure, actual controllers, beneficial owners, executive teams, external investments, financial data, annual reports, and listing information — complete corporate identity verification and background checks through natural language.",
+      "name": "qcc-company",
+      "source": "./connectors/qcc-company",
+      "version": "0.0.0+wb.902fc72b308cbd9b"
+    },
+    {
+      "description": "Query comprehensive enterprise data via Tianyancha MCP. Supports company registration info, shareholder structure, risk monitoring, intellectual property, executive teams, financial data, and more — complete business intelligence through natural language.",
+      "name": "tyc-mcp",
+      "source": "./connectors/tyc-mcp",
+      "version": "0.0.0+wb.8181007254cb5885"
+    },
+    {
+      "description": "Connect to Baidu Netdisk to browse and search files, manage folders and files, create share links, check storage usage, and save content or files from URLs.",
+      "name": "baidu-netdisk",
+      "source": "./connectors/baidu-netdisk",
+      "version": "0.0.0+wb.5a4fc9472c9f32fe"
+    },
+    {
+      "description": "Tushare provides financial data for research, covering A-shares, indices, ETFs/funds, financials, valuations, capital flows, announcements and news, sector concepts, and macroeconomic data.",
+      "name": "tushare",
+      "source": "./connectors/tushare",
+      "version": "1.0.0+wb.d5f491d7614e6dcd"
+    },
+    {
+      "description": "Access Dun & Bradstreet global business intelligence such as company profile, financial data, risk insights, corporate linkages and UBO through natural language.",
+      "name": "dnb-global-data",
+      "source": "./connectors/dnb-global-data",
+      "version": "0.0.0+wb.4ecc4fdfbb288917"
+    },
+    {
+      "description": "Announcements, news and policy data, including stock news, sector news, hot topics, news search, bulk commodity flashes, forex flashes, stock flashes, announcement keyword search, and policy vector search.",
+      "name": "xhcj-mcp-announcements-news-policy",
+      "source": "./connectors/xhcj-mcp-announcements-news-policy",
+      "version": "1.0.0+wb.c3cd2fc08b359142"
+    },
+    {
+      "description": "Clone, push, and manage repositories and pull requests on GitHub with natural language.",
+      "name": "github",
+      "source": "./connectors/github",
+      "version": "0.0.0+wb.15f749b7cfc4cc00"
+    },
+    {
+      "description": "Create, search, and manage your Notion workspace. Read pages, query databases, update content, and organize knowledge bases with natural language.",
+      "name": "notion",
+      "source": "./connectors/notion",
+      "version": "0.0.0+wb.7169e1d95547ee9e"
+    },
+    {
+      "description": "Tencent Qidian Customer Service connector. Use natural language to manage work orders (query / create / update / status change), monitor agent online status and real-time reception, retrieve customer profiles, pull chat records and messages from human / LLM / text-robot sessions, and view real-time service monitoring, session monitoring, satisfaction and response reports.",
+      "name": "tencent-qidian-cs",
+      "source": "./connectors/tencent-qidian-cs",
+      "version": "0.0.0+wb.0d2fd786b81db261"
+    },
+    {
+      "description": "Deploy the project to EdgeOne Makers and return the live access URL. Supports full-stack development, cloud functions, AI Agent, and other development scenarios.",
+      "name": "edgeone-pages",
+      "source": "./connectors/edgeone-pages",
+      "version": "0.0.0+wb.e6d4ab7480668a04"
+    },
+    {
+      "description": "Develop, deploy, debug, and troubleshoot CloudBase applications across Web apps, WeChat Mini Programs, uni-app, native apps, cloud functions, CloudRun, NoSQL/MySQL databases, storage, hosting, authentication, AI model calls, AI agents, and ops diagnostics.",
+      "name": "cloudbase",
+      "source": "./connectors/cloudbase",
+      "version": "0.0.0+wb.5441901157a37d7f"
+    },
+    {
+      "description": "查看产品的质量概览 包括崩溃率 anr率 foom（oom）率 启动耗时",
+      "name": "bugly-token",
+      "source": "./connectors/bugly-token",
+      "version": "0.0.0+wb.1c1b09ce36cab0dc"
+    },
+    {
+      "description": "Query customers, advance opportunities, review leads, claim from the public pool, and log follow-ups in natural language—closing the sales workflow loop in a single sentence.",
+      "name": "neo-crm",
+      "source": "./connectors/neo-crm",
+      "version": "0.0.0+wb.b45ff2918e7b7727"
+    },
+    {
+      "description": "Manage your Xiaoe shop with natural language: query courses and students, create or update courses, review orders, and find or upload images, audio, e-books, and documents.",
+      "name": "xiaoe-cloud-cli",
+      "source": "./connectors/xiaoe-cloud-cli",
+      "version": "0.0.0+wb.38ffd19487843260"
+    },
+    {
+      "description": "Huayu Yuandian Legal Data provides agents with MCP tool capabilities for laws and regulations, case documents, and enterprise information.",
+      "name": "yuandian-mcp",
+      "source": "./connectors/yuandian-mcp",
+      "version": "0.0.0+wb.40bbb743bf032ed6"
+    },
+    {
+      "description": "Weisheng SCRM integration for WeCom customer management and private domain operations.",
+      "name": "weisheng-scrm",
+      "source": "./connectors/weisheng-scrm",
+      "version": "0.0.0+wb.e7d7746ee80c1cf3"
+    },
+    {
+      "description": "AI reimbursement assistant for ZTE FSSC: reimburse, query invoices and expense bills via natural language.",
+      "name": "zfs-fssc-ai",
+      "source": "./connectors/zfs-fssc-ai",
+      "version": "0.0.0+wb.49ce0aaf18a8f302"
+    },
+    {
+      "description": "腾讯营销投放 Skill，为大模型赋予广告投放管理能力：支持广告账户授权、广告/智投项目的创建与更新、创意管理、广告数据查询与分析、推广内容资产管理，以及操作日志查询等完整的广告投放全链路操作。",
+      "name": "tencentads",
+      "source": "./connectors/tencentads",
+      "version": "0.0.0+wb.23e82457f71387f4"
+    },
+    {
+      "description": "Connect to Gildata MCP to query structured financial data, research reports, corporate announcements, news, conditional stock selection, macroeconomic & industry data, as well as enterprise business data.",
+      "name": "gildata",
+      "source": "./connectors/gildata",
+      "version": "0.0.0+wb.458e9e8c014d157a"
+    },
+    {
+      "description": "Access Tencent Map location services via MCP, including place search, route planning (driving/transit/walking/cycling), geocoding, reverse geocoding, along-route search, and weather query.",
+      "name": "tencent-map",
+      "source": "./connectors/tencent-map",
+      "version": "0.0.0+wb.a1e411269c88e784"
+    },
+    {
+      "description": "Connect to Qixinhuiyan's comprehensive enterprise data capabilities through Qixinhuiyan MCP, enabling users to use natural language for company search, business profiling, risk identification, business updates, intellectual property, and other business intelligence analysis.",
+      "name": "qixinhuiyan-mcp",
+      "source": "./connectors/qixinhuiyan-mcp",
+      "version": "0.0.0+wb.081a12904bd1283b"
+    },
+    {
+      "description": "Search Patsnap's global patent and literature databases with natural-language, semantic, keyword, and filtered queries, and fetch patent or literature details.",
+      "name": "patsnap-search",
+      "source": "./connectors/patsnap-search",
+      "version": "0.0.0+wb.27988e1587833849"
+    },
+    {
+      "description": "Connect to the MasterGo canvas to allow AI to design, modify, synchronize, and retrieve D2C code.",
+      "name": "mastergo-vibe-mcp",
+      "source": "./connectors/mastergo-vibe-mcp",
+      "version": "0.0.0+wb.821bfe83957d647f"
+    },
+    {
+      "description": "Tongcheng Chengxin supports natural-language travel search for flights, trains, hotels, attractions, vacation products and itinerary planning.",
+      "name": "tc-chengxin",
+      "source": "./connectors/tc-chengxin",
+      "version": "0.0.0+wb.12eb84b02e513b05"
+    },
+    {
+      "description": "Manage Zsxq knowledge communities with natural language: browse groups, post topics, comment, answer questions, search content, manage notes, and view user profiles.",
+      "name": "zsxq",
+      "source": "./connectors/zsxq",
+      "version": "0.0.0+wb.45b7505cf44d153f"
+    },
+    {
+      "description": "Tencent Health NGES MCP service for pharma marketing: data insights on visits and meetings, HCP profile lookup, pre-call planning, post-call recording, and compliance review.",
+      "name": "tencent-health-nges",
+      "source": "./connectors/tencent-health-nges",
+      "version": "1.0.0+wb.5d204ed6cabebd49"
+    },
+    {
+      "description": "Manage remote devices via CLI: monitor online status in real time, initiate remote control instantly, transfer files quickly, and capture remote screenshots. Zero deployment, no updates, enabling smart batch operations with ease.",
+      "name": "awesun",
+      "source": "./connectors/awesun",
+      "version": "0.0.0+wb.6b37b855baf38af9"
+    },
+    {
+      "description": "无缝调用Canva可画的设计能力。一句话生成海报、演示文稿、小红书封面等设计，通过文字描述调整尺寸、填充品牌模板及检索已有内容",
+      "name": "canva",
+      "source": "./connectors/canva",
+      "version": "0.0.0+wb.67eb339701919148"
+    },
+    {
+      "description": "QingFlow no-code platform connector for building apps, managing records, and automating workflows.",
+      "name": "qingflow",
+      "source": "./connectors/qingflow",
+      "version": "0.0.0+wb.7fd39bcb75302dc2"
+    },
+    {
+      "description": "Built on Wolters Kluwer China's authoritative and real-time legal database, MCP service facilitates diverse search capabilities such as semantic and keyword retrieval.",
+      "name": "wk-workbuddy",
+      "source": "./connectors/wk-workbuddy",
+      "version": "0.0.0+wb.b725c16a787bf8db"
+    },
+    {
+      "description": "Support natural language to obtain accurate and currently effective regulatory provisions, seamlessly integrating high-quality and massive regulatory knowledge bases into various AI applications and workflows.",
+      "name": "fyopen-lawsearch",
+      "source": "./connectors/fyopen-lawsearch",
+      "version": "0.0.0+wb.d168d8c59e041f2e"
+    },
+    {
+      "description": "连接公开行情、研报检索、行业图谱与同舟投研材料，为股市研究提供可复核证据。",
+      "name": "tongzhou-fin-research",
+      "source": "./connectors/tongzhou-fin-research",
+      "version": "0.21.2+wb.d6ae51a68172d001"
+    },
+    {
+      "description": "An AI capability suite for global advertising and growth teams.",
+      "name": "tec-do",
+      "source": "./connectors/tec-do",
+      "version": "0.0.0+wb.98e4151f71be11bc"
+    },
+    {
+      "description": "Access fund and market data for investment research, portfolio analysis, wealth planning, and financial content creation.",
+      "name": "yingmi-mcp",
+      "source": "./connectors/yingmi-mcp",
+      "version": "0.0.0+wb.3eb0eb38b88a35bf"
+    },
+    {
+      "description": "Create and edit forms, query and bulk-update entries, check plan quota on Jinshuju (jinshuju.net).",
+      "name": "jinshuju",
+      "source": "./connectors/jinshuju",
+      "version": "0.0.0+wb.5e941076c32a6e7f"
+    },
+    {
+      "description": "连接企业系统、数据和流程，让AI完成工作，交付结果",
+      "name": "lovrabet-cli",
+      "source": "./connectors/lovrabet-cli",
+      "version": "2.1.23+wb.eab848f99a9725c9"
+    },
+    {
+      "description": "招聘和人事一体的 AI 同事，把查询与执行收进一个对话。人才推荐、招聘动态、考勤绩效、审批待办，一句话问清；候选人寻访、面试分析与面试官评估，一句话发起。",
+      "name": "moka",
+      "source": "./connectors/moka",
+      "version": "0.1.18+wb.e6bee0f90ec722e1"
+    },
+    {
+      "description": "全周期管理平台机构端的数据查询MCP连接器，覆盖医疗数据、管理任务、对话沟通等业务域的查询能力，所有数据仅在对话内分析、不落盘不导出。",
+      "name": "archive-hospital-mcp",
+      "source": "./connectors/archive-hospital-mcp",
+      "version": "2.0.0+wb.334e233cac03d92e"
+    },
+    {
+      "description": "Connects with Lemon Cloud Finance, Inventory, Accounting, Cloud Accounting, and Invoicing systems, supporting various business scenarios such as account reconciliation, invoice generation, business inquiry, and operational analysis.",
+      "name": "lemonclaw",
+      "source": "./connectors/lemonclaw",
+      "version": "0.0.0+wb.2ce21184d6652263"
+    },
+    {
+      "description": "Query Elastic MapReduce (EMR) clusters, nodes, services, jobs, monitoring, YARN scheduling, auto-scaling, users, and configurations via CLI.",
+      "name": "emr-query",
+      "source": "./connectors/emr-query",
+      "version": "0.0.0+wb.cb3d3013e0bf9033"
+    },
+    {
+      "description": "Unlock the full breadth of Wind financial data and tools, covering equities, funds, bonds, commodities, indices, and economic data across more than 60 countries and regions worldwide, including Mainland China, Hong Kong, and the United States, as well as Wind financial models and toolsets. Turn WorkBuddy into a financial analysis expert—a professional agent with multidimensional capabilities in data drill-down, investment research and analysis, risk-informed decision-making, and more.",
+      "name": "wind-finance",
+      "source": "./connectors/wind-finance",
+      "version": "1.2.0+wb.9487123af5e9fc4f"
+    },
+    {
+      "description": "Upload files (PDFs, images, Word, Excel, PowerPoint, scanned documents, and more) to parse them into Markdown or structured JSON. Preserve document hierarchies and complex table structures for high-accuracy, high-performance OCR and document processing tasks. Parse up to 1,000 pages free each day. It also supports document image forensics to accurately determine whether an image is authentic or manipulated.",
+      "name": "textin-xparse",
+      "source": "./connectors/textin-xparse",
+      "version": "0.0.0+wb.a779a3e6c311b368"
+    },
+    {
+      "description": "Search and verify Chinese statutes and judicial cases through natural language. Covers full in-force laws at both statute and article level with validity tagging, a massive body of judgment documents plus 25,000+ authoritative cases, and citation verification that eliminates fabricated statutes and case numbers in AI-generated legal content.",
+      "name": "qcc-legal",
+      "source": "./connectors/qcc-legal",
+      "version": "1.0.0+wb.5b3170f1479a6146"
+    },
+    {
+      "description": "通过自然语言查询的金融投研 MCP 工具套件，依托东方财富数据源，提供A股、港股、美股、基金、债券、指数板块、宏观数据查询，具备多条件资产筛选、券商研报检索、全市场公告解析、金融资讯检索能力。",
+      "name": "mx-ds-mcp",
+      "source": "./connectors/mx-ds-mcp",
+      "version": "0.0.0+wb.938a4af86cbf5736"
+    },
+    {
+      "description": "WPS/zhishi knowledge base CLI: list spaces, file trees, ask (SSE), share links, and skills_hub file CRUD.",
+      "name": "wps-knowledgebase",
+      "source": "./connectors/wps-knowledgebase",
+      "version": "0.0.0+wb.728013b59fd92e31"
+    },
+    {
+      "description": "Query multi-dimensional enterprise information via Zenicredit, including business registration, IP, public opinion, financials, land, corporate relationships, related parties, and verification services.",
+      "name": "cisp-mcp",
+      "source": "./connectors/cisp-mcp",
+      "version": "0.0.0+wb.a23e1e6a5c10e8cf"
+    },
+    {
+      "description": "100+ top AI models (Seedance 2.5, H3 MiniMax, Happyhorse, GPT-image, Nano-Banana, Deepseek, Kimi). One config.",
+      "name": "ai-hive",
+      "source": "./connectors/ai-hive",
+      "version": "0.0.0+wb.11a5a77a46ac0129"
+    },
+    {
+      "description": "Finenter MCP covers public roadshow content from securities firms, listed companies, and asset management institutions; integrates institutional-grade insights from domestic and international research reports and brokerage commentary; and provides real-time market data, financial data, quantitative factors, and more. Data Agent cleansing and structuring reduce token usage and improve response accuracy.",
+      "name": "finenter",
+      "source": "./connectors/finenter",
+      "version": "0.0.0+wb.cff32b33c9adc566"
+    },
+    {
+      "description": "Manage 77ircloud AI Supply Chain using natural language: supports full-lifecycle order operations, as well as query and analysis for customers, products, warehouse inventory, employee organization, financial accounts, data export, business statistics, and warning details.",
+      "name": "77ircloud",
+      "source": "./connectors/77ircloud",
+      "version": "1.0.2+wb.a4d22aa62f4fb8de"
+    },
+    {
+      "description": "Real-time TikTok Shop data, AI content workflows, and social media operations for cross-border commerce.",
+      "name": "chuhaijiang",
+      "source": "./connectors/chuhaijiang",
+      "version": "0.0.0+wb.a80745ccef12dbf3"
+    },
+    {
+      "description": "查询中国企业工商、股权投资、经营司法风险、知识产权、招投标及新闻舆情数据。",
+      "name": "kuaicha-search",
+      "source": "./connectors/kuaicha-search",
+      "version": "0.0.0+wb.dda6a94071ac0fd9"
+    },
+    {
+      "description": "对公营销助手是基于企业全维数据构建的对公营销智能助手，提供从生成访前一页纸、访前客情报告、产品找客、关键人画像、营销话术及按企荐品的完整展业闭环能力。",
+      "name": "youshu-bd-mate",
+      "source": "./connectors/youshu-bd-mate",
+      "version": "2.0.2+wb.0e69e123b5ace8d0"
+    },
+    {
+      "description": "Provides enterprise financial, tax, banking, and travel management services through Yonyou Bank-Enterprise Cloud, Tax-Enterprise Cloud, and Business Travel Cloud, enabling comprehensive fund, tax, and travel operations management via natural language.",
+      "name": "shanglv-mcp-gateway",
+      "source": "./connectors/shanglv-mcp-gateway",
+      "version": "0.0.0+wb.8b84a81950eec7c9"
+    },
+    {
+      "description": "AI-powered enterprise risk analysis: industry identification and related-party relationship analysis.",
+      "name": "xingtu-claw-risk",
+      "source": "./connectors/xingtu-claw-risk",
+      "version": "0.0.0+wb.9f3dccbf57ee5f20"
+    },
+    {
+      "description": "Search trademarks across China and 110+ overseas offices by name / applicant / class / status, plus image-based similarity search.",
+      "name": "mzl-trademark",
+      "source": "./connectors/mzl-trademark",
+      "version": "1.0.0+wb.96201bd1f01a4a5a"
+    },
+    {
+      "description": "Picset AI Commerce Design provides four independent capabilities, including product style replication from a style reference: ecommerce image suites (main, detail, listing, and A+ content images), single image text-to-image/image-to-image generation and editing, and Agent Canvas (canvas hosting and image return), plus a unified connector pricing panel. Covers Taobao, Tmall, JD, Pinduoduo, Douyin, 1688, Xiaohongshu, TikTok, Amazon, Shopify, Temu, OZON, Shopee, Alibaba.com with credit quoting, generation tracking, and indexed partial revisions.",
+      "name": "picset-commerce-images",
+      "source": "./connectors/picset-commerce-images",
+      "version": "0.0.0+wb.5d5dee23b620e37e"
+    },
+    {
+      "description": "用于 Picset AI 视频创作和独立人物三视图生成，包括商品带货视频生成、爆款视频复刻、有人物参考图或无人物参考图的正面/侧面/背面三视图生成。支持 UGC 种草、产品口播、带货短剧、产品演示、开箱种草、痛点解决、TVC 品牌广告等类型，并支持有声或静音视频、参考音频、固定模特和多条视频生成。该 Skill 会路由到生成视频、复刻视频或人物三视图子 Skill，根据用户提供的商品图、唯一主目标视频、人物素材和创作要求，完成用户确认、素材准备、异步生成、状态恢复与结果交付。",
+      "name": "picset-video-generation",
+      "source": "./connectors/picset-video-generation",
+      "version": "0.0.0+wb.9df6a34e236b64ae"
+    },
+    {
+      "description": "Query offline spatiotemporal data via natural language — area heat maps, scene recognition, customer-flow analysis, POI search and more — to power business insights and site-selection scenarios.",
+      "name": "opendata",
+      "source": "./connectors/opendata",
+      "version": "0.0.0+wb.88854ec67635dbc9"
+    },
+    {
+      "description": "Drive Bazhuayu cloud scraping with natural language: discover templates, run tasks, check progress, export structured data, and manage existing tasks.",
+      "name": "bazhuayu",
+      "source": "./connectors/bazhuayu",
+      "version": "0.0.0+wb.f72c4577c10e57b0"
+    },
+    {
+      "description": "Based on Baidu Miaoda (秒哒), users can create, preview, modify, and publish websites, WeChat Mini Programs, and mobile apps through natural-language conversations—enabling intelligent, automated, and scalable application development.",
+      "name": "miaoda",
+      "source": "./connectors/miaoda",
+      "version": "0.0.0+wb.fe4484829dac69b2"
+    },
+    {
+      "description": "Manage EzyJoin smart meetings via natural language: book rooms, create or cancel meetings, view schedules, and retrieve AI minutes.",
+      "name": "ezjoin-meeting",
+      "source": "./connectors/ezjoin-meeting",
+      "version": "0.0.0+wb.3fe24544a2bce821"
+    },
+    {
+      "description": "Gangtise MCP汇聚机构级观点，研报，日程等另类数据，提供投研AI Agent预生成数据及全球行情/财务/估值/宏观行业等结构化数据。",
+      "name": "gangtise-mcp",
+      "source": "./connectors/gangtise-mcp",
+      "version": "1.0.8+wb.a1fa3aab7f531450"
+    },
+    {
+      "description": "Upload Excel or CSV files to quickly generate native visual data analysis reports, dashboards, and charts.",
+      "name": "jiushuyun",
+      "source": "./connectors/jiushuyun",
+      "version": "0.0.0+wb.2c038a7d346fde07"
+    },
+    {
+      "description": "Query, organize, and analyze financial data across equities, futures, options, funds, macroeconomics, and quantitative factors.",
+      "name": "pandadata",
+      "source": "./connectors/pandadata",
+      "version": "0.0.0+wb.9731df99b484b642"
+    },
+    {
+      "description": "Turn every idea into a striking image or video. Kling AI (Kling / 可灵AI) is an AI image generation and AI video generation connector for creators, designers, video producers, ecommerce sellers, advertising, marketing, and brand teams. In WorkBuddy, use natural language for text-to-image, image-to-image, text-to-video, image-to-video, reference-image creation, and single- or multi-shot video. Create posters, illustrations, portraits, product images, ecommerce hero images, Listing images, product detail graphics, ad creatives, product showcase videos, marketing clips, ecommerce short videos, social media videos, and cinematic content for Taobao, Tmall, JD, Pinduoduo, Douyin, Kuaishou, Xiaohongshu, TikTok, Amazon, Shopify, and more. Browse the subject library (Elements), view subject details, and create, update, delete, or reuse subjects. Browse and preview the motion library, then apply a saved motion or reference video to a subject image for motion-controlled video generation. Upload reference images, check remaining credits, submit generation tasks, track progress, query task status, and retrieve final images or videos. If you are searching for competitor tools, similar AI generators, or alternatives to Hailuo AI, Seedance (Seeddance), Vidu, Jimeng, Runway, Pika, Sora, or Veo, use Kling AI to build a high-quality Kling MCP creative workflow.",
+      "name": "kling-ai-plugin",
+      "source": "./connectors/kling-ai-plugin",
+      "version": "0.0.0+wb.fa66b523f74d40a5"
+    },
+    {
+      "description": "Provides enterprises with collaborative office, meeting, and business collaboration capabilities, enabling users to create and query meetings, initiate and follow up on collaborations, and analyze business data using natural language.",
+      "name": "seeyon-office-marketing-suite",
+      "source": "./connectors/seeyon-office-marketing-suite",
+      "version": "1.0.0+wb.8ec5270c7bf18a86"
+    },
+    {
+      "description": "Execute Weimob WOS business commands with natural language via woscli: orders, goods, customers, marketing, dashboards, and more.",
+      "name": "woscli",
+      "source": "./connectors/woscli",
+      "version": "0.0.0+wb.05986084b1c64bb0"
+    },
+    {
+      "description": "Tencent Charity organization platform connector: connect and use the features of the Tencent Charity organization platform in natural language.",
+      "name": "gongyi-open-mcp",
+      "source": "./connectors/gongyi-open-mcp",
+      "version": "1.0.0+wb.1d244b320426ae6a"
+    },
+    {
+      "description": "Easily handle the entire sales workflow—from querying customer data and advancing opportunities to logging follow-ups, managing approvals, and generating charts—using natural language.",
+      "name": "sharecrm",
+      "source": "./connectors/sharecrm",
+      "version": "0.0.0+wb.03f473abbc2d05c2"
+    },
+    {
+      "description": "Query and manage stores, inventory, listings, sales, profit, advertising, and operations data in LingXing ERP using natural language.",
+      "name": "lingxing-mcp",
+      "source": "./connectors/lingxing-mcp",
+      "version": "0.0.0+wb.75ef1300773af70d"
+    },
+    {
+      "description": "Connect SalesTouch to configure organization profiles, units, role permissions, employee invitations, reporting scopes, and sales processes, then govern B2B and B2C sales execution and non-sales work with evidence-backed management reviews.",
+      "name": "salestouch",
+      "source": "./connectors/salestouch",
+      "version": "0.0.0+wb.d58be45ff7004d17"
+    },
+    {
+      "description": "依托北森HR SaaS平台，把审批、招聘进展、员工档案、绩效履历、考勤假期、组织架构和企业制度等近百个人力场景装进Workbuddy，一句话查询人力数据、办理HR业务。",
+      "name": "beisen-cli",
+      "source": "./connectors/beisen-cli",
+      "version": "1.0.0+wb.7f7835ea8bac4caa"
+    },
+    {
+      "description": "通过氚云连接器，将日常业务快速构建为可配置、可协同、可追踪的数字化应用。支持快速创建应用表单、管理业务数据、以流程驱动审批与任务流转，适用于客户、项目、采购、库存、售后等多类业务管理场景。",
+      "name": "h3yun-connector",
+      "source": "./connectors/h3yun-connector",
+      "version": "1.0.1+wb.e79a34ee6a4207a5"
+    },
+    {
+      "description": "DKnow Trusted Workbench focuses on trusted knowledge services for laws, policies, and standards, while supporting industry research and public-service scenarios. It breaks down complex questions into verifiable research tasks, cross-checks evidence from multiple sources, traces claims to authoritative original documents, and produces clear, source-backed answers, search results, and research materials.",
+      "name": "dknowc-mcp",
+      "source": "./connectors/dknowc-mcp",
+      "version": "0.0.0+wb.8d7ad0f89ca7acf6"
+    },
+    {
+      "description": "Create and manage AI-generated images, videos, audio, scripts, art settings and storyboard content with Mango LingChuang.",
+      "name": "mglc",
+      "source": "./connectors/mglc",
+      "version": "0.1.13+wb.77a5ef0e63437704"
+    },
+    {
+      "description": "Morningstar global and China fund data, analyst research and portfolio analytics for fund screening, risk, holdings, fees and reviews.",
+      "name": "morningstar",
+      "source": "./connectors/morningstar",
+      "version": "0.0.0+wb.3fac0b0d4c3ce865"
+    },
+    {
+      "description": "实时追踪企业全生命周期动态，覆盖投资设立、股权变动、创新平台、中标、知识产权、排名、迁移、资质认定、工商变更、上市、标准制定、招聘、拿地等维度，并提供企业实体匹配。",
+      "name": "sq-company-dynamic",
+      "source": "./connectors/sq-company-dynamic",
+      "version": "1.0.1+wb.31228998e27e4ea2"
+    },
+    {
+      "description": "查询中国法律法规、司法案例、裁判文书及互联网法律实务资讯，支持法条检索、类案检索、深度法律研究、法律文书起草与诉讼可视化。",
+      "name": "fazhi-law",
+      "source": "./connectors/fazhi-law",
+      "version": "1.0.0+wb.5c4d22bfda10d2bf"
+    },
+    {
+      "description": "同花顺iFinD金融数据查询，查询股票、基金、宏观经济、行业经济、新闻公告、债券、港美股、指数板块及期货期权数据；通过内置智能问数算法，仅少量工具即可覆盖海量投研级金融数据指标，其中A股、中国公募基金、债券交易所、国内指数共4类市场支持日内高频/实时行情的level1数据，同时支持智能选股、选基、宏观行业经济指标搜索、金融公告资讯搜索等服务",
+      "name": "ifind-mcp",
+      "source": "./connectors/ifind-mcp",
+      "version": "0.0.0+wb.e47de47553d50450"
+    },
+    {
+      "description": "腾讯云数据仓库 TCHouse-C 智能运维与分析助手，支持集群健康诊断、慢 SQL 分析、规格选型推荐、表结构设计与自然语言查询。",
+      "name": "tencent-tchouse-c",
+      "source": "./connectors/tencent-tchouse-c",
+      "version": "1.0.0+wb.ab018e9b7d2b8976"
+    },
+    {
+      "description": "It provides management and operation capabilities for core security features such as zero-trust access, endpoint control, security protection, and data leakage prevention.",
+      "name": "ioa",
+      "source": "./connectors/ioa",
+      "version": "1.0.31+wb.4edcb77eca8a5c50"
+    },
+    {
+      "description": "Penguin Teacher Assistant handles foundational tasks, leveraging curriculum standards and teaching methodologies to rapidly generate lesson outlines, lesson plans, courseware, and multimodal teaching resources, thereby freeing up more time for teachers to innovate in the classroom.",
+      "name": "teacher-assistant",
+      "source": "./connectors/teacher-assistant",
+      "version": "1.0.0+wb.07439f9fc30ab911"
+    },
+    {
+      "description": "Enterprise insight and growth analysis: query public business data such as operational risks, public opinion, bidding, patents, qualifications, and policies, and call authorized MOSS Growth Advisor agents to generate analysis and reports.",
+      "name": "fanruan-growth-advisor",
+      "source": "./connectors/fanruan-growth-advisor",
+      "version": "1.1.0+wb.e099c36201179d95"
+    },
+    {
+      "description": "Flova AI creation for video, images, scripts, short films, drama, advertising, product TVCs, and visual design.",
+      "name": "flova",
+      "source": "./connectors/flova",
+      "version": "1.1.1+wb.03922098c3f6e4b8"
+    },
+    {
+      "description": "DCS CLI，连接后通过个人访问令牌（PAT）登录认证，即可操作 DCS 云平台：支持项目管理、组学数据检索与传输、离线分析任务投递与查询、工作流管理等。使用前需在云平台个人中心创建 PAT，并粘贴至连接器完成绑定。",
+      "name": "dcs-cloud",
+      "source": "./connectors/dcs-cloud",
+      "version": "0.0.0+wb.c147d7e1f535ad21"
+    },
+    {
+      "description": "An end-to-end AI content operations platform covering content brains, brand profiles, trend research, short-video and social-copy writing, image generation, podcasts, voiceover, video packaging, and multi-account publishing.",
+      "name": "duoguan-fengchao",
+      "source": "./connectors/duoguan-fengchao",
+      "version": "2.0.0+wb.104ecdd841bf7b95"
+    },
+    {
+      "description": "Natural-language access to Chanjet T+Cloud: query and manage sales orders, purchase orders, inventory vouchers, production orders, financial documents, reports, and master data.",
+      "name": "tplus-api",
+      "source": "./connectors/tplus-api",
+      "version": "1.0.0+wb.57e71c16f6a40f2b"
+    },
+    {
+      "description": "A full-journey AI assistant for student internships and employment: get smart civil-service position recommendations, search internship and campus jobs, run career assessments (MBTI, Holland, career anchors), diagnose and optimize resumes, and practice interview questions with evaluation reports.",
+      "name": "gaodun-job",
+      "source": "./connectors/gaodun-job",
+      "version": "0.0.0+wb.43abf3fa8043c373"
+    },
+    {
+      "description": "OpenBoost cross-border data connector: one-stop MCP toolkit for TikTok creator/product/video analytics, Amazon product/market research, and global patent search.",
+      "name": "proboost",
+      "source": "./connectors/proboost",
+      "version": "0.0.0+wb.42f0a607baf0d344"
+    },
+    {
+      "description": "Provides real phone data access and device control. AI auto-collects calls and recordings, sedimenting full communication data to drive sales analysis; meanwhile AI can directly operate the phone to make calls, send SMS, and control apps — turning the physical phone into a hardware execution unit for the Agent.",
+      "name": "yunke-cli",
+      "source": "./connectors/yunke-cli",
+      "version": "0.0.0+wb.69780e2af9e164d9"
+    },
+    {
+      "description": "AI assistant powered by a trusted cultural knowledge base. Provides traceable retrieval and creative assistance across world heritage sites, museum collections, oracle bone characters, and academic literature. Covers heritage nomination texts, archaeological data, ceramic genome databases, pattern libraries, and more.",
+      "name": "tanyuan-assistant",
+      "source": "./connectors/tanyuan-assistant",
+      "version": "0.0.0+wb.1f6a1b6227163417"
+    },
+    {
+      "description": "粉笔AI公考助手：专业查询、智能选岗、简历完善、考情科普与言语词汇练习。",
+      "name": "fenbi-baokao-decision",
+      "source": "./connectors/fenbi-baokao-decision",
+      "version": "0.0.0+wb.bde69e76bb559fb2"
+    },
+    {
+      "description": "Search laws, regulations, and similar legal cases, look up enterprise information, and review contract risks with Richee.",
+      "name": "fadada-richee",
+      "source": "./connectors/fadada-richee",
+      "version": "1.0.1+wb.3083a0358c384f52"
+    },
+    {
+      "description": "Same-city delivery, on-site help, and coupon claiming via the UU open-platform CLI.",
+      "name": "uupt",
+      "source": "./connectors/uupt",
+      "version": "1.1.0+wb.13e71740d4cdfadd"
+    },
+    {
+      "description": "Call Meitu Design Studio Agent Teams with a single sentence — from market strategy insights to e-commerce image sets, marketing videos, social media graphics, posters, and brand visuals — completing the full commercial design workflow with zero barriers.",
+      "name": "designkit-buddy-cli",
+      "source": "./connectors/designkit-buddy-cli",
+      "version": "1.0.2+wb.2a40945e3fb140d9"
+    },
+    {
+      "description": "Read Baizhi WiseNote meeting lists, summaries, and transcripts with user authorization.",
+      "name": "wisenote",
+      "source": "./connectors/wisenote",
+      "version": "0.0.0+wb.e4c87f1f6b747518"
+    },
+    {
+      "description": "Connect intelligently to iHR to query organization, employee lifecycle, contracts, training, attendance, approvals, payroll, and performance, and assist with HR interviews.",
+      "name": "ihr-cli",
+      "source": "./connectors/ihr-cli",
+      "version": "0.1.2+wb.7aa5653134ce25fc"
+    },
+    {
+      "description": "Query, organize, and enter data in JianDaoYun. Use natural language to find form records, summarize business progress, generate analyses, and create new records after confirmation.",
+      "name": "jiandaoyun",
+      "source": "./connectors/jiandaoyun",
+      "version": "1.0.0+wb.22388f0682ea071c"
+    },
+    {
+      "description": "Smart document conversion and processing platform. Supports image/PDF conversion to Word, Excel and Markdown, images to PDF, Word/Excel/PPT to PDF, Office format upgrades (DOC to DOCX), image enhancement (shadow removal, sharpening, HD upscaling, photo restoration), OCR, image translation, formula extraction, watermark processing, multi-image merging, and cloud document saving, search, download, move and folder management.",
+      "name": "camscanner-mcp",
+      "source": "./connectors/camscanner-mcp",
+      "version": "0.0.0+wb.6be0745c656a7580"
+    },
+    {
+      "description": "Create AI phone callout tasks and query available Fuma AI phone agents and members.",
+      "name": "fuma-ai-callout",
+      "source": "./connectors/fuma-ai-callout",
+      "version": "0.0.0+wb.67c5232bf8d8560f"
+    },
+    {
+      "description": "An AI-powered network operations assistant that provides network status queries, network issue analysis, device/AP information queries, and wireless terminal troubleshooting to help users quickly identify network anomalies and obtain resolution recommendations.",
+      "name": "h3c-cloudnet",
+      "source": "./connectors/h3c-cloudnet",
+      "version": "0.0.0+wb.780e21a7003b65e9"
+    },
+    {
+      "description": "One sentence handles your invoicing, tax filing, and policy clarification—saving not just money, but also peace of mind.",
+      "name": "yzf-general-mcp-server",
+      "source": "./connectors/yzf-general-mcp-server",
+      "version": "1.1.1+wb.9ade23f5d50da6e5"
+    },
+    {
+      "description": "Operate Tencent Cloud Data Lake Compute (DLC) via MCP: execute SQL/Spark SQL, browse catalogs/databases/tables/partitions, manage Spark jobs, inspect tasks and logs, diagnose performance, and check engine/user permissions.",
+      "name": "tencent-dlc",
+      "source": "./connectors/tencent-dlc",
+      "version": "0.0.0+wb.a18083fb9dbda214"
+    },
+    {
+      "description": "The TikTok for Business MCP Server is a standardized bridge built on the Model Context Protocol (MCP) that enables developers and advertisers to directly connect AI agents with the TikTok advertising platform. It encapsulates core advertising capabilities—such as campaign management, performance reporting, audience configuration, and creative operations—into a stable, production-ready toolkit. By using simple, structured instructions, AI agents can manage TikTok ads, optimize performance, and query data through this tool.",
+      "name": "tiktok",
+      "source": "./connectors/tiktok",
+      "version": "0.0.0+wb.304d21214774df90"
+    },
+    {
+      "description": "Lingyi Ops exclusive knowledge base for viral WeChat Channels and private-traffic content.",
+      "name": "lingyi-mcp",
+      "source": "./connectors/lingyi-mcp",
+      "version": "1.4.0+wb.db5957246455c555"
+    },
+    {
+      "description": "Provide data query capabilities for A-share K-line and real-time quotes, Hong Kong and US stock K-line and real-time quotes, futures K-line and real-time quotes, fund quotes, company profiles, main products, shareholders, dividends and bonus shares, company financials, stock thematic concepts, A-share sectors, research reports, company announcements, news and public opinion, capital flows, institutional surveys, the Dragon-Tiger List, margin trading, and stock technical indicators to assist in investment decision-making.",
+      "name": "dzh-mcp",
+      "source": "./connectors/dzh-mcp",
+      "version": "0.0.0+wb.e19ebedee07a0092"
+    },
+    {
+      "description": "View and switch Fenbeitong account and company context; search and manage business travel; check policies, invoices and reimbursements; analyze consumption insights, compliance and cost-reduction opportunities; and get customer support.",
+      "name": "fenbeitong",
+      "source": "./connectors/fenbeitong",
+      "version": "0.0.0+wb.3f44825ed4d330e8"
+    },
+    {
+      "description": "Query your COROS workouts, sleep, heart rate, HRV, stress and fitness data in natural language.",
+      "name": "coros",
+      "source": "./connectors/coros",
+      "version": "1.0.0+wb.d95b606f535bda67"
+    },
+    {
+      "description": "Financial market data via natural language: A-share/HK equities, funds, bonds, indices, futures/options, factors, real-time quotes, macro indicators, announcements, analyst forecasts and policies.",
+      "name": "datayes-data",
+      "source": "./connectors/datayes-data",
+      "version": "0.0.0+wb.3bbff564c50d29f2"
+    },
+    {
+      "description": "AlphaPai Lite is an AI assistant developed by Rabyte Technology for finance professionals and investors. It provides in-depth industry and company research and analysis, along with professional insights into major asset classes and market strategies. It also supports essential financial workflows, including writing reports, creating presentations, producing charts, and drafting meeting minutes.",
+      "name": "alphapai-lite-mcp",
+      "source": "./connectors/alphapai-lite-mcp",
+      "version": "1.0.0+wb.8024f2b8ec020b5d"
+    },
+    {
+      "description": "Connect to the E Fund MCP service to get a complete fund profile in a single query—performance, risk-return metrics, holdings structure, and other key indicators at a glance. You can also access E Fund's investment research insights, product interpretations, and market perspectives anytime to support efficient investment decision-making.",
+      "name": "efunds",
+      "source": "./connectors/efunds",
+      "version": "1.0.0+wb.819e836be22e88ba"
+    },
+    {
+      "description": "Browse and search your Plaud recordings, read transcripts and AI summaries, and turn meetings into digests, follow-up emails, and action items.",
+      "name": "plaud",
+      "source": "./connectors/plaud",
+      "version": "1.0.0+wb.9262912af53ceeb2"
+    },
+    {
+      "description": "Query business opportunity and customer data: inquiries, leads, follow-ups, customer assets and sales performance.",
+      "name": "tct-business-expert",
+      "source": "./connectors/tct-business-expert",
+      "version": "0.10.3+wb.ab97a7b0b233e71b"
+    },
+    {
+      "description": "专业金融股票行情、电商社媒数据、内容生成、搜索抓取、学术论文与专利信息、地图信息等。只需一次注册便可调用不同领域专业数据，无需逐一配置各类服务，价格相对官方有大幅折扣。目前已覆盖以下领域：金融： 查询 A股、美股股票行情、股价、K线、成交量、公司财务、财报及基本面数据，覆盖基金、ETF、外汇、汇率、比特币和加密货币，辅助股票与公司研究、投资分析和市场跟踪。接入 Tushare、CoinGecko 等金融数据服务。内容生成： 支持 AI 生图、文生图、图生图、商品图（如小红书图）、海报、抠图、文字渲染、图生视频、文生视频、数字人口播、配音、背景音乐与音效生成。聚合字节跳动即梦相关模型 Dreamina 即梦、Seedream、Seedance，以及可灵 Kling、通义千问 Qwen、通义万相 Wan、腾讯混元 Hunyuan、MiniMax／海螺 AI、智谱 GLM、Google Gemini／Nano Banana／Veo、OpenAI GPT Image／Whisper、Stable Diffusion、FLUX、HeyGen、ElevenLabs 等模型与工具，满足图片制作、视频创作和音频处理需求。信息检索： 按关键词开展联网搜索、新闻查询、行业调研和深度研究，获取 SEO 数据、语义搜索结果、网页内容提取与爬取代理服务。接入 Perplexity、Tavily、Exa、Firecrawl、Linkup 等；支持论文、学术文献、引用关系与专利信息检索，X（Twitter／推特）、YouTube、TikTok 社媒内容与数据查询，以及 GitHub 仓库、代码和开发文档查询。电商： 获取抖音、TikTok Shop、淘宝、天猫、1688、亚马逊、Shopee、Temu 等平台相关数据，通过蝉妈妈、Kalodata、Sorftime 等服务查询商品、店铺、达人、直播及带货表现，辅助国内与跨境选品、供应商查找、市场调研和竞品分析。其他： 提供高德地图 Amap、和风天气 QWeather 等地图与天气服务，支持地点查询、地理编码、全球及本地天气查询，辅助出行规划；支持 OCR 图片文字识别、文档解析、PDF／Word／Excel／PPT 内容提取，并提供影视、招聘等查询。",
+      "name": "agent-earth",
+      "source": "./connectors/agent-earth",
+      "version": "1.1.1+wb.ebd252d03a18d8e0"
+    },
+    {
+      "description": "An all-in-one China market data query service covering enterprise due diligence & risk assessment (registration, equity structure, financials, financing, litigation, penalties), stock/bond/fund data, regional economy & macro rates, news/sentiment & regulations, with multi-dimensional enterprise and bond screening.",
+      "name": "caihui-mcp",
+      "source": "./connectors/caihui-mcp",
+      "version": "1.0.0+wb.347ef177e3eb788e"
+    },
+    {
+      "description": "Query Sumscope fixed-income market data: bond info, valuations, quotes, issuance, financials and China macro indicators.",
+      "name": "sumscope-data",
+      "source": "./connectors/sumscope-data",
+      "version": "1.0.1+wb.e4efffbb81f3e69c"
+    },
+    {
+      "description": "中英文学术检索: 搜索期刊论文、专著、政策文件；查阅最新基金招投标信息；核实参考文献真伪、追溯引用；推荐投稿期刊与审稿人。",
+      "name": "baixiao-mcp",
+      "source": "./connectors/baixiao-mcp",
+      "version": "1.0.0+wb.a93b0475e5ca738b"
+    },
+    {
+      "description": "Combined with your purchase, sales, and inventory business data, you can achieve batch reconciliation, sales invoicing, and batch product creation, covering various business scenarios such as sales, procurement, inventory, cashier, reconciliation, and operational analysis.",
+      "name": "ailit",
+      "source": "./connectors/ailit",
+      "version": "0.8.3+wb.441793ce0828c44b"
+    },
+    {
+      "description": "Tencent Ads execution platform in WorkBuddy: query data, write briefs, open launch links, and light optimizations.",
+      "name": "jinshouzhi",
+      "source": "./connectors/jinshouzhi",
+      "version": "0.0.0+wb.61424a6ff2481281"
+    },
+    {
+      "description": "Through the GF Securities MCP, intelligent investment research services can be delivered across three core scenarios—multi-dimensional stock selection, in-depth research, and smart market monitoring—enabling a complete intelligent investment loop that covers hot market tracking, real-time news interpretation, target screening, and post-investment review.",
+      "name": "gfsecurities",
+      "source": "./connectors/gfsecurities",
+      "version": "0.0.0+wb.b75d2335f33ca8ad"
+    },
+    {
+      "description": "Call Chuangkit's powerful AI online design capabilities in one click to create professional marketing designs from a single prompt.",
+      "name": "chuangkit",
+      "source": "./connectors/chuangkit",
+      "version": "0.1.0+wb.e0f3309c3d4a29e5"
+    },
+    {
+      "description": "Connect to Infimind Ecommerce Content with OAuth to create smart retouching, product main image, detail page, visual migration, KOC seeding, image-text commerce, video generation, and viral video copy tasks.",
+      "name": "infimind-ecommerce-content",
+      "source": "./connectors/infimind-ecommerce-content",
+      "version": "1.0.0+wb.a7f4d691e8bd94d6"
+    },
+    {
+      "description": "An AI sales assistant for individuals, helping you understand customers, evaluate opportunities, identify risks, and convert insights into actionable steps.",
+      "name": "neo-eakey",
+      "source": "./connectors/neo-eakey",
+      "version": "0.0.0+wb.b6befbbef374bd9a"
+    },
+    {
+      "description": "BioBuddy intelligent biomedical research platform. Discover and attach authorized molecular design, translational research, target discovery, and data intelligence MCP tools through one Gateway connection.",
+      "name": "biobuddy",
+      "source": "./connectors/biobuddy",
+      "version": "1.0.3+wb.a8651175ae773e0c"
+    },
+    {
+      "description": "Generate a personalized adult weight-management plan and render it as a standalone interactive HTML page with phased goals, nutrition and exercise guidance, meal photo analysis, and a local weight tracker.",
+      "name": "wm-weight-manage",
+      "source": "./connectors/wm-weight-manage",
+      "version": "1.0.1+wb.d55ec06015448ca5"
+    },
+    {
+      "description": "AI-powered research proposal and PPT generation, quick literature search, smart medical Q&A, and detailed review report with asynchronous task execution.",
+      "name": "paper-retrieval",
+      "source": "./connectors/paper-retrieval",
+      "version": "2.0.1+wb.7bdbf34b2d19337e"
+    },
+    {
+      "description": "Use DataBuddy capabilities on WorkBuddy.",
+      "name": "databuddy",
+      "source": "./connectors/databuddy",
+      "version": "0.1.2+wb.67d95d745eabcdcb"
+    },
+    {
+      "description": "Use natural language to query and export Today Watermark Camera team photos, and assist with photo archiving, attendance checks, ledger organization, and photo statistics.",
+      "name": "today-watermark-camera",
+      "source": "./connectors/today-watermark-camera",
+      "version": "0.0.0+wb.cf80c474caac1b3a"
+    },
+    {
+      "description": "Scientific visualization: volcano, PCA, enrichment, survival, and more.",
+      "name": "xmed-figure-mcp",
+      "source": "./connectors/xmed-figure-mcp",
+      "version": "1.0.10+wb.d70f46ee51af0dc7"
+    },
+    {
+      "description": "Create AI interview projects on Aimoderator with natural language. Provide a title, background and outline (optional opening), and get a shareable interview link.",
+      "name": "aimoderator",
+      "source": "./connectors/aimoderator",
+      "version": "0.0.0+wb.c7cdb4579cf4f912"
+    },
+    {
+      "description": "天财商龙成立于1998年，是中国餐饮数字化整体解决方案服务商。连接器提供公司介绍，以及会员数据概览、用户画像、消费、储值、复购、卡券、积分与营销活动分析（仅 CRM8）；并负责 CLI 安装与账号认证。业务查询使用当前账号权限范围内的固定只读接口。",
+      "name": "shanlong-claw",
+      "source": "./connectors/shanlong-claw",
+      "version": "1.0.168+wb.50ed66b6f68c34ba"
+    },
+    {
+      "description": "Create Tencent Map travel guides with natural language: create, query, update and delete guides. Converts free-form itinerary text / Markdown into Tencent Map's structured guide data format (parsing places, enriching POIs, building routes) and saves them to your map guides.",
+      "name": "tencent-map-guide",
+      "source": "./connectors/tencent-map-guide",
+      "version": "1.0.0+wb.03b4a739fa2bd4c2"
+    },
+    {
+      "description": "CRIC Data provides AI-powered access to nearly 20 years of CRIC-licensed China real estate data. Wenshu supports natural-language queries, rankings, trends, and city comparisons across nine domains, while Wenzhi answers professional questions about real estate, property management, and senior care.",
+      "name": "deeplink",
+      "source": "./connectors/deeplink",
+      "version": "4.0.2+wb.eed93bb3dcbdc7df"
+    },
+    {
+      "description": "DramaBuddy is a general-purpose comic-drama creation tool for everyone — just provide a novel or an idea, and it automatically generates the script, characters, and storyboard videos, so you can easily create your own comic-drama.",
+      "name": "dramabuddy",
+      "source": "./connectors/dramabuddy",
+      "version": "0.1.2+wb.b3eb259c55d16bf5"
+    },
+    {
+      "description": "Connect to HanyiDeliver in WorkBuddy to query enterprise contract coverage, font entitlements, and font previews.",
+      "name": "hanyi-fonts",
+      "source": "./connectors/hanyi-fonts",
+      "version": "0.1.0+wb.2a1a2d827c8cbe20"
+    },
+    {
+      "description": "Ming Yuan Cloud Customer (Myunker) AI service platform for real estate marketing: unified customer, sales-site, channel and video-marketing data with AI content creation, live-stream lead generation, and deal-closing insights.",
+      "name": "myunker-mcp",
+      "source": "./connectors/myunker-mcp",
+      "version": "0.0.0+wb.6aeba34284c5d232"
+    },
+    {
+      "description": "Connect to the Yiou Data MCP service and gain in-depth access to industrial data via natural language. Core datasets including corporate investment and financing, industrial chain upstream-downstream relationships, and industry research reports are readily available. You can also retrieve Yiou's published industrial perspectives, enterprise analyses and market insights at any time to support your efficient business decision-making.",
+      "name": "iyiou-connector",
+      "source": "./connectors/iyiou-connector",
+      "version": "1.0.0+wb.6790b2b5b21c1693"
+    },
+    {
+      "description": "Access INTCO business systems, RPA, enterprise data, and licensed data services.",
+      "name": "intco-ai-platform",
+      "source": "./connectors/intco-ai-platform",
+      "version": "0.0.0+wb.859515cbcd459cc4"
+    },
+    {
+      "description": "让 Agent 直接读懂并处理任何业务文档。对话上传发票、订单、合同等文件即可完成内容识别、关键信息抽取并输出结构化结果。支持中国 30+ 票据（含验真）、海外多语言发票及 11 种常用证件，覆盖 PDF、图片、Word、Excel、OFD 等格式。",
+      "name": "laiye-adp",
+      "source": "./connectors/laiye-adp",
+      "version": "0.0.0+wb.1bb7fe2db1c49977"
+    },
+    {
+      "description": "Use the tuniu CLI to access Tuniu Open Platform travel services, including flights, hotels, attraction tickets, trains, cruises, holiday products, and package booking.",
+      "name": "tuniu-travel",
+      "source": "./connectors/tuniu-travel",
+      "version": "0.0.0+wb.5f502bb0025687e2"
+    },
+    {
+      "description": "Manage XRXS HR SaaS via MCP.",
+      "name": "xrxs",
+      "source": "./connectors/xrxs",
+      "version": "1.0.0+wb.52e8b2ec7a28d781"
+    },
+    {
+      "description": "Tencent Qidian Marketing Cloud: audience segmentation, product and offer selection, marketing content, WeCom operations, and business analytics. End-to-end campaign planning is currently unavailable in this connector.",
+      "name": "magic-agent-token",
+      "source": "./connectors/magic-agent-token",
+      "version": "1.1.1+wb.1101f3731f2fca37"
+    },
+    {
+      "description": "用自然语言驱动中望3D，让设计回归思考本身。",
+      "name": "zw3d-mcp",
+      "source": "./connectors/zw3d-mcp",
+      "version": "0.0.0+wb.49856a84cc6edf71"
+    },
+    {
+      "description": "用自然语言直接操作中望CAD（ZWCAD）二维平台与中望机械CAD，自动绘制、查询、标注和管理 DWG 图纸。",
+      "name": "zwcad-mcp",
+      "source": "./connectors/zwcad-mcp",
+      "version": "0.0.0+wb.0187b9d2b9dc8fcc"
+    },
+    {
+      "description": "Wall Street CN MCP: query A-share surge stocks with attribution (surge reasons, related sectors, sector movement notes, auto-grouped by sector) and Wall Street CN global financial news lists and article details, covering the last two months to help you quickly grasp the day's market themes and track financial hotspots",
+      "name": "wscnmcp-token",
+      "source": "./connectors/wscnmcp-token",
+      "version": "1.0.0+wb.d74638cb06c63da2"
+    },
+    {
+      "description": "Bank corporate credit due diligence platform with intake recognition, industry analysis, company profiling, business analysis, financial analysis and report generation capabilities.",
+      "name": "aidd-saas",
+      "source": "./connectors/aidd-saas",
+      "version": "1.0.1+wb.706f5b23b3d5fde3"
+    },
+    {
+      "description": "Query partnered pharma brands' pharmacy-box home-page data via the Pharmacy Box BI MCP: run multi-dimension data analysis and generate insight reports to inform brand marketing and operating strategy.",
+      "name": "tencent-yaoxiang-bi",
+      "source": "./connectors/tencent-yaoxiang-bi",
+      "version": "1.0.1+wb.d86441c92d43b172"
+    },
+    {
+      "description": "Query enterprise entity data: fuzzy company search with precise name matching, registration details, change records, shareholders and capital contributions, key personnel, contact information, beneficial owners, branches, listing information, and external investments.",
+      "name": "primematrix-company",
+      "source": "./connectors/primematrix-company",
+      "version": "1.0.0+wb.49585ba12f329bbd"
+    },
+    {
+      "description": "Operate Tencent Cloud Elasticsearch Service (ES) via MCP: list instances, inspect cluster health/nodes/shards/thread pools, browse index settings and mappings, query monitoring metrics and cluster logs, diagnose performance and unassigned shards, and manage clusters (scale nodes/disk, restart, rollover, aliases, Kibana access, Logstash pipelines).",
+      "name": "es",
+      "source": "./connectors/es",
+      "version": "0.0.0+wb.646406763acf41e4"
+    },
+    {
+      "description": "Access Tencent Future Classroom (aiclass) teaching services via MCP.",
+      "name": "aiclass-teaching",
+      "source": "./connectors/aiclass-teaching",
+      "version": "0.1.0+wb.2bba849d4c4c92c2"
+    },
+    {
+      "description": "Use MeituHub in WorkBuddy to create and edit images and videos, produce marketing and e-commerce content, and run custom workflows.",
+      "name": "meitu-ai",
+      "source": "./connectors/meitu-ai",
+      "version": "0.1.3+wb.53826772b43721e8"
+    },
+    {
+      "description": "Create and modify website pages, manage site data such as products and articles via MCP, and deliver end-to-end from requirements to published pages with skills.",
+      "name": "yunzhi-mcp",
+      "source": "./connectors/yunzhi-mcp",
+      "version": "1.0.0+wb.43b1f124c125a8d7"
+    },
+    {
+      "description": "OiiOii is the world's first AI agent for animated and live-action video creation. Simply describe your idea, and OiiOii's cinematic professional agent team will instantly turn fragmented concepts into complete stories, advertisements, and finished videos. OiiOii also deeply integrates short-form comic drama workflows, enabling one-click completion of video stylization for global markets, script localization, multi-episode breakdown, and final production.",
+      "name": "oiioii",
+      "source": "./connectors/oiioii",
+      "version": "1.0.0+wb.396c443b7720ba99"
+    },
+    {
+      "description": "Query CloudMall orders, products, and members in natural language. After connecting your operations account, read-only queries run with your real-time permissions—no need to switch to the admin console.",
+      "name": "cloudmall-operations",
+      "source": "./connectors/cloudmall-operations",
+      "version": "0.0.0+wb.d5b4facdceb26618"
+    },
+    {
+      "description": "Turn a document, a web page, a slide deck, or text pasted straight into the chat into a narrated video — then read its script, adjust it, and get the MP4 back in the conversation.",
+      "name": "vibeknow-cli",
+      "source": "./connectors/vibeknow-cli",
+      "version": "0.9.1+wb.eeab6c884a43b736"
+    },
+    {
+      "description": "Query flight status, operational analysis, per-flight tickets and fares, airport and airline services, plus trips, statistics, and followed flights for the currently authenticated user.",
+      "name": "variflight-mcp",
+      "source": "./connectors/variflight-mcp",
+      "version": "1.2.2+wb.d01ba70b2b5927e8"
+    },
+    {
+      "description": "Create, read, and edit Xmind online mind maps directly from AI conversations.",
+      "name": "xmind",
+      "source": "./connectors/xmind",
+      "version": "1.0.0+wb.a0ae22ec617dd1a8"
+    },
+    {
+      "description": "Search Jufa for cases, laws, prosecution documents, contracts, tenders, and business risks.",
+      "name": "jufa-mcp-server",
+      "source": "./connectors/jufa-mcp-server",
+      "version": "1.0.0+wb.79dac8e9dcf618ac"
+    },
+    {
+      "description": "Dinghua eMES AI Assistant. Connects to eMES OPENAPI to provide production data queries, dispatching, equipment repair, outsourcing, and work reporting capabilities.",
+      "name": "emes-ai",
+      "source": "./connectors/emes-ai",
+      "version": "1.0.0+wb.bfc17f6ccf291f3d"
+    },
+    {
+      "description": "FastMoss is an official TikTok Shop data analytics tool for analyzing and interpreting ecommerce data across products, creators, shops, MCN agencies, short videos, livestreams, ads, categories, markets, and rankings. Use it to discover breakout products, research product opportunities, find creators, analyze competitors, diagnose shops, shape content strategy, and evaluate advertising performance.",
+      "name": "fastmoss",
+      "source": "./connectors/fastmoss",
+      "version": "1.0.0+wb.4065e9e86d1a96ab"
+    },
+    {
+      "description": "Syspetro Properties (PropMcp) chemical property database: search components by name, formula, or CAS; query identity details and molecular weight, pure-component scalar properties, and binary mixture data availability.",
+      "name": "syspetro-service-22065846",
+      "source": "./connectors/syspetro-service-22065846",
+      "version": "1.0.0+wb.63e8da79041b6971"
+    },
+    {
+      "description": "Discover, inspect, and call 10,000+ verified capabilities through one MCP connection.",
+      "name": "qveris",
+      "source": "./connectors/qveris",
+      "version": "1.0.0+wb.8ae3bb2a644707e8"
+    },
+    {
+      "description": "面向中国外贸企业的 AI 出海助手：搜买家、盘客户、查同行、看市场数据，给出买家清单与跟进建议。",
+      "name": "meo-xiaoyuan",
+      "source": "./connectors/meo-xiaoyuan",
+      "version": "1.0.2+wb.387451d2dc835912"
+    },
+    {
+      "description": "Query enterprise business registration data for corporate due diligence.",
+      "name": "qibook-mcp",
+      "source": "./connectors/qibook-mcp",
+      "version": "1.0.0+wb.edd72679caca51ed"
+    },
+    {
+      "description": "Send a platform settlement Excel file and auto-reconcile TikTok Shop / Tokopedia statements against Eccang settlement data — compare order counts and amounts, flag amount mismatches and one-sided orders, and generate a reconciliation report.",
+      "name": "eccang-reconcile",
+      "source": "./connectors/eccang-reconcile",
+      "version": "1.0.2+wb.f0710df1422dd526"
+    },
+    {
+      "description": "Connect to the V8 smart property cloud platform. Search owners/tenants, query archives, arrears, repair orders, and execute payment write-off for property customer-service and billing scenarios.",
+      "name": "property-saas",
+      "source": "./connectors/property-saas",
+      "version": "1.0.0+wb.850acb9d0b444a4a"
+    },
+    {
+      "description": "Connect to the Lemon AGI ability platform to query wholesale, warehouse, and retail business data with natural language.",
+      "name": "lemon-agi",
+      "source": "./connectors/lemon-agi",
+      "version": "1.0.0+wb.2e90e298b8368817"
+    },
+    {
+      "description": "Product recommendations, comparison shopping, and specification inquiries, purchase channel and store locator services, as well as after-sales support and knowledge-based Q&A for Haier, Casarte, and Leader.",
+      "name": "haier-assistant",
+      "source": "./connectors/haier-assistant",
+      "version": "0.1.0+wb.e0b5310042b72e3d"
+    },
+    {
+      "description": "Make a Qiyuan Q1 robot speak, make a heart gesture, or walk forward after an explicit safety confirmation.",
+      "name": "qiyuan-robot-executor",
+      "source": "./connectors/qiyuan-robot-executor",
+      "version": "0.3.0+wb.750f0436037dbd43"
+    },
+    {
+      "description": "Find collaborators and opportunities, apply to events, and manage registrations with your agent.",
+      "name": "opcmenu",
+      "source": "./connectors/opcmenu",
+      "version": "1.1.0+wb.cc3120a1679d0409"
+    },
+    {
+      "description": "Connect MedGroup to query DRG/DIP cities and rules, search ICD codes, perform grouping and settlement scenario calculations, and check CC/MCC status.",
+      "name": "medgroup-drgdip-toolkit",
+      "source": "./connectors/medgroup-drgdip-toolkit",
+      "version": "1.0.0+wb.080a71d955901d92"
+    },
+    {
+      "description": "Semantic search across Chinese laws, judicial interpretations, guiding cases and sentencing standards, plus international treaties and foreign laws covering 168 countries/regions; also drafts (697 templates), edits legal documents and reviews contracts for legal risks. Each call consumes credits.",
+      "name": "xiaolv-law-search",
+      "source": "./connectors/xiaolv-law-search",
+      "version": "1.0.0+wb.ef2af163f2e8da4d"
+    },
+    {
+      "description": "An AI video creation tool by Meitu, featuring one-click editing for social media, animated subtitles, and AI-generated covers to make talking-head videos more engaging. It also offers quality enhancement, watermark and subtitle removal, and audio noise reduction to simplify common video creation tasks.",
+      "name": "meitu-kaipai",
+      "source": "./connectors/meitu-kaipai",
+      "version": "1.0.0+wb.df33759bf67e9c61"
+    },
+    {
+      "description": "Academic literature search Connector for finding papers, research literature, and related studies. For explicit literature-search requests, prefer the searchAcademicLiterature MCP tool, which aggregates results from configured academic providers.",
+      "name": "sugon-scinsight-agent",
+      "source": "./connectors/sugon-scinsight-agent",
+      "version": "2.1.0+wb.3d0fab52a33e18f0"
+    },
+    {
+      "description": "Sharp insights into Amazon markets, traffic, and advertising — for market research, product research, traffic analysis, ad structure breakdown, competitor monitoring, reverse ASIN lookup, and other core seller workflows. Goes beyond raw data to deliver analysis and judgment. Officially provided by Sif (sif.com).",
+      "name": "sif-mcp",
+      "source": "./connectors/sif-mcp",
+      "version": "1.0.1+wb.c7bd0ccd49666916"
+    },
+    {
+      "description": "Create an AI music video from audio, reference images, and creative direction.",
+      "name": "bizmuse-ai-music-video",
+      "source": "./connectors/bizmuse-ai-music-video",
+      "version": "0.3.0+wb.a428c5bbd684c0ec"
+    },
+    {
+      "description": "Query WangXiaoBao sales data in natural language: customers, visits, recordings, focus/resistance tags, knowledge base, quantum KPIs and Q&A.",
+      "name": "wangxiaobao",
+      "source": "./connectors/wangxiaobao",
+      "version": "1.0.0+wb.0e8f90839c4a97ee"
+    },
+    {
+      "description": "Query Chinese financial-market and investment-research data, including A-shares, Hong Kong stocks, funds, indices, quotes, financials, announcements, research reports, macroeconomics, sectors, themes, and industry chains.",
+      "name": "investoday-finance-data",
+      "source": "./connectors/investoday-finance-data",
+      "version": "1.0.0+wb.95ab8055a32de71e"
+    },
+    {
+      "description": "Connect eRoad to bring external talent and compensation market data into your workflows. Explore competitor hiring changes, talent supply by role, market compensation, and workforce productivity metrics to benchmark recruiting strategy, role pricing, and workforce planning with data instead of experience alone.",
+      "name": "smartsalary",
+      "source": "./connectors/smartsalary",
+      "version": "1.0.0+wb.97d8f00e0f632c51"
+    },
+    {
+      "description": "Connect to QZD enterprise data service to query company profiles and basic corporate information through natural language.",
+      "name": "qzd-connector",
+      "source": "./connectors/qzd-connector",
+      "version": "1.0.0+wb.5a540d950d369f6a"
+    },
+    {
+      "description": "Connect to the QiSeMi ERP inventory management system through natural language to query products, inventory, customers, suppliers, and business documents such as sales, purchases, and stock movements at any time. Supports sales statistics, arrears reconciliation, document creation, and more, enabling instant business data Q&A.",
+      "name": "qisemierp",
+      "source": "./connectors/qisemierp",
+      "version": "1.0.0+wb.d0f1ee6af7f05001"
+    },
+    {
+      "description": "Anonymous read-only MCP service from 24haowan with 8 read-only tools: live search over the interactive-marketing H5 campaign template library, real client case library, help-center knowledge base, and industry benchmark data from real campaigns on the platform (win rates, prize tiers, campaign length, player behaviour). No sign-up, no API key, no side effects.",
+      "name": "24haowan",
+      "source": "./connectors/24haowan",
+      "version": "1.0.0+wb.49b4692fdc677b26"
+    },
+    {
+      "description": "24haowan Space (space.24haowan.com): an agent-native B2B pre-sales proposal platform with 21 tools. Publish a finished proposal (PDF / PPTX / HTML deck / Markdown) as a client-specific WeChat-readable link, read back which pages the client viewed and for how long, collect their feedback, log meeting notes against the proposal, and push new versions that update the same link. Requires WeChat-scan login (OAuth).",
+      "name": "24haowan-space",
+      "source": "./connectors/24haowan-space",
+      "version": "1.0.0+wb.313ff98794ab65bf"
+    },
+    {
+      "description": "Deli Legal Data MCP service providing authoritative legal data retrieval, covering 160M+ court judgments and 3M+ laws and regulations. Supports case retrieval, statute retrieval and legal Q&A via natural language, with semantic search by case facts, disputes, statute names or provisions, plus detail and validity lookups.",
+      "name": "deli-mcp",
+      "source": "./connectors/deli-mcp",
+      "version": "1.0.0+wb.77b541507f385a41"
+    },
+    {
+      "description": "Browse the latest cursor styles, cursor trails, cursor pets, and available pet actions from Miki Cursor.",
+      "name": "miki-cursor-catalog",
+      "source": "./connectors/miki-cursor-catalog",
+      "version": "1.0.0+wb.679e43d78b9ecd55"
+    },
+    {
+      "description": "Enterprise data intelligence via ShangYiTong MCP: query company registry, equity, listed info and judicial risk.",
+      "name": "shangyitong",
+      "source": "./connectors/shangyitong",
+      "version": "1.0.1+wb.1f1162dc70b91997"
+    },
+    {
+      "description": "Make Amazon's AI recommend your products. Includes listing compliance pre-check, AI readiness scoring, one-sentence listing generation, deep compliance scan, review analysis and POA appeal drafting.",
+      "name": "listinggood",
+      "source": "./connectors/listinggood",
+      "version": "0.0.0+wb.206d95ff30d4b015"
+    },
+    {
+      "description": "AI teaching for Tsinghua University School of Environment courses, tasks, feedback, and progress.",
+      "name": "edu-next",
+      "source": "./connectors/edu-next",
+      "version": "1.0.0+wb.0c062f3498226ded"
+    },
+    {
+      "description": "Securely query customers, orders, and other business data in ZXYGJ using natural language.",
+      "name": "zxygj-business-data",
+      "source": "./connectors/zxygj-business-data",
+      "version": "0.0.0+wb.ec2de66be4ef601f"
+    },
+    {
+      "description": "Connect WorkBuddy to Baijimu workspaces, agents, workflows, applications, and governed enterprise services.",
+      "name": "baijimu-enterprise-ai",
+      "source": "./connectors/baijimu-enterprise-ai",
+      "version": "1.0.0+wb.3697237118b1fd61"
+    },
+    {
+      "description": "Search licensed assets, generate images and videos, run editable workflows, and manage creative assets in WorkBuddy.",
+      "name": "58pic-qiantu-ai",
+      "source": "./connectors/58pic-qiantu-ai",
+      "version": "0.0.0+wb.ae1f003f624d8f5e"
+    },
+    {
+      "description": "Huita IMS MCP connector: products/inventory (multi-store, batch/expiry), sales & purchase orders, AR/AP, and business analytics. Provides 14 read + 6 analytics + 12 write tools (preview→commit two-phase writes). Data syncs in real time with the Huita desktop and POS clients.",
+      "name": "huita-ims",
+      "source": "./connectors/huita-ims",
+      "version": "1.0.1+wb.d1830c5a42ae5507"
+    },
+    {
+      "description": "Browse the JoyRead bilingual picture-book library: find books by level or theme, read page by page with native audio narration, enjoy guided reading, vocabulary games and bedtime mode, and export books as MP4 videos with narration and bilingual subtitles.",
+      "name": "joyread-english",
+      "source": "./connectors/joyread-english",
+      "version": "1.0.0+wb.b0e08f876cfed90d"
+    },
+    {
+      "description": "Connect your Jiucuo Dashi account to query your child's recent errors and generate printable review papers.",
+      "name": "jiucuodashi",
+      "source": "./connectors/jiucuodashi",
+      "version": "1.0.0+wb.5f97f901c43fe723"
+    },
+    {
+      "description": "Query enterprise data via Shuidi Credit MCP. Supports business registration, shareholders, actual controller penetration, legal risks, intellectual property, bidding, tax credit, and sci-tech innovation assessment for one-stop enterprise due diligence through natural language.",
+      "name": "shuidi-credit",
+      "source": "./connectors/shuidi-credit",
+      "version": "1.0.0+wb.c85c3db10618e3b4"
+    },
+    {
+      "description": "Look up a medical-device manufacturer across 14 official registries (NMPA, EUDAMED, FDA, MHRA, Health Canada, ANVISA, TFDA, MFDS, Roszdravnadzor and more): registration counts, risk-class split and device-level detail. 68,000+ manufacturers; every record re-verified against the manufacturer name. 100 free queries/day; unlimited with a free key.",
+      "name": "sungo-device-registry",
+      "source": "./connectors/sungo-device-registry",
+      "version": "1.0.0+wb.59e52ff547580ae6"
+    },
+    {
+      "description": "Baogao Yizhan aggregates tens of millions of research reports from hundreds of global research institutions, together with global company filings, U.S. SEC filings, global earnings calls, academic papers, public roadshows, charts and bilingual research materials. RAG-based structuring reduces token use and improves retrieval efficiency and research accuracy.",
+      "name": "reportgem-research",
+      "source": "./connectors/reportgem-research",
+      "version": "1.0.0+wb.4b588b08b04834c8"
+    },
+    {
+      "description": "Operate NoxInfluencer creator intelligence and marketing operations through natural language: search and shortlist YouTube, TikTok, and Instagram creators, analyze audience, content, and cooperation signals, retrieve contacts, track content performance, run campaigns, CRM, email outreach, brand monitoring, and exports, and check quota and pricing.",
+      "name": "noxinfluencer-cli",
+      "source": "./connectors/noxinfluencer-cli",
+      "version": "0.1.1+wb.1e21e4e025fed44d"
+    },
+    {
+      "description": "Batch-filter target companies by region, industry, scale, risk, qualifications and business performance. Supports multi-dimensional screening on business registration, judicial risk, honors, bidding, equity relations, etc. One-click removal of dishonest/executed/administrative-penalty entities, and穿透 mining of affiliated enterprise groups from known companies. Ideal for lead generation, supplier admission screening, risk investigation and regional industry analysis.",
+      "name": "shuidi-discovery",
+      "source": "./connectors/shuidi-discovery",
+      "version": "1.0.0+wb.7f4eb82e18b97121"
+    },
+    {
+      "description": "Probe a remote MCP endpoint, draft and validate a WorkBuddy connector, and download it as a spec-compliant zip.",
+      "name": "connector-workshop",
+      "source": "./connectors/connector-workshop",
+      "version": "1.0.0+wb.1318079258cd7b9c"
+    },
+    {
+      "description": "Discover suppliers, request and compare quotes, and negotiate non-binding purchasing terms.",
+      "name": "kiwi-sourcing",
+      "source": "./connectors/kiwi-sourcing",
+      "version": "1.0.0+wb.d844d9c798a97c0d"
+    },
+    {
+      "description": "Generate 1D barcodes, 2D codes and label previews, covering CODE128, QR, DataMatrix, PDF417 and more, plus .alb label template preview.",
+      "name": "masocloud-barcode-generator",
+      "source": "./connectors/masocloud-barcode-generator",
+      "version": "1.0.0+wb.0e5b6fde76b00ec7"
+    },
+    {
+      "description": "Screen and compare insurance products from Huize's internal recommendation catalog based on age, audience, occupation, budget, and coverage needs.",
+      "name": "huize-insurance-product-recommendation",
+      "source": "./connectors/huize-insurance-product-recommendation",
+      "version": "0.1.0+wb.53a30f1a3721a5fc"
+    },
+    {
+      "description": "Search France's official government registry of 3,640+ Chinese associations by name, city, or category, and check chairman-verified certification status before contacting one.",
+      "name": "xiehui-fr",
+      "source": "./connectors/xiehui-fr",
+      "version": "0.0.0+wb.f50b7c6601a67435"
+    },
+    {
+      "description": "Query social insurance and housing fund contribution bases, rates, deadlines, minimum wages, average wages and maternity leave across China; search policy sources and read policy analysis reports with supporting links.",
+      "name": "51shebao-hr-tools",
+      "source": "./connectors/51shebao-hr-tools",
+      "version": "1.0.1+wb.049c312fb77bcadb"
+    },
+    {
+      "description": "Connect to the Orient Futures MCP service for one-prompt access to reviewed futures knowledge, trading rules, risk education, contract data and account-opening guidance.",
+      "name": "orientfutures-mobile-knowledge-base",
+      "source": "./connectors/orientfutures-mobile-knowledge-base",
+      "version": "0.4.4+wb.4f58e4f24aedc890"
+    },
+    {
+      "description": "Contract Risk Review is an intelligent contract review tool built on over 40 years of practical experience from a leading law firm in contract review, risk control, and dispute resolution. It helps identify key legal and commercial risks in Chinese contracts, including employment, divorce, lease, entrustment, and sales contracts, and generates structured review reports, actionable revision suggestions, and annotated Word documents to improve review efficiency and signing security.",
+      "name": "mindbye-contract-review",
+      "source": "./connectors/mindbye-contract-review",
+      "version": "1.0.0+wb.0c5325b036880720"
+    },
+    {
+      "description": "Connect to TDengine to manage industrial data, build analyses, monitor events, create visualization panels, and drive industrial decisions with AI-powered data queries and root cause analysis.",
+      "name": "tdengine",
+      "source": "./connectors/tdengine",
+      "version": "1.0.1+wb.b762bd07f61ff387"
+    },
+    {
+      "description": "用 WorkRally MCP 做剧集前期、批量生图、画布整理与成片验收。",
+      "name": "workrally1",
+      "source": "./connectors/workrally1",
+      "version": "0.5.1+wb.d2b97b529c55a914"
+    },
+    {
+      "description": "A visual creative studio inside WorkBuddy, powered by the TapNow Creative OS multi-model generation pipeline: from creative ideation to visual design, with ready-to-use, editable results. Built for office, marketing and social media scenarios.",
+      "name": "tapnow",
+      "source": "./connectors/tapnow",
+      "version": "0.1.2+wb.18ae3f406dbceff4"
+    },
+    {
+      "description": "Access your WaveNote recordings, transcriptions, and summaries, and start transcription tasks.",
+      "name": "wavenote-audio",
+      "source": "./connectors/wavenote-audio",
+      "version": "1.0.0+wb.af3b853db3ad4b63"
+    },
+    {
+      "description": "Query hospital operations and staff KPI performance within your Angel Doctor account permissions.",
+      "name": "jumper-kpi",
+      "source": "./connectors/jumper-kpi",
+      "version": "1.0.0+wb.caea03bcf31fc361"
+    },
+    {
+      "description": "Connect to Shunong Assistant, authorize a company account, and check or disconnect your session.",
+      "name": "shunong-assistant",
+      "source": "./connectors/shunong-assistant",
+      "version": "0.1.1+wb.c58d318eb78d2a52"
+    },
+    {
+      "description": "AI customer-service connector for cross-border multi-store sellers (Shopee & more): ask in natural language for daily buyer-question digests, multi-store operations summaries, escalation handling stats, conversation insights, and order snapshot reports. Buyer PII is redacted on all output.",
+      "name": "replygen",
+      "source": "./connectors/replygen",
+      "version": "1.0.0+wb.c08f51d0e7840d21"
+    },
+    {
+      "description": "把需求做成公司同事能登录使用的企业应用：建应用、写代码、部署开发版、平台真机验收、发布正式版；自带企业微信登录、功能权限、数据库、文件上传和定时任务。",
+      "name": "guansd",
+      "source": "./connectors/guansd",
+      "version": "1.0.2+wb.642799190630810a"
+    },
+    {
+      "description": "Access Dun & Bradstreet's China business database through natural language. This service provides indexing of company basic information and structured profile data, supporting entity identification and matching (quickly locating target companies through multi-criteria fuzzy search), as well as the creation of foundational company profiles covering key dimensions such as registration information, ownership structure, and organizational structure.",
+      "name": "dnb-longyicha-workbuddy",
+      "source": "./connectors/dnb-longyicha-workbuddy",
+      "version": "1.1.0+wb.016c95f7c1f2f74f"
+    },
+    {
+      "description": "Turn sales training, kickoffs, and dealer conferences into AI-customized B2B sales simulations, with team practice, instructor facilitation, and evidence-backed debriefs.",
+      "name": "salesnail-instructor",
+      "source": "./connectors/salesnail-instructor",
+      "version": "0.6.7+wb.8c490566fe92ca8e"
+    },
+    {
+      "description": "Query Shopee site, category, product, shop, brand, trend, and search-keyword data for read-only market analysis.",
+      "name": "shopee-market-intelligence",
+      "source": "./connectors/shopee-market-intelligence",
+      "version": "1.0.0+wb.ac22144d046a863e"
+    },
+    {
+      "description": "Connect to HOSE business travel for authentication and real-time flight, hotel, and train searches.",
+      "name": "hose-ai-assistant",
+      "source": "./connectors/hose-ai-assistant",
+      "version": "1.0.0+wb.5620961c0d9d6506"
+    },
+    {
+      "description": "Connect to Gaoding creative, asset, model and editor capabilities through natural language.",
+      "name": "gaoding",
+      "source": "./connectors/gaoding",
+      "version": "0.1.0+wb.031088db03bd465f"
+    },
+    {
+      "description": "DingDanBao assistant for wholesale sales reps, covering ordering on behalf of customers, customer operations, stock, purchasing, collections, and performance briefs.",
+      "name": "dingdanbao",
+      "source": "./connectors/dingdanbao",
+      "version": "1.0.0+wb.e427fa16d907b08f"
+    },
+    {
+      "description": "通过自然语言批量管理 TikTok 达人建联、邀约、私信和店铺/商品/达人查询。",
+      "name": "dami-external-mcp",
+      "source": "./connectors/dami-external-mcp",
+      "version": "0.0.0+wb.8ea91fbace63aaa9"
+    },
+    {
+      "description": "Connect to Zhangsanfeng (finance, inventory & sales, MES). Ask in natural language for income statements, balance sheets, receivables aging, purchase/sales bills, stock, work orders and reporting progress; draft vouchers and purchase-in bills from plain text and post them after confirmation.",
+      "name": "zhangsanfeng",
+      "source": "./connectors/zhangsanfeng",
+      "version": "1.0.0+wb.f44ab7f18eda3332"
+    },
+    {
+      "description": "萌啦数据Ozon-选品数据分析提供 Ozon 类目、商品、关键词、品牌、店铺与大盘趋势等大数据查询能力，帮助跨境卖家完成选品与运营分析。",
+      "name": "menglar-ozon",
+      "source": "./connectors/menglar-ozon",
+      "version": "1.0.1+wb.0eb207f02cee7805"
+    },
+    {
+      "description": "This AI-powered cross-border e-commerce operations assistant encompasses multiple sub-capabilities, including competitor analysis, market research, content generation, marketing and advertising, store operations, and compliance monitoring, providing cross-border e-commerce services across multiple platforms and data sources.",
+      "name": "linkfox",
+      "source": "./connectors/linkfox",
+      "version": "0.0.0+wb.475a8d32b2a96f30"
+    },
+    {
+      "description": "Manage AI canvases and assets, generate media, and track tasks with natural language.",
+      "name": "novai-studio",
+      "source": "./connectors/novai-studio",
+      "version": "1.0.0+wb.36bad3967db553a2"
+    },
+    {
+      "description": "Query Hefei real-time public life info: weather & warnings, water/power/gas outage notices, traffic controls and government announcements.",
+      "name": "hefei-city-alerts",
+      "source": "./connectors/hefei-city-alerts",
+      "version": "0.1.0+wb.fe736670bb901f49"
+    },
+    {
+      "description": "Connect Liesun for scientific, precise hiring. Compare candidates, review interview-recording analysis, track pipeline and funnel — quickly assess in one sentence whether to move someone forward.",
+      "name": "liesun",
+      "source": "./connectors/liesun",
+      "version": "1.2.2+wb.fdcdaa5a54817637"
+    },
+    {
+      "description": "Connect GetNote to save ideas and webpages, find notes, read transcripts, and organize knowledge.",
+      "name": "getnote",
+      "source": "./connectors/getnote",
+      "version": "1.0.0+wb.b453ccd11a5f40bb"
+    },
+    {
+      "description": "Discover and run Data Apps, track execution and costs, and retrieve structured results.",
+      "name": "datahub",
+      "source": "./connectors/datahub",
+      "version": "1.0.0+wb.c5a6d3b1f193584d"
+    },
+    {
+      "description": "Connects to Tencent Marketing Solution to power intelligent operations — account management, creative inspiration, campaign optimization, and performance diagnostics — lifting efficiency across the entire marketing workflow.",
+      "name": "tencent-marketing-solution",
+      "source": "./connectors/tencent-marketing-solution",
+      "version": "1.0.0+wb.5ec367780a5beb17"
+    },
+    {
+      "description": "Connect EZR omnichannel CRM to bring member, sales, campaign, WeCom operation, coupon analytics, mall operation, audience segmentation, and MA canvas monitoring capabilities into agents for natural-language business queries and operational insights.",
+      "name": "ezr-crm",
+      "source": "./connectors/ezr-crm",
+      "version": "1.0.1+wb.8724d1fad9876a89"
+    },
+    {
+      "description": "Use natural language to query and enter business data such as leads, customers, opportunities, contracts, products, payment collection and invoicing, follow-up records, and more in LXCRM.",
+      "name": "lxcloud",
+      "source": "./connectors/lxcloud",
+      "version": "0.0.0+wb.2052b841d3def3f3"
+    },
+    {
+      "description": "AI product compliance check and ecommerce image series generation.",
+      "name": "easymofang",
+      "source": "./connectors/easymofang",
+      "version": "1.0.0+wb.e17e4152399c7d8b"
+    },
+    {
+      "description": "Gain real-time visibility into restaurant delivery reputation with a single query: access authorized stores, reviews, key metrics, issue trends, and review reports.",
+      "name": "candao-age",
+      "source": "./connectors/candao-age",
+      "version": "1.0.1+wb.e789f5420b3c0b7a"
+    },
+    {
+      "description": "KUKA official intelligent service: answer questions about KUKA industrial robots, cobots, automation solutions, product selection and specifications.",
+      "name": "kuka-service",
+      "source": "./connectors/kuka-service",
+      "version": "1.0.0+wb.38c2802b8c5c03b0"
+    },
+    {
+      "description": "Search overseas assets for sale, cross-border M&A events, and a company's deal activity over the past year.",
+      "name": "mergerinfo",
+      "source": "./connectors/mergerinfo",
+      "version": "0.2.0+wb.4b03eb4037553dbd"
+    },
+    {
+      "description": "Analyze your company's lead trends, sources, and delivery performance.",
+      "name": "xinke-laile-analytics-enterprise",
+      "source": "./connectors/xinke-laile-analytics-enterprise",
+      "version": "1.0.0+wb.3db593f31cb95a5e"
+    },
+    {
+      "description": "Query equipment, fault, maintenance, spare-parts inventory, and stock movement data with natural language. Supports statistics, trend analysis, category comparisons, and detail drill-down.",
+      "name": "gt-generate-sql-data",
+      "source": "./connectors/gt-generate-sql-data",
+      "version": "1.0.0+wb.1ae1de6ac19f4924"
+    },
+    {
+      "description": "Search verya knowledge, explore entity relations, and uncover insights with its knowledge graph.",
+      "name": "verya-knowledgebase",
+      "source": "./connectors/verya-knowledgebase",
+      "version": "1.0.0+wb.3ac169c23db92e32"
+    },
+    {
+      "description": "Global customs trade data at your fingertips: find overseas buyers and suppliers by product, analyze market trends and partner-country shares, and look up company profiles and credit standing. Built on original shipment records and official statistics with clear time coverage.",
+      "name": "yichayun-trade-data",
+      "source": "./connectors/yichayun-trade-data",
+      "version": "0.0.0+wb.e60fbba46db08b29"
+    },
+    {
+      "description": "Use everyday language to check NVIDIA driver updates, launch games, choose supported graphics presets, record gameplay, take screenshots, save Instant Replay clips, or show FPS. You can also manage supported battery-saving and quiet-mode features. Requires Windows with a compatible NVIDIA App installed.",
+      "name": "nvapp-windows-local",
+      "source": "./connectors/nvapp-windows-local",
+      "version": "0.0.0+wb.c12cdf77562c37aa"
+    },
+    {
+      "description": "面向使用 AI 客服、销售智能体开展私域运营和客户转化的企业与商家。可在 WorkBuddy 中，通过自然语言查找、筛选和理解微信、企业微信、小红书、抖音等渠道中的真实客户，获取客户画像、历史沟通、兴趣偏好、购买意向和成交阶段，并执行单客户触达、批量营销、客户激活和精准跟进。客户回复后，可由 3Chat AI 客服/销售智能体继续自动接待、回答咨询、识别高意向客户、处理销售异议并推进成交，形成客户洞察、精准触达、AI 接待、持续跟进、成交转化的私域客户运营闭环。当前能力基于企业已接入 3Chat 的客户和渠道数据，不用于获取企业尚未拥有或未授权访问的外部用户数据。",
+      "name": "3chat-customer-growth",
+      "source": "./connectors/3chat-customer-growth",
+      "version": "1.0.0+wb.93de906c15f1824a"
+    },
+    {
+      "description": "Bridge WorkBuddy skills to the FT Workbench H5: skills write buyer reports, global search, intel cards and follow-ups back into the workbench stored in your own EdgeOne KV.",
+      "name": "yuntu-ft-workbench",
+      "source": "./connectors/yuntu-ft-workbench",
+      "version": "0.0.0+wb.b36fb8c6e8df8c11"
+    },
+    {
+      "description": "Query shared power bank rental orders by phone number and nearby stores by coordinates, all through natural language.",
+      "name": "charge-order-query",
+      "source": "./connectors/charge-order-query",
+      "version": "1.0.0+wb.38063e0360f283df"
+    },
+    {
+      "description": "Query and manage warehouses, inventory, products, orders, and stock movements in Gongxie ERP.",
+      "name": "gongxie-erp",
+      "source": "./connectors/gongxie-erp",
+      "version": "1.0.0+wb.712d99ea0c0fbdf3"
+    },
+    {
+      "description": "Connect your Meituan for Business account: authorize once and keep the local login state for future enterprise services.",
+      "name": "meituan-for-business",
+      "source": "./connectors/meituan-for-business",
+      "version": "1.0.2+wb.2b6355c3da5810fc"
+    },
+    {
+      "description": "Use natural language to analyze data and manage assets in your selected ThinkingAI AE environment.",
+      "name": "thinkingai-ae-cli",
+      "source": "./connectors/thinkingai-ae-cli",
+      "version": "1.0.0+wb.1011e764b98475fd"
+    },
+    {
+      "description": "连接天润客服平台，通过自然语言管理系统全产品能力：在各功能模块内导入数据、查询数据明细&数据报表、完整相关流程配置、搭建语音/文本/分析智能体。",
+      "name": "zenava",
+      "source": "./connectors/zenava",
+      "version": "0.1.2+wb.6ff8e70ce0d5f932"
+    },
+    {
+      "description": "Create 3D assets from text or images, retexture models, convert formats, and retrieve task results.",
+      "name": "aholo-lux3d",
+      "source": "./connectors/aholo-lux3d",
+      "version": "0.1.1+wb.6e46d43a23cdadb3"
+    },
+    {
+      "description": "Query authorized restaurant operating data through WeLife AI Workbench, including business metrics, standard reports, operating diagnosis, and marketing campaign facts.",
+      "name": "welife-ai-workbench-connector",
+      "source": "./connectors/welife-ai-workbench-connector",
+      "version": "2.1.1+wb.6eac669e6c9df5cb"
+    },
+    {
+      "description": "Connect to the viaim App to search and read recordings, transcripts and AI summaries, browse recently updated records, and turn them into meeting notes and action items.",
+      "name": "viaim",
+      "source": "./connectors/viaim",
+      "version": "1.0.1+wb.d05d5929f3f64ae6"
+    },
+    {
+      "description": "Chain-store business data assistant for sales ranking, inventory, member and operation insights",
+      "name": "yuanbei-hub",
+      "source": "./connectors/yuanbei-hub",
+      "version": "1.0.0+wb.b0fb159192d12284"
+    },
+    {
+      "description": "One-stop service for digital invoice issuance, delivery, verification, and accounting, helping enterprises efficiently carry out invoice business.",
+      "name": "wpe-general-connector",
+      "source": "./connectors/wpe-general-connector",
+      "version": "1.0.2+wb.488c38a7d9113577"
+    },
+    {
+      "description": "Operate a local BeatDesign Canvas, Assets, generation tasks, video timeline, and captions with natural language.",
+      "name": "beatapi-beatdesign",
+      "source": "./connectors/beatapi-beatdesign",
+      "version": "0.2.3+wb.87f26f1ff5ffe603"
+    },
+    {
+      "description": "Convert between OFD, PDF, Word and images, and extract OFD text, powered by ofdh.cn.",
+      "name": "ofdh-doc-convert",
+      "source": "./connectors/ofdh-doc-convert",
+      "version": "1.2.2+wb.bb989a6aae78a6ca"
+    },
+    {
+      "description": "Connect Qinghu AI ecommerce SaaS for data research, product sourcing, operations analysis, and LinkPix visual creation.",
+      "name": "qinghu-ai",
+      "source": "./connectors/qinghu-ai",
+      "version": "0.0.0+wb.5b7a572afeddf5b2"
+    },
+    {
+      "description": "Create, typeset, and publish WeChat official account articles with natural language: list bound accounts and style themes, build drafts, and push them to the draft box.",
+      "name": "yanxu",
+      "source": "./connectors/yanxu",
+      "version": "1.0.1+wb.33285b2697ae0970"
+    },
+    {
+      "description": "Handle everyday office work on Weaver eteams in natural language. Covers approvals, schedules and meetings, mail and messaging, reports, projects and tasks, CRM, HR, expenses and invoices, archives and assets.",
+      "name": "weaver-eteams-connector",
+      "source": "./connectors/weaver-eteams-connector",
+      "version": "1.0.0+wb.ba200274a261bcbc"
+    },
+    {
+      "description": "Medical Q&A connector for clinicians: ask questions in natural language and get evidence-based answers with literature citations, with follow-up, document Q&A, and history review support.",
+      "name": "medlive-medical-qa",
+      "source": "./connectors/medlive-medical-qa",
+      "version": "1.0.0+wb.c7cf5b623dd2527f"
+    },
+    {
+      "description": "Operate Yunzhijia (Kingdee) with natural language: docs, sheets, calendar, contacts, IM messages and files.",
+      "name": "cloudhub",
+      "source": "./connectors/cloudhub",
+      "version": "0.6.1+wb.0f8b28b923443289"
+    },
+    {
+      "description": "Smart operating connector for small businesses: support natural language entry of sales, purchase, and other business data, as well as operating data query and analysis, sales trend insight.",
+      "name": "kingbot-xiaodie",
+      "source": "./connectors/kingbot-xiaodie",
+      "version": "1.0.0+wb.2c2a460a7a2d27ca"
+    },
+    {
+      "description": "Discover or search for suitable AI agents, explore their capabilities, exchange messages, and get help completing tasks.",
+      "name": "voko-guest",
+      "source": "./connectors/voko-guest",
+      "version": "1.0.0+wb.2f102f8c769904ec"
+    },
+    {
+      "description": "Query authorized customer, staff, archived chat and work order data with natural language, with explicit approval for writes.",
+      "name": "weiban-agent-mcp",
+      "source": "./connectors/weiban-agent-mcp",
+      "version": "1.3.0+wb.7a22c243cf158ab0"
+    },
+    {
+      "description": "通过 MCP 查询有赞店铺商品、订单、会员、营销、供应链、流量等 16 个业务域数据，支持订单、会员等原始数据导出，全部能力只读。",
+      "name": "youzan-workbuddy",
+      "source": "./connectors/youzan-workbuddy",
+      "version": "0.0.0+wb.80391ae81601592d"
+    },
+    {
+      "description": "Look up customers, opportunities and orders, write follow-ups, handle approvals and to-dos, review call/SMS/WeChat records, manage devices, and view risk-control statistics in natural language.",
+      "name": "yixiaoke",
+      "source": "./connectors/yixiaoke",
+      "version": "1.0.0+wb.5beb8dbb243ecf1f"
+    },
+    {
+      "description": "通过自然语言查询聚宝赞的订单、商品、门店、优惠券、退款单、直播间和云仓库存数据。",
+      "name": "sesunfox-gateway",
+      "source": "./connectors/sesunfox-gateway",
+      "version": "1.0.1+wb.2e741a814aab5e2e"
+    },
+    {
+      "description": "Query LeadsCloud CRM records, follow-ups, touchpoints, and WhatsApp via MCP.",
+      "name": "leads-cloud-crm",
+      "source": "./connectors/leads-cloud-crm",
+      "version": "1.0.0+wb.4bd99ecb9a93a1e9"
+    },
+    {
+      "description": "Query the signed-in campus teacher's own leave records, including dates, types, reasons and approval status, and check the leave workflows available at their school.",
+      "name": "yunzhi-campus",
+      "source": "./connectors/yunzhi-campus",
+      "version": "1.0.1+wb.103e27dcd6b10911"
+    },
+    {
+      "description": "Query Erhao HR data across HR records, organization, attendance and payroll with natural language: employee roster/transfers/contracts, org structure and distribution, attendance/leave/overtime, and payroll/cost/tax analysis.",
+      "name": "erhao-hr",
+      "source": "./connectors/erhao-hr",
+      "version": "0.1.9+wb.b901e869cdb6611a"
+    },
+    {
+      "description": "Connect to the XuanPian PRO photo-studio scheduling system to check shooting schedules with natural language: monthly availability summary per day, time-slot details for a specific date, and account binding via bind code.",
+      "name": "xuanpian-schedule",
+      "source": "./connectors/xuanpian-schedule",
+      "version": "0.0.0+wb.c36f463fece93834"
+    },
+    {
+      "description": "Connect to the UPTG AI investment advisory workbench to query recommended stocks and advisory strategies, track watchlists and positions, and support stock screening, review and client service.",
+      "name": "uptgai-manager",
+      "source": "./connectors/uptgai-manager",
+      "version": "1.0.0+wb.968655f53c7ca858"
+    },
+    {
+      "description": "Search and analyze products, reviews, posts, comments, creators, and trends across major global commerce and social platforms.",
+      "name": "realtrace",
+      "source": "./connectors/realtrace",
+      "version": "1.0.1+wb.084c5a794751afc6"
+    },
+    {
+      "description": "Query masked, read-only business and patient-operations analytics within your CRM permissions.",
+      "name": "yunjing-crm-analytics",
+      "source": "./connectors/yunjing-crm-analytics",
+      "version": "0.1.0+wb.78d70afbe96c6d09"
+    },
+    {
+      "description": "Query and manage GEO analytics, content, publishing, websites, keywords, and tenant data with natural language.",
+      "name": "duoguan-ge",
+      "source": "./connectors/duoguan-ge",
+      "version": "0.1.0+wb.beb1be9c95d22110"
+    },
+    {
+      "description": "Connect to Creative Rabbit Micro-Course to turn your target audience, customer pain points, offer, and unique strengths into a complete course plan, presentation, narration scripts, and publish-ready micro-course for knowledge-based lead generation, private-domain marketing, and corporate training.",
+      "name": "duoguan-course",
+      "source": "./connectors/duoguan-course",
+      "version": "0.0.0+wb.afef859e8326d6e3"
+    },
+    {
+      "description": "Query and manage Xiaoliebian SCRM customers, staff, chats, campaigns, and operational data using natural language.",
+      "name": "xiaoliebian-scrm",
+      "source": "./connectors/xiaoliebian-scrm",
+      "version": "0.0.0+wb.6f83907bcc1812a6"
+    },
+    {
+      "description": "Check whether a brand is visible in AI search, generate keyword matrices, and run GEO diagnostics with actionable advice. Results come from real retrieval sources, and it honestly reports degraded mode instead of fabricating scores.",
+      "name": "chainlon-geo-mcp",
+      "source": "./connectors/chainlon-geo-mcp",
+      "version": "1.0.0+wb.26ecd686a6d7985e"
+    },
+    {
+      "description": "Fabao LawyerOne delivers a full-stack legal AI service: search 2M+ regulations and 160M+ court rulings, get legal consultation, review and generate contracts, draft single-party legal documents, predict judgment outcomes and desensitize documents.",
+      "name": "lawyerone",
+      "source": "./connectors/lawyerone",
+      "version": "1.0.0+wb.1d32f62766bfb353"
+    }
+  ]
+}

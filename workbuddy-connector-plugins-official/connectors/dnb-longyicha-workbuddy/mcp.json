@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "dnb-longyicha-workbuddy": {
+      "type": "streamable-http",
+      "url": "https://mcp.dnbservice.com.cn/v1/company"
+    }
+  }
+}

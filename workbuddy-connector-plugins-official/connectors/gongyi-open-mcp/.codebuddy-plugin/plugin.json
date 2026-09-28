@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Tencent Charity organization platform connector: connect and use the features of the Tencent Charity organization platform in natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Tencent Charity organization platform connector: connect and use the features of the Tencent Charity organization platform in natural language.",
+        "description_zh": "腾讯公益机构服务平台连接器：用自然语言连接并使用腾讯公益机构服务平台的功能。",
+        "examples_en": [
+          "Get the current user and organization info",
+          "List the projects under my organization, focusing on education projects",
+          "Show my organization's unified social credit code and evaluation level",
+          "Show the latest progress and beneficiary count of a project",
+          "Fetch a project's financial disclosures and income/expense details for the last three months"
+        ],
+        "examples_zh": [
+          "获取当前登录用户和所属机构信息",
+          "查询我机构下的项目列表，重点看教育助学类项目",
+          "查一下本机构的统一社会信用代码和评估等级",
+          "看看[某个项目]最新的进展和受益人数",
+          "拉取[某个项目]近三个月的财务披露和收支明细"
+        ],
+        "name": "腾讯公益机构服务平台",
+        "name_en": "Tencent Charity Org Platform",
+        "name_zh": "腾讯公益机构服务平台"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "gongyi-open-mcp",
+  "version": "1.0.0+wb.1d244b320426ae6a"
+}

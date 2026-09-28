@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "OpenBoost cross-border data connector: one-stop MCP toolkit for TikTok creator/product/video analytics, Amazon product/market research, and global patent search.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "OpenBoost cross-border data connector: one-stop MCP toolkit for TikTok creator/product/video analytics, Amazon product/market research, and global patent search.",
+        "description_zh": "OpenBoost 跨境数据连接器：TikTok 达人/商品/视频分析、Amazon 选品与市场分析、全球专利检索一站式 MCP 工具集。",
+        "examples_en": [
+          "Do Amazon product research",
+          "Analyze a TikTok creator",
+          "Check patent infringement risk",
+          "Mine Amazon keywords"
+        ],
+        "examples_zh": [
+          "帮我做亚马逊选品",
+          "分析 TikTok 达人",
+          "查专利侵权风险",
+          "挖亚马逊关键词"
+        ],
+        "name": "OpenBoost 跨境数据",
+        "name_en": "OpenBoost Cross-border Data"
+      },
+      "policy": {
+        "mcpServers": {
+          "proboost-tiktok-amazon-patent-mcp": {
+            "timeout": 60
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "proboost",
+  "version": "0.0.0+wb.42f0a607baf0d344"
+}

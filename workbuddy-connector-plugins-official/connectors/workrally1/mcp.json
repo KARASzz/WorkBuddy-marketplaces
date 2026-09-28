@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "workrally": {
+      "type": "streamable-http",
+      "url": "https://workrally.qq.com/zenstudio/api/mcp"
+    }
+  }
+}

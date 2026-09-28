@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "kiwi-sourcing": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@harrylabsj/kiwi@0.8.0",
+        "mcp",
+        "serve",
+        "--principal",
+        "workbuddy:local",
+        "--agent",
+        "buyer-agent:workbuddy",
+        "--a2a-timeout-ms",
+        "15000"
+      ]
+    }
+  }
+}

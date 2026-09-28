@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect GetNote to save ideas and webpages, find notes, read transcripts, and organize knowledge.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect GetNote to save ideas and webpages, find notes, read transcripts, and organize knowledge.",
+        "description_zh": "连接得到大脑与 AI：随手保存文字、网页和图片，语义查找个人笔记，读取录音转写与会议待办，并用标签、文件夹和知识库整理长期信息。",
+        "examples_en": [
+          "Find my notes about user growth and summarize the key takeaways",
+          "Save this webpage to GetNote and tag it as Product Ideas",
+          "Turn this meeting transcript and action items into concise meeting notes",
+          "Create a weekly report from the work notes I saved this week"
+        ],
+        "examples_zh": [
+          "找找我之前关于用户增长的笔记，整理出关键结论",
+          "把这个网页存进得到大脑，并加上「产品灵感」标签",
+          "把这场会议的逐字稿和待办事项整理成一份会议纪要",
+          "根据我这周记录的工作笔记，帮我生成一份周报"
+        ],
+        "name": "得到大脑（原 Get 笔记）",
+        "name_en": "GetNote",
+        "name_zh": "得到大脑（原 Get 笔记）"
+      },
+      "policy": {
+        "mcpServers": {
+          "getnote": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "getnote",
+  "version": "1.0.0+wb.b453ccd11a5f40bb"
+}

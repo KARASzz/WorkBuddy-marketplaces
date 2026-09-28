@@ -1,0 +1,63 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "萌啦数据Ozon-选品数据分析提供 Ozon 类目、商品、关键词、品牌、店铺与大盘趋势等大数据查询能力，帮助跨境卖家完成选品与运营分析。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Menglar OZON Market Intelligence provides big-data query capabilities for Ozon categories, products, keywords, brands, shops, and market trends to help cross-border sellers with product selection and operations analysis.",
+        "description_zh": "萌啦数据Ozon-选品数据分析提供 Ozon 类目、商品、关键词、品牌、店铺与大盘趋势等大数据查询能力，帮助跨境卖家完成选品与运营分析。",
+        "examples_en": [
+          "List OZON Chinese level-1 categories and analyze the hot-sale performance of a level-3 category in the last 28 days",
+          "Show top 15 hot products of a level-3 category in the last 28 days and summarize the price range and sales structure",
+          "Compare the differences between CN zone and site-wide hot rankings for a category",
+          "Analyze a product's price/rating tracking and traffic keywords in the last 90 days",
+          "Query weekly hot keyword rankings for a category and view related products and keyword trends",
+          "Compare sales and GMV trends of two shops in the last 28 days and list their hot products",
+          "Query a brand's hot-sale ranking in a specified category and its related products"
+        ],
+        "examples_zh": [
+          "查询 OZON 中文一级类目，并分析某三级类目近 28 天的热销表现",
+          "查某三级类目近 28 天热销商品 Top15，并总结价格带与销量结构",
+          "对比中国专区与全站热销榜在某类目下的差异",
+          "分析某商品近 90 天的价格/评分追踪和流量关键词",
+          "查某类目热搜词周榜，并看关联商品与关键词趋势",
+          "对比两个店铺近 28 天销量和 GMV 趋势，并列出各自热销商品",
+          "查某品牌在指定类目下的热销排名及其关联商品"
+        ],
+        "name": "萌啦数据Ozon-选品数据分析",
+        "name_en": "Menglar OZON Market Intelligence",
+        "name_zh": "萌啦数据Ozon-选品数据分析"
+      },
+      "policy": {
+        "mcpServers": {
+          "menglar-ozon": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "menglar-ozon": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "ACCESS_TOKEN"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "menglar-ozon",
+  "version": "1.0.1+wb.0eb207f02cee7805"
+}

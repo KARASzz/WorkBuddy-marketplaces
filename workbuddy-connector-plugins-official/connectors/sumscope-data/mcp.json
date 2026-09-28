@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "sumscope-data": {
+      "url": "https://data-api.qeubee.cn/sumscope/common/mcp/stream",
+      "type": "streamable-http"
+    }
+  }
+}

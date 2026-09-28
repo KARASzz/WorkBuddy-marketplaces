@@ -1,0 +1,67 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Tencent Qidian Marketing Cloud: audience segmentation, product and offer selection, marketing content, WeCom operations, and business analytics. End-to-end campaign planning is currently unavailable in this connector.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Tencent Qidian Marketing Cloud: audience segmentation, product and offer selection, marketing content, WeCom operations, and business analytics. End-to-end campaign planning is currently unavailable in this connector.",
+        "description_zh": "腾讯企点营销云：人群圈选、选品配券、营销内容生成、企微运营与业务分析。当前连接器暂不提供完整营销活动策划流程。",
+        "examples_en": [
+          "Analyze key payment order metrics and trends over the previous two weeks",
+          "Build an audience of users who added to cart but did not order in the last 30 days",
+          "Pick products for this audience and attach a discount coupon",
+          "Review last week's WeCom broadcast conversion"
+        ],
+        "examples_zh": [
+          "分析前两周支付订单的关键指标与变化趋势",
+          "圈选近 30 天有加购未下单的人群",
+          "给这批人群选品并配一张满减券",
+          "复盘上周企微群发的转化效果"
+        ],
+        "name": "腾讯企点营销云",
+        "name_en": "Tencent Qidian Marketing Cloud",
+        "name_zh": "腾讯企点营销云"
+      },
+      "policy": {
+        "mcpServers": {
+          "magic-agent-token": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "magic-agent-token": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "MAGIC_AGENT_SECRET_KEY",
+                  "prefix": "Bearer "
+                },
+                "X-Biz-Id": {
+                  "field": "MAGIC_AGENT_BIZ_ID"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "magic-agent-token",
+  "version": "1.1.1+wb.1101f3731f2fca37"
+}

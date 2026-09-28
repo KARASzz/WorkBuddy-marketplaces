@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "连接天润客服平台，通过自然语言管理系统全产品能力：在各功能模块内导入数据、查询数据明细&数据报表、完整相关流程配置、搭建语音/文本/分析智能体。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to the Tinet customer service platform and manage all product capabilities in natural language: import data in each module, query data details and reports, complete process configuration, and build voice, text, and analytics agents.",
+        "description_zh": "连接天润客服平台，通过自然语言管理系统全产品能力：在各功能模块内导入数据、查询数据明细&数据报表、完整相关流程配置、搭建语音/文本/分析智能体。",
+        "examples_en": [
+          "Export this week's call records, split inbound customer calls and agent outbound calls, and include basic call data plus transcripts.",
+          "Build an automotive [DCC invitation] outbound bot whose goal is to invite customers to the showroom; if they decline, guide them to add WeChat.",
+          "Check this week's answer rate, AHT, and queue abandonment by skill group; list groups below 80% answer rate and suggest schedule or routing changes.",
+          "Split last week's online IM sessions by WeCom, web, and app; export negative and unresolved sessions with summaries, last handling agent, and transfer-to-agent reasons.",
+          "Build a ticket-module agent that summarizes overdue unprocessed tickets and pushes them to a DingTalk group as notifications."
+        ],
+        "examples_zh": [
+          "导出本周的通话记录数据，将客户来电和座席外呼的数据分开，导出的数据要包含通话基础数据、以及转写文本",
+          "搭建一个汽车行业【DCC邀约场景】的外呼机器人，核心目的是邀约客户到店看车，若客户拒绝到店，引导客户同意添加微信",
+          "帮我查本周各技能组的接通率、平均通话时长和排队放弃量，把接通率低于 80% 的技能组单独列出来，并给出可调整的班表/路由建议",
+          "把上周在线 IM 会话按企微、网页、App 渠道拆开，导出差评和未解决会话，带上会话摘要、最后接待座席和转人工原因",
+          "搭建一个工单模块智能体，把超时未处理的工单内容进行总结，以通知的形式推送到钉钉群内"
+        ],
+        "name": "天润融通·Zenava",
+        "name_en": "Tinet·Zenava",
+        "name_zh": "天润融通·Zenava"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "zenava",
+  "version": "0.1.2+wb.6ff8e70ce0d5f932"
+}

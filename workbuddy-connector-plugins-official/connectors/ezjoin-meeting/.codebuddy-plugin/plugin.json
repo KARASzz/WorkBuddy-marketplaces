@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Manage EzyJoin smart meetings via natural language: book rooms, create or cancel meetings, view schedules, and retrieve AI minutes.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Manage EzyJoin meetings via natural language: book rooms, create or cancel meetings, view schedules.",
+        "description_zh": "用自然语言管理 EzyJoin 智慧会议：预约会议室、创建/取消会议、查询会议日程与 AI 纪要。",
+        "examples_en": [
+          "Find available meeting rooms tomorrow morning",
+          "Book meeting room 301 on floor 3 of Building A for 3-4 PM tomorrow with subject 'Weekly project review'",
+          "Show my meeting schedule for this week",
+          "Cancel meeting with ID 12345",
+          "Get the AI minutes of my recent meetings"
+        ],
+        "examples_zh": [
+          "帮我查一下明天上午有哪些空闲会议室",
+          "帮我预约明天下午 3 点到 4 点 A 栋 3 楼 301 会议室，主题是项目周会",
+          "查看我本周的会议安排",
+          "帮我把会议 ID 12345 取消掉",
+          "查一下最近会议的 AI 纪要"
+        ],
+        "name": "EzyJoin智慧会议",
+        "name_en": "EzyJoin Smart Meeting"
+      },
+      "policy": {
+        "mcpServers": {
+          "ezjoin-meeting": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "ezjoin-meeting",
+  "version": "0.0.0+wb.3fe24544a2bce821"
+}

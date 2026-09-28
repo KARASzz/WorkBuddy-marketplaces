@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "xhcj-mcp-announcements-news-policy": {
+      "type": "streamable-http",
+      "url": "https://mcp.cnfic.com.cn/mcp-servers/xhcj-mcp-announcements-news-policy"
+    }
+  }
+}

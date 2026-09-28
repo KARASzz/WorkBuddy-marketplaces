@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Based on Baidu Miaoda (秒哒), users can create, preview, modify, and publish websites, WeChat Mini Programs, and mobile apps through natural-language conversations—enabling intelligent, automated, and scalable application development.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Based on Baidu Miaoda (秒哒), users can create, preview, modify, and publish websites, WeChat Mini Programs, and mobile apps through natural-language conversations—enabling intelligent, automated, and scalable application development.",
+        "description_zh": "通过自然语言对话，即可完成网页、微信小程序及移动 App 的创建、预览、修改与发布上线，实现智能化、自动化、规模化的应用开发。",
+        "examples_en": [
+          "Help me create a to-do list management app.",
+          "Build a sales data dashboard.",
+          "Create a premium magazine-style personal blog website."
+        ],
+        "examples_zh": [
+          "帮我创建一个待办事项管理应用",
+          "搭建一个销售数据看板",
+          "做一个杂志风格的高级个人博客网站"
+        ],
+        "name": "秒哒应用搭建",
+        "name_en": "Miaoda App Builder",
+        "name_zh": "秒哒应用搭建"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "miaoda",
+  "version": "0.0.0+wb.fe4484829dac69b2"
+}

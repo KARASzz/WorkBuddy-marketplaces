@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "FastMoss is an official TikTok Shop data analytics tool for analyzing and interpreting ecommerce data across products, creators, shops, MCN agencies, short videos, livestreams, ads, categories, markets, and rankings. Use it to discover breakout products, research product opportunities, find creators, analyze competitors, diagnose shops, shape content strategy, and evaluate advertising performance.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "FastMoss is an official TikTok Shop data analytics tool for analyzing and interpreting ecommerce data across products, creators, shops, MCN agencies, short videos, livestreams, ads, categories, markets, and rankings. Use it to discover breakout products, research product opportunities, find creators, analyze competitors, diagnose shops, shape content strategy, and evaluate advertising performance.",
+        "description_zh": "FastMoss 官方出品的 TikTok Shop 数据分析工具，覆盖商品、达人、店铺、MCN、短视频、直播、广告、类目市场与榜单数据，支持爆品挖掘、选品研究、达人筛选、竞品分析、店铺诊断、内容策略和投放效果评估。",
+        "examples_en": [
+          "Find the fastest-growing beauty products on US TikTok Shop this week and explain which are worth pursuing.",
+          "Analyze the creators and viral videos driving this product, then prioritize outreach targets.",
+          "Compare these TikTok Shop competitor stores by sales, assortment, and growth opportunity."
+        ],
+        "examples_zh": [
+          "帮我找美国 TikTok Shop 美妆类目最近一周增长最快的商品，并说明适合跟卖的原因。",
+          "分析这个商品的带货达人和爆款视频，给出达人建联优先级。",
+          "对比这几家 TikTok Shop 竞品店铺的销量、商品结构和增长机会。"
+        ],
+        "name": "FastMoss",
+        "name_en": "FastMoss",
+        "name_zh": "FastMoss"
+      },
+      "policy": {
+        "mcpServers": {
+          "fastmoss": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "fastmoss",
+  "version": "1.0.0+wb.4065e9e86d1a96ab"
+}

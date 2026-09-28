@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Scientific visualization: volcano, PCA, enrichment, survival, and more.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Scientific visualization: volcano, PCA, enrichment, survival, and more.",
+        "description_zh": "科研数据可视化：火山图、PCA、富集分析、生存分析，自动匹配发表级输出",
+        "examples_en": [
+          "Generate a volcano plot from my differential expression data",
+          "Run PCA to visualize sample distribution",
+          "Create a clustered heatmap for my expression data",
+          "Make an enrichment bar chart for GO analysis",
+          "Plot KM survival curves for my clinical data"
+        ],
+        "examples_zh": [
+          "帮我画一个火山图，用差异分析结果",
+          "用 PCA 分析样本分布",
+          "给这些表达数据画一个聚类热图",
+          "做 GO 富集分析的条形图",
+          "帮我画 KM 生存分析曲线"
+        ],
+        "name": "迪安智能科研云",
+        "name_en": "DAZD X-Med MCP",
+        "name_zh": "迪安智能科研云"
+      },
+      "policy": {
+        "mcpServers": {
+          "xmed-figure-mcp": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "xmed-figure-mcp",
+  "version": "1.0.10+wb.d70f46ee51af0dc7"
+}

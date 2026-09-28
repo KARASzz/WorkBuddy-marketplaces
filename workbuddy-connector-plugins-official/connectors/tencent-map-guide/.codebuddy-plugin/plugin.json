@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Create Tencent Map travel guides with natural language: create, query, update and delete guides. Converts free-form itinerary text / Markdown into Tencent Map's structured guide data format (parsing places, enriching POIs, building routes) and saves them to your map guides.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Create Tencent Map travel guides with natural language: create, query, update and delete guides. Converts free-form itinerary text / Markdown into Tencent Map's structured guide data format (parsing places, enriching POIs, building routes) and saves them to your map guides.",
+        "description_zh": "用自然语言制作腾讯地图行程指南：创建、查询、更新、删除攻略。支持将攻略文本 / Markdown 内容智能转换为腾讯地图结构化行程指南数据格式（自动解析地点、补全 POI、生成路线），并一键保存同步到你的地图指南。",
+        "examples_en": [
+          "Create a 3-day Beijing travel guide for me",
+          "Convert this Markdown itinerary and save it as my map guide",
+          "Show the details of my Chengdu food guide",
+          "Update the title of my Hangzhou guide to 'West Lake 2-Day Tour'",
+          "Delete the travel guide with id TG-123"
+        ],
+        "examples_zh": [
+          "帮我制作一份北京三日游的行程指南",
+          "把这段 Markdown 攻略转换并保存成我的地图指南",
+          "查一下我那份成都美食攻略的详情",
+          "更新我的杭州行程指南标题为『西湖深度2日游』",
+          "删除编号 TG-123 的行程指南"
+        ],
+        "name": "腾讯地图·指南制作",
+        "name_en": "Tencent Map · Guide Maker"
+      },
+      "policy": {
+        "mcpServers": {
+          "tencent-map-guide": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tencent-map-guide",
+  "version": "1.0.0+wb.03b4a739fa2bd4c2"
+}

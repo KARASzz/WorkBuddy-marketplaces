@@ -1,0 +1,51 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "AI-powered enterprise risk analysis: industry identification and related-party relationship analysis.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Enterprise risk AI assistant. Identify a company's industry and analyze related-party relationships (equity, controller, guarantee, joint investment) between companies using natural language.",
+        "description_zh": "企业风险 AI 分析助手，用自然语言识别企业所属行业、分析企业间关联方关系（股权/实控人/担保/共同投资）。",
+        "examples_en": [
+          "What industry does Baidu belong to?",
+          "Identify the main business of Xiaomi Group",
+          "What is the relationship between Tencent and Alibaba?",
+          "What does Tianchuang Credit do?",
+          "Analyze if these two companies are related",
+          "What is the relationship between ByteDance and Beijing Yue'an Technology?"
+        ],
+        "examples_zh": [
+          "百度公司属于哪个行业",
+          "识别一下小米集团的主营业务",
+          "腾讯和阿里巴巴是什么关系",
+          "天创信用是做什么的",
+          "分析一下这两家公司有没有关联",
+          "字节跳动和北京阅安科技是啥关系"
+        ],
+        "name": "天创信用星图MCP",
+        "name_en": "Tianchuang Credit StarGraph MCP"
+      },
+      "policy": {
+        "mcpServers": {
+          "xingtu-claw-risk": {
+            "timeout": 600
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "xingtu-claw-risk",
+  "version": "0.0.0+wb.9f3dccbf57ee5f20"
+}

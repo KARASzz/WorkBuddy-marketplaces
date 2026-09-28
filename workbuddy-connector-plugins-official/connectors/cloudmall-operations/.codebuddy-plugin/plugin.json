@@ -1,0 +1,47 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query CloudMall orders, products, and members in natural language. After connecting your operations account, read-only queries run with your real-time permissions—no need to switch to the admin console.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query CloudMall orders, products, and members in natural language. After connecting your operations account, read-only queries run with your real-time permissions—no need to switch to the admin console.",
+        "description_zh": "在 WorkBuddy 中用自然语言查询云MALL订单、商品与会员数据。连接运营账号后，按你当前的权限执行只读查询，结果实时返回，无需切换后台。",
+        "examples_en": [
+          "List today's orders awaiting shipment",
+          "Show self-pickup orders",
+          "Find on-sale study-tour products",
+          "Show members registered in the past week"
+        ],
+        "examples_zh": [
+          "查一下今天的待发货订单",
+          "看看有哪些自提的订单",
+          "找一下在售的研学类商品",
+          "看看最近一周新注册的会员"
+        ],
+        "name": "云MALL运营",
+        "name_en": "CloudMall Operations"
+      },
+      "policy": {
+        "mcpServers": {
+          "cloudmall-operations": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "cloudmall-operations",
+  "version": "0.0.0+wb.d5b4facdceb26618"
+}

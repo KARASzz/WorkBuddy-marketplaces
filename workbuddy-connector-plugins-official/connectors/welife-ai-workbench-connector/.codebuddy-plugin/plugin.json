@@ -1,0 +1,54 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query authorized restaurant operating data through WeLife AI Workbench, including business metrics, standard reports, operating diagnosis, and marketing campaign facts.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query authorized restaurant operating data through WeLife AI Workbench, including business metrics, standard reports, operating diagnosis, and marketing campaign facts.",
+        "description_zh": "连接微生活 AI 工作台，在授权范围内查询餐饮商户经营指标、六类标准经营报告、一键经营诊断和营销活动数据，支持门店对比、消费趋势、会员增长与流失风险分析。",
+        "examples_en": [
+          "Show member registrations for the last 7 days",
+          "Compare stored-value and consumption data by store for the last 7 days",
+          "Explain this merchant's latest operating diagnosis",
+          "Analyze cumulative performance by marketing campaign type"
+        ],
+        "examples_zh": [
+          "查询最近 7 天会员注册数量",
+          "比较最近 7 天各门店储值和消费数据",
+          "解读本商户最新的一键经营诊断",
+          "分析当前各类营销活动的累计效果"
+        ],
+        "name": "微生活 AI 工作台",
+        "name_en": "WeLife AI Workbench",
+        "name_zh": "微生活 AI 工作台"
+      },
+      "policy": {
+        "mcpServers": {
+          "welife-ai-workbench-connector": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "5.0.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "welife-ai-workbench-connector": {
+            "preAuth": "cli",
+            "runtime": {
+              "type": "node",
+              "version": ">=20"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills",
+    "cli"
+  ],
+  "name": "welife-ai-workbench-connector",
+  "version": "2.1.1+wb.6eac669e6c9df5cb"
+}

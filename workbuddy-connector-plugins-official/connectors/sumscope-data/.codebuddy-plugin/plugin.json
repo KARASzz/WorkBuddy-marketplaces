@@ -1,0 +1,65 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query Sumscope fixed-income market data: bond info, valuations, quotes, issuance, financials and China macro indicators.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query Sumscope fixed-income market data, including bond reference data, primary issuance, bill quotes, public opinion information, issuer financial statements, macroeconomic indicators, and trading calendars.",
+        "description_zh": "查询森浦固定收益市场数据：债券基础信息、一级发行、票据行情、舆情信息、发行人财务报表、宏观指标和交易日历。",
+        "examples_en": [
+          "Get basic info and latest ratings for bond 2405050.IB",
+          "Fetch CDC valuation (clean price, yield, modified duration) of a bond on a given date",
+          "List interbank market trading days of last week",
+          "List all outstanding bonds issued by a given issuer",
+          "Query the time series of a China macro indicator over the past year"
+        ],
+        "examples_zh": [
+          "查询 2405050.IB 这只债券的基础信息和最新评级",
+          "获取 24贵州债02 在 2026-08-25 的中债估值净价、收益率和修正久期",
+          "查一下上周银行间市场有哪些交易日",
+          "列出贵州省人民政府目前未到期的存量债券",
+          "查询某宏观指标最近一年的数值走势"
+        ],
+        "name": "森浦qeubee金融数据",
+        "name_en": "Sumscope qeubee Data",
+        "name_zh": "森浦qeubee金融数据"
+      },
+      "policy": {
+        "mcpServers": {
+          "sumscope-data": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "sumscope-data": {
+            "auth": {
+              "headers": {
+                "X-Access-Key": {
+                  "field": "X_ACCESS_KEY"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "sumscope-data",
+  "version": "1.0.1+wb.e4efffbb81f3e69c"
+}

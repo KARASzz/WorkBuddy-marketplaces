@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "An AI sales assistant for individuals, helping you understand customers, evaluate opportunities, identify risks, and convert insights into actionable steps.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "An AI sales assistant for individuals, helping you understand customers, evaluate opportunities, identify risks, and convert insights into actionable steps.",
+        "description_zh": "面向个人的AI销售伙伴，一句话帮你看懂客户、评估商机、发现风险，并把判断转化为下一步行动。",
+        "examples_en": [
+          "Who should I follow up with first today, and why?",
+          "Assess the health of the XX opportunity and tell me the biggest risk and next step",
+          "Find the recent changes at XX Company that are worth my attention and cite the sources",
+          "Summarize the current situation, counter-evidence, and next step for the XX account",
+          "Write a low-pressure follow-up message based on this account's situation"
+        ],
+        "examples_zh": [
+          "帮我看看今天最该先跟进哪个客户，为什么",
+          "评估一下 XX 项目的商机健康度，告诉我最大风险和下一步",
+          "查一下 XX 公司最近有哪些值得关注的变化，并标明来源",
+          "汇总 XX 客户的当前局势、反向证据和下一步",
+          "根据这个客户的情况，写一条不施压的跟进微信"
+        ],
+        "name": "销售易·易启",
+        "name_en": "NeoEaKey"
+      },
+      "policy": {
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "neo-eakey",
+  "version": "0.0.0+wb.b6befbbef374bd9a"
+}

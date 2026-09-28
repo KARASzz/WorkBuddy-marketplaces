@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect MedGroup to query DRG/DIP cities and rules, search ICD codes, perform grouping and settlement scenario calculations, and check CC/MCC status.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect MedGroup to query DRG/DIP cities and rules, search ICD codes, perform grouping and settlement scenario calculations, and check CC/MCC status.",
+        "description_zh": "连接 MedGroup，查询 DRG/DIP 城市与规则、检索 ICD 编码、完成分组、结算测算及 CC/MCC 查询。",
+        "examples_en": [
+          "List the DRG/DIP cities and rule versions currently supported by MedGroup",
+          "Search pneumonia ICD-10 codes and, after confirmation, perform DRG grouping for a selected city",
+          "Check whether a case satisfies a specified DIP rule and cite the tool that was actually called",
+          "Check CC/MCC and exclusion status for secondary diagnoses under a selected city rule"
+        ],
+        "examples_zh": [
+          "查看 MedGroup 当前支持的 DRG/DIP 城市与规则版本",
+          "检索肺炎相关 ICD-10 编码，确认后按指定城市执行 DRG 分组",
+          "核对某个 DIP 病种规则，并说明本次实际调用的工具",
+          "查询其他诊断在指定城市规则下的 CC/MCC 与排除状态"
+        ],
+        "name": "DRG/DIP 工具包（MedGroup）",
+        "name_en": "DRG/DIP Toolkit (MedGroup)"
+      },
+      "policy": {
+        "mcpServers": {
+          "medgroup-drgdip-toolkit": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "medgroup-drgdip-toolkit",
+  "version": "1.0.0+wb.080a71d955901d92"
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "面向使用 AI 客服、销售智能体开展私域运营和客户转化的企业与商家。可在 WorkBuddy 中，通过自然语言查找、筛选和理解微信、企业微信、小红书、抖音等渠道中的真实客户，获取客户画像、历史沟通、兴趣偏好、购买意向和成交阶段，并执行单客户触达、批量营销、客户激活和精准跟进。客户回复后，可由 3Chat AI 客服/销售智能体继续自动接待、回答咨询、识别高意向客户、处理销售异议并推进成交，形成客户洞察、精准触达、AI 接待、持续跟进、成交转化的私域客户运营闭环。当前能力基于企业已接入 3Chat 的客户和渠道数据，不用于获取企业尚未拥有或未授权访问的外部用户数据。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Enables AI agents to operate private-domain customers across WeChat, RedNote, and Douyin. Find, filter, and understand real customers from these channels via natural language, including profiles, chat history, interests, purchase intent, and deal stage. Then run one-to-one outreach, batch marketing, reactivation, and precise follow-ups. Once customers reply, the 3Chat AI agent continues automatically by answering inquiries, spotting high-intent leads, handling objections, and supporting conversion. Based solely on the enterprise's own integrated customer and channel data, never external or unauthorized data.",
+        "description_zh": "面向使用AI客服、销售智能体开展私域运营和客户转化的企业与商家。可在WorkBuddy中，通过自然语言查找、筛选和理解微信、企业微信、小红书、抖音等渠道中的真实客户，获取客户画像、历史沟通、兴趣偏好、购买意向和成交阶段，并执行单客户触达、批量营销、客户激活和精准跟进。客户回复后，可由3Chat AI客服/销售智能体继续自动接待、回答咨询、识别高意向客户、处理销售异议并推进成交，形成客户洞察、精准触达、AI接待、持续跟进、成交转化的私域客户运营闭环。当前能力基于企业已接入3Chat的客户和渠道数据，不用于获取企业尚未拥有或未授权访问的外部用户数据。",
+        "examples_en": [
+          "Find customers who recently showed clear needs, and organize the list by interest and intent",
+          "Send this event image and introduction to the matched customers from earlier",
+          "Find high-intent customers who consulted in the last 30 days but have not closed, and analyze where they are stuck",
+          "How is Ms. Lin doing recently? Summarize her interests, deal stage, and main concerns",
+          "Find recently silent high-value customers and run a precise reactivation based on their previous interests"
+        ],
+        "examples_zh": [
+          "找出最近有明确需求的客户，按兴趣和意向整理一下名单",
+          "把这张活动图片和介绍，群发给刚才这些匹配的客户",
+          "找出最近30天咨询过但还没成交的高意向客户，看看他们主要卡在哪里？",
+          "林女士最近怎么样？帮我总结她的兴趣、成交阶段和主要顾虑",
+          "找出最近沉默的高价值客户，结合他们之前的兴趣做一轮精准唤醒"
+        ],
+        "name": "3Chat 私域客户运营",
+        "name_en": "3Chat Customer Growth",
+        "name_zh": "3Chat 私域客户运营"
+      },
+      "policy": {
+        "mcpServers": {
+          "3chat-customer-growth": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "3chat-customer-growth": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "3chat-customer-growth",
+  "version": "1.0.0+wb.93de906c15f1824a"
+}

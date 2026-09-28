@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to the Orient Futures MCP service for one-prompt access to reviewed futures knowledge, trading rules, risk education, contract data and account-opening guidance.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to the Orient Futures MCP service for one-prompt access to reviewed futures knowledge, trading rules, risk education, contract data and account-opening guidance.",
+        "description_zh": "接入东证期货MCP服务，一句话检索经审核的期货知识、交易制度、风险投教、合约资料和开户注册说明，助力您高效进行投资决策。",
+        "examples_en": [
+          "Explain daily mark-to-market in futures with a simple example",
+          "Compare a main contract, a continuous contract and a delivery-month contract",
+          "Explain the account-opening steps a futures beginner should complete"
+        ],
+        "examples_zh": [
+          "期货逐日盯市是什么意思，请用通俗例子解释",
+          "主力合约、主力连续和具体月份合约有什么区别",
+          "我是期货新手，开始参与前需要完成哪些开户注册步骤"
+        ],
+        "name": "东证期货",
+        "name_en": "Orient Futures"
+      },
+      "policy": {
+        "mcpServers": {
+          "orientfutures_mobile_knowledge_base": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "orientfutures-mobile-knowledge-base",
+  "version": "0.4.4+wb.4f58e4f24aedc890"
+}

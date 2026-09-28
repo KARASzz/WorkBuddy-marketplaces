@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Call Meitu Design Studio Agent Teams with a single sentence — from market strategy insights to e-commerce image sets, marketing videos, social media graphics, posters, and brand visuals — completing the full commercial design workflow with zero barriers.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Call Meitu Design Studio Agent Teams with a single sentence — from market strategy insights to e-commerce image sets, marketing videos, social media graphics, posters, and brand visuals — completing the full commercial design workflow with zero barriers.",
+        "description_zh": "一句话轻松调用美图设计室Agent Teams，从市场策略洞察，到电商套图、营销视频、社媒图文、海报及品牌等视觉物料，零门槛完成商业设计的全流程。",
+        "examples_en": [
+          "Create a Team Agent room and handle my design task",
+          "Send this image and my instructions to DesignKit",
+          "Upload a reference video for DesignKit Team Agent to process",
+          "Check task progress and answer the Agent's question",
+          "Download images and videos generated in the current room"
+        ],
+        "examples_zh": [
+          "创建一个 Team Agent 房间并处理我的设计任务",
+          "把这张图片和我的要求一起发送给 DesignKit",
+          "上传参考视频，让 DesignKit Team Agent 继续处理",
+          "查看当前任务进度，并回答 Agent 的追问",
+          "把当前房间生成的图片和视频下载到指定目录"
+        ],
+        "name": "美图设计室 AI设计 CLI",
+        "name_en": "DesignKit Buddy CLI"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "designkit-buddy-cli",
+  "version": "1.0.2+wb.2a40945e3fb140d9"
+}

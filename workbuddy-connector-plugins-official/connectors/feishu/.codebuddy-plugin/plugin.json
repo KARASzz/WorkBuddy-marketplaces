@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Manage Feishu/Lark products via CLI: IM, Mail, Calendar, Docs, Sheets, Base (Bitable), Slides, Whiteboard, Wiki, Drive, Minutes, VC, Tasks, Approvals, Attendance, Contacts, OKR, and more.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Manage Feishu/Lark products via CLI: IM, Mail, Calendar, Docs, Sheets, Base (Bitable), Slides, Whiteboard, Wiki, Drive, Minutes, VC, Tasks, Approvals, Attendance, Contacts, OKR, and more.",
+        "description_zh": "通过命令行管理飞书/Lark 全产品能力：即时通讯、邮箱、日历、云文档、电子表格、多维表格（Base）、幻灯片、画板、知识库、云空间、妙记、视频会议、任务、审批、考勤、通讯录、OKR 等。",
+        "examples_en": [
+          "Send a bot notification to the Feishu group 'Product Weekly': weekly meeting at 15:00 in Room 3F, please bring last week's progress materials",
+          "Check my Feishu calendar and those of Zhang San and Li Si next week, find a 2-hour slot when all three are free, create an event titled 'Q2 Planning Sync', invite them, and book a meeting room",
+          "Add a row to the Feishu Bitable 'Task Tracker': title=Q2 Launch Review, owner=Zhang San, due=2026-05-20, status=In Progress; also aggregate open tasks by owner",
+          "Turn today's Feishu Minutes 'Product Review' into notes (summary + action items + key speakers), create a new Feishu Doc under the 'Meeting Notes' folder, and share the link in the group",
+          "Use KQL to search my Feishu Mail for emails from the finance team in the past week with 'reimbursement' in the subject; list sender, date, and summary"
+        ],
+        "examples_zh": [
+          "在飞书群【产品周会】里用机器人发一条通知：今天 15:00 在 3 楼会议室开周会，请带上周的进展材料",
+          "查下周我和张三、李四的飞书日程，找出三人都空闲的 2 小时时段，并创建一个标题为【Q2 规划对齐】的日程，邀请他们俩，预定一间会议室",
+          "在飞书多维表格【任务跟踪】里新增一行：标题=Q2 上线评审、负责人=张三、截止=2026-05-20、状态=进行中；并按负责人聚合未完成任务数",
+          "把今天的飞书妙记【产品评审会】整理成纪要（摘要 + 待办 + 关键发言人），新建一篇飞书云文档发到【会议纪要】文件夹，并在群里分享链接",
+          "用 KQL 搜索我飞书邮箱最近一周来自财务部、主题包含【报销】的邮件，列出发件人、日期和摘要"
+        ],
+        "name": "飞书",
+        "name_en": "Feishu"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "feishu",
+  "version": "0.0.0+wb.8c5607d597e6fcc6"
+}

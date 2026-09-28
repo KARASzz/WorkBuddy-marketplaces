@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "腾讯云数据仓库 TCHouse-C 智能运维与分析助手，支持集群健康诊断、慢 SQL 分析、规格选型推荐、表结构设计与自然语言查询。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Intelligent ops & analytics assistant for Tencent Cloud TCHouse-C. Diagnose cluster health, analyze slow SQL, recommend cluster sizing, design tables and run NL2SQL queries in natural language.",
+        "description_zh": "腾讯云数据仓库 TCHouse-C 智能运维与分析助手，用自然语言完成集群健康诊断、慢 SQL 分析、规格选型推荐、表结构设计与 NL2SQL 查询。",
+        "examples_en": [
+          "Diagnose the health of cluster cdwch-xxxx over the last 24 hours",
+          "Analyze the top 10 slow SQL queries on my TCHouse-C cluster in the last 24 hours and suggest optimizations",
+          "Recommend a TCHouse-C cluster spec and estimate the price for 2TB daily ingestion and 100 concurrent queries",
+          "Design a DDL for a user behavior log table on TCHouse-C with proper engine and partition key",
+          "Query the top 10 products by orders in the last week on TCHouse-C using natural language"
+        ],
+        "examples_zh": [
+          "帮我诊断一下集群 cdwch-xxxx 最近一天的健康状况",
+          "分析 TCHouse-C 集群最近 24 小时耗时最长的 10 条慢 SQL 并给出优化建议",
+          "根据我每天 2TB 写入、100 并发查询的业务场景，推荐一个合适的 TCHouse-C 集群规格并估算价格",
+          "在 TCHouse-C 上设计一张用户行为日志表的建表 DDL，选择合适的表引擎和分区键",
+          "用自然语言查询 TCHouse-C 集群里最近一周下单量 Top 10 的商品"
+        ],
+        "name": "腾讯云数据仓库 TCHouse-C",
+        "name_en": "Tencent Cloud TCHouse-C",
+        "name_zh": "腾讯云数据仓库 TCHouse-C"
+      },
+      "policy": {
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tencent-tchouse-c",
+  "version": "1.0.0+wb.ab018e9b7d2b8976"
+}

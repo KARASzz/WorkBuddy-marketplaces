@@ -1,0 +1,51 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "对公营销助手是基于企业全维数据构建的对公营销智能助手，提供从生成访前一页纸、访前客情报告、产品找客、关键人画像、营销话术及按企荐品的完整展业闭环能力。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "The BD Mate is an intelligent corporate marketing assistant built on full-dimensional enterprise data, delivering a complete business development closed-loop from pre-visit one-pagers and customer intelligence reports to product-based customer acquisition, key-person profiling, sales scripts, and enterprise-based product recommendations.",
+        "description_zh": "对公营销助手是基于企业全维数据构建的对公营销智能助手，提供从生成访前一页纸、访前客情报告、产品找客、关键人画像、营销话术及按企荐品的完整展业闭环能力。",
+        "examples_en": [
+          "Generate a pre-visit customer intelligence report for DeepSeek",
+          "I'm visiting Deep Robotics next week, help me prepare a one-page pre-visit briefing",
+          "I'm about to make outbound calls to Game Science, help me draft a sales script",
+          "Analyze the competitive landscape of the spatial intelligence sector where Manycore operates",
+          "Look up Wang Xingxing, founder of Unitree, and give me a key-person profile with outreach suggestions",
+          "Match the top 5 corporate financial products for BrainCo"
+        ],
+        "examples_zh": [
+          "帮我出一份深度求索的访前客情报告",
+          "下周要拜访云深处科技，帮我生成一份访前一页纸",
+          "准备给游戏科学打电话外呼，帮我出一套营销话术",
+          "分析一下群核科技所在空间智能赛道的竞争格局",
+          "查一下宇树科技创始人王兴兴的关键人画像和拜访触达建议",
+          "为强脑科技匹配前 5 类对公金融产品"
+        ],
+        "name": "智客AI · 对公(To B)营销助手",
+        "name_en": "YouShu BD Mate"
+      },
+      "policy": {
+        "mcpServers": {
+          "youshu-bd-mate": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "youshu-bd-mate",
+  "version": "2.0.2+wb.0e69e123b5ace8d0"
+}

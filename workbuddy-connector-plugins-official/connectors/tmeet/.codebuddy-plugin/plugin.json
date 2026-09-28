@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Create, query, and manage Tencent Meeting sessions via CLI.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Create, query, and manage Tencent Meeting sessions via CLI.",
+        "description_zh": "通过命令行创建、查询和管理腾讯会议。支持快速发起会议、查看日程安排、管理参会人员。",
+        "examples_en": [
+          "Create a meeting for tomorrow at 3 PM, topic: weekly review, duration: 1 hour",
+          "Show all my meetings scheduled for today",
+          "Cancel tomorrow's weekly review meeting"
+        ],
+        "examples_zh": [
+          "帮我创建一个明天下午 3 点的会议，主题是周报评审，时长 1 小时",
+          "查看我今天的所有会议安排",
+          "取消明天的周报评审会议"
+        ],
+        "name": "腾讯会议",
+        "name_en": "Tencent Meeting"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "tmeet",
+  "version": "0.0.0+wb.ceca5e3457ad6bea"
+}

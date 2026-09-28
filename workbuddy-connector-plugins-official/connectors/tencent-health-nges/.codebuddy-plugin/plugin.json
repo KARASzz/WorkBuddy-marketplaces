@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Tencent Health NGES MCP service for pharma marketing: data insights on visits and meetings, HCP profile lookup, pre-call planning, post-call recording, and compliance review.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Tencent Health NGES MCP service for pharma marketing: data insights on visits and meetings, HCP profile lookup, pre-call planning, post-call recording, and compliance review.",
+        "description_zh": "腾讯健康NGES医药营销智能助手，支持拜访与会议等业务数据洞察分析、医生画像查询、访前准备、访后记录写入及话术合规审核。",
+        "examples_en": [
+          "Help me check the KPI completion for this month",
+          "Show Dr. Zhang's profile and the summary of our last visit",
+          "Which doctors should I prioritize visiting this week? Prepare a visit strategy for me",
+          "I just finished visiting Dr. Li — record this visit and update the adoption grading",
+          "Help me audit the following statement"
+        ],
+        "examples_zh": [
+          "帮我查看本月的拜访KPI达成情况",
+          "查询张医生的客户画像，看看上次拜访聊了什么",
+          "这周我该优先拜访哪些医生？帮我准备拜访策略",
+          "刚拜访完李医生，帮我记录这次拜访并更新医生观念定级",
+          "帮我对以下话术进行合规审核"
+        ],
+        "name": "腾讯健康NGES",
+        "name_en": "Tencent Health NGES"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tencent-health-nges",
+  "version": "1.0.0+wb.5d204ed6cabebd49"
+}

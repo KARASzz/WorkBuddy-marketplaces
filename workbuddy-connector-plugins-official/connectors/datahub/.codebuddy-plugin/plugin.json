@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Discover and run Data Apps, track execution and costs, and retrieve structured results.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Discover and run Data Apps, track execution and costs, and retrieve structured results.",
+        "description_zh": "用自然语言发现并运行 Data App，跟踪执行状态与费用，读取结构化结果并管理历史运行。",
+        "examples_en": [
+          "Find a Data App that can collect e-commerce product data",
+          "Show this Data App's inputs, outputs, and pricing",
+          "Run the Data App with these inputs and return at most 100 records",
+          "Check the status and cost of the run I just started",
+          "Get the first 50 records from my latest successful run"
+        ],
+        "examples_zh": [
+          "帮我找一个能采集电商商品信息的 Data App",
+          "查看这个 Data App 的输入参数、输出字段和计费方式",
+          "用这些参数运行 Data App，最多返回 100 条数据",
+          "查看刚才那次运行的状态和费用",
+          "读取最近一次成功运行的前 50 条结果"
+        ],
+        "name": "DataHub",
+        "name_en": "DataHub",
+        "name_zh": "DataHub"
+      },
+      "policy": {
+        "mcpServers": {
+          "datahub": {
+            "timeout": 70000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "datahub",
+  "version": "1.0.0+wb.c5a6d3b1f193584d"
+}

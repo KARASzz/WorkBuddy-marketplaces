@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query, organize, and enter data in JianDaoYun. Use natural language to find form records, summarize business progress, generate analyses, and create new records after confirmation.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Jiandaoyun’s no-code platform connector enables users to create enterprise applications through natural-language conversations, build and manage forms and data, process workflow approvals, and query and deeply analyze business data—helping enterprises rapidly achieve AI transformation based on real business data.",
+        "description_zh": "简道云零代码平台连接器，自然语言对话创建企业应用、沉淀表单、数据、处理流程审批，查询企业业务数据进行深度分析，帮助企业快速基于真实业务数据进行AI改造",
+        "examples_en": [
+          "Show my pending tasks that I have not handled this week.",
+          "Find the customers assigned to me who have not yet been followed up.",
+          "Summarize incomplete tasks due this week in the project task form and generate a follow-up list grouped by owner.",
+          "Find this week's after-sales service tickets, identify recurring issues, and generate a categorized summary.",
+          "From these meeting notes, extract the customer name, requirements, estimated amount, and next steps, then enter them into the opportunity follow-up form; ask me to confirm before writing."
+        ],
+        "examples_zh": [
+          "查一下本周我还未处理的待办。",
+          "帮我找一下我负责的、还没跟进的客户名单。",
+          "汇总项目任务表中本周到期但未完成的任务，按负责人生成催办清单。",
+          "查找本周的售后工单，归纳高频问题并生成问题分类汇总。",
+          "根据这份会议纪要，提取客户名称、需求、预计金额和下一步动作，填写到商机跟进表；写入前先让我确认。"
+        ],
+        "name": "简道云",
+        "name_en": "JianDaoYun",
+        "name_zh": "简道云"
+      },
+      "policy": {
+        "mcpServers": {
+          "jiandaoyun": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "jiandaoyun",
+  "version": "1.0.0+wb.22388f0682ea071c"
+}

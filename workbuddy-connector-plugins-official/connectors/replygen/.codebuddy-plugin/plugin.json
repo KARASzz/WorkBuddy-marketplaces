@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "AI customer-service connector for cross-border multi-store sellers (Shopee & more): ask in natural language for daily buyer-question digests, multi-store operations summaries, escalation handling stats, conversation insights, and order snapshot reports. Buyer PII is redacted on all output.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "AI customer-service connector for cross-border multi-store sellers (Shopee & more): ask in natural language for daily buyer-question digests, multi-store operations summaries, escalation handling stats, conversation insights, and order snapshot reports. 25+ read & analytics tools, cross-store and multi-language, with PII redaction on all buyer content.",
+        "description_zh": "跨境电商多店铺客服 AI 连接器（Shopee 等）：用自然语言做每日买家问题总结、多店经营汇总、工单处理统计、会话洞察与订单快照报表。提供 25+ 只读/分析工具，跨店铺跨语种，买家隐私数据经脱敏后输出。",
+        "examples_en": [
+          "Summarize what buyers asked about today",
+          "Give me this week's customer-service report across all my stores",
+          "How many refund tickets were handled this week, and how many are overdue",
+          "Which stores have anomalies today"
+        ],
+        "examples_zh": [
+          "总结一下今天买家主要问了什么",
+          "给我这四个店铺本周的客服经营汇总",
+          "退款类工单这周处理了多少？有多少超时",
+          "哪几个店铺今天有异常？"
+        ],
+        "name": "睿答",
+        "name_en": "ReplyGen",
+        "name_zh": "睿答"
+      },
+      "policy": {
+        "mcpServers": {
+          "replygen": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "replygen",
+  "version": "1.0.0+wb.c08f51d0e7840d21"
+}

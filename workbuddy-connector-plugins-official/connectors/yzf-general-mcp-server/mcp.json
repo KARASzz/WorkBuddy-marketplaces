@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "yzf-general-mcp-server": {
+      "type": "streamable-http",
+      "url": "https://super-ai-app.yunzhangfang.com/api/mcp/general/stream"
+    }
+  }
+}

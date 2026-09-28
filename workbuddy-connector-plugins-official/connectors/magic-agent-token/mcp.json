@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "magic-agent-token": {
+      "url": "https://tmc.qidian.qq.com/magic-agent/mcp",
+      "type": "streamable-http",
+      "headers": {
+        "X-Magic-MCP-Profile": "workbuddy-mcp"
+      }
+    }
+  }
+}

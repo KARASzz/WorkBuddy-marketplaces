@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "3chat-customer-growth": {
+      "type": "streamable-http",
+      "url": "https://app.3chatai.cn/mcp"
+    }
+  }
+}

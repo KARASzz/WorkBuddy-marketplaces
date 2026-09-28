@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Use natural language to analyze data and manage assets in your selected ThinkingAI AE environment.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Use natural language to analyze data and manage assets in your selected ThinkingAI AE environment.",
+        "description_zh": "通过自然语言查询和分析数据，并管理所选 ThinkingAI AE 环境中的业务资产。",
+        "examples_en": [
+          "List the AE projects I can access",
+          "Analyze user retention over the last seven days",
+          "Find events and properties whose names contain order"
+        ],
+        "examples_zh": [
+          "列出我可以访问的 AE 项目",
+          "查询最近 7 天的用户留存情况",
+          "查找名称中包含订单的事件和属性"
+        ],
+        "name": "ThinkingAI AE",
+        "name_en": "ThinkingAI AE",
+        "name_zh": "ThinkingAI AE"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "thinkingai-ae-cli",
+  "version": "1.0.0+wb.1011e764b98475fd"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "An AI video creation tool by Meitu, featuring one-click editing for social media, animated subtitles, and AI-generated covers to make talking-head videos more engaging. It also offers quality enhancement, watermark and subtitle removal, and audio noise reduction to simplify common video creation tasks.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "An AI video creation tool by Meitu, featuring one-click editing for social media, animated subtitles, and AI-generated covers to make talking-head videos more engaging. It also offers quality enhancement, watermark and subtitle removal, and audio noise reduction to simplify common video creation tasks.",
+        "description_zh": "美图公司出品的AI视频创作工具，支持一键网感剪辑、动态字幕和AI封面，让口播视频更有网感；还提供画质修复、水印消除、字幕消除、音频降噪等功能，轻松处理视频创作中的常见问题。",
+        "examples_en": [
+          "Remove the text watermark from this image.",
+          "Remove the watermark from this video.",
+          "Remove the subtitles from this video.",
+          "Repair the quality of this image.",
+          "Repair the quality of this video."
+        ],
+        "examples_zh": [
+          "帮我去掉这张图片上的文字水印",
+          "帮我去掉这个视频里的水印",
+          "帮我去掉这个视频里的字幕",
+          "帮我修复这张图片的画质",
+          "帮我修复这个视频的画质"
+        ],
+        "name": "美图 · 开拍",
+        "name_en": "Meitu Kaipai",
+        "name_zh": "美图 · 开拍"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "meitu-kaipai",
+  "version": "1.0.0+wb.df33759bf67e9c61"
+}

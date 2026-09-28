@@ -1,0 +1,62 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query enterprise entity data: fuzzy company search with precise name matching, registration details, change records, shareholders and capital contributions, key personnel, contact information, beneficial owners, branches, listing information, and external investments.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query enterprise entity data: fuzzy company search with precise name matching, registration details, change records, shareholders and capital contributions, key personnel, contact information, beneficial owners, branches, listing information, and external investments.",
+        "description_zh": "提供企业主体的身份识别与基础信息查询服务，包含企业模糊搜索、受益所有人结果、企业基本信息、变更信息、企业联系方式、主要人员信息、企业股东信息等工具。",
+        "examples_en": [
+          "Show the company registration details of Xiaomi Technology Co., Ltd.",
+          "Find the shareholders and external investments of CATL",
+          "Find AI companies established in Beijing during the last five years"
+        ],
+        "examples_zh": [
+          "查询小米科技有限责任公司的工商基本信息",
+          "查看宁德时代新能源科技股份有限公司的股东及对外投资情况",
+          "筛选北京近五年成立的人工智能企业"
+        ],
+        "name": "质数幻方·企业数据",
+        "name_en": "Prime Matrix Company",
+        "name_zh": "质数幻方·企业数据"
+      },
+      "policy": {
+        "mcpServers": {
+          "primematrix-company": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "primematrix-company": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "primematrix-company",
+  "version": "1.0.0+wb.49585ba12f329bbd"
+}

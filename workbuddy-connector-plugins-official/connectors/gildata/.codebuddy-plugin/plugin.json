@@ -1,0 +1,56 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to Gildata MCP to query structured financial data, research reports, corporate announcements, news, conditional stock selection, macroeconomic & industry data, as well as enterprise business data.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to Gildata MCP to query structured financial data, research reports, corporate announcements, news, conditional stock selection, macroeconomic & industry data, as well as enterprise business data.",
+        "description_zh": "连接恒生聚源 MCP，查询金融结构化数据、研究报告、公司公告、新闻资讯、条件选股、宏观行业、工商企业数据。支持基金经理观点持仓一致性分析、行业速报生成、金融资讯热点解读。",
+        "examples_en": [
+          "Analyze the consistency of Zhang Kun's views and holdings at end of 2024",
+          "Generate a 24-hour industry brief for the semiconductor sector",
+          "What are today's top financial news stories?",
+          "Screen CSI 300 constituents with P/E ratio below 15",
+          "Find recent research reports for Kweichow Moutai"
+        ],
+        "examples_zh": [
+          "帮我分析张坤在 2024 年底的观点与持仓一致性",
+          "生成半导体行业的 24 小时速报",
+          "今天有什么重要的金融新闻要闻？",
+          "帮我筛选市盈率低于 15 的沪深 300 成分股",
+          "查询贵州茅台最近的研究报告"
+        ],
+        "name": "恒生聚源 MCP",
+        "name_en": "Gildata MCP"
+      },
+      "policy": {
+        "mcpServers": {
+          "gildata-finance-data": {
+            "timeout": 180000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "urlTemplatedMcpServers": {
+        "gildata-finance-data": {
+          "tokenSchema": "./ai.workbuddy/token-schema.json",
+          "type": "streamable-http",
+          "urlTemplate": "https://api.gildata.com/mcp-servers/aidata-assistant-srv-tool?token=${GILDATA_TOKEN}"
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "gildata",
+  "version": "0.0.0+wb.458e9e8c014d157a"
+}

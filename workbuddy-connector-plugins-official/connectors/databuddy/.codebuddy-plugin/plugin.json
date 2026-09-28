@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Use DataBuddy capabilities on WorkBuddy.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect the DataBuddy knowledge base, powered by Tencent Cloud Big Data, to let AI answer with real enterprise data — for more trustworthy Q&A, reports, anomaly attribution, forecasting, and related-signal analysis, plus dashboards that refresh in real time.",
+        "description_zh": "连接腾讯云大数据 DataBuddy 数据知识库，让 AI 基于企业真实数据作答——问数、报告、异动归因、预测、相关信号分析更可信，并可生成实时更新的仪表盘。",
+        "examples_en": [
+          "Query last month's GMV and its month-over-month change?",
+          "Generate an operations data report for each store",
+          "Detect whether order transaction counts have any anomalies over the past 90 days",
+          "Analyze the attribution dimensions behind the drop in a certain model's order conversion rate",
+          "Forecast the next 30 days' trend of game user-acquisition conversion and ROI",
+          "Build an order sales operations dashboard based on the order data knowledge base"
+        ],
+        "examples_zh": [
+          "统计上个月 GMV 是多少，环比涨跌多少？",
+          "帮我生成一份各门店经营数据报告",
+          "检测近 90 天交易笔数是否存在异常波动",
+          "分析某车型订单转化率下降的归因维度",
+          "预测未来 30 天游戏买量转化与 ROI 走势",
+          "基于订单数据知识库，搭建一个订单销售运营看板"
+        ],
+        "name": "DataBuddy",
+        "name_en": "DataBuddy",
+        "name_zh": "DataBuddy"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "databuddy",
+  "version": "0.1.2+wb.67d95d745eabcdcb"
+}

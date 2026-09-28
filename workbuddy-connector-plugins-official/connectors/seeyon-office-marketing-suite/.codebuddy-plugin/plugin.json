@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Provides enterprises with collaborative office, meeting, and business collaboration capabilities, enabling users to create and query meetings, initiate and follow up on collaborations, and analyze business data using natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Provides enterprises with collaborative office, meeting, and business collaboration capabilities, enabling users to create and query meetings, initiate and follow up on collaborations, and analyze business data using natural language.",
+        "description_zh": "为企业提供协同办公、会议和业务协同能力，支持用户用自然语言完成会议创建与查询、协同发起与跟进、和业务数据分析。",
+        "examples_en": [
+          "Show meetings I created this week",
+          "Analyze shipment and payment status for sales orders",
+          "Send the sales analysis report to the sales owner"
+        ],
+        "examples_zh": [
+          "查询我本周已经发起的会议",
+          "分析销售订单的发货和回款情况",
+          "把销售分析报告发协同给销售负责人"
+        ],
+        "name": "致远互联协同办公服务",
+        "name_en": "Seeyon Collaborative Office Services",
+        "name_zh": "致远互联协同办公服务"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "seeyon-office-marketing-suite",
+  "version": "1.0.0+wb.8ec5270c7bf18a86"
+}

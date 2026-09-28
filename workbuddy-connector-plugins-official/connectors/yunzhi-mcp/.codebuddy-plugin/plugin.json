@@ -1,0 +1,65 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Create and modify website pages, manage site data such as products and articles via MCP, and deliver end-to-end from requirements to published pages with skills.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Create and modify website pages, manage site data such as products and articles via MCP, and deliver end-to-end from requirements to published pages with skills.",
+        "description_zh": "通过 MCP 服务创建/修改网站页面，管理网站的产品、文章等数据，与 Skill 结合实现从需求到页面的端到端自动交付，大幅简化建站流程。",
+        "examples_en": [
+          "Help me create a website homepage",
+          "Help me upload a product",
+          "Replace the homepage banner with this image and update the promotional copy",
+          "Write a company introduction article and publish it to the articles section"
+        ],
+        "examples_zh": [
+          "帮我创建一个网站首页",
+          "帮我上传一个产品",
+          "把网站首页的横幅换成这张图，并更新宣传文案",
+          "给网站写一篇公司介绍文章并发布到文章栏目"
+        ],
+        "name": "云指建站MCP服务",
+        "name_en": "YunZhi Site Builder MCP Service"
+      },
+      "policy": {
+        "mcpServers": {
+          "yunzhi-mcp": {
+            "disabled": false
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "yunzhi-mcp": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "MCP_TOKEN",
+                  "prefix": "Bearer "
+                },
+                "SiteID": {
+                  "field": "SITE_ID"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "yunzhi-mcp",
+  "version": "1.0.0+wb.43b1f124c125a8d7"
+}

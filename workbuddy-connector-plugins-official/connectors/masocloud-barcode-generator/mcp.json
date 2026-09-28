@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "barcode-generator": {
+      "type": "sse",
+      "url": "https://ai.masocloud.net/DoYsSV/maso/mcp/sse",
+      "headers": {
+        "src": "WorkBuddy"
+      }
+    }
+  }
+}

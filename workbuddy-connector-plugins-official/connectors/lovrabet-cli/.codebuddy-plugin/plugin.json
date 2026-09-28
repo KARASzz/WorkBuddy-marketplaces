@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "连接企业系统、数据和流程，让AI完成工作，交付结果",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect enterprise systems, data, and workflows so AI can do the work and deliver results.",
+        "description_zh": "连接企业系统、数据和流程，让AI完成工作，交付结果",
+        "examples_en": [
+          "Find today's high-priority exception orders and create an action list.",
+          "Update these policies' latest follow-up results in the business system and return an update summary.",
+          "Summarize this month's renewals and claims in a business brief.",
+          "Read these renovation acceptance forms, write the details to their project records, and list any issues.",
+          "Every day at 9 AM, automatically summarize yesterday's operations and send me a reminder.",
+          "Use company policy to check this business application and provide issues and revision suggestions."
+        ],
+        "examples_zh": [
+          "找出今天需要优先处理的异常订单，并生成处理清单",
+          "把这批保单的最新跟进结果更新到业务系统，并返回更新摘要",
+          "汇总本月续保和理赔情况，生成经营简报",
+          "识别这些装修验收单，将关键信息写入项目记录，并列出异常项",
+          "每天上午 9 点自动汇总昨日经营情况并发送提醒",
+          "根据公司制度检查这份业务申请，给出问题和修改建议"
+        ],
+        "name": "Lovrabet CLI",
+        "name_en": "Lovrabet CLI"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "lovrabet-cli",
+  "version": "2.1.23+wb.eab848f99a9725c9"
+}

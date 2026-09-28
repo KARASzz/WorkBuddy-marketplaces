@@ -1,0 +1,64 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Fabao LawyerOne delivers a full-stack legal AI service: search 2M+ regulations and 160M+ court rulings, get legal consultation, review and generate contracts, draft single-party legal documents, predict judgment outcomes and desensitize documents.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Fabao LawyerOne delivers a full-stack legal AI service: search 2M+ regulations and 160M+ court rulings, get legal consultation, review and generate contracts, draft single-party legal documents, predict judgment outcomes and desensitize documents.",
+        "description_zh": "一站式垂类法律 AI 能力服务，支持法规检索、案例检索、合同智能审查、合同/单方文书生成、智能法律咨询、裁判结果预测、文件脱敏，实现法律文书处理、法律资料检索等全链路智能化。",
+        "examples_en": [
+          "Company fired me for alleged policy violation, find similar court rulings",
+          "How does the Civil Code define liability for breach of contract?",
+          "My friend owes me 100k RMB, what are my chances if I sue?",
+          "Generate a residential lease agreement for me",
+          "Review this contract for risks, I am Party B",
+          "Draft a payment demand letter for me",
+          "Desensitize this document and mask the personal information"
+        ],
+        "examples_zh": [
+          "公司以严重违反规章制度为由开除我，帮我找找类似的判决",
+          "民法典合同编对违约责任是怎么规定的",
+          "朋友借钱10万元不还，我起诉的话胜诉概率多大，大概能判多少",
+          "帮我生成一份房屋租赁合同",
+          "帮我看下这份合同的风险，我是乙方",
+          "帮我起草一份催款函",
+          "帮忙脱敏一下这份文件，把个人敏感信息去掉"
+        ],
+        "name": "法保·全栈法律智能服务",
+        "name_en": "LawyerOne",
+        "name_zh": "法保·全栈法律智能服务"
+      },
+      "policy": {
+        "mcpServers": {
+          "LawyerOne": {
+            "timeout": 900000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "LawyerOne": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "APIKEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "lawyerone",
+  "version": "1.0.0+wb.1d32f62766bfb353"
+}

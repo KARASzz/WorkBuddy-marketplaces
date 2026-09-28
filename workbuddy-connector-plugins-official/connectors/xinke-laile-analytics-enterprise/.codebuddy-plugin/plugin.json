@@ -1,0 +1,56 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Analyze your company's lead trends, sources, and delivery performance.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Analyze your company's lead trends, sources, and delivery performance.",
+        "description_zh": "通过自然语言分析企业自己的线索趋势、渠道来源和推送效果。",
+        "examples_en": [
+          "Analyze my lead trend over the last 7 days",
+          "Compare lead volumes by platform this month",
+          "Analyze delivery success rates over the last 30 days"
+        ],
+        "examples_zh": [
+          "分析我最近7天的线索趋势",
+          "统计本月各平台线索数量和占比",
+          "分析最近30天各平台的推送成功率"
+        ],
+        "name": "新客来了数据分析企业版",
+        "name_en": "Xinke Laile Analytics Enterprise",
+        "name_zh": "新客来了数据分析企业版"
+      },
+      "policy": {
+        "mcpServers": {
+          "xinke-laile-enterprise": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "xinke-laile-enterprise": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "XIANSUO_MCP_TOKEN",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "xinke-laile-analytics-enterprise",
+  "version": "1.0.0+wb.3db593f31cb95a5e"
+}

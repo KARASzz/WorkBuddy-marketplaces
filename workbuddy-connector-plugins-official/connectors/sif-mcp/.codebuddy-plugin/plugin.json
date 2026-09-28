@@ -1,0 +1,59 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Sharp insights into Amazon markets, traffic, and advertising — for market research, product research, traffic analysis, ad structure breakdown, competitor monitoring, reverse ASIN lookup, and other core seller workflows. Goes beyond raw data to deliver analysis and judgment. Officially provided by Sif (sif.com).",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Sharp insights into Amazon markets, traffic, and advertising — for market research, product research, traffic analysis, ad structure breakdown, competitor monitoring, reverse ASIN lookup, and other core seller workflows. Goes beyond raw data to deliver analysis and judgment. Officially provided by Sif (sif.com).",
+        "description_zh": "精准洞察亚马逊市场、流量与广告：适用于市场研究、选品调研、流量分析、广告架构拆解、竞品监控、反查流量词等亚马逊运营核心场景。不只返回数据，更直接给出分析与判断。由 Sif（sif.com）官方提供。",
+        "examples_en": [
+          "Is 'yoga mat' still worth bidding on? Is demand growing or declining?",
+          "Why did this ASIN's traffic drop last week? How did organic vs sponsored traffic change?",
+          "Break down this ASIN's ad structure: which campaigns lead, and which ones lag?",
+          "Which keywords drive traffic to this competitor ASIN? Where can I break in?",
+          "This competitor is pulling back on ads — real retreat or a strategy shift? What's my opportunity?"
+        ],
+        "examples_zh": [
+          "yoga mat 这个词还值得打吗？需求在涨还是在跌？",
+          "帮我分析这个 ASIN 上周流量为什么跌了？自然流 vs 广告流怎么变的？",
+          "拆解这个 ASIN 的广告结构：哪些广告活动贡献最大、哪些在拖后腿？",
+          "这个竞品 ASIN 靠哪些关键词获得流量？我能从哪切进去？",
+          "竞品 ASIN 广告在减投，是真撤了还是换打法了？我有什么机会？"
+        ],
+        "name": "Sif MCP",
+        "name_en": "Sif Amazon Seller Analytics",
+        "name_zh": "Sif 亚马逊运营分析"
+      },
+      "policy": {
+        "mcpServers": {
+          "sif-mcp": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "sif-mcp": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "SIF_API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "sif-mcp",
+  "version": "1.0.1+wb.c7bd0ccd49666916"
+}

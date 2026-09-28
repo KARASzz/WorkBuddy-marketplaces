@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Access your WaveNote recordings, transcriptions, and summaries, and start transcription tasks.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Access your WaveNote recordings, transcriptions, and summaries, and start transcription tasks.",
+        "description_zh": "读取 WaveNote 录音、转写及总结内容，并为指定录音发起转写和总结任务。",
+        "examples_en": [
+          "Show my recent WaveNote recordings",
+          "Get the transcription for recording 2091",
+          "Get the summary for recording 2091",
+          "Start transcription for recording 2091"
+        ],
+        "examples_zh": [
+          "查看我最近的录音列表",
+          "获取录音 2091 的转写内容",
+          "获取录音 2091 的总结内容",
+          "为录音 2091 重新发起转写"
+        ],
+        "name": "WaveNote",
+        "name_en": "WaveNote",
+        "name_zh": "WaveNote"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "wavenote-audio",
+  "version": "1.0.0+wb.af3b853db3ad4b63"
+}

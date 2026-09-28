@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "AI teaching for Tsinghua University School of Environment courses, tasks, feedback, and progress.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "AI teaching for Tsinghua University School of Environment courses, tasks, feedback, and progress.",
+        "description_zh": "面向清华大学环境学院课程的 AI 教学平台，支持课程、学习任务、教学资料、成果草稿、评价反馈与学习进展协作。",
+        "examples_en": [
+          "Check my Edu Next connection",
+          "Show the courses I teach",
+          "Create a pre-class activity for next week",
+          "Show my upcoming learning activities"
+        ],
+        "examples_zh": [
+          "检查一下 Edu Next 连接",
+          "看看我正在教授的课程",
+          "帮我创建下周的课前学习任务",
+          "看看我最近有哪些学习任务要完成"
+        ],
+        "name": "Edu Next",
+        "name_en": "Edu Next"
+      },
+      "policy": {
+        "mcpServers": {
+          "edu-next": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "edu-next",
+  "version": "1.0.0+wb.0c062f3498226ded"
+}

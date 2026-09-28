@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "同花顺iFinD金融数据查询，查询股票、基金、宏观经济、行业经济、新闻公告、债券、港美股、指数板块及期货期权数据；通过内置智能问数算法，仅少量工具即可覆盖海量投研级金融数据指标，其中A股、中国公募基金、债券交易所、国内指数共4类市场支持日内高频/实时行情的level1数据，同时支持智能选股、选基、宏观行业经济指标搜索、金融公告资讯搜索等服务",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "server-side",
+        "provider_id": "ifind-mcp"
+      },
+      "display": {
+        "description_en": "THS iFinD Financial Data Query: Access comprehensive data on stocks, funds, macroeconomics, industry economics, news & announcements, bonds, HK/US stocks, indices, sectors, futures, and options. Powered by built-in intelligent natural language query algorithms, it covers a vast array of investment-research-grade financial metrics with minimal tooling. It supports Level-1 intraday high-frequency/real-time market data for four major markets: A-shares, Chinese public mutual funds, bond exchanges, and domestic indices. Additional features include smart stock screening, fund selection, macro/industry economic indicator search, and financial announcement & news search.",
+        "examples_en": [
+          "Stocks in the new energy vehicle industry with a market cap exceeding 50 billion CNY",
+          "Latest ROA, ROE, and profit growth rate of THS, East Money, and Hundsun Technologies",
+          "Recent price trend of lithium hexafluorophosphate",
+          "Recent news and developments in brain-computer interface technology",
+          "Search for content related to robotic dexterous hands in listed companies' annual reports or prospectuses"
+        ],
+        "examples_zh": [
+          "新能源汽车行业市值高于500亿的股票",
+          "同花顺、东方财富、恒生电子最新ROA、ROE和利润增速",
+          "六氟磷酸锂的近期价格走势",
+          "脑机接口技术近期进展资讯",
+          "查询上市公司年报/招股书中与机器人灵巧手相关内容"
+        ],
+        "name": "同花顺iFinD金融数据查询",
+        "name_en": "THS iFinD Financial Data Query",
+        "name_zh": "同花顺iFinD金融数据查询"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "ifind-mcp",
+  "version": "0.0.0+wb.e47de47553d50450"
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "AI reimbursement assistant for ZTE FSSC: reimburse, query invoices and expense bills via natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "ZTE FSSC AI reimbursement assistant: file reimbursements, recognize and query invoices, query expense bills and approve via natural language.",
+        "description_zh": "财务云 AI 报销助手：用自然语言完成报销申请、发票查询识别、报销单查询与费用审批等操作。",
+        "examples_en": [
+          "Show my submitted reimbursement bills this month",
+          "Create a travel reimbursement for my Beijing business trip",
+          "I have a meal expense to reimburse, please start the process"
+        ],
+        "examples_zh": [
+          "帮我查询本月已提交的报销单",
+          "创建一张去北京出差的差旅报销单",
+          "我有一笔餐费要报销，帮我走流程"
+        ],
+        "name": "中兴新云AI智报",
+        "name_en": "ZTC AI Assistant"
+      },
+      "policy": {
+        "mcpServers": {
+          "zfs-fssc-ai": {
+            "timeout": 120000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "zfs-fssc-ai": {
+            "auth": {
+              "headers": {
+                "X-Zfs-Login-Key": {
+                  "field": "ZFS_LOGIN_KEY"
+                },
+                "X-Zfs-Login-Password": {
+                  "field": "ZFS_PASSWORD"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "zfs-fssc-ai",
+  "version": "0.0.0+wb.49ce0aaf18a8f302"
+}

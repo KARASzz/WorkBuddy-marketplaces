@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "通过 MCP 查询有赞店铺商品、订单、会员、营销、供应链、流量等 16 个业务域数据，支持订单、会员等原始数据导出，全部能力只读。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query Youzan store data across 16 business domains including products, orders, members, marketing, supply chain, and traffic via MCP, with read-only access and supported raw data exports.",
+        "description_zh": "通过 MCP 查询有赞店铺商品、订单、会员、营销、供应链、流量等 16 个业务域数据，支持订单、会员等原始数据导出，全部能力只读。",
+        "examples_en": [
+          "Check the current store's listed products",
+          "Query today's order data for the current store",
+          "Check a member's level and points history",
+          "List active marketing campaigns for the current store"
+        ],
+        "examples_zh": [
+          "查询当前店铺在售商品",
+          "查询当前店铺今日订单数据",
+          "查询指定会员的等级和积分记录",
+          "查询当前店铺正在生效的营销活动"
+        ],
+        "name": "有赞",
+        "name_en": "Youzan"
+      },
+      "policy": {
+        "mcpServers": {
+          "youzan-workbuddy": {
+            "timeout": 120000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "youzan-workbuddy",
+  "version": "0.0.0+wb.80391ae81601592d"
+}

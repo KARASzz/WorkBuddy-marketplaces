@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Send a platform settlement Excel file and auto-reconcile TikTok Shop / Tokopedia statements against Eccang settlement data — compare order counts and amounts, flag amount mismatches and one-sided orders, and generate a reconciliation report.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Send a platform settlement Excel file and auto-reconcile TikTok Shop / Tokopedia statements against Eccang settlement data — compare order counts and amounts, flag amount mismatches and one-sided orders, and generate a reconciliation report.",
+        "description_zh": "发一份平台结算 Excel，自动核对 TikTok Shop / Tokopedia 账单与易仓结算数据：比对订单数与结算金额，标出金额差异、单边订单，并生成可对外的对账报告。",
+        "examples_en": [
+          "Reconcile this TikTok settlement file: D:/bill/TK3631_202602.xlsx",
+          "Check the March Tokopedia statement for any differences",
+          "List the orders whose settlement amounts don't match",
+          "Generate the February TikTok reconciliation report as an Excel file"
+        ],
+        "examples_zh": [
+          "帮我对一下这份 TikTok 账单：D:/bill/TK3631_202602.xlsx",
+          "核对 3 月份 Tokopedia 结算单，看看有没有差异",
+          "这家店 1683 单金额对不上，把差异订单列出来",
+          "生成 2 月 TikTok 账单的对账报告并发我 Excel"
+        ],
+        "name": "易仓跨境对账",
+        "name_en": "Eccang Settlement Reconcile",
+        "name_zh": "易仓跨境对账"
+      },
+      "policy": {
+        "mcpServers": {
+          "eccang-reconcile": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "eccang-reconcile",
+  "version": "1.0.2+wb.f0710df1422dd526"
+}

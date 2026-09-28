@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Create and edit forms, query and bulk-update entries, check plan quota on Jinshuju (jinshuju.net).",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "server-side"
+      },
+      "display": {
+        "description_en": "Create and edit forms, query and bulk-update entries, check plan quota on Jinshuju (jinshuju.net).",
+        "description_zh": "用自然语言在金数据（jinshuju.net）创建表单、表格、问卷、考试、报名、收款等各类场景应用：一句话生成表单与表格、批量处理数据、自动统计分析，零门槛快速搭建。",
+        "examples_en": [
+          "List all forms in my Jinshuju account",
+          "Create a registration form for the 2026 Spring Launch with name, phone, company and title fields",
+          "Export the entries submitted in the last 7 days for form abCdEf",
+          "How much quota is left on my Jinshuju plan?"
+        ],
+        "examples_zh": [
+          "列一下我金数据里的表单",
+          "帮我建一个“2026 春季发布会”报名表，要姓名、手机号、公司、职位",
+          "把 form_token 为 abCdEf 的表单里最近 7 天的报名数据导出来",
+          "查一下我这个金数据账户的套餐还剩多少额度"
+        ],
+        "name": "金数据",
+        "name_en": "Jinshuju"
+      },
+      "policy": {
+        "mcpServers": {
+          "jinshuju": {
+            "timeout": 30000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "jinshuju",
+  "version": "0.0.0+wb.5e941076c32a6e7f"
+}

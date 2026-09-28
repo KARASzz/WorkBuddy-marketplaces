@@ -1,0 +1,58 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Chain-store business data assistant for sales ranking, inventory, member and operation insights",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Chain-store business data assistant for sales ranking, inventory, member and operation insights",
+        "description_zh": "连锁门店经营数据助手，支持销售排名、库存补货、会员分析和经营诊断等查询",
+        "examples_en": [
+          "Which store in my chain sells the best?",
+          "What products need restocking?",
+          "Analyze member spending contribution"
+        ],
+        "examples_zh": [
+          "查询连锁店铺哪个店铺销售最好",
+          "帮我看看哪些商品需要补货",
+          "分析一下会员的消费贡献"
+        ],
+        "name": "生意专家",
+        "name_en": "Yuanbei Business Hub"
+      },
+      "policy": {
+        "mcpServers": {
+          "yuanbei-hub": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "yuanbei-hub": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "YUANBEI_ACCESS_TOKEN",
+                  "prefix": "Bearer "
+                },
+                "X-Login-Token": {
+                  "field": "YUANBEI_LOGIN_TOKEN"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "yuanbei-hub",
+  "version": "1.0.0+wb.b0fb159192d12284"
+}

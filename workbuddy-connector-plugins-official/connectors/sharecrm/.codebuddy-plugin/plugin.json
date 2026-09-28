@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Easily handle the entire sales workflow—from querying customer data and advancing opportunities to logging follow-ups, managing approvals, and generating charts—using natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Easily handle the entire sales workflow—from querying customer data and advancing opportunities to logging follow-ups, managing approvals, and generating charts—using natural language.",
+        "description_zh": "用自然语言查询客户、推进商机、写跟进记录、处理审批、建图表等，轻松搞定销售全链路工作。",
+        "examples_en": [
+          "Sales opportunities for me to follow up on next month.",
+          "Create a sales record.",
+          "Generate this week's sales report.",
+          "Handle my pending approvals."
+        ],
+        "examples_zh": [
+          "下个月待我跟进的商机情况",
+          "写一条销售记录",
+          "生成本周销售周报",
+          "处理我的审批待办"
+        ],
+        "name": "纷享销客CRM",
+        "name_en": "ShareCRM"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "sharecrm",
+  "version": "0.0.0+wb.03f473abbc2d05c2"
+}

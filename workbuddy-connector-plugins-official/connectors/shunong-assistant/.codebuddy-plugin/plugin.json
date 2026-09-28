@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to Shunong Assistant, authorize a company account, and check or disconnect your session.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to Shunong Assistant, authorize a company account, and check or disconnect your session.",
+        "description_zh": "连接数字农人，使用企业账号完成授权，查询登录状态，切换或退出当前连接。",
+        "examples_en": [
+          "Connect to Shunong Assistant and let me choose my company",
+          "Check whether I am signed in to Shunong Assistant",
+          "Switch the company currently authorized in Shunong Assistant",
+          "Disconnect my current Shunong Assistant session"
+        ],
+        "examples_zh": [
+          "连接数字农人，我要选择本次使用的企业",
+          "检查数字农人是否已经登录",
+          "切换数字农人当前授权的企业",
+          "退出当前数字农人连接"
+        ],
+        "name": "数字农人",
+        "name_en": "Shunong Assistant"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "shunong-assistant",
+  "version": "0.1.1+wb.c58d318eb78d2a52"
+}

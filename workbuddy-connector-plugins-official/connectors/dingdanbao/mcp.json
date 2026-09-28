@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "dingdanbao": {
+      "type": "streamable-http",
+      "url": "https://wbmcp.shansugou.com/mcp",
+      "headers": {
+        "X-DDB-Base-Url": "https://sanbao.shansugou.com"
+      }
+    }
+  }
+}

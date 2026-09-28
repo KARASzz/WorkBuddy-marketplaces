@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Screen and compare insurance products from Huize's internal recommendation catalog based on age, audience, occupation, budget, and coverage needs.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Screen and compare insurance products from Huize's internal recommendation catalog based on age, audience, occupation, budget, and coverage needs.",
+        "description_zh": "根据年龄、人群、职业、预算和保障需求，从慧择内部产品推荐库中筛选并比较保险产品。",
+        "examples_en": [
+          "Recommend cost-effective medical insurance for young adults",
+          "Compare critical illness insurance for a 30-year-old family breadwinner",
+          "Screen accident insurance based on my occupation and budget"
+        ],
+        "examples_zh": [
+          "推荐适合年轻人的高性价比医疗险",
+          "比较适合30岁家庭经济支柱的重疾险",
+          "根据我的职业和预算筛选意外险"
+        ],
+        "name": "慧择保险产品推荐",
+        "name_en": "Huize Insurance Product Recommendation"
+      },
+      "policy": {
+        "mcpServers": {
+          "product-recommendation": {
+            "timeout": 30000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "huize-insurance-product-recommendation",
+  "version": "0.1.0+wb.53a30f1a3721a5fc"
+}

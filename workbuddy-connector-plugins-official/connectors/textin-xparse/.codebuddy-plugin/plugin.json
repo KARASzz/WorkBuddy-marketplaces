@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Upload files (PDFs, images, Word, Excel, PowerPoint, scanned documents, and more) to parse them into Markdown or structured JSON. Preserve document hierarchies and complex table structures for high-accuracy, high-performance OCR and document processing tasks. Parse up to 1,000 pages free each day. It also supports document image forensics to accurately determine whether an image is authentic or manipulated.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Upload files (PDFs, images, Word, Excel, PowerPoint, scanned documents, and more) to parse them into Markdown or structured JSON. Preserve document hierarchies and complex table structures for high-accuracy, high-performance OCR and document processing tasks. Parse up to 1,000 pages free each day. It also supports document image forensics to accurately determine whether an image is authentic or manipulated.",
+        "description_zh": "支持 PDF、图片、Word、Excel、PPT、扫描件等文档的高精度高性能OCR/文字识别、解析、格式转换、提取与结构化抽取，可识别表格、公式、手写体并输出 Markdown 或 JSON，支持复杂表格版式还原和批量处理，每日免费 1000 页。更可支持文档图像鉴伪，精准判定图片真假。",
+        "examples_en": [
+          "Use the xParse Connector to parse this PDF, extract all tables, and convert them to Excel",
+          "Use xParse to recognize this scanned document and reproduce it verbatim as editable text",
+          "Use xParse to recognize these invoices, extract the invoice titles, tax IDs, and amounts, and summarize them in a table",
+          "Use xParse to parse and summarize the key points of this PDF: https://web-api.textin.com/image/download?filename=4249da45f6e946d2afd8380d59.pdf",
+          "Use xParse to parse this PDF into Markdown for ingestion into a knowledge base",
+          "Upload an image, check for AI generation, Photoshop edits, or local tampering, and highlight suspicious regions."
+        ],
+        "examples_zh": [
+          "用 xParse 连接器解析这份 PDF，提取所有表格并转成 Excel",
+          "用 xParse 识别这份扫描件，逐字还原成可编辑文本",
+          "用 xParse 识别这批发票，提取抬头、税号、金额并汇总成表",
+          "用 xParse 解析并总结这份 PDF 的核心内容：https://web-api.textin.com/image/download?filename=4249da45f6e946d2afd8380d59.pdf",
+          "用 xParse 把这份 PDF 解析成 Markdown，用于知识库入库",
+          "上传图片，检查是否存在 AI 生成、PS 修改或局部篡改，并标出可疑区域。"
+        ],
+        "name": "TextIn xParse·智能文档解析",
+        "name_en": "TextIn xParse · Intelligent Document Parsing"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "textin-xparse",
+  "version": "0.0.0+wb.a779a3e6c311b368"
+}

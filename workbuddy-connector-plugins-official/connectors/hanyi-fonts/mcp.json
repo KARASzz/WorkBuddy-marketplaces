@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "hanyi-fonts": {
+      "type": "streamable-http",
+      "url": "https://hanyi-mcp.hellofont.cn/mcp"
+    }
+  }
+}

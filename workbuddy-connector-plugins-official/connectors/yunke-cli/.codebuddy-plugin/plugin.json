@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Provides real phone data access and device control. AI auto-collects calls and recordings, sedimenting full communication data to drive sales analysis; meanwhile AI can directly operate the phone to make calls, send SMS, and control apps — turning the physical phone into a hardware execution unit for the Agent.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Provides real phone data access and device control. AI auto-collects calls and recordings, sedimenting full communication data to drive sales analysis; meanwhile AI can directly operate the phone to make calls, send SMS, and control apps — turning the physical phone into a hardware execution unit for the Agent.",
+        "description_zh": "提供真实手机的数据读取与设备控制能力。AI 自动采集通话与录音，沉淀全量沟通数据驱动销售分析；同时允许 AI 直接操控手机拨打电话、发短信、操作 APP，把实体手机变成 Agent 的硬件执行单元。",
+        "examples_en": [
+          "Generate last week's sales team employee statistics report",
+          "Analyze call records from the past week for customer sentiment insights",
+          "Extract top-performing sales scripts from the last 7 days of call recordings as winning deal case studies",
+          "Analyze a specific employee's last conversation with a key client to surface winning deal patterns",
+          "Analyze customer profiles and help me plan this week's visit schedule"
+        ],
+        "examples_zh": [
+          "生成上周销售部的员工统计报表",
+          "查询最近一周的通话记录分析客户情绪分析",
+          "提取最近7天销售部通话记录中的优秀话术形成成单案例",
+          "分析xx员工最后和陈总的沟通提取成成单案例",
+          "分析客户情况，帮我规划本周拜访计划"
+        ],
+        "name": "云客AI工作手机",
+        "name_en": "Yunke AI WorkPhone"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "yunke-cli",
+  "version": "0.0.0+wb.69780e2af9e164d9"
+}

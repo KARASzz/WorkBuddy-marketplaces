@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Contract Risk Review is an intelligent contract review tool built on over 40 years of practical experience from a leading law firm in contract review, risk control, and dispute resolution. It helps identify key legal and commercial risks in Chinese contracts, including employment, divorce, lease, entrustment, and sales contracts, and generates structured review reports, actionable revision suggestions, and annotated Word documents to improve review efficiency and signing security.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Contract Risk Review is an intelligent contract review tool built on over 40 years of practical experience from a leading law firm in contract review, risk control, and dispute resolution. It helps identify key legal and commercial risks in Chinese contracts, including employment, divorce, lease, entrustment, and sales contracts, and generates structured review reports, actionable revision suggestions, and annotated Word documents to improve review efficiency and signing security.",
+        "description_zh": "基于头部律所40余年合同审查与争议处理实战经验沉淀，面向劳动、离婚、租赁、委托、买卖等中文合同，自动识别关键法律与交易风险，并生成规范审查报告、修改建议和 Word 批注版，提升审查效率和签署安全性。",
+        "examples_en": [
+          "Review this employment contract and flag the key legal risks",
+          "Check this divorce agreement and give me revision suggestions",
+          "Can I sign this lease? Review it and generate a report",
+          "Review this entrustment contract, focus on the liability clauses"
+        ],
+        "examples_zh": [
+          "帮我审一下这份劳动合同，看看有哪些风险",
+          "审查这份离婚协议，给我修改建议和批注版 Word",
+          "这份租房合同能签吗？帮我出一份审查报告",
+          "帮我审查这份委托合同，重点关注违约责任条款"
+        ],
+        "name": "明白律师·合同风险审查",
+        "name_en": "Mindbye Contract Risk Review"
+      },
+      "policy": {
+        "mcpServers": {
+          "mindbye-contract-review": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "mindbye-contract-review",
+  "version": "1.0.0+wb.0c5325b036880720"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query shared power bank rental orders by phone number and nearby stores by coordinates, all through natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query shared power bank rental orders by phone number and nearby stores by coordinates, all through natural language.",
+        "description_zh": "按手机号查询共享充电宝租借订单，按经纬度查询附近门店，用自然语言即可查询订单明细与最近网点。",
+        "examples_en": [
+          "Find rental orders for phone number 13800000000",
+          "What are the nearest stores around Beijing Houhai",
+          "Show me the 3 closest stores to my location"
+        ],
+        "examples_zh": [
+          "帮我查一下手机号 13800000000 的租借订单",
+          "北京后海附近最近的门店有哪些",
+          "查一下离我最近的前 3 家门店"
+        ],
+        "name": "订单门店查询",
+        "name_en": "Order & Store Query",
+        "name_zh": "订单门店查询"
+      },
+      "policy": {
+        "mcpServers": {
+          "charge-order-query": {
+            "timeout": 30000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "charge-order-query",
+  "version": "1.0.0+wb.38063e0360f283df"
+}

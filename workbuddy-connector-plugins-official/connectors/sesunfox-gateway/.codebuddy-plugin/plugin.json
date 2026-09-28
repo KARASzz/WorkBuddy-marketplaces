@@ -1,0 +1,68 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "通过自然语言查询聚宝赞的订单、商品、门店、优惠券、退款单、直播间和云仓库存数据。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query Jubaozan orders, products, stores, coupons, refunds, live rooms and warehouse inventory with natural language.",
+        "description_zh": "通过自然语言查询聚宝赞的订单、商品、门店、优惠券、退款单、直播间和云仓库存数据。",
+        "examples_en": [
+          "Show yesterday's Jubaozan orders, newest first",
+          "Search products named \"sweater\" and list their prices",
+          "List recent refunds and their status",
+          "List our stores",
+          "Check warehouse inventory for WH-CENTER-00000003"
+        ],
+        "examples_zh": [
+          "查一下昨天的聚宝赞订单，按下单时间倒序",
+          "搜商品名包含「羊毛衫」的商品，看看价格",
+          "最近有哪些退款单，状态分别是什么",
+          "列一下我们的门店",
+          "查一下云仓 WH-CENTER-00000003 的库存"
+        ],
+        "name": "聚宝赞",
+        "name_en": "Jubaozan",
+        "name_zh": "聚宝赞"
+      },
+      "policy": {
+        "mcpServers": {
+          "sesunfox": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "sesunfox": {
+            "auth": {
+              "headers": {
+                "X-Client-Id": {
+                  "field": "CLIENT_ID"
+                },
+                "X-Client-Secret": {
+                  "field": "CLIENT_SECRET"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "sesunfox-gateway",
+  "version": "1.0.1+wb.2e741a814aab5e2e"
+}

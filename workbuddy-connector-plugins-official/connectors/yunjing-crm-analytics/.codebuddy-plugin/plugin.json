@@ -1,0 +1,60 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query masked, read-only business and patient-operations analytics within your CRM permissions.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query masked, read-only business and patient-operations analytics within your CRM permissions.",
+        "description_zh": "在当前 CRM 权限范围内查询脱敏的经营、患者、客户、工单及中心运营汇总数据。",
+        "examples_en": [
+          "Show this month's business overview",
+          "Analyze the new-patient trend for the last 12 months",
+          "Summarize this month's follow-up to-dos, completions, and overdue items",
+          "Summarize this month's work order status and overdue handling",
+          "Show the distribution of new, existing, and public-pool customers"
+        ],
+        "examples_zh": [
+          "查询本月经营总览",
+          "分析近 12 个月新增患者趋势",
+          "汇总本月患者跟进待办、完成和逾期情况",
+          "汇总本月工单状态和逾期处理情况",
+          "查询新客户、老客户和公海客户分布"
+        ],
+        "name": "云净透析中心CRM与经营管理系统",
+        "name_en": "Yunjing CRM Analytics",
+        "name_zh": "云净透析中心CRM与经营管理系统"
+      },
+      "policy": {
+        "mcpServers": {
+          "yunjing-crm-analytics": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "yunjing-crm-analytics": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "CRM_API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "yunjing-crm-analytics",
+  "version": "0.1.0+wb.78d70afbe96c6d09"
+}

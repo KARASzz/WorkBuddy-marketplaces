@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Academic literature search Connector for finding papers, research literature, and related studies. For explicit literature-search requests, prefer the searchAcademicLiterature MCP tool, which aggregates results from configured academic providers.",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "oauth"
+      },
+      "display": {
+        "description_en": "Academic literature search Connector for finding papers, research literature, and related studies. For explicit literature-search requests, prefer the searchAcademicLiterature MCP tool to aggregate results from configured and enabled academic providers.",
+        "description_zh": "学术文献检索 Connector：用于查论文、找文献、搜索相关研究和文献调研。对于明确的学术检索请求，优先使用 searchAcademicLiterature MCP 工具，聚合运行时已配置并启用的学术数据源，并返回可追溯的结构化文献元数据。",
+        "examples_en": [
+          "Find papers about protein structure prediction",
+          "Search recent literature on perovskite solar cells",
+          "Find related academic studies on optical interconnects",
+          "Search 10 papers about AI for Science"
+        ],
+        "examples_zh": [
+          "查论文：深度学习在蛋白质结构预测中的应用",
+          "帮我找近三年的钙钛矿太阳能电池文献",
+          "搜索关于光互连拓扑的相关研究",
+          "做一个关于 AI for Science 的文献调研，给出10篇论文"
+        ],
+        "name": "scnet·科学文献洞察智能体",
+        "name_en": "sugon-scinsight Agent",
+        "name_zh": "scnet·科学文献洞察智能体"
+      },
+      "policy": {
+        "mcpServers": {
+          "sugon-scinsight-agent": {
+            "timeout": 360000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "sugon-scinsight-agent",
+  "version": "2.1.0+wb.3d0fab52a33e18f0"
+}

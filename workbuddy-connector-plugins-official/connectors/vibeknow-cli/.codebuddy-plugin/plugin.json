@@ -1,0 +1,51 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Turn a document, a web page, a slide deck, or text pasted straight into the chat into a narrated video — then read its script, adjust it, and get the MP4 back in the conversation.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Turn a document, a web page, a slide deck, or text pasted straight into the chat into a narrated video. Five creation modes — freeform, illustrated, page-by-page slide walkthrough, hand-drawn animation, one-shot — or lock your own script and have it narrated verbatim. Follow progress while it runs, then read the script, adjust subtitles and background music for free, and export the MP4 straight back into the conversation.",
+        "description_zh": "把文档、网页、PPT，或直接粘在对话里的一段文字，变成带旁白的成片。五种创作模式：灵活创作、图解视频、PPT 逐页讲解、手绘动画、一键成片，也可锁定原稿逐字照念。生成过程可分段查看进度，成片后能免费读取讲稿、调整字幕与背景音乐，并把导出的 mp4 直接发回对话。",
+        "examples_en": [
+          "I have a PDF report — use VibeKnow to turn it into a narrated video",
+          "I'll paste some text — use VibeKnow to narrate it as a video",
+          "I have a slide deck — use VibeKnow to make a page-by-page walkthrough video",
+          "I already wrote the script — have VibeKnow narrate it verbatim, don't rewrite it",
+          "Use VibeKnow to turn a long article into an illustrated video",
+          "Use VibeKnow to make a short story into a hand-drawn animation",
+          "For a video VibeKnow generated, can I read the script and tweak subtitles or music?",
+          "Can VibeKnow export a finished video to MP4 and send me the file?"
+        ],
+        "examples_zh": [
+          "我有一份 PDF 报告，用 VibeKnow 帮我做成讲解视频",
+          "我发一段文字给你，用 VibeKnow 配上旁白做成视频",
+          "我有一份 PPT，用 VibeKnow 做成逐页讲解的视频",
+          "讲稿我已经写好了，用 VibeKnow 照原文念，别改我的文案",
+          "用 VibeKnow 把一篇长文章做成图解视频",
+          "用 VibeKnow 把一个小故事做成手绘动画",
+          "用 VibeKnow 生成的视频，我能看讲稿、改字幕和背景音乐吗？",
+          "VibeKnow 做好的视频能导出成 mp4 文件发我吗？"
+        ],
+        "name": "VibeKnow CLI",
+        "name_en": "VibeKnow CLI",
+        "name_zh": "VibeKnow"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "vibeknow-cli",
+  "version": "0.9.1+wb.eeab6c884a43b736"
+}

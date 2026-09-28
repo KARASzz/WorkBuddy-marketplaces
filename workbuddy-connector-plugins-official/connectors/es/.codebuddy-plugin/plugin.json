@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Operate Tencent Cloud Elasticsearch Service (ES) via MCP: list instances, inspect cluster health/nodes/shards/thread pools, browse index settings and mappings, query monitoring metrics and cluster logs, diagnose performance and unassigned shards, and manage clusters (scale nodes/disk, restart, rollover, aliases, Kibana access, Logstash pipelines).",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Operate Tencent Cloud Elasticsearch Service (ES) via MCP: list instances, inspect cluster health/nodes/shards/thread pools, browse index settings and mappings, query monitoring metrics and cluster logs, diagnose performance and unassigned shards, and manage clusters (scale nodes/disk, restart, rollover, aliases, Kibana access, Logstash pipelines).",
+        "description_zh": "通过 MCP 操作腾讯云 Elasticsearch Service（ES）：查询实例列表，查看集群健康、节点、分片与线程池状态，浏览索引配置与 Mapping，查询监控指标与集群日志，诊断集群性能与分片未分配问题，并管理集群（节点/磁盘变配、重启、索引 Rollover、别名、Kibana 访问、Logstash 管道）。",
+        "examples_en": [
+          "List the Elasticsearch instances in ap-guangzhou",
+          "Check the cluster health of es-xxxxxxxx and whether there are unassigned shards",
+          "Show CPU, JVM memory and disk usage metrics of es-xxxxxxxx for the last hour",
+          "Diagnose why indexing on es-xxxxxxxx is slow, check thread pools and hot threads",
+          "List the largest indices on es-xxxxxxxx and show their mappings and settings",
+          "Scale the data nodes of es-xxxxxxxx up to 6"
+        ],
+        "examples_zh": [
+          "帮我查一下 ap-guangzhou 地域下有哪些 ES 集群实例",
+          "看看 es-xxxxxxxx 集群的健康状态，有没有未分配的分片",
+          "查一下 es-xxxxxxxx 最近一小时的 CPU、JVM 内存和磁盘使用率监控数据",
+          "帮我分析 es-xxxxxxxx 集群写入变慢的原因，看下线程池和热点线程",
+          "列出 es-xxxxxxxx 中占用磁盘最大的索引，并查看它的 Mapping 和 Settings",
+          "帮我给 es-xxxxxxxx 集群扩容数据节点数量到 6 个"
+        ],
+        "name": "腾讯云 Elasticsearch Service",
+        "name_en": "Tencent Cloud Elasticsearch Service"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "es",
+  "version": "0.0.0+wb.646406763acf41e4"
+}

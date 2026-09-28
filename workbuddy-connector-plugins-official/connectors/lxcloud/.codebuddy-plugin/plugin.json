@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Use natural language to query and enter business data such as leads, customers, opportunities, contracts, products, payment collection and invoicing, follow-up records, and more in LXCRM.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Use natural language to query and enter business data such as leads, customers, opportunities, contracts, products, payment collection and invoicing, follow-up records, and more in LXCRM.",
+        "description_zh": "用自然语言查询和录入励销CRM线索、客户、商机、合同、产品、回款开票、跟进记录等业务数据，轻松搞定销售全链路工作。",
+        "examples_en": [
+          "Search and find out how many new customers were added last week",
+          "List out the customers under my name who have not been followed up for more than 30 days",
+          "Write the uploaded material content into the follow-up record"
+        ],
+        "examples_zh": [
+          "搜一下上周新增了多少客户",
+          "把我名下超过30天没跟进的客户列举出来",
+          "把上传的资料内容写入跟进记录"
+        ],
+        "name": "励销CRM",
+        "name_en": "LX Client"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "lxcloud",
+  "version": "0.0.0+wb.2052b841d3def3f3"
+}

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Create AI phone callout tasks and query available Fuma AI phone agents and members.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Create AI phone callout tasks and query available Fuma AI phone agents and members.",
+        "description_zh": "通过 WorkBuddy 查询福马AI手机智能体、成员列表，并创建 AI 外呼任务。",
+        "examples_en": [
+          "List available Fuma AI phone agents",
+          "List assignable Fuma AI members",
+          "Create a callout task with bot ID and a callee list"
+        ],
+        "examples_zh": [
+          "帮我查询可用的手机智能体",
+          "帮我查询可分配的成员列表",
+          "用智能体创建一个外呼任务，名单包含张三 13800138000"
+        ],
+        "name": "福马AI外呼任务",
+        "name_en": "Fuma AI Callout Tasks"
+      },
+      "policy": {
+        "mcpServers": {
+          "fuma-ai-callout": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "fuma-ai-callout": {
+            "auth": {
+              "headers": {
+                "access-token": {
+                  "field": "ACCESS_TOKEN"
+                },
+                "loginName": {
+                  "field": "LOGIN_NAME"
+                },
+                "orgCode": {
+                  "field": "ORG_CODE"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "fuma-ai-callout",
+  "version": "0.0.0+wb.67c5232bf8d8560f"
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Discover, inspect, and call 10,000+ verified capabilities through one MCP connection.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Discover, inspect, and call 10,000+ verified real-time data, tool, and external-service capabilities through one MCP connection.",
+        "description_zh": "通过一个 MCP 连接，发现、检查并调用 10,000+ 个实时数据、工具与外部服务能力。",
+        "examples_en": [
+          "Get Apple's latest stock price and include the source and update time",
+          "Find a capability for Shanghai's seven-day weather forecast, inspect it, then call it",
+          "Find tools for extracting tables from PDFs and compare success rate, latency, and cost"
+        ],
+        "examples_zh": [
+          "查询苹果公司最新股价，并说明数据来源和更新时间",
+          "发现可以查询上海未来七天天气的能力，先检查参数再调用",
+          "查找适合提取 PDF 表格的工具，并比较成功率、延迟和费用"
+        ],
+        "name": "QVeris",
+        "name_en": "QVeris",
+        "name_zh": "QVeris"
+      },
+      "policy": {
+        "mcpServers": {
+          "qveris": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "qveris": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "QVERIS_API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "qveris",
+  "version": "1.0.0+wb.8ae3bb2a644707e8"
+}

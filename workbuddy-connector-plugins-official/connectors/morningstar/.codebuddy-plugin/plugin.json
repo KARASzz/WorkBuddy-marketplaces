@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Morningstar global and China fund data, analyst research and portfolio analytics for fund screening, risk, holdings, fees and reviews.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Morningstar global and China fund data, analyst research and portfolio analytics for fund screening, risk, holdings, fees and reviews.",
+        "description_zh": "接入晨星全球与中国基金数据，通过自然语言实现基金查询、筛选、分析与深度研究，以及组合穿透分析",
+        "examples_en": [
+          "Screen funds rated 5 stars by Morningstar with a max drawdown within 20% over the past three years",
+          "Show me the performance, risk and holdings of E Fund Blue Chip Select",
+          "Research the latest active ETFs",
+          "Analyze the PineBridge FS - US Equity Fund"
+        ],
+        "examples_zh": [
+          "筛选晨星评级5星，近三年最大回撤不超过20%的基金",
+          "帮我看看易方达蓝筹精选的业绩、风险和持仓",
+          "研究一下最新的主动ETF/ active ETF",
+          "分析柏瑞基金系列 - 柏瑞美国股票基金"
+        ],
+        "name": "晨星 Morningstar",
+        "name_en": "Morningstar"
+      },
+      "policy": {
+        "mcpServers": {
+          "morningstar": {
+            "timeout": 30000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "morningstar",
+  "version": "0.0.0+wb.3fac0b0d4c3ce865"
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to the E Fund MCP service to get a complete fund profile in a single query—performance, risk-return metrics, holdings structure, and other key indicators at a glance. You can also access E Fund's investment research insights, product interpretations, and market perspectives anytime to support efficient investment decision-making.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to the E Fund MCP service to get a complete fund profile in a single query—performance, risk-return metrics, holdings structure, and other key indicators at a glance. You can also access E Fund's investment research insights, product interpretations, and market perspectives anytime to support efficient investment decision-making.",
+        "description_zh": "接入易方达基金MCP服务，一句话查透基金画像——业绩、风险收益、持仓结构等核心指标一目了然，还能随时调阅易方达发布的投研观点、产品解读与市场洞察，助力您高效进行投资决策。",
+        "examples_en": [
+          "Look up 510310's returns over the past year, maximum drawdown, and Sharpe ratio.",
+          "Analyze the holdings structure of these funds.",
+          "What articles has the E Fund official WeChat account published recently?"
+        ],
+        "examples_zh": [
+          "查询510310的近一年收益、最大回撤和夏普比率",
+          "分析下这几只基金的持仓结构",
+          "最近易方达公众号发了哪些文章"
+        ],
+        "name": "易方达基金",
+        "name_en": "E Fund"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "efunds",
+  "version": "1.0.0+wb.819e836be22e88ba"
+}

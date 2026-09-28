@@ -1,0 +1,55 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Create 3D assets from text or images, retexture models, convert formats, and retrieve task results.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Create 3D assets from text or images, retexture models, convert formats, and retrieve task results.",
+        "description_zh": "通过文字或图片创建 3D 资产，为模型重绘材质、补齐视角、转换格式，并查询任务和获取结果。",
+        "examples_en": [
+          "Create a 3D model from this chair image; show me the quote before submitting.",
+          "Check my submitted generation task and provide the model download link.",
+          "Convert this model to FBX after confirming the cost."
+        ],
+        "examples_zh": [
+          "用这张椅子图片生成 3D 模型，先给我报价再执行。",
+          "查询我刚才提交的生成任务，并提供模型下载链接。",
+          "把这个模型转换成 FBX 格式，先确认费用。"
+        ],
+        "name": "Aholo Lux3D",
+        "name_en": "Aholo Lux3D",
+        "name_zh": "Aholo Lux3D"
+      },
+      "policy": {
+        "mcpServers": {
+          "lux3d-mcp": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "lux3d-mcp": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "LUX3D_CN_API_KEY"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "aholo-lux3d",
+  "version": "0.1.1+wb.6e46d43a23cdadb3"
+}

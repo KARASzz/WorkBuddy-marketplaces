@@ -1,0 +1,39 @@
+{
+  "description": "Search Jufa for cases, laws, prosecution documents, contracts, tenders, and business risks.",
+  "extensions": {
+    "ai.workbuddy": {
+      "connector": {
+        "auth_mode": "token",
+        "description_en": "Search Jufa for cases, laws, prosecution documents, contracts, tenders, and business risks.",
+        "description_zh": "检索聚法司法案例、法律法规、检察文书、合同模板、招投标及企业风险数据。",
+        "examples_en": [
+          "Find Supreme People's Court cases on construction contract disputes from the past three years",
+          "Find the currently effective Civil Code provisions on contract termination",
+          "Review a company's litigation, enforcement, and administrative penalty risks",
+          "Find a software development contract template and return its text",
+          "Find recent tender notices and related tender information for a project"
+        ],
+        "examples_zh": [
+          "检索近三年建设工程施工合同纠纷的最高人民法院案例",
+          "查询《民法典》关于合同解除的现行有效条文",
+          "搜索某公司的裁判文书、被执行和行政处罚风险",
+          "查找一份软件开发合同模板并返回正文",
+          "检索某项目近期招标公告和相关招标信息"
+        ],
+        "minWorkbuddyVersion": "5.0.0",
+        "name": "聚法-法律数据智能服务",
+        "name_en": "Jufa Legal Data",
+        "name_zh": "聚法-法律数据智能服务",
+        "type": "mcp"
+      },
+      "legacyReason": "stdio-env-template",
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "connector",
+    "mcp"
+  ],
+  "name": "jufa-mcp-server",
+  "version": "1.0.0+wb.79dac8e9dcf618ac"
+}

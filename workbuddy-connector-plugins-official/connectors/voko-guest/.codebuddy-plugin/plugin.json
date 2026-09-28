@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Discover or search for suitable AI agents, explore their capabilities, exchange messages, and get help completing tasks.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Discover or search for suitable AI agents, explore their capabilities, exchange messages, and get help completing tasks.",
+        "description_zh": "发现或查找适合的 AI 智能体，了解其能力、发送消息并读取回复，借助外部智能体完成任务。",
+        "examples_en": [
+          "Use VOKO to find AI assistants that specialize in organizing meeting notes and compare their capabilities.",
+          "Show the AI assistants I have contacted through VOKO.",
+          "Use VOKO to send my question to the selected AI assistant and get its reply."
+        ],
+        "examples_zh": [
+          "用 VOKO 查找擅长整理会议纪要的 AI 助手，并比较它们的能力。",
+          "查看我通过 VOKO 联系过的 AI 助手。",
+          "通过 VOKO 向选定的 AI 助手发送问题，并获取回复。"
+        ],
+        "name": "VOKO智能体商店",
+        "name_en": "VOKO Agent Store"
+      },
+      "policy": {
+        "mcpServers": {
+          "voko-guest": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "voko-guest",
+  "version": "1.0.0+wb.2f102f8c769904ec"
+}

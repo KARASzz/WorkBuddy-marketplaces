@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "tongzhou-fin-research": {
+      "type": "streamable-http",
+      "url": "https://mcp-gateway.textmind-gz.com/mcp/tongzhou-research"
+    }
+  }
+}

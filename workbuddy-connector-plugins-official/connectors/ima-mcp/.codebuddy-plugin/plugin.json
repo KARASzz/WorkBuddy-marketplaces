@@ -1,0 +1,81 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "腾讯AI知识管家，连接后支持搜索、读取和写入知识库资料，并可搜索和订阅教育、法律、财经、科技等20+行业专业知识",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "injectionRules": [
+          {
+            "applies_to_connectors": [
+              "ima-mcp",
+              "ima-mcp-oa"
+            ],
+            "id": "ima-mcp-dual-token",
+            "inject": [
+              {
+                "from_connector": "ima-mcp",
+                "header": "Authorization",
+                "token_type": "mcp-oauth",
+                "value_template": "Bearer ${access_token}"
+              },
+              {
+                "from_connector": "ima-mcp-oa",
+                "header": "X-Oneid-Access-Token",
+                "token_type": "oneid-token",
+                "value_template": "Bearer ${access_token}"
+              }
+            ],
+            "requires_connected_connectors": [
+              "ima-mcp",
+              "ima-mcp-oa"
+            ],
+            "timing": "request",
+            "when": {
+              "active_in": [
+                "iOA"
+              ]
+            }
+          }
+        ]
+      },
+      "display": {
+        "description_en": "Tencent AI Knowledge Manager, after connection, supports searching, reading, and writing knowledge base materials, and can search and subscribe to professional knowledge in 20+ industries such as education, law, finance, and technology",
+        "description_zh": "腾讯AI知识管家，连接后支持搜索、读取和写入知识库资料，并可搜索和订阅教育、法律、财经、科技等20+行业专业知识",
+        "examples_en": [
+          "Find last year's competitor research conclusions in my ima knowledge base",
+          "Save these links to my knowledge base",
+          "Summarize the product plan saved in my knowledge base"
+        ],
+        "examples_zh": [
+          "从我的 ima 知识库里找出去年的竞品调研结论",
+          "把这几个链接都存进我的知识库",
+          "把我知识库里那篇产品方案的要点讲给我听"
+        ],
+        "name": "ima",
+        "name_en": "ima",
+        "name_zh": "ima"
+      },
+      "policy": {
+        "mcpServers": {
+          "ima-mcp": {
+            "timeout": 20000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "ima-mcp",
+  "version": "0.0.0+wb.fac085d46643602c"
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Read Baizhi WiseNote meeting lists, summaries, and transcripts with user authorization.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Read Baizhi WiseNote meeting lists, summaries, and transcripts with user authorization.",
+        "description_zh": "通过用户授权读取百智 WiseNote 会议列表、会议详情摘要和会议转写内容。",
+        "examples_en": [
+          "Show my recent meeting records",
+          "Summarize my last product review meeting",
+          "Find transcript content about the WorkBuddy integration"
+        ],
+        "examples_zh": [
+          "查看我最近的会议记录",
+          "帮我总结上一场产品评审会",
+          "查一下关于 WorkBuddy 对接的会议转写内容"
+        ],
+        "name": "百智WiseNote",
+        "name_en": "Baizhi WiseNote"
+      },
+      "policy": {
+        "mcpServers": {
+          "wisenote": {
+            "disabled": false,
+            "timeout": 30000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "wisenote",
+  "version": "0.0.0+wb.e4c87f1f6b747518"
+}

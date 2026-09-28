@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect eRoad to bring external talent and compensation market data into your workflows. Explore competitor hiring changes, talent supply by role, market compensation, and workforce productivity metrics to benchmark recruiting strategy, role pricing, and workforce planning with data instead of experience alone.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect eRoad to bring external talent and compensation market data into your workflows. Explore competitor hiring changes, talent supply by role, market compensation, and workforce productivity metrics to benchmark recruiting strategy, role pricing, and workforce planning with data instead of experience alone.",
+        "description_zh": "连接薪智（SmartSalary），把外部人才与薪酬市场数据带入现有工作流。随手查询竞品招聘变化、岗位人才供给、市场薪酬和人效指标，为招聘策略、岗位定薪及人才规划获得更清晰的外部参照，让招聘、定薪和人才规划不再只凭经验。",
+        "examples_en": [
+          "How do ByteDance, Tencent, and Alibaba Cloud differ in hiring investment for large language models, AI infrastructure, and inference optimization roles? Compare job counts, major cities, compensation ranges, and experience requirements, and identify which conclusions about business investment are inferences based on hiring signals.",
+          "What are the hiring volumes and average advertised salaries for the new energy vehicle industry in Shanghai, Shenzhen, Hefei, and Guangzhou? Which city has the strongest talent demand and the most competitive compensation?",
+          "How do CATL, BYD, and Sungrow differ in their hiring mix for power battery and energy storage roles? Compare in-demand positions, city distribution, compensation ranges, and education requirements.",
+          "How do annual turnover rates differ across the automotive, semiconductor, and smart manufacturing industries? Which sub-industries face greater employee retention pressure?",
+          "How do the automotive manufacturing, semiconductor equipment, and industrial automation industries differ in the share of technical employees, the share of compensation allocated to R&D roles, and compensation costs as a percentage of revenue? Which industry is more R&D-intensive in its talent investment?"
+        ],
+        "examples_zh": [
+          "字节跳动、腾讯和阿里云在大模型、AI 基础设施与推理优化岗位上的招聘投入有何差异？请对比职位数量、主要城市、薪酬区间和经验门槛，并注明哪些业务投入判断属于招聘信号推断。",
+          "新能源汽车行业在上海、深圳、合肥和广州的招聘量与平均招聘薪酬分别如何？哪个城市的人才需求最旺、薪酬竞争最强？",
+          "宁德时代、比亚迪和阳光电源在动力电池与储能岗位上的招聘结构有何差异？请对比热招岗位、城市布局、薪酬区间和学历要求。",
+          "汽车、半导体和智能制造行业的年度离职率有何差异？哪些细分行业的人才保留压力更大？",
+          "汽车整车制造、半导体设备和工业自动化行业的技术人员占比、研发类薪酬占比和薪酬成本占营收比例有何差异？哪个行业的人才投入更偏研发？"
+        ],
+        "name": "eRoad·市场人才薪酬数据",
+        "name_en": "eRoad Market Talent & Compensation Data"
+      },
+      "policy": {
+        "mcpServers": {
+          "smartsalary": {
+            "timeout": 600000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "smartsalary",
+  "version": "1.0.0+wb.97d8f00e0f632c51"
+}

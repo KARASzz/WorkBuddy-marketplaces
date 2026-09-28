@@ -1,0 +1,55 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect intelligently to iHR to query organization, employee lifecycle, contracts, training, attendance, approvals, payroll, and performance, and assist with HR interviews.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect intelligently to iHR to query organization, employee lifecycle, contracts, training, attendance, approvals, payroll, and performance, and assist with HR interviews.",
+        "description_zh": "一键直接连接 i 人事。覆盖组织人事管理、劳动合同、考勤管理、薪酬管理、社保个税、智慧绩效OKRKPI、招聘管理、培训陪练、OA审批，AI面谈、数字人面试，蓝领面试，说一句话，就能查询分析人事、薪资、绩效、用工风险，提升敏捷管理水平，降低人力成本，还有自定义各类agent，SKILL，实现定制化管理要求。",
+        "examples_en": [
+          "Check my attendance this month and show any anomalies.",
+          "Check my remaining annual leave balance.",
+          "Show my pending and completed approvals.",
+          "Check Zhang San's profile and current employment details.",
+          "Show Zhang San's payroll details for last month.",
+          "Show Zhang San's recent clock-in records.",
+          "Show Zhang San's performance results and scores for this quarter.",
+          "Show the organization structure and members of the R&D department.",
+          "Show the positions and job levels in the R&D department.",
+          "Show Zhang San's employment changes and contract information."
+        ],
+        "examples_zh": [
+          "查询我这个月的考勤日报，有哪些异常记录？",
+          "帮我看看我还有多少年假额度",
+          "查看待审批和已办的审批流程",
+          "帮我查一下张三的员工档案和当前任职信息",
+          "查询张三上个月的薪资台账明细",
+          "帮我查一下张三最近的打卡记录",
+          "查询张三本季度的绩效结果和各项得分",
+          "查询研发部的组织架构和部门成员",
+          "帮我查一下研发部的职位和职级信息",
+          "查询张三的入转调离记录及合同协议信息"
+        ],
+        "name": "i人事AI·HR专家",
+        "name_en": "iHR AI·HR Expert",
+        "name_zh": "i人事AI·HR专家"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "ihr-cli",
+  "version": "0.1.2+wb.7aa5653134ce25fc"
+}

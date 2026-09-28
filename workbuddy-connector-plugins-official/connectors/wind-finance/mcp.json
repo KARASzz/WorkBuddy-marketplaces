@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "wind-finance": {
+      "type": "streamable-http",
+      "url": "https://mcp.wind.com.cn/vserver_workbuddy/mcp/",
+      "headers": {
+        "Accept": "application/json, text/event-stream"
+      }
+    }
+  }
+}

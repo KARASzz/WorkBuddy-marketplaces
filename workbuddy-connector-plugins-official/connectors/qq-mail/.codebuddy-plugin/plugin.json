@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Send, search, and organize your QQ Mail inbox. Read emails, summarize threads, and manage folders with natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Send, search, and organize your QQ Mail inbox. Read emails, summarize threads, and manage folders with natural language.",
+        "description_zh": "收发、搜索和整理 QQ 邮件。用自然语言读取邮件内容、汇总邮件线程、管理文件夹。",
+        "examples_en": [
+          "Find all emails from hr@company.com in the past two weeks, sort by date, and tell me the total count and key topics",
+          "Generate a weekly email summary: how many are from clients, how many from internal colleagues, and which topic (sales/tech/ops) has the most",
+          "Search all emails with subject containing 'reimbursement' or 'invoice' from the finance team, list sender, date, and summary",
+          "Organize all starred or important unread emails into a list sorted by newest first, so I can decide which to handle first"
+        ],
+        "examples_zh": [
+          "找出最近两周来自 hr@company.com 的所有邮件，按时间排序，告诉我总共有几封、主要说的是什么",
+          "帮我生成上周的邮件汇总：来自客户的有多少封、来自内部同事的有多少封、哪个主题（销售/技术/运营）的邮件最多",
+          "搜索所有主题包含【报销】或【发票】且来自财务部的邮件，列出发件人、日期和摘要，我需要核对一笔款项",
+          "把所有标记为【星标】或【重要】的未读邮件整理成一份清单，按发件时间从新到旧排列，帮我快速决定优先处理哪封"
+        ],
+        "name": "QQ邮箱",
+        "name_en": "QQ Mail"
+      },
+      "policy": {
+        "mcpServers": {
+          "qq-mail": {
+            "timeout": 600
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "qq-mail",
+  "version": "0.0.0+wb.95f3bc1899199703"
+}

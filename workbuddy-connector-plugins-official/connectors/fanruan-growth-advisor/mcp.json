@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "fanruan-growth-advisor": {
+      "type": "streamable-http",
+      "url": "https://www.mossdo.com/api/v1/mcp",
+      "headers": {
+        "X-Moss-WorkBuddy": "1"
+      }
+    }
+  }
+}

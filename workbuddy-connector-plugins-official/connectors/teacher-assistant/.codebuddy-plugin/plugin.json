@@ -1,0 +1,47 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Penguin Teacher Assistant handles foundational tasks, leveraging curriculum standards and teaching methodologies to rapidly generate lesson outlines, lesson plans, courseware, and multimodal teaching resources, thereby freeing up more time for teachers to innovate in the classroom.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Penguin Teacher Assistant handles foundational tasks, leveraging curriculum standards and teaching methodologies to rapidly generate lesson outlines, lesson plans, courseware, and multimodal teaching resources, thereby freeing up more time for teachers to innovate in the classroom.",
+        "description_zh": "企鹅教师助手负责处理基础性工作，基于课标和教学方法协助快速生成课程大纲、教案、课件及多模态教学资源，从而让教师腾出更多时间在课堂上进行创新",
+        "examples_en": [
+          "Help me prepare a lesson on 'Introduction to Fractions' for 4th grade math",
+          "Analyze this week's homework completion for my class",
+          "Recommend teaching videos about photosynthesis",
+          "Generate a targeted practice sheet based on students' wrong answers"
+        ],
+        "examples_zh": [
+          "帮我准备一节小学四年级数学《分数的初步认识》的课程",
+          "分析一下本周班级学生的作业完成情况",
+          "推荐几个关于光合作用的教学视频",
+          "根据学生错题生成一份针对性的练习卷"
+        ],
+        "name": "企鹅教师助手",
+        "name_en": "Penguin Teacher Assistant"
+      },
+      "policy": {
+        "mcpServers": {
+          "teacher-assistant": {
+            "disabled": false,
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "teacher-assistant",
+  "version": "1.0.0+wb.07439f9fc30ab911"
+}

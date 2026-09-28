@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "xingtu-claw-risk": {
+      "url": "https://claw-mcp.tcredit.com/mcp/sse",
+      "type": "sse"
+    }
+  }
+}

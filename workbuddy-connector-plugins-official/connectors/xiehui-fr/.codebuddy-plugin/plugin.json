@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Search France's official government registry of 3,640+ Chinese associations by name, city, or category, and check chairman-verified certification status before contacting one.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Search France's official government registry of 3,640+ Chinese associations by name, city, or category, and check chairman-verified certification status before contacting one.",
+        "description_zh": "查询法国内政部官方登记库收录的 3,640 家华人协会，可按名称、城市、类型搜索，查看认证状态与登记信息，联系前先核实。",
+        "examples_en": [
+          "What Chinese business chambers exist in France?",
+          "I'm planning a cultural exhibition in France, which associations should I contact?",
+          "I want to expand my food brand into France, which associations should I reach out to?",
+          "Which certified associations are in Paris?",
+          "Look up the registration info for a specific association"
+        ],
+        "examples_zh": [
+          "法国有哪些华人商会协会？",
+          "我要在法国办一场文化展，可以联系哪些协会？",
+          "我想做餐饮品牌出海，要联系哪些法国的华人协会？",
+          "巴黎有哪些认证过的协会？",
+          "帮我查一下 xxx 协会的注册信息"
+        ],
+        "name": "法国协会网",
+        "name_en": "France Chinese Associations Directory"
+      },
+      "policy": {
+        "mcpServers": {
+          "xiehui-fr": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "xiehui-fr",
+  "version": "0.0.0+wb.f50b7c6601a67435"
+}

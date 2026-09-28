@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "wavenote-audio": {
+      "url": "https://mcp.wavenote.cn/mcp/audio/",
+      "type": "streamable-http"
+    }
+  }
+}

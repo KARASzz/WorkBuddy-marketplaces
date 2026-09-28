@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "This AI-powered cross-border e-commerce operations assistant encompasses multiple sub-capabilities, including competitor analysis, market research, content generation, marketing and advertising, store operations, and compliance monitoring, providing cross-border e-commerce services across multiple platforms and data sources.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "This AI-powered cross-border e-commerce operations assistant encompasses multiple sub-capabilities, including competitor analysis, market research, content generation, marketing and advertising, store operations, and compliance monitoring, providing cross-border e-commerce services across multiple platforms and data sources.",
+        "description_zh": "跨境电商AI运营助手，涵盖竞品查询、市场调研、内容生成、营销广告、店铺运营、合规检测等多个子能力，提供多平台多数据源的跨境电商服务。",
+        "examples_en": [
+          "Filter US products with 500+ monthly sales via Jungle Scout",
+          "Check 90-day Keepa price and BSR trend for an ASIN",
+          "Search similar design patents from a product image"
+        ],
+        "examples_zh": [
+          "用 Jungle Scout 筛选美国站月销量 500+ 的商品",
+          "查 Keepa 上某 ASIN 近 90 天价格和 BSR 趋势",
+          "用智慧芽检索商品图相似外观专利"
+        ],
+        "name": "LinkFox",
+        "name_en": "LinkFox"
+      },
+      "policy": {
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "linkfox",
+  "version": "0.0.0+wb.475a8d32b2a96f30"
+}

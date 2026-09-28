@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Drive Bazhuayu cloud scraping with natural language: discover templates, run tasks, check progress, export structured data, and manage existing tasks.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Drive Bazhuayu cloud scraping with natural language: discover templates, run tasks, check progress, export structured data, and manage existing tasks.",
+        "description_zh": "用自然语言驱动八爪鱼云采集：搜索模板、启动任务、查询进度、导出结构化数据，并管理已有任务。",
+        "examples_en": [
+          "Scrape the first 3 pages of Amazon search results for wireless earbuds",
+          "Find a cloud template for product detail pages on an e-commerce site",
+          "Show progress for my recent scraping tasks",
+          "Export the first page of data for a completed task lot",
+          "Stop the scraping task that is still running"
+        ],
+        "examples_zh": [
+          "帮我采集亚马逊无线耳机搜索结果前 3 页",
+          "搜索适合抓取某电商商品详情的云采集模板",
+          "查看我最近创建的采集任务进度",
+          "把任务 TF 对应批次的第一页数据导出来",
+          "停止正在运行的那个采集任务"
+        ],
+        "name": "八爪鱼",
+        "name_en": "Bazhuayu"
+      },
+      "policy": {
+        "mcpServers": {
+          "bazhuayu": {
+            "timeout": 60000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "bazhuayu",
+  "version": "0.0.0+wb.f72c4577c10e57b0"
+}

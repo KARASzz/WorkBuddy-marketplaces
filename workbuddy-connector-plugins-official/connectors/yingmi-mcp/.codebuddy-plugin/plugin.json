@@ -1,0 +1,54 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Access fund and market data for investment research, portfolio analysis, wealth planning, and financial content creation.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Access fund and market data for investment research, portfolio analysis, wealth planning, and financial content creation.",
+        "description_zh": "查询基金与市场数据，完成基金研究、组合分析、财富规划及金融内容生成。",
+        "examples_en": [
+          "Show the profile and recent performance of fund 005827",
+          "Analyze the underlying asset allocation and risks of these funds",
+          "Create a wealth plan based on my household finances and goals",
+          "Find today's market highlights and create a market brief"
+        ],
+        "examples_zh": [
+          "查询基金 005827 的基本信息和近期表现",
+          "分析这几只基金的底层资产分布和组合风险",
+          "根据家庭收支和目标制定一份财富规划方案",
+          "查询今天的市场热点并生成一份市场简报"
+        ],
+        "name": "盈米MCP",
+        "name_en": "Yingmi MCP"
+      },
+      "policy": {
+        "mcpServers": {
+          "yingmi-mcp": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "urlTemplatedMcpServers": {
+        "yingmi-mcp": {
+          "tokenSchema": "./ai.workbuddy/token-schema.json",
+          "type": "streamable-http",
+          "urlTemplate": "https://stargate.yingmi.com/mcp/v2?apiKey=${YINGMI_API_KEY}"
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "yingmi-mcp",
+  "version": "0.0.0+wb.3eb0eb38b88a35bf"
+}

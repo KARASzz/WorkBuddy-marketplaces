@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "The official CLI suite for WeChat Work covers business functions such as messaging, email, documents, to-do lists, calendars, meetings, WeChat Drive, and contacts. It supports features such as proactive notifications from chatbots, creating and retrieving documents, document search, creating and managing calendars, scheduling and retrieving meeting information, creating and following up on to-do lists, uploading and retrieving WeChat Drive files, and reading and sending emails.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "The official CLI suite for WeChat Work covers business functions such as messaging, email, documents, to-do lists, calendars, meetings, WeChat Drive, and contacts. It supports features such as proactive notifications from chatbots, creating and retrieving documents, document search, creating and managing calendars, scheduling and retrieving meeting information, creating and following up on to-do lists, uploading and retrieving WeChat Drive files, and reading and sending emails.",
+        "description_zh": "企业微信官方 CLI 套件，覆盖消息、邮件、文档、待办、日程、会议、微盘、通讯录等业务功能。支持机器人主动通知、新建与读取文档、文档搜索、新建管理日程、预约与获取会议信息、新建跟进待办、上传与获取微盘文件、邮件读取与发送等能力",
+        "examples_en": [
+          "Please compile the latest weekly AI news for me and send it to myself via WeChat Work message",
+          "Based on my recent WeChat emails and meetings with clients, I have generated a presentation for them",
+          "Based on the product documentation, generate a summary PDF. The document link is https://doc.weixin.qq.com/XXXXXX",
+          "I need to analyze the data in the table and extract the key points that I need to focus on. The table link is https://doc.weixin.qq.com/XXXXXX"
+        ],
+        "examples_zh": [
+          "帮我整理下最新一周AI资讯，通过企业微信消息发送给我自己",
+          "根据最近一周我与客户沟通的企业微信邮件和会议，生成给客户的演示文稿",
+          "根据产品文档内容，生成一份总结摘要的PDF，文档链接是https://doc.weixin.qq.com/XXXXXX",
+          "读取表格数据进行分析，提炼需要我关注的要点，表格链接是https://doc.weixin.qq.com/XXXXXX"
+        ],
+        "name": "企业微信",
+        "name_en": "WeCom"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.22.12"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "wecom",
+  "version": "0.0.0+wb.8bc9c0561ce41ab3"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Probe a remote MCP endpoint, draft and validate a WorkBuddy connector, and download it as a spec-compliant zip.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Probe a remote MCP endpoint, draft and validate a WorkBuddy connector, and download it as a spec-compliant zip.",
+        "description_zh": "探测远程 MCP 端点能力，起草并校验 WorkBuddy 连接器配置，产出符合规范的连接器 zip 包。",
+        "examples_en": [
+          "Probe this MCP endpoint for its capabilities",
+          "Draft a SKILL.md for my connector",
+          "Validate and package my connector draft as a zip"
+        ],
+        "examples_zh": [
+          "帮我探测这个 MCP 端点有哪些能力",
+          "帮我生成一个连接器的 SKILL.md",
+          "把我的连接器草稿校验一遍再打包下载"
+        ],
+        "name": "连接器工坊",
+        "name_en": "Connector Studio"
+      },
+      "policy": {
+        "mcpServers": {
+          "connector-workshop": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "connector-workshop",
+  "version": "1.0.0+wb.1318079258cd7b9c"
+}

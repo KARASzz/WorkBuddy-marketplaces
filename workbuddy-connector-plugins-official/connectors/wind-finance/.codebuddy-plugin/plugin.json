@@ -1,0 +1,64 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Unlock the full breadth of Wind financial data and tools, covering equities, funds, bonds, commodities, indices, and economic data across more than 60 countries and regions worldwide, including Mainland China, Hong Kong, and the United States, as well as Wind financial models and toolsets. Turn WorkBuddy into a financial analysis expert—a professional agent with multidimensional capabilities in data drill-down, investment research and analysis, risk-informed decision-making, and more.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Unlock the full breadth of Wind financial data and tools, covering equities, funds, bonds, commodities, indices, and economic data across more than 60 countries and regions worldwide, including Mainland China, Hong Kong, and the United States, as well as Wind financial models and toolsets. Turn WorkBuddy into a financial analysis expert—a professional agent with multidimensional capabilities in data drill-down, investment research and analysis, risk-informed decision-making, and more.",
+        "description_zh": "全量开放万得（Wind）金融数据与工具能力，覆盖沪深港美等全球60多个国家地区的股票、基金、债券、商品、指数、经济数据与万得金融模型与工具集。让WorkBuddy变身金融分析专家，成为具备数据穿透、投研分析、风险决策等多维金融能力的专业智能体。",
+        "examples_en": [
+          "How have NVIDIA's revenue, net income, and ROE changed over the past three years?",
+          "How has the U.S. 10-year Treasury yield moved over the past month, and what does it imply for stocks and bonds?",
+          "What is the S&P 500's current P/E versus its five-year historical range?",
+          "Based on the past 24 months of CPI, PPI, PMI, retail sales, and industrial production, what stage of the U.S. economic cycle are we in, and which assets and sectors could benefit most?"
+        ],
+        "examples_zh": [
+          "京东方A近3年营收、净利润和ROE表现怎么样？",
+          "恒生科技指数ETF今年涨了多少，现在估值贵不贵？",
+          "永赢科技智选最新重仓哪些股票，持仓集中度高不高？",
+          "结合近24个月CPI、PPI、PMI、社零和固定资产投资，判断当前经济处于什么阶段，哪些资产和行业更受益？"
+        ],
+        "name": "Wind Alice 万得金融数据",
+        "name_en": "Wind Alice Wind Financial Data",
+        "name_zh": "Wind Alice 万得金融数据"
+      },
+      "policy": {
+        "mcpServers": {
+          "wind-finance": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "wind-finance": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "WIND_API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "wind-finance",
+  "version": "1.2.0+wb.9487123af5e9fc4f"
+}

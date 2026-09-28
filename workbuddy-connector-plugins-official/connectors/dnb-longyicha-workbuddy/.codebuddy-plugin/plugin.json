@@ -1,0 +1,53 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Access Dun & Bradstreet's China business database through natural language. This service provides indexing of company basic information and structured profile data, supporting entity identification and matching (quickly locating target companies through multi-criteria fuzzy search), as well as the creation of foundational company profiles covering key dimensions such as registration information, ownership structure, and organizational structure.",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "server-side"
+      },
+      "display": {
+        "description_en": "Access Dun & Bradstreet's China business database through natural language. This service provides indexing of company basic information and structured profile data, supporting entity identification and matching (quickly locating target companies through multi-criteria fuzzy search), as well as the creation of foundational company profiles covering key dimensions such as registration information, ownership structure, and organizational structure.",
+        "description_zh": "通过自然语言访问邓白氏中国企业数据。本服务提供企业基础信息与结构化档案数据索引，支持主体识别与匹配（通过多条件模糊检索快速定位目标企业）及构建企业基础画像（覆盖注册信息、股权结构、人员结构等核心维度）",
+        "examples_en": [
+          "Query the Unified Social Credit Code of Xiaomi Inc.",
+          "View the business registration profile of Xiaomi Inc.",
+          "Search for companies registered in Shanghai, China, whose company names contain the keyword 'Technology Co., Ltd.",
+          "Query BYD's legal representative and company contact information",
+          "Identify BYD's shareholders and beneficial owners"
+        ],
+        "examples_zh": [
+          "查询 小米科技 的统一社会信用代码",
+          "查看 小米科技有限责任公司 的工商基本信息",
+          "搜索 注册地址在中国上海市的企业名称包含'科技有限公司'关键字的企业",
+          "查询 比亚迪 的法人和公司联系方式",
+          "识别 BYD 的股东及受益人"
+        ],
+        "name": "龙易查",
+        "name_en": "D&B Long Yicha",
+        "name_zh": "龙易查"
+      },
+      "policy": {
+        "mcpServers": {
+          "dnb-longyicha-workbuddy": {
+            "timeout": 600
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "dnb-longyicha-workbuddy",
+  "version": "1.1.0+wb.016c95f7c1f2f74f"
+}

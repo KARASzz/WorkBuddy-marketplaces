@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "fuma-ai-callout": {
+      "type": "streamable-http",
+      "url": "https://services.vcrm.vip:60610/mcp"
+    }
+  }
+}

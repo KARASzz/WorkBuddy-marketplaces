@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "westock-mcp": {
+      "type": "streamable-http",
+      "url": "https://stockbuddy.qq.com/cgi/cgi-bin/openai/mcp/mcp"
+    }
+  }
+}

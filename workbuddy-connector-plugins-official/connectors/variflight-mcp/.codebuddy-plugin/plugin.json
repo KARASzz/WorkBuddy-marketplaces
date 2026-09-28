@@ -1,0 +1,74 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query flight status, operational analysis, per-flight tickets and fares, airport and airline services, plus trips, statistics, and followed flights for the currently authenticated user.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query flight status, operational analysis, per-flight tickets and fares, airport and airline services, plus trips, statistics, and followed flights for the currently authenticated user.",
+        "description_zh": "查询航班动态、运行分析、逐航班机票与价格、机场与航司服务，以及当前用户的行程、统计和航班关注信息。用户身份由 C 端 MCP Key 确定。",
+        "examples_en": [
+          "Check tomorrow's status for flight MU5330.",
+          "Analyze the delay and cancellation risk for my next flight.",
+          "Check per-flight fares and sold-out status from Beijing to Shanghai tomorrow.",
+          "Check round-trip fare references from Shanghai to Tokyo next week.",
+          "What ground transport and passenger services are available at Pudong Airport?",
+          "Show my past trips and flight statistics.",
+          "Follow this flight for me."
+        ],
+        "examples_zh": [
+          "查询 MU5330 明天的航班动态。",
+          "分析我下一趟航班的延误和取消风险。",
+          "查询明天北京到上海每个航班的机票价格和售罄状态。",
+          "查询下周上海到东京的往返价格参考。",
+          "浦东机场有哪些地面交通和旅客服务？",
+          "查看我的历史行程和飞行统计。",
+          "帮我关注这个航班。"
+        ],
+        "name": "飞常准",
+        "name_en": "VariFlight",
+        "name_zh": "飞常准"
+      },
+      "policy": {
+        "mcpServers": {
+          "variflight-mcp": {
+            "disabledTools": [
+              "getUserInfo",
+              "queryUserTripStatsInner"
+            ],
+            "timeout": 120000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "variflight-mcp": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "VARIFLIGHT_MCP_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "variflight-mcp",
+  "version": "1.2.2+wb.d01ba70b2b5927e8"
+}

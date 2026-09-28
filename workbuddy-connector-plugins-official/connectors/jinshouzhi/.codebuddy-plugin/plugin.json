@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Tencent Ads execution platform in WorkBuddy: query data, write briefs, open launch links, and light optimizations.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Tencent Ads execution platform in WorkBuddy: query data, write briefs, open launch links, and light optimizations.",
+        "description_zh": "WorkBuddy 里的腾讯广告投放执行台：查数据、写需求单、生成投放深链、轻量调优。",
+        "examples_en": [
+          "List all my ad projects",
+          "Show spend and ROI for a project in the last 7 days",
+          "Open Goldfinger launch console after strategy is confirmed",
+          "Set daily budget to 500 CNY for a live project"
+        ],
+        "examples_zh": [
+          "列出我名下的所有投放项目",
+          "查看某项目最近 7 天的消耗和 ROI",
+          "策略确认后打开金手指投放主台",
+          "把已上线项目的日预算调到 500 元"
+        ],
+        "name": "金手指·AI广告投放",
+        "name_en": "Goldfinger · AI Ad Launch",
+        "name_zh": "金手指·AI广告投放"
+      },
+      "policy": {
+        "mcpServers": {
+          "jinshouzhi": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "5.5.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "jinshouzhi",
+  "version": "0.0.0+wb.61424a6ff2481281"
+}

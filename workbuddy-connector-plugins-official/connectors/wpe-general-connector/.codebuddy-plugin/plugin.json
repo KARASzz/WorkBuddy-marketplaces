@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "One-stop service for digital invoice issuance, delivery, verification, and accounting, helping enterprises efficiently carry out invoice business.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "One-stop service for digital invoice issuance, delivery, verification, and accounting, helping enterprises efficiently carry out invoice business.",
+        "description_zh": "一站式数电发票开具、交付、查验、入账等，助力企业高效开展发票业务。",
+        "examples_en": [
+          "Please check this invoice",
+          "Query my taxpayer basic information",
+          "Query my invoicing data for this week",
+          "How much credit limit is left this month for invoicing?",
+          "Summarize last month's invoicing data"
+        ],
+        "examples_zh": [
+          "帮我查验这张发票",
+          "查询我的纳税人基本信息",
+          "查询我本周的开票数据情况",
+          "本月还剩多少授信额度可以开票？",
+          "汇总上月开票数据"
+        ],
+        "name": "腾讯数电发票",
+        "name_en": "Tencent Digital Invoice"
+      },
+      "policy": {
+        "mcpServers": {
+          "wpe-general-connector": {
+            "timeout": 30000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "wpe-general-connector",
+  "version": "1.0.2+wb.488c38a7d9113577"
+}

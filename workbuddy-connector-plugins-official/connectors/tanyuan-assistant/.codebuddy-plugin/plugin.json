@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "AI assistant powered by a trusted cultural knowledge base. Provides traceable retrieval and creative assistance across world heritage sites, museum collections, oracle bone characters, and academic literature. Covers heritage nomination texts, archaeological data, ceramic genome databases, pattern libraries, and more.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "AI assistant powered by a trusted cultural knowledge base. Provides traceable retrieval and creative assistance across world heritage sites, museum collections, oracle bone characters, and academic literature. Covers heritage nomination texts, archaeological data, ceramic genome databases, pattern libraries, and more.",
+        "description_zh": "基于文化可信知识库的智能体服务，提供世界遗产、博物馆藏品、甲骨文字形释义、学术文献等可溯源检索与创作辅助。覆盖申遗文本、考古数据、陶瓷基因库、纹样库等多模态知识，支持研究考据、策展辅助、文化科普与内容创作。",
+        "examples_en": [
+          "What are the artistic treasures of the Mogao Caves in Dunhuang?",
+          "Reconstructing the musical scale system of the Zenghouyi chime bells",
+          "Why doesn't the Sword of Goujian rust?"
+        ],
+        "examples_zh": [
+          "敦煌莫高窟有哪些艺术瑰宝",
+          "曾侯乙编钟的音律体系复原",
+          "越王勾践剑为何不锈"
+        ],
+        "name": "腾讯数字文化智能体",
+        "name_en": "TDC - Tencent Digital Culture"
+      },
+      "policy": {
+        "mcpServers": {
+          "tanyuan-assistant": {
+            "timeout": 30000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tanyuan-assistant",
+  "version": "0.0.0+wb.1f6a1b6227163417"
+}

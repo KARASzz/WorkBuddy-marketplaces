@@ -1,0 +1,52 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "天财商龙成立于1998年，是中国餐饮数字化整体解决方案服务商。连接器提供公司介绍，以及会员数据概览、用户画像、消费、储值、复购、卡券、积分与营销活动分析（仅 CRM8）；并负责 CLI 安装与账号认证。业务查询使用当前账号权限范围内的固定只读接口。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Tiancai Shanglong company introduction and CRM8 member analytics—data overview, profile, consumption, recharge, repurchase, coupons, points, and campaigns—with CLI installation and authentication. Queries use fixed read-only commands within the current account permissions.",
+        "description_zh": "天财商龙成立于1998年，是中国餐饮数字化整体解决方案服务商。连接器提供公司介绍，以及会员数据概览、用户画像、消费、储值、复购、卡券、积分与营销活动分析（仅 CRM8）；并负责 CLI 安装与账号认证。业务查询使用当前账号权限范围内的固定只读接口。",
+        "examples_en": [
+          "What does Tiancai Shanglong do",
+          "How is the member data overview performing",
+          "Analyze the profile of members newly joined this month",
+          "Analyze member consumption for the last week",
+          "Analyze overall recharge for the last month",
+          "How are repurchase rate and trends lately",
+          "How are coupon issuance and redemption performing",
+          "How are points earned and redeemed",
+          "Analyze member campaigns for the last 7 complete days"
+        ],
+        "examples_zh": [
+          "天财商龙是做什么的",
+          "会员数据概览整体表现怎么样",
+          "分析本月新增会员的用户画像",
+          "分析近一周会员消费表现",
+          "分析近一个月储值整体情况",
+          "最近复购率和复购趋势怎么样",
+          "最近发券用券效果怎么样",
+          "积分获得和兑换情况怎么样",
+          "分析最近7天的会员营销活动效果"
+        ],
+        "name": "天财商龙餐饮SaaS",
+        "name_en": "Tiancai Shanglong Catering SaaS"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "shanlong-claw",
+  "version": "1.0.168+wb.50ed66b6f68c34ba"
+}

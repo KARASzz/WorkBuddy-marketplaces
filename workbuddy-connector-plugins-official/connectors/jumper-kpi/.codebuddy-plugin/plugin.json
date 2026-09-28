@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query hospital operations and staff KPI performance within your Angel Doctor account permissions.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query hospital operations and staff KPI performance within your Angel Doctor account permissions.",
+        "description_zh": "通过自然语言查询当前天使医生账号有权限的医院经营指标、渠道分布、同比环比及人员 KPI 完成情况。",
+        "examples_en": [
+          "Rank the hospitals I can access by last month's valid amount.",
+          "Compare this hospital's performance this month with the same period last month.",
+          "Show which consultants at this hospital have not met their monthly KPI."
+        ],
+        "examples_zh": [
+          "查询我有权限的门店上个月的有效金额排名",
+          "对比这家门店本月与上月同期的经营指标",
+          "看看这家门店本月哪些顾问还没有完成 KPI"
+        ],
+        "name": "天使医生",
+        "name_en": "Angel Doctor",
+        "name_zh": "天使医生"
+      },
+      "policy": {
+        "mcpServers": {
+          "jumper-kpi": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "jumper-kpi",
+  "version": "1.0.0+wb.caea03bcf31fc361"
+}

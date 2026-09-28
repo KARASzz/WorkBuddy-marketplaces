@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Search, create, and manage documents in your Lexiang knowledge base. Import Markdown, organize by tags, and keep team docs up to date.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Search, create, and manage documents in your Lexiang knowledge base. Import Markdown, organize by tags, and keep team docs up to date.",
+        "description_zh": "搜索、创建和管理乐享知识库中的文档。支持导入 Markdown、按标签整理内容、追踪团队文档的更新动态。",
+        "examples_en": [
+          "Search the lexiang knowledge base for all documents containing 'API interface', return matching titles, last edit time, and brief content summary",
+          "Find all documents in the 'Technical Solutions' knowledge base not updated for over 3 months, list document names and last editor — I need to prompt updates",
+          "Import a Markdown file '2025 Tech Roadmap' into lexiang, auto-convert to hierarchical knowledge base docs while preserving code blocks and tables",
+          "Extract all documents tagged with 'v2.0' from the 'Product Docs' knowledge base, compile a version documentation list and generate a navigation index",
+          "I want to organize all 'TODO' related documents in lexiang, move them to the 'Personal Management' folder, and update tag classifications",
+          "Search for all documents edited in lexiang within the past 7 days, rank by edit frequency, and tell me what topics the team is most focused on"
+        ],
+        "examples_zh": [
+          "在乐享知识库里搜索所有包含【API 接口】的文档，返回匹配的文档标题、最后编辑时间和简要内容摘要",
+          "找出【技术方案】知识库里所有超过 3 个月没有更新的文档，列出文档名称和最后编辑人，我需要推动大家更新",
+          "把一份 Markdown 格式的【2025 年技术规划】导入到乐享，自动转换成带层级结构的知识库文档，保留代码块和表格格式",
+          "从乐享的【产品文档】知识库里提取所有标记为【v2.0】标签的文档，整理成一份版本文档清单，并生成目录导航",
+          "我要整理乐享里的所有【待办事项】相关文档，把它们统一移到【个人管理】文件夹，并更新标签分类",
+          "搜索乐享知识库中最近 7 天被编辑过的所有文档，按编辑频次排序，告诉我团队最近关注的热点话题是什么"
+        ],
+        "name": "乐享知识库",
+        "name_en": "Tencent Lexiang"
+      },
+      "policy": {
+        "mcpServers": {
+          "lexiang": {
+            "timeout": 600
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "lexiang",
+  "version": "0.0.0+wb.1d9c4e9c0e41f535"
+}

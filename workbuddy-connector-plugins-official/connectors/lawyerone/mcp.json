@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "LawyerOne": {
+      "type": "streamable-http",
+      "url": "https://connector.365lawhelp.com/workbuddy/lawerone/mcp"
+    }
+  }
+}

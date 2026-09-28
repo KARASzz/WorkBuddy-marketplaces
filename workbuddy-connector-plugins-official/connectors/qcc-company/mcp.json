@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "qcc-company": {
+      "type": "streamable-http",
+      "url": "https://agent.qcc.com/mcp/company/stream"
+    }
+  }
+}

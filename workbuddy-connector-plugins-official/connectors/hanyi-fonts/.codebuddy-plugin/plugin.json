@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to HanyiDeliver in WorkBuddy to query enterprise contract coverage, font entitlements, and font previews.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to HanyiDeliver in WorkBuddy to query enterprise contract coverage, font entitlements, and font previews.",
+        "description_zh": "连接汉仪交付平台服务，在 WorkBuddy 中查询企业合同、字体权益以及字体预览。",
+        "examples_en": [
+          "Show the Hanyi font accounts I can access",
+          "Search for Hei-style fonts in my account",
+          "Show this font's entitlement scope and expiration date",
+          "Preview this text using an entitled Hanyi font"
+        ],
+        "examples_zh": [
+          "查看我可以访问的汉仪字体签约主体",
+          "在我的签约主体中搜索黑体",
+          "查看这款字体的授权范围和到期时间",
+          "用汉仪字体预览这段文字"
+        ],
+        "name": "汉仪字库",
+        "name_en": "Hanyi Fonts",
+        "name_zh": "汉仪字库"
+      },
+      "policy": {
+        "mcpServers": {
+          "hanyi-fonts": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "5.3.14",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "hanyi-fonts",
+  "version": "0.1.0+wb.2a1a2d827c8cbe20"
+}

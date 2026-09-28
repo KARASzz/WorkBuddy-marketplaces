@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "picset-video-generation": {
+      "type": "streamable-http",
+      "url": "https://picsetai.cn/functions/v1/agent-video-mcp-v1/mcp"
+    }
+  }
+}

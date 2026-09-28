@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Create, typeset, and publish WeChat official account articles with natural language: list bound accounts and style themes, build drafts, and push them to the draft box.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Create, typeset, and publish WeChat official account articles with natural language: list bound accounts and style themes, build drafts, and push them to the draft box.",
+        "description_zh": "通过自然语言创作并发布微信公众号文章：查询已绑定的公众号与样式主题、按主题排版建稿、一键推送到公众号草稿箱。",
+        "examples_en": [
+          "Create a WeChat draft from this article, keep the title under 30 characters",
+          "List my connected official accounts and their default themes",
+          "What typesetting styles are available?",
+          "Typeset this article and push it to the draft box"
+        ],
+        "examples_zh": [
+          "帮我把这篇文章建成公众号草稿，标题控制在 30 字以内",
+          "看看我绑定了哪些公众号，各自默认用什么主题",
+          "有哪些排版样式可以选？",
+          "把这篇稿子排版好，推到公众号草稿箱"
+        ],
+        "name": "言序",
+        "name_en": "Yanxu"
+      },
+      "policy": {
+        "mcpServers": {
+          "yanxu": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "yanxu",
+  "version": "1.0.1+wb.33285b2697ae0970"
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "OiiOii is the world's first AI agent for animated and live-action video creation. Simply describe your idea, and OiiOii's cinematic professional agent team will instantly turn fragmented concepts into complete stories, advertisements, and finished videos. OiiOii also deeply integrates short-form comic drama workflows, enabling one-click completion of video stylization for global markets, script localization, multi-episode breakdown, and final production.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "OiiOii is the world's first AI agent for animated and live-action video creation. Simply describe your idea, and OiiOii's cinematic professional agent team will instantly turn fragmented concepts into complete stories, advertisements, and finished videos. OiiOii also deeply integrates short-form comic drama workflows, enabling one-click completion of video stylization for global markets, script localization, multi-episode breakdown, and final production.",
+        "description_zh": "OiiOii 是全球首个 AI 动画/真人视频创作 Agent。只需描述创意，OiiOii 的影视级专业 Agents 团队就会即刻将零散的想法转化为完整的故事、广告成片；同时，OiiOii 还深度整合短漫剧工作流，无论是视频转绘出海、剧本本土化出海、多剧集拆分到成片，都能一键完成。",
+        "examples_en": [
+          "Help me create a short story: a transfer student arrives at a high school in another world and discovers that all the other students have different superpowers.",
+          "Create a 30-second animated promotional video based on this product introduction.",
+          "Expand this story script into a vertical-format AI live-action-style series and generate the first episode.",
+          "Using the uploaded character reference images, create a multi-shot animation with consistent character appearances.",
+          "Adapt this educational material into an animated explainer video suitable for middle school students.",
+          "Design a 45-second opening cinematic for this game.",
+          "Adapt this brand story into an animated short film with narration, music, and sound effects."
+        ],
+        "examples_zh": [
+          "帮我做个小故事：一个转学生来到异世界高中，发现同学们都有各种超能力",
+          "根据这份产品介绍，制作一条 30 秒的动画宣传片。",
+          "把这个故事脚本扩展成一部竖屏 AI 仿真人剧，并生成第一集。",
+          "根据上传的角色参考图，制作一段角色形象一致的多镜头动画。",
+          "将这份教育材料改编成适合中学生观看的动画讲解视频。",
+          "为这款游戏设计一段 45 秒的开场过场动画。",
+          "把这篇品牌故事改编成包含旁白、音乐和音效的动画短片。"
+        ],
+        "name": "OiiOii",
+        "name_en": "OiiOii"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "oiioii",
+  "version": "1.0.0+wb.396c443b7720ba99"
+}

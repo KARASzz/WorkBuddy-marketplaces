@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connects to Tencent Marketing Solution to power intelligent operations — account management, creative inspiration, campaign optimization, and performance diagnostics — lifting efficiency across the entire marketing workflow.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connects to Tencent Marketing Solution to power intelligent operations — account management, creative inspiration, campaign optimization, and performance diagnostics — lifting efficiency across the entire marketing workflow.",
+        "description_zh": "连接腾讯营销，支持账户授权、组织与广告主管理、报表查询、创意审核与素材修复、广告知识库搜索、创意灵感推荐和视频号直播数据等能力，实现广告投放全链路智能化操作。",
+        "examples_en": [
+          "Analyze ad spend over the past two weeks and identify clients and industries with significant declines or sustained growth.",
+          "Diagnose the ad delivery funnel and identify the stage with the biggest drop-off. What should I fix first?",
+          "Every day at 6 PM, summarize ad performance, flag key changes and anomalies, and send the daily report to WeCom.",
+          "Check my permissions for this ad account. What can I do directly, and what requires approval?",
+          "Review this ad's copy and design. What could be hurting its appeal or conversion?",
+          "Generate ad copy from different angles based on these images and videos, and check for potential ad-review risks."
+        ],
+        "examples_zh": [
+          "帮我分析近两周广告消耗，找出明显下滑和持续增长的客户及行业，并给出重点跟进建议。",
+          "帮我排查广告投放链路，找出掉量最严重的环节，并告诉我先改哪里、怎么改。",
+          "每天18点汇总当天投放数据，标出关键变化和异常，生成日报并推送到企业微信。",
+          "帮我查查这个广告账户的权限，哪些操作我可以直接做，哪些需要申请？",
+          "帮我看看这组广告的文案和设计，找出影响吸引力和转化的问题，并给我几版可直接使用的修改方案。",
+          "根据这些图片和视频，帮我生成几组不同角度的投放文案，并检查潜在的审核风险。"
+        ],
+        "name": "腾讯营销",
+        "name_en": "Tencent Marketing Solution",
+        "name_zh": "腾讯营销"
+      },
+      "policy": {
+        "mcpServers": {
+          "tencent-marketing": {
+            "timeout": 30000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tencent-marketing-solution",
+  "version": "1.0.0+wb.5ec367780a5beb17"
+}

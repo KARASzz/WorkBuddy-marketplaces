@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "tec-do": {
+      "type": "streamable-http",
+      "url": "https://tec-chi-external-skill-mcp.tec-do.cn/mcp"
+    }
+  }
+}

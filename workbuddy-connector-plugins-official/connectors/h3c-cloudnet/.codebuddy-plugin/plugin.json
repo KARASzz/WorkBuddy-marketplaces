@@ -1,0 +1,66 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "An AI-powered network operations assistant that provides network status queries, network issue analysis, device/AP information queries, and wireless terminal troubleshooting to help users quickly identify network anomalies and obtain resolution recommendations.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "An AI-powered network operations assistant that provides network status queries, network issue analysis, device/AP information queries, and wireless terminal troubleshooting to help users quickly identify network anomalies and obtain resolution recommendations.",
+        "description_zh": "面向网络运维场景的 AI 助手，支持网络运行状态查询、网络问题分析、设备/AP 信息查询和无线终端故障排查，帮助用户快速定位网络异常并获取处理建议。",
+        "examples_en": [
+          "Troubleshoot the cause of poor network performance for terminal 001d-4330-0cbc at the Chengdu Experimental Bureau site",
+          "View the overall network health and identify network issues at the Chengdu Experimental Bureau site",
+          "Query the hourly network access success rate at the Chengdu Experimental Bureau site for today",
+          "Query the number of APs and their online status at the Chengdu Experimental Bureau site",
+          "Check the CPU and memory usage of device 219801A5ND823CP002X3"
+        ],
+        "examples_zh": [
+          "排查成都实验局场所下，终端 001d-4330-0cbc 网络不好的原因",
+          "查看成都实验局场所整体网络健康度，有哪些网络问题",
+          "查询成都实验局场所今天每小时的接入成功率",
+          "查询成都实验局场所的 AP 数量和在线情况",
+          "查询设备 219801A5ND823CP002X3 的 CPU 和内存占用率"
+        ],
+        "name": "新华三Cloudnet灵犀AI助手",
+        "name_en": "H3C Cloudnet LinSeer AI Assistant",
+        "name_zh": "新华三Cloudnet灵犀AI助手"
+      },
+      "policy": {
+        "mcpServers": {
+          "h3c-cloudnet": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "h3c-cloudnet": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "CLOUDNET_API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "h3c-cloudnet",
+  "version": "0.0.0+wb.780e21a7003b65e9"
+}

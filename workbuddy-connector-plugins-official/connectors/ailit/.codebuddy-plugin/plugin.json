@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Combined with your purchase, sales, and inventory business data, you can achieve batch reconciliation, sales invoicing, and batch product creation, covering various business scenarios such as sales, procurement, inventory, cashier, reconciliation, and operational analysis.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Combined with your purchase, sales, and inventory business data, you can achieve batch reconciliation, sales invoicing, and batch product creation, covering various business scenarios such as sales, procurement, inventory, cashier, reconciliation, and operational analysis.",
+        "description_zh": "结合您的进销存业务数据，可实现成批量对账、销售开单和批量创建商品，覆盖销售、采购、库存、收银、对账及经营分析等多种业务场景。",
+        "examples_en": [
+          "Please look up the customer with the highest outstanding balance and send me their statement of account (PDF) for this month.",
+          "I have a customer purchase order. Please extract the customer, items, and quantities to create a sales order",
+          "I've uploaded a product list. Please help me bulk-create these products and import them into the system"
+        ],
+        "examples_zh": [
+          "帮我查询累计欠款最多的客户，并把他本月的对账单PDF发给我。",
+          "我有一张客户订货单，帮我识别客户、商品和数量并创建销售单",
+          "我上传了一份商品清单，帮我批量创建商品，并录入到系统"
+        ],
+        "name": "智慧记AI进销存",
+        "name_en": "Zhihuiji AI ERP",
+        "name_zh": "智慧记AI进销存"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "ailit",
+  "version": "0.8.3+wb.441793ce0828c44b"
+}

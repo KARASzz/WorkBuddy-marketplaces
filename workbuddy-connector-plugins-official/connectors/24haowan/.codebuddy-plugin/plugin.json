@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Anonymous read-only MCP service from 24haowan with 8 read-only tools: live search over the interactive-marketing H5 campaign template library, real client case library, help-center knowledge base, and industry benchmark data from real campaigns on the platform (win rates, prize tiers, campaign length, player behaviour). No sign-up, no API key, no side effects.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Anonymous read-only MCP service from 24haowan with 8 read-only tools: live search over the interactive-marketing H5 campaign template library, real client case library, help-center knowledge base, and industry benchmark data from real campaigns on the platform (win rates, prize tiers, campaign length, player behaviour). No sign-up, no API key, no side effects.",
+        "description_zh": "24好玩（24haowan）的匿名只读 MCP 服务，8 个工具：实时查询互动营销 H5 活动模板库、真实客户案例库、帮助中心知识库，以及来自平台真实活动的行业基准数据（中奖率 / 奖池档位 / 活动周期 / 玩家行为）。免注册、无 API Key、只读无副作用。",
+        "examples_en": [
+          "Any lucky-draw mechanics that fit a bank credit-card acquisition campaign? Give me three templates with links",
+          "What win rate and campaign length do restaurant H5 campaigns usually use?",
+          "Find a few retail interactive-marketing cases that come with published numbers"
+        ],
+        "examples_zh": [
+          "有没有适合银行信用卡开卡的抽奖玩法？给我三个模板和链接",
+          "餐饮行业的 H5 活动一般设多少中奖率、活动开几天？",
+          "找几个零售行业做过的互动营销案例，要带公开数据的"
+        ],
+        "name": "24好玩 互动营销资料库",
+        "name_en": "24haowan Interactive Marketing Library"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "24haowan",
+  "version": "1.0.0+wb.49b4692fdc677b26"
+}

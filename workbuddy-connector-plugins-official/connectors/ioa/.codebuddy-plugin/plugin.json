@@ -1,0 +1,47 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "It provides management and operation capabilities for core security features such as zero-trust access, endpoint control, security protection, and data leakage prevention.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "It provides management and operation capabilities for core security features such as zero-trust access, endpoint control, security protection, and data leakage prevention.",
+        "description_zh": "提供零信任接入、终端管控、安全防护、数据防泄密等核心安全能力的管理操作",
+        "examples_en": [
+          "Please help me check my current account group information on iOA",
+          "Please help me compile a list of iOA terminal assets",
+          "Show iOA client installation coverage across the company"
+        ],
+        "examples_zh": [
+          "帮我查询 iOA 当前账号分组信息",
+          "帮我盘点 iOA 终端资产列表",
+          "查看公司全员安装 iOA 客户端的覆盖率"
+        ],
+        "name": "零信任安全 iOA",
+        "name_en": "iOA Zero Trust"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "ioa-mcp": {
+            "preAuth": "cli"
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "cli"
+  ],
+  "name": "ioa",
+  "version": "1.0.31+wb.4edcb77eca8a5c50"
+}

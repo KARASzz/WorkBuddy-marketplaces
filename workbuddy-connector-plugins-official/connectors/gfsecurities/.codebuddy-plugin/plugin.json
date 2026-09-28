@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Through the GF Securities MCP, intelligent investment research services can be delivered across three core scenarios—multi-dimensional stock selection, in-depth research, and smart market monitoring—enabling a complete intelligent investment loop that covers hot market tracking, real-time news interpretation, target screening, and post-investment review.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Through the GF Securities MCP, intelligent investment research services can be delivered across three core scenarios—multi-dimensional stock selection, in-depth research, and smart market monitoring—enabling a complete intelligent investment loop that covers hot market tracking, real-time news interpretation, target screening, and post-investment review.",
+        "description_zh": "通过广发证券 MCP，完成多维选股、深度研究、智能盯盘三大核心场景的智能投研服务，实现市场热点跟踪、资讯动态解读、标的筛选、投后复盘的智能投资闭环。",
+        "examples_en": [
+          "What are today's top 20 A-share gainers, and where is the main capital flowing?",
+          "Scan today's hot sectors and explain the dominant theme and capital direction",
+          "Pull recent research reports and announcements for a given stock",
+          "What earnings releases and key meetings are on this week's calendar?"
+        ],
+        "examples_zh": [
+          "今日沪深涨幅榜前 20 是哪些，主力资金怎么流",
+          "扫描今天的热点板块，说明主线和资金方向",
+          "查一下某只股票最近的研报观点和公告",
+          "本周有哪些财报披露和重要会议"
+        ],
+        "name": "广发证券",
+        "name_en": "GF Securities"
+      },
+      "policy": {
+        "mcpServers": {
+          "gfsecurities": {
+            "timeout": 30000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "gfsecurities",
+  "version": "0.0.0+wb.b75d2335f33ca8ad"
+}

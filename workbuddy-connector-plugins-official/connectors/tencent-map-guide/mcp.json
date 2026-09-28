@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "tencent-map-guide": {
+      "url": "https://mcp.map.qq.com/mcpgw/oauth/toolgroup",
+      "type": "streamable-http",
+      "headers": {
+        "McpGw-Tools-ID": "500038"
+      }
+    }
+  }
+}

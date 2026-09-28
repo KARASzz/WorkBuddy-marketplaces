@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect EZR omnichannel CRM to bring member, sales, campaign, WeCom operation, coupon analytics, mall operation, audience segmentation, and MA canvas monitoring capabilities into agents for natural-language business queries and operational insights.",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "server-side"
+      },
+      "display": {
+        "description_en": "Connect EZR omnichannel CRM to bring member, sales, campaign, WeCom operation, coupon analytics, mall operation, audience segmentation, and MA canvas monitoring capabilities into agents for natural-language business queries and operational insights.",
+        "description_zh": "连接 EZR 全域 CRM，把会员、销售、活动、企微运营、券分析、商城运营、人群圈选和 MA 画布监控等能力带入智能体，帮助品牌用自然语言完成经营查询、运营分析和策略洞察。",
+        "examples_en": [
+          "Show me member recruitment in the last 30 days",
+          "Analyze this month's omnichannel sales performance across offline, Tmall, and Douyin channels",
+          "Review recent mall operation performance and changes in product visits, add-to-cart, and sales rankings",
+          "Analyze the claim, redemption, and conversion performance of this coupon campaign",
+          "Segment members in Shanghai who purchased in the last 90 days",
+          "Review WeCom customer assets and mass-send touch performance",
+          "Review the performance of running MA canvases in the last month"
+        ],
+        "examples_zh": [
+          "帮我看一下最近 30 天会员招募情况",
+          "分析一下本月全域销售表现，线下、天猫和抖音渠道分别贡献多少",
+          "最近商城运营表现怎么样，商品访问、加购和成交排行有什么变化",
+          "帮我分析这个券活动的领取、核销和转化效果",
+          "圈选近 90 天有消费且在上海的会员",
+          "看一下企微客户资产和群发触达效果",
+          "查看最近一个月进行中的 MA 画布效果"
+        ],
+        "name": "EZR 全域CRM",
+        "name_en": "EZR CRM"
+      },
+      "policy": {
+        "mcpServers": {
+          "ezr-crm": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "ezr-crm",
+  "version": "1.0.1+wb.8724d1fad9876a89"
+}

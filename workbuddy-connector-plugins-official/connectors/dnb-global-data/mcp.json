@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "dnb-global-data": {
+      "type": "streamable-http",
+      "url": "https://plus.dnb.com/v2/mcp"
+    }
+  }
+}

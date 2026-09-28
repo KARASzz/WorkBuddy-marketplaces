@@ -1,0 +1,62 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Make a Qiyuan Q1 robot speak, make a heart gesture, or walk forward after an explicit safety confirmation.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Make a Qiyuan Q1 robot speak, make a heart gesture, or walk forward after an explicit safety confirmation.",
+        "description_zh": "让启元 Q1 机器人播报文字，并在现场安全确认后执行比心或向前走动作。",
+        "examples_en": [
+          "Ask the Qiyuan robot to say: Welcome to the Qiyuan Robot booth.",
+          "After confirming the area is safe, ask the Qiyuan robot to make a heart gesture.",
+          "After confirming the path is clear and level, ask the Qiyuan robot to walk forward two steps."
+        ],
+        "examples_zh": [
+          "让启元机器人播报：欢迎来到启元机器人展台。",
+          "确认机器人周围安全后，让启元机器人比个心。",
+          "确认前方无人、无障碍物且地面平整后，让启元机器人向前走两步。"
+        ],
+        "name": "启元机器人执行器",
+        "name_en": "Qiyuan Robot Executor",
+        "name_zh": "启元机器人执行器"
+      },
+      "policy": {
+        "mcpServers": {
+          "qiyuan-robot": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "qiyuan-robot": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "QIYUAN_ROBOT_TOKEN",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "qiyuan-robot-executor",
+  "version": "0.3.0+wb.750f0436037dbd43"
+}

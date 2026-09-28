@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Call Chuangkit's powerful AI online design capabilities in one click to create professional marketing designs from a single prompt.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Call Chuangkit's powerful AI online design capabilities in one click to create professional marketing designs from a single prompt. It covers posters, brand logos, cover images, Xiaohongshu graphics, e-commerce designs and more, with editable layered text and visuals plus point-and-click text editing, making it easy for anyone to create images and videos.",
+        "description_zh": "一键调用创客贴强大的AI在线设计能力，一句话生成专业营销设计，覆盖海报、品牌logo、封面配图、小红书图文，电商等设计场景，支持图文分层可编辑，点选改字，让设计小白轻松做图做视频！",
+        "examples_en": [
+          "Design an enrollment poster for an after-school care program, with service hours from 16:00 to 20:00",
+          "Create a minimalist line-art brand VI set for my coffee brand, \"COFFEE CAT\"",
+          "Design a vertical travel itinerary map themed around \"7-Day Yunnan Travel Guide\"",
+          "The attachment is my product photo. Create a set of e-commerce images for a Taobao store",
+          "Create a Korean-style relaxed daily outfit video for Douyin feed ads, featuring a long-haired sweet Asian female model"
+        ],
+        "examples_zh": [
+          "设计一张课后托管招生海报，托管时间16:00-20:00",
+          "为我的咖啡品牌“COFFEE CAT”，输出一套简笔画风格品牌vi设计",
+          "以“云南7日游攻略”为主题，设计一张竖版旅游线路图",
+          "附件是我的产品照片，输出一套用于淘宝店铺的电商套图",
+          "韩系松弛感日常穿搭视频，模特是长发甜妹亚裔女生，用于抖音信息流广告"
+        ],
+        "name": "创客贴 AI 创作",
+        "name_en": "Chuangkit",
+        "name_zh": "创客贴 AI 创作"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.22.12",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "chuangkit",
+  "version": "0.1.0+wb.e0f3309c3d4a29e5"
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to the XuanPian PRO photo-studio scheduling system to check shooting schedules with natural language: monthly availability summary per day, time-slot details for a specific date, and account binding via bind code.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to the XuanPian PRO photo-studio scheduling system to check shooting schedules with natural language: monthly availability summary per day, time-slot details for a specific date, and account binding via bind code.",
+        "description_zh": "连接影楼选片系统，通过自然语言查询拍摄档期：支持整月每日可约汇总、单日各时间段档位明细，并支持使用绑定码绑定选片系统账号。",
+        "examples_en": [
+          "Which days in September are still available for photo shooting?",
+          "How many open slots are left on October 15?",
+          "Which day this month has the fewest bookings?",
+          "Bind my photo studio account with code 123456"
+        ],
+        "examples_zh": [
+          "帮我看看9月哪些天还能约拍摄",
+          "查一下10月15号还有几个可约的档期",
+          "这个月哪天拍摄档期最空",
+          "我的绑定码是123456，帮我绑定选片系统账号"
+        ],
+        "name": "选片PRO云档期",
+        "name_en": "XuanPian PRO Cloud Schedule"
+      },
+      "policy": {
+        "mcpServers": {
+          "xuanpian-schedule": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "xuanpian-schedule": {
+            "auth": {
+              "headers": {
+                "X-Api-Key": {
+                  "field": "WORKBUDDY_API_KEY"
+                },
+                "token": {
+                  "field": "WB_TOKEN"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "xuanpian-schedule",
+  "version": "0.0.0+wb.c36f463fece93834"
+}

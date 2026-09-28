@@ -1,0 +1,57 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Tushare provides financial data for research, covering A-shares, indices, ETFs/funds, financials, valuations, capital flows, announcements and news, sector concepts, and macroeconomic data.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Tushare provides financial data for research, covering A-shares, indices, ETFs/funds, financials, valuations, capital flows, announcements and news, sector concepts, and macroeconomic data.",
+        "description_zh": "Tushare 金融数据服务，支持 A股、指数、ETF/基金、财务、估值、资金流、公告新闻、板块概念与宏观数据等研究工作。",
+        "examples_en": [
+          "Get the latest market data for the CSI 300 index",
+          "Find the top 10 stocks with the best performance over the last three days",
+          "Check how much Moutai has risen so far this year",
+          "Find companies with high ROE and low debt",
+          "Which sector has been the strongest recently"
+        ],
+        "examples_zh": [
+          "获取沪深300指数最新的行情数据",
+          "帮我查询最近三天涨势最好的10只股票",
+          "看下茅台今年以来涨了多少",
+          "帮我找高 ROE 低负债的公司",
+          "最近哪个板块最强"
+        ],
+        "name": "Tushare",
+        "name_en": "Tushare",
+        "name_zh": "Tushare"
+      },
+      "policy": {
+        "mcpServers": {
+          "tushare": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "urlTemplatedMcpServers": {
+        "tushare": {
+          "tokenSchema": "./ai.workbuddy/token-schema.json",
+          "type": "streamable-http",
+          "urlTemplate": "https://api.tushare.pro/mcp/?token=${TUSHARE_TOKEN}"
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tushare",
+  "version": "1.0.0+wb.d5f491d7614e6dcd"
+}

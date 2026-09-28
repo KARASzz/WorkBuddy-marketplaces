@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Institutional-grade financial data, queried in natural language. A free data platform powered by Tencent Financial Technology covering stocks, indices, funds, bonds, futures, forex, precious metals and macro across A-share, HK, US, UK, JP and KR markets.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "A free, institutional-grade data platform powered by Tencent Financial Technology for investment research. Integrating 100+ tools and authoritative sources, it covers global equities, fixed income, commodities, FX, and derivatives across key markets (A-shares, HK, US, UK, JP, KR). It delivers standardized, traceable real-time and historical quotes, financials, capital flows, and corporate filings.",
+        "description_zh": "一键安装，免费使用，面向投研分析的专业金融数据服务。由腾讯金融科技链接各大权威来源，集成100+金融数据工具，覆盖股票、指数、板块、基金、债券、期货、期权、宏观、外汇、大宗商品等资产标的，提供行情报价、财务报表、资金流向、研报评级、盈利预测、舆情与事件公告等机构级数据，支持 A股 / 港股 / 美股 / 英股 / 日股 / 韩股 多市场与实时、历史双时效，口径统一、可溯源。",
+        "examples_en": [
+          "Apple (AAPL) latest price and change",
+          "Tencent Holdings earnings call transcript",
+          "NVIDIA quarterly revenue and margins",
+          "10-year US Treasury yield curve",
+          "Latest US CPI reading",
+          "Alibaba ADR premium vs HK shares"
+        ],
+        "examples_zh": [
+          "贵州茅台 近30日股价走势",
+          "腾讯控股 业绩电话会",
+          "招商银行 2025年归母净利润",
+          "人工智能板块 今日资金流向",
+          "最新一期 中国制造业PMI",
+          "周大福今日金价"
+        ],
+        "name": "NeoData金融数据库",
+        "name_en": "NeoData Financial Data"
+      },
+      "policy": {
+        "mcpServers": {
+          "neodata": {
+            "timeout": 12000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "neodata",
+  "version": "0.0.0+wb.aa693f28189ee196"
+}

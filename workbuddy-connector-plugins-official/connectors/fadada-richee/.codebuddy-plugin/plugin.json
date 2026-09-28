@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Search laws, regulations, and similar legal cases, look up enterprise information, and review contract risks with Richee.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Search laws, regulations, and similar legal cases, look up enterprise information, and review contract risks with Richee.",
+        "description_zh": "提供法律法规检索、类案检索、企业信息查询与合同审查能力，帮助用户快速查找相关法条、相似案例、核验企业信息并完成合同风险审查。",
+        "examples_en": [
+          "Find Civil Code provisions related to contract termination",
+          "Search for similar labor dispute cases involving unsigned employment contracts",
+          "Find cases concerning the validity of equity transfer agreements",
+          "Look up a company's business registration and litigation records",
+          "Review the payment clause risks in this procurement contract"
+        ],
+        "examples_zh": [
+          "查找《民法典》中关于合同解除的相关规定",
+          "检索未签订书面劳动合同相关的劳动争议类案",
+          "查找与股权转让合同效力相关的相似案例",
+          "查询某家公司的工商注册信息和涉诉情况",
+          "审查这份采购合同的付款条款是否存在风险"
+        ],
+        "name": "法大大睿契",
+        "name_en": "Fadada-Richee",
+        "name_zh": "法大大睿契"
+      },
+      "policy": {
+        "mcpServers": {
+          "richee-mcp-server": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "fadada-richee",
+  "version": "1.0.1+wb.3083a0358c384f52"
+}

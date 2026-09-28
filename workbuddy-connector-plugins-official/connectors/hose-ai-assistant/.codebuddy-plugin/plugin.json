@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to HOSE business travel for authentication and real-time flight, hotel, and train searches.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to HOSE business travel for authentication and real-time flight, hotel, and train searches.",
+        "description_zh": "连接合思差旅服务，提供身份校验、短信登录以及企业实时机票、酒店和火车票查询能力。",
+        "examples_en": [
+          "Find flights from Shanghai to Hangzhou tomorrow",
+          "Find hotels in Hangzhou from next Monday to Wednesday",
+          "Find direct trains from Shanghai to Hangzhou tomorrow"
+        ],
+        "examples_zh": [
+          "查询明天从上海到杭州的机票",
+          "查找杭州下周一入住、周三离店的酒店",
+          "查询明天上海到杭州的直达火车票"
+        ],
+        "name": "HOSE AI Assistant",
+        "name_en": "HOSE AI Assistant",
+        "name_zh": "合思 AI 助手"
+      },
+      "policy": {
+        "mcpServers": {
+          "hose-ai-assistant": {
+            "timeout": 600
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "hose-ai-assistant",
+  "version": "1.0.0+wb.5620961c0d9d6506"
+}

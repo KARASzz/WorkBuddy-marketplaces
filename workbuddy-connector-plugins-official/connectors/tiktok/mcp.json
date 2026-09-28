@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "tiktok-mcp": {
+      "type": "streamable-http",
+      "url": "https://business-api.tiktok.com/open_mcp/tt-ads-mcp-flat"
+    }
+  }
+}

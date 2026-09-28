@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query WangXiaoBao sales data in natural language: customers, visits, recordings, focus/resistance tags, knowledge base, quantum KPIs and Q&A.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query WangXiaoBao sales data in natural language: customers, visits, recordings, focus/resistance tags, knowledge base, quantum KPIs and Q&A.",
+        "description_zh": "用自然语言查询旺小宝业务数据：客户、来访、录音、关注点/抗性点、知识库、量子看板 KPI 与问数。",
+        "examples_en": [
+          "How many customer visits today",
+          "Show recent visits and reception summary for Ms. Li",
+          "Compare deals by team this month",
+          "What does the knowledge base say about school districts"
+        ],
+        "examples_zh": [
+          "今天来了几组客户",
+          "查一下李女士最近的来访和接待总结",
+          "本月各团队成交对比",
+          "知识库里关于学区怎么说"
+        ],
+        "name": "旺小宝",
+        "name_en": "WangXiaoBao"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "wangxiaobao",
+  "version": "1.0.0+wb.0e8f90839c4a97ee"
+}

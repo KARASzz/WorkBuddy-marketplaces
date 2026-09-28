@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "investoday-finance-data": {
+      "type": "streamable-http",
+      "url": "https://data-api.investoday.net/data/mcp?source=work_buddy"
+    }
+  }
+}

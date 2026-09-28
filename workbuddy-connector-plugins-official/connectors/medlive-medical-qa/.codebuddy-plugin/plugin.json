@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Medical Q&A connector for clinicians: ask questions in natural language and get evidence-based answers with literature citations, with follow-up, document Q&A, and history review support.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Medical Q&A connector for clinicians: ask questions in natural language and get evidence-based answers with literature citations, with follow-up, document Q&A, and history review support.",
+        "description_zh": "面向医生的医学问答连接器：用自然语言提问并获取带文献依据的完整答案，支持多轮追问、文档问答与历史回看。",
+        "examples_en": [
+          "What are the main indications for aspirin?",
+          "What should I know about metformin use in patients with renal impairment?",
+          "Following up on the previous question, does the dosage need adjusting for elderly patients?"
+        ],
+        "examples_zh": [
+          "阿司匹林的主要适应症是什么",
+          "帮我查一下二甲双胍在肾功能不全患者中的用药注意事项",
+          "接着上一个问题，老年患者的剂量需要调整吗"
+        ],
+        "name": "医脉通医学问答",
+        "name_en": "Medlive Medical Q&A"
+      },
+      "policy": {
+        "mcpServers": {
+          "medlive-medical-qa": {
+            "timeout": 300000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "medlive-medical-qa",
+  "version": "1.0.0+wb.c7cf5b623dd2527f"
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect WorkBuddy to Baijimu workspaces, agents, workflows, applications, and governed enterprise services.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect WorkBuddy to Baijimu workspaces, agents, workflows, applications, and governed enterprise services.",
+        "description_zh": "连接百积木工作区、智能体、工作流、应用与受治理的企业服务。",
+        "examples_en": [
+          "List the Baijimu workspaces I can access",
+          "Show workflows currently running in my workspace",
+          "Ask a Baijimu digital worker to handle this task",
+          "Check this business workflow's status and failed step"
+        ],
+        "examples_zh": [
+          "列出我可以访问的百积木工作区",
+          "查看当前工作区正在运行的工作流",
+          "让百积木中的数字员工处理这项任务",
+          "查询这个业务流程的执行状态和失败节点"
+        ],
+        "name": "百积木",
+        "name_en": "Baijimu"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "baijimu-enterprise-ai",
+  "version": "1.0.0+wb.3697237118b1fd61"
+}

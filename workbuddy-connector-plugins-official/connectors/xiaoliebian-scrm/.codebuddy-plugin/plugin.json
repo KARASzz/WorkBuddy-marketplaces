@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query and manage Xiaoliebian SCRM customers, staff, chats, campaigns, and operational data using natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query and manage Xiaoliebian SCRM customers, staff, chats, campaigns, and operational data using natural language.",
+        "description_zh": "小裂变SCRM连接器，帮你查询企业微信中的私域客户、客户群数据，制定朋友圈发布任务、群发触达任务，自动统计员工聊天排行榜，总结员工和客户聊天内容，小裂变SCRM&WorkBuddy帮你做好企业微信私域运营",
+        "examples_en": [
+          "Show this week's new customer count grouped by staff",
+          "Check yesterday's group messaging results and failure reasons",
+          "Analyze staff group-chat data for a date range"
+        ],
+        "examples_zh": [
+          "查询本周新增私域客户数，并按员工汇总",
+          "查看昨天企微群发任务的发送结果和失败原因",
+          "分析指定日期范围内的员工和客户聊天数据"
+        ],
+        "name": "小裂变 SCRM",
+        "name_en": "Xiaoliebian SCRM Assistant"
+      },
+      "policy": {
+        "mcpServers": {
+          "xiaoliebian-scrm": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "xiaoliebian-scrm",
+  "version": "0.0.0+wb.6f83907bcc1812a6"
+}

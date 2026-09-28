@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "One sentence handles your invoicing, tax filing, and policy clarification—saving not just money, but also peace of mind.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "One sentence handles your invoicing, tax filing, and policy clarification—saving not just money, but also peace of mind.",
+        "description_zh": "一句话把票开了、税报了、政策理清了，省的是钱，更是心。",
+        "examples_en": [
+          "Create a special VAT invoice for Yunzhangfang Network Technology Co., Ltd., invoice item software service fee, tax-included amount 12000 CNY",
+          "Please help me handle the individual income tax declaration for this period.",
+          "Please check if there are any omitted filings on this period’s tax return. Enterprise name / tax ID: xxx."
+        ],
+        "examples_zh": [
+          "帮我开专票给云帐房网络科技有限公司，开票项目是软件服务费，含税金额 12000 元",
+          "麻烦帮我处理下本期个税申报事项",
+          "帮我检查下本期是否有遗漏的申报事项，企业名称/税号：xxx"
+        ],
+        "name": "云帐房",
+        "name_en": "Yunzhangfang",
+        "name_zh": "云帐房"
+      },
+      "policy": {
+        "mcpServers": {
+          "yzf-general-mcp-server": {
+            "timeout": 60000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "yzf-general-mcp-server",
+  "version": "1.1.1+wb.9ade23f5d50da6e5"
+}

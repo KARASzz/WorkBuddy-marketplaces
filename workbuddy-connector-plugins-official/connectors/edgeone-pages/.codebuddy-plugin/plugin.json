@@ -1,0 +1,47 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Deploy the project to EdgeOne Makers and return the live access URL. Supports full-stack development, cloud functions, AI Agent, and other development scenarios.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Deploy the project to EdgeOne Makers and return the live access URL. Supports full-stack development, cloud functions, AI Agent, and other development scenarios.",
+        "description_zh": "将项目部署到 EdgeOne Makers 并返回线上访问地址，支持全栈、云函数、AI Agent 等开发场景。",
+        "examples_en": [
+          "Develop a Pomodoro timer and deploy it to EdgeOne Makers"
+        ],
+        "examples_zh": [
+          "开发个番茄时钟并部署到 EdgeOne Makers"
+        ],
+        "name": "EdgeOne Makers",
+        "name_en": "EdgeOne Makers"
+      },
+      "policy": {
+        "mcpServers": {
+          "edgeone-pages": {
+            "timeout": 600
+          }
+        },
+        "minWorkbuddyVersion": "4.22.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "edgeone-pages": {
+            "preAuth": "cli",
+            "runtime": {
+              "type": "node",
+              "version": ">=20"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills",
+    "cli"
+  ],
+  "name": "edgeone-pages",
+  "version": "0.0.0+wb.e6d4ab7480668a04"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Deli Legal Data MCP service providing authoritative legal data retrieval, covering 160M+ court judgments and 3M+ laws and regulations. Supports case retrieval, statute retrieval and legal Q&A via natural language, with semantic search by case facts, disputes, statute names or provisions, plus detail and validity lookups.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Deli Legal Data MCP service providing authoritative legal data retrieval, covering 160M+ court judgments and 3M+ laws and regulations. Supports case retrieval, statute retrieval and legal Q&A via natural language, with semantic search by case facts, disputes, statute names or provisions, plus detail and validity lookups.",
+        "description_zh": "得理法律数据 MCP 连接器，提供权威法律数据检索，覆盖 1.7 亿+裁判文书与 300 万+法律法规。支持自然语言案例检索、法规检索与法律问答，可按案情描述、争议焦点、法规名称或条款内容语义检索，并获取案例/法规详情与效力状态。",
+        "examples_en": [
+          "Search for similar cases in Shenzhen regarding shareholders' liability for damaging company creditors' interests",
+          "Search for laws, regulations, and judicial interpretations related to private lending interest rates",
+          "Look up Article 680 of the Civil Code, its full text and validity status",
+          "What precedents and legal basis support employees' claims for overtime pay?"
+        ],
+        "examples_zh": [
+          "检索深圳股东损害公司债权人利益的类案",
+          "检索民间借贷利率相关的法律法规及司法解释",
+          "查一下《民法典》第六百八十条的条文内容和效力状态",
+          "劳动者主张加班费，有哪些类案和法规依据？"
+        ],
+        "name": "得理法律数据",
+        "name_en": "DELI Legal Data"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "deli-mcp",
+  "version": "1.0.0+wb.77b541507f385a41"
+}

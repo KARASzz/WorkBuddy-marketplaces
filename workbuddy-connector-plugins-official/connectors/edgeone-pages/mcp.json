@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "edgeone-pages": {
+      "command": "npx",
+      "args": [
+        "edgeone-pages-mcp-fullstack@latest",
+        "--region",
+        "china"
+      ],
+      "type": "stdio"
+    }
+  }
+}

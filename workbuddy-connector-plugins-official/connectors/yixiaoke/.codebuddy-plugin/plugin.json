@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Look up customers, opportunities and orders, write follow-ups, handle approvals and to-dos, review call/SMS/WeChat records, manage devices, and view risk-control statistics in natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Look up customers, opportunities and orders, write follow-ups, handle approvals and to-dos, review call/SMS/WeChat records, manage devices, and view risk-control statistics in natural language.",
+        "description_zh": "用自然语言查客户、商机、订单，写跟进、处理待办审批，查通话/短信/微信记录，管设备工牌，看风控统计，打通销售全链路。",
+        "examples_en": [
+          "List my customers that have not been followed up for over 30 days",
+          "Show the follow-up records and related opportunities for customer XX Technology Co., Ltd.",
+          "Write today's visit follow-up for customer Zhang San",
+          "Show my pending approvals and to-dos for today",
+          "Summarize this month's call volume and sensitive-word triggers for the sales team"
+        ],
+        "examples_zh": [
+          "把我名下超过 30 天没跟进的客户列出来",
+          "查一下客户 XX 科技有限公司的跟进记录和关联商机",
+          "帮我给客户张三写一条今天的拜访跟进",
+          "看看我今天的待办审批有哪些",
+          "统计本月销售团队的通话量和敏感词触发情况"
+        ],
+        "name": "翼小客",
+        "name_en": "YiXiaoKe",
+        "name_zh": "翼小客"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "yixiaoke",
+  "version": "1.0.0+wb.5beb8dbb243ecf1f"
+}

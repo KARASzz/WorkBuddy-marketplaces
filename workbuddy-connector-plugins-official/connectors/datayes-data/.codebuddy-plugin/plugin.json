@@ -1,0 +1,65 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Financial market data via natural language: A-share/HK equities, funds, bonds, indices, futures/options, factors, real-time quotes, macro indicators, announcements, analyst forecasts and policies.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query financial market data in natural language: A-share/HK equities, funds, bonds, indices, futures/options, factors, real-time quotes, macro indicators, announcements, analyst forecasts and policies.",
+        "description_zh": "用自然语言查询金融数据：A股/港股、基金、债券、指数、期货期权、因子、实时行情、宏观、公告与政策法规。",
+        "examples_en": [
+          "Show Kweichow Moutai's net profit and ROE over the past year",
+          "CSI 300 index performance for the last 5 trading days",
+          "Top 10 holdings of E Fund Blue Chip in 2026 Q2",
+          "Recent year-over-year CPI and PMI figures",
+          "List CATL's latest material-event announcements"
+        ],
+        "examples_zh": [
+          "查一下贵州茅台最近一年的净利润和ROE",
+          "沪深300最近5个交易日的涨跌幅",
+          "易方达蓝筹精选2026年二季度的前十大重仓股",
+          "最近一个月CPI和PMI的同比数据",
+          "宁德时代最近的重大事项公告有哪些"
+        ],
+        "name": "通联数据",
+        "name_en": "DataYes"
+      },
+      "policy": {
+        "mcpServers": {
+          "datayes-data": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "datayes-data": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "DATAYES_TOKEN",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "datayes-data",
+  "version": "0.0.0+wb.3bbff564c50d29f2"
+}

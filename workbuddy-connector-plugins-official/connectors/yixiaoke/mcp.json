@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "yixiaoke": {
+      "url": "https://call.yixiaoke.net/mcp",
+      "type": "streamable-http"
+    }
+  }
+}

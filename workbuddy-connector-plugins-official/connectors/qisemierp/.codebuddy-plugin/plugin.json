@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to the QiSeMi ERP inventory management system through natural language to query products, inventory, customers, suppliers, and business documents such as sales, purchases, and stock movements at any time. Supports sales statistics, arrears reconciliation, document creation, and more, enabling instant business data Q&A.",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "oauth"
+      },
+      "display": {
+        "description_en": "Connect to the QiSeMi ERP inventory management system through natural language to query products, inventory, customers, suppliers, and business documents such as sales, purchases, and stock movements at any time. Supports sales statistics, arrears reconciliation, document creation, and more, enabling instant business data Q&A.",
+        "description_zh": "通过自然语言连接七色米进销存系统，随时查询商品、库存、客户、供应商及销售、采购、出入库等业务单据；支持销售统计、欠款对账、单据创建等操作，让业务数据问答即得。",
+        "examples_en": [
+          "Query which products are currently out of stock.",
+          "What is the product with the highest sales this month?",
+          "Which customers have arrears?",
+          "Help me create a sales order, please confirm before submitting."
+        ],
+        "examples_zh": [
+          "查询当前库存不足的商品有哪些",
+          "本月销售额最高的商品是什么",
+          "哪些客户有欠款",
+          "帮我创建一张销售单，提交前请确认"
+        ],
+        "name": "七色米进销存",
+        "name_en": "QiSeMi ERP",
+        "name_zh": "七色米进销存"
+      },
+      "policy": {
+        "mcpServers": {
+          "qisemierp": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "qisemierp",
+  "version": "1.0.0+wb.d0f1ee6af7f05001"
+}

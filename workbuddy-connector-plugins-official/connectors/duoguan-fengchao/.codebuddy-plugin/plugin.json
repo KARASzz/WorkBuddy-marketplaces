@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "An end-to-end AI content operations platform covering content brains, brand profiles, trend research, short-video and social-copy writing, image generation, podcasts, voiceover, video packaging, and multi-account publishing.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "An end-to-end AI content operations platform covering content brains, brand profiles, trend research, short-video and social-copy writing, image generation, podcasts, voiceover, video packaging, and multi-account publishing.",
+        "description_zh": "覆盖内容大脑、品牌画像、热点选题、口播与图文文案、配图、播客、配音、视频封装和多账号运营的一站式 AI 自媒体内容生产平台。",
+        "examples_en": [
+          "Initialize the content brain and brand profile from my business materials",
+          "Analyze recent trends and suggest a short-video topic",
+          "Turn this topic into a Xiaohongshu post with cover concepts",
+          "Generate a podcast audio from this finalized script",
+          "Package this talking-head recording into a publish-ready short video"
+        ],
+        "examples_zh": [
+          "根据我的品牌资料初始化内容大脑和账号画像",
+          "帮我分析最近的热点，推荐一个适合做抖音口播的选题",
+          "把这个选题写成一篇小红书图文，配 3 张封面方案",
+          "这篇文案定稿了，帮我生成一段播客音频",
+          "把这段口播原片封装成适合发布的短视频"
+        ],
+        "name": "夺冠蜂巢",
+        "name_en": "Duoguan Fengchao",
+        "name_zh": "夺冠蜂巢"
+      },
+      "policy": {
+        "mcpServers": {
+          "duoguan-fengchao": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "5.0.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "duoguan-fengchao",
+  "version": "2.0.0+wb.104ecdd841bf7b95"
+}

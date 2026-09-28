@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "kuaicha-search": {
+      "type": "streamable-http",
+      "url": "https://bizveris.kuaicha365.com/open/mcp?source=workbuddy"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "today-watermark-camera": {
+      "type": "streamable-http",
+      "url": "https://workbuddy.xhey.top/workbuddy-adapter/mcp"
+    }
+  }
+}

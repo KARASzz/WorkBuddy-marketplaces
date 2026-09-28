@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Search licensed assets, generate images and videos, run editable workflows, and manage creative assets in WorkBuddy.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Search licensed assets, generate images and videos, run editable workflows, and manage creative assets in WorkBuddy.",
+        "description_zh": "在 WorkBuddy 中搜索正版素材、生成图片和视频、运行可编辑工作流，并管理创意资产。",
+        "examples_en": [
+          "Find licensed assets for an autumn marketing poster and suggest three directions.",
+          "Generate a 16:9 key visual for a technology launch and explain the expected credit cost first.",
+          "Read my poster workflow, preserve its canvas structure, and create a spring version."
+        ],
+        "examples_zh": [
+          "搜索适合秋季营销海报的正版素材，并给出三种创意方向",
+          "生成一张 16:9 的科技发布会主视觉，先说明预计积分消耗",
+          "读取我的海报工作流，保留原有节点结构并创建一个春日版本"
+        ],
+        "name": "千图 AI",
+        "name_en": "Qiantu AI"
+      },
+      "policy": {
+        "mcpServers": {
+          "qiantu-ai": {
+            "timeout": 30000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "58pic-qiantu-ai",
+  "version": "0.0.0+wb.ae1f003f624d8f5e"
+}

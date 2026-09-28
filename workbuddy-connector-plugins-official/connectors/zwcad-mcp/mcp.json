@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "zwcad-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "zwcad-mcp"
+      ],
+      "env": {
+        "PYTHONUTF8": "1",
+        "UV_DEFAULT_INDEX": "https://pypi.tuna.tsinghua.edu.cn/simple"
+      }
+    }
+  }
+}

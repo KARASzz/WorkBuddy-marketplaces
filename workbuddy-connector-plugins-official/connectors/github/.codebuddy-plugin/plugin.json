@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Clone, push, and manage repositories and pull requests on GitHub with natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "server-side"
+      },
+      "display": {
+        "description_en": "Clone, push, and manage repositories and pull requests on GitHub with natural language.",
+        "description_zh": "在 GitHub 上克隆、推送代码，查看和管理仓库与 Pull Request，用自然语言完成代码协作。",
+        "examples_en": [
+          "Clone https://github.com/torvalds/linux locally and briefly describe the repository structure",
+          "List all open pull requests in owner/repo sorted by most recently updated, with title, author, and change size for each",
+          "Commit all current changes and push to GitHub, generate the commit message based on my edits",
+          "Add a comment to PR #123 in owner/repo saying tests passed, and mark it as ready for review"
+        ],
+        "examples_zh": [
+          "帮我克隆 https://github.com/torvalds/linux 到本地并简要介绍这个仓库的结构",
+          "查看仓库 owner/repo 里所有 open 状态的 Pull Request，按更新时间倒序，告诉我每个 PR 的标题、作者和变更规模",
+          "在当前分支提交所有改动并推送到 GitHub，提交消息按我做的变更自动生成",
+          "给 owner/repo 的 PR #123 添加一条评论说明测试已通过，并把它标记为 ready for review"
+        ],
+        "name": "GitHub",
+        "name_en": "GitHub"
+      },
+      "policy": {
+        "mcpServers": {
+          "github": {
+            "timeout": 600
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "github",
+  "version": "0.0.0+wb.15f749b7cfc4cc00"
+}

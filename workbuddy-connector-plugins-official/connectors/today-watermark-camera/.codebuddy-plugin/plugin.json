@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Use natural language to query and export Today Watermark Camera team photos, and assist with photo archiving, attendance checks, ledger organization, and photo statistics.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Use natural language to query and export Today Watermark Camera team photos, and assist with photo archiving, attendance checks, ledger organization, and photo statistics.",
+        "description_zh": "用自然语言查询和导出今日水印相机的团队照片，通过对话辅助完成照片归档、考勤核对、台账整理和照片统计。",
+        "examples_en": [
+          "Find construction site photos taken this week",
+          "Count how many photos the team took this month",
+          "Show the top 10 photographers this month",
+          "Export the photos taken by a team member yesterday"
+        ],
+        "examples_zh": [
+          "帮我找出本周施工现场的照片",
+          "统计这个月团队拍了多少张照片",
+          "列出本月拍照最多的 10 位成员",
+          "把昨天张三拍的照片打包导出"
+        ],
+        "name": "今日水印相机",
+        "name_en": "Today Watermark Camera"
+      },
+      "policy": {
+        "mcpServers": {
+          "today-watermark-camera": {
+            "timeout": 60000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "today-watermark-camera",
+  "version": "0.0.0+wb.cf80c474caac1b3a"
+}

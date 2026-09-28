@@ -1,0 +1,51 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "腾讯营销投放 Skill，为大模型赋予广告投放管理能力：支持广告账户授权、广告/智投项目的创建与更新、创意管理、广告数据查询与分析、推广内容资产管理，以及操作日志查询等完整的广告投放全链路操作。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Tencent Ads Delivery Skill empowers LLMs with full-funnel ad management capabilities: account authorization, ad/smart delivery campaign creation and update, creative management, ad data query and analysis, marketing asset management, and operation log query.",
+        "description_zh": "腾讯营销投放 Skill，为大模型赋予广告投放管理能力：支持广告账户授权、广告/智投项目的创建与更新、创意管理、广告数据查询与分析、推广内容资产管理，以及操作日志查询等完整的广告投放全链路操作。",
+        "examples_en": [
+          "Check the daily budget for account 52480523 and update it to 1000 CNY",
+          "Update ad 100869559303 (advertiser ID: 80429989): enable auto-acquisition with budget 200 CNY",
+          "Show product-dimension delivery data for account 69159768 from Apr 29 to May 18, 2026, grouped by day and product, focusing on spend, impressions, and clicks",
+          "Batch update the delivery schedule for ad 92811836282 (advertiser ID: 74752792) to 06:00-24:00 daily",
+          "Create a smart delivery campaign for advertiser 79029085, targeting live streaming, bid 65 CNY per order",
+          "Analyze ad 100329364591 (account 78649746) for performance issues and provide optimization suggestions",
+          "List marketing assets for account 80957915, asset type: short drama, name contains 'Shenjizaozao'",
+          "Query operation logs for ad 103519996520 from May 19 to May 25, 2026"
+        ],
+        "examples_zh": [
+          "帮我查一下账户 52480523 当前的日预算是多少，并修改为 1000 元",
+          "请帮我更新广告 100869559303（广告主 ID: 80429989），开启一键起量，预算设为 200 元",
+          "帮我查看账户 69159768 在 2026 年 4 月 29 日到 5 月 18 日的商品维度投放数据，按天和商品分组，重点看消耗、曝光、点击",
+          "请帮我批量修改广告 92811836282（广告主 ID: 74752792）的投放时段为每天 06:00-24:00",
+          "帮我创建一条智能投放项目，广告主 ID: 79029085，推直播间智投，出价 65 元/下单",
+          "分析广告 100329364591（账户 78649746）的投放效果，识别问题并给出优化建议",
+          "帮我查询推广内容资产列表，账号 80957915，资产类型为短剧，名称包含「神级制造」",
+          "帮我查一下广告 103519996520 在 2026 年 5 月 19 日到 25 日的操作日志"
+        ],
+        "name": "腾讯营销投放",
+        "name_en": "Tencent Ads Delivery",
+        "name_zh": "腾讯营销投放"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "tencentads",
+  "version": "0.0.0+wb.23e82457f71387f4"
+}

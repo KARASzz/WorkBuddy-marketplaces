@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "全周期管理平台机构端的数据查询MCP连接器，覆盖医疗数据、管理任务、对话沟通等业务域的查询能力，所有数据仅在对话内分析、不落盘不导出。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Read-only MCP connector for the provider side of the Tencent Health Full-Cycle Care Platform, providing queries across medical records, care management tasks, and patient messaging. Data is analyzed in-conversation only — never stored or exported.",
+        "description_zh": "全周期管理平台机构端的数据查询MCP连接器，覆盖医疗数据、管理任务、对话沟通等业务域的查询能力，所有数据仅在对话内分析、不落盘不导出。",
+        "examples_en": [
+          "How many patients are currently under management?",
+          "Pull up Zhang San's data — summarize abnormal indicators and key areas of concern",
+          "How has Zhang San's blood pressure been trending over the past three months? Give me a trend analysis",
+          "What do Zhang San's diet and exercise stats look like this month?",
+          "Show me Zhang San's current follow-up programs and timeline"
+        ],
+        "examples_zh": [
+          "目前管理了多少患者",
+          "帮我查看张三的数据情况，总结异常指标和需要关注的重点情况",
+          "张三最近三个月血压怎么样，给个趋势分析",
+          "张三这个月的饮食/运动统计如何？",
+          "查看张三当前的随访项目与时间轴"
+        ],
+        "name": "腾讯健康全周期管理平台",
+        "name_en": "Tencent Health Full-Cycle Care Platform",
+        "name_zh": "腾讯健康全周期管理平台"
+      },
+      "policy": {
+        "mcpServers": {
+          "archive-hospital-mcp": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "archive-hospital-mcp",
+  "version": "2.0.0+wb.334e233cac03d92e"
+}

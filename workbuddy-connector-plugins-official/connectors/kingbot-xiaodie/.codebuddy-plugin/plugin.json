@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Smart operating connector for small businesses: support natural language entry of sales, purchase, and other business data, as well as operating data query and analysis, sales trend insight.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Smart operating connector for small businesses: support natural language entry of sales, purchase, and other business data, as well as operating data query and analysis, sales trend insight.",
+        "description_zh": "小微企业智能经营连接器：支持自然语言录入销售、采购等业务数据、经营数据查询与分析、销售趋势洞察",
+        "examples_en": [
+          "Record today sales of 2374 yuan Xiaodie Accounting Commemorative T-shirt",
+          "What was this month sales revenue",
+          "Photograph and recognize this receipt, record it for me",
+          "How is this month profit",
+          "Analyze this month operating situation"
+        ],
+        "examples_zh": [
+          "帮我记录今天卖了2374元的小蝶记账纪念衫",
+          "这个月销售额是多少",
+          "拍照识别这张单据，帮我记账",
+          "这个月利润怎么样",
+          "帮我分析一下本月经营情况"
+        ],
+        "name": "小蝶记账",
+        "name_en": "Xiaodie Accounting"
+      },
+      "policy": {
+        "mcpServers": {
+          "xdjz": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "kingbot-xiaodie",
+  "version": "1.0.0+wb.2c2a460a7a2d27ca"
+}

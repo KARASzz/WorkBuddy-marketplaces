@@ -1,0 +1,52 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Use FBSir identity, scenes, progress and rewards, with OAuth account and purpose-limited profile tools when available.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Use FBSir identity, scenes, progress and rewards, with OAuth account and purpose-limited profile tools when available.",
+        "description_zh": "福帮手连接器：保留身份、场景、进度和乐包；在当前授权与用途允许时确认账号、读取或提交待确认画像。",
+        "examples_en": [
+          "Check my current FBSir identity and recommend the safest next step.",
+          "Match my active expert and goal to an actionable scene plan.",
+          "I finished the first step; record the progress and guide the follow-up.",
+          "Check my reward status and explain whether I should claim, redeem, or continue first.",
+          "Check my FBSir account and available capabilities; use confirmed profile facts only for a purpose I choose."
+        ],
+        "examples_zh": [
+          "先确认我当前的福帮手身份和最稳妥的下一步，再继续推进。",
+          "根据我正在使用的专家和当前目标，匹配一个可执行的场景方案。",
+          "我已经完成了第一步，请帮我记录进度并安排后续。",
+          "查询我的乐包状态，并说明现在适合领取、兑换还是继续完成任务。",
+          "确认本次福帮手账号与可用能力；经我选择后，按用途使用已确认资料。"
+        ],
+        "name": "福帮手",
+        "name_en": "Fbsir"
+      },
+      "policy": {
+        "mcpServers": {
+          "fbs-connector": {
+            "disabledTools": [
+              "lebao_drop"
+            ],
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "5.0.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "fbs-connector",
+  "version": "2026.9.25-r7+wb.17841864c3604190"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Batch-filter target companies by region, industry, scale, risk, qualifications and business performance. Supports multi-dimensional screening on business registration, judicial risk, honors, bidding, equity relations, etc. One-click removal of dishonest/executed/administrative-penalty entities, and穿透 mining of affiliated enterprise groups from known companies. Ideal for lead generation, supplier admission screening, risk investigation and regional industry analysis.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Batch-filter target companies by region, industry, scale, risk, qualifications and business performance. Supports multi-dimensional screening on business registration, judicial risk, honors, bidding, equity relations, etc. One-click removal of dishonest/executed/administrative-penalty entities, and穿透 mining of affiliated enterprise groups from known companies. Ideal for lead generation, supplier admission screening, risk investigation and regional industry analysis.",
+        "description_zh": "基于企业数据仓库，面向企业发现与筛选场景：支持按工商信息、司法风险、荣誉资质、招投标、股权关系等多维条件组合筛选企业清单，可一键剔除失信/被执行/行政处罚等风险主体，也可从已知企业出发穿透挖掘关联企业群。适用于获客名单挖掘、供应商准入筛选、风险排查、区域产业分析等场景。",
+        "examples_en": [
+          "Filter companies newly established in Shanghai on September 1, 2026",
+          "Check companies nationwide listed as operating abnormally on September 1, 2026",
+          "Find manufacturing companies in Guangdong with registered capital over 10 million CNY",
+          "Starting from this company,穿透 mine its affiliated enterprise group"
+        ],
+        "examples_zh": [
+          "筛选一下上海市2026-09-01新成立的企业",
+          "查一下全国在2026-09-01被列为经营异常的企业",
+          "帮我找出广东省注册资本超过1000万的制造业企业",
+          "从这家企业出发，穿透挖掘它的关联企业群"
+        ],
+        "name": "水滴信用-企业发现",
+        "name_en": "Shuidi Credit Enterprise Discovery"
+      },
+      "policy": {
+        "mcpServers": {
+          "shuidi-discovery": {
+            "timeout": 30000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "shuidi-discovery",
+  "version": "1.0.0+wb.7f4eb82e18b97121"
+}

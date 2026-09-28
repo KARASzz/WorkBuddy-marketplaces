@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Handle everyday office work on Weaver eteams in natural language. Covers approvals, schedules and meetings, mail and messaging, reports, projects and tasks, CRM, HR, expenses and invoices, archives and assets.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Handle everyday office work on Weaver eteams in natural language. Covers approvals, schedules and meetings, mail and messaging, reports, projects and tasks, CRM, HR, expenses and invoices, archives and assets.",
+        "description_zh": "用自然语言办理泛微 eteams 上的日常办公事务。覆盖流程审批、日程会议、邮件消息、周报月报、项目任务、客户商机、人事考勤、费控发票、档案与资产。",
+        "examples_en": [
+          "Check my pending workflows",
+          "Check my attendance records for this month",
+          "Book a project review meeting tomorrow at 3 PM and find a free meeting room",
+          "Read these invoices, import them into my folder, and auto-fill the reimbursement form"
+        ],
+        "examples_zh": [
+          "查询我的待办流程",
+          "查一下本月考勤记录",
+          "约明天下午 3 点的项目评审会，看看哪个会议室有空",
+          "把这几张发票识别后导入票夹，并自动填好报销单"
+        ],
+        "name": "泛微eteams数智办公云平台",
+        "name_en": "Weaver eteams Smart Office Cloud Platform"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "weaver-eteams-connector",
+  "version": "1.0.0+wb.ba200274a261bcbc"
+}

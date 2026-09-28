@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query partnered pharma brands' pharmacy-box home-page data via the Pharmacy Box BI MCP: run multi-dimension data analysis and generate insight reports to inform brand marketing and operating strategy.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query partnered pharma brands' pharmacy-box home-page data via the Pharmacy Box BI MCP: run multi-dimension data analysis and generate insight reports to inform brand marketing and operating strategy.",
+        "description_zh": "通过药箱企业数据洞察 MCP，查询合作药企的药箱品牌主页数据，按九大维度进行数据分析与洞察，生成 HTML 数据洞察报告，指引品牌宣传及运营策略。",
+        "examples_en": [
+          "Generate a 2026 annual data insight report for <drug name>",
+          "Query the average monthly scan-user count of <drug name> from Jan to Jun 2026",
+          "Generate an H1 2026 'market size and pharmacy-box user analysis' report for <drug name>"
+        ],
+        "examples_zh": [
+          "帮我生成<药品名>2026年度的数据洞察报告",
+          "查询<药品名>2026年1-6月的月均扫码人数",
+          "帮我生成<药品名>2026上半年「整体市场规模和药箱用户分析」的数据报告"
+        ],
+        "name": "腾讯健康药箱企业数据洞察",
+        "name_en": "Pharmacy Box BI Data"
+      },
+      "policy": {
+        "mcpServers": {
+          "eyao-data-gateway": {
+            "disabled": false,
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.22.12",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "tencent-yaoxiang-bi",
+  "version": "1.0.1+wb.d86441c92d43b172"
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "AI-powered research proposal and PPT generation, quick literature search, smart medical Q&A, and detailed review report with asynchronous task execution.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Generate research proposals and PPTs, quick literature search, smart medical Q&A, and detailed review reports, all asynchronously with status polling and cancellation.",
+        "description_zh": "课题申报书与PPT生成、快速文献检索、医学智能问答、综述报告生成，所有任务异步执行，支持状态轮询与取消。",
+        "examples_en": [
+          "Generate a research proposal about artificial intelligence",
+          "Search literature on gene editing in the last two years",
+          "Explain the application of deep learning in medical imaging",
+          "Generate a detailed review report on tumor immunotherapy"
+        ],
+        "examples_zh": [
+          "帮我生成一份关于人工智能的科研申报书",
+          "检索近两年关于基因编辑的文献",
+          "解释一下深度学习在医学影像中的应用",
+          "生成一份关于肿瘤免疫治疗的详细报告"
+        ],
+        "name": "Repilot科研智能体",
+        "name_en": "Repilot Research Assistant",
+        "name_zh": "Repilot科研智能体"
+      },
+      "policy": {
+        "mcpServers": {
+          "paper-retrieval": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "paper-retrieval",
+  "version": "2.0.1+wb.7bdbf34b2d19337e"
+}

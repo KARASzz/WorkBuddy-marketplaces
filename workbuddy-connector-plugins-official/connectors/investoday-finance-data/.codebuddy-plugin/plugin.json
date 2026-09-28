@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query Chinese financial-market and investment-research data, including A-shares, Hong Kong stocks, funds, indices, quotes, financials, announcements, research reports, macroeconomics, sectors, themes, and industry chains.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query Chinese financial-market and investment-research data, including A-shares, Hong Kong stocks, funds, indices, quotes, financials, announcements, research reports, macroeconomics, sectors, themes, and industry chains.",
+        "description_zh": "查询 A 股、港股、基金、指数、行情、财务、公告、研报、宏观经济、板块主题和产业链等金融数据与投研信息。",
+        "examples_en": [
+          "Show Kweichow Moutai's price trend over the past month",
+          "Compare the CSI 300 and CSI 500 over the past year in a line chart",
+          "Show CATL's latest financial data and valuation metrics",
+          "List the best-performing Shenwan Level 1 industries this week"
+        ],
+        "examples_zh": [
+          "查询贵州茅台最近一个月的行情走势",
+          "用折线图对比沪深 300 和中证 500 最近一年的表现",
+          "查看宁德时代最近一期财务数据和估值指标",
+          "查询本周表现最强的申万一级行业"
+        ],
+        "name": "今日投资金融数据",
+        "name_en": "Investoday Financial Data"
+      },
+      "policy": {
+        "mcpServers": {
+          "investoday-finance-data": {
+            "timeout": 60000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "investoday-finance-data",
+  "version": "1.0.0+wb.95ab8055a32de71e"
+}

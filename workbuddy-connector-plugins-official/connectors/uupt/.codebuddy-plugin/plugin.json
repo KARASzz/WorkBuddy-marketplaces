@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Same-city delivery, on-site help, and coupon claiming via the UU open-platform CLI.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Use natural language to price, create, track, and cancel UU same-city delivery or on-site help orders, and claim coupons.",
+        "description_zh": "通过自然语言使用 UU跑腿：同城配送与帮帮服务，支持询价、下单、查单、取消、跑男追踪和领取优惠券",
+        "examples_en": [
+          "Send a package from Huayuan Road, Jinshui District to Dehua Street, Erqi District in Zhengzhou, phone 13800138000",
+          "Book an on-site hospital companion at Zhengzhou People's Hospital, phone 13900001111",
+          "Where is order UU123456789 right now?",
+          "Claim UU Delivery coupons for me"
+        ],
+        "examples_zh": [
+          "帮我从郑州市金水区花园路送到二七区德化街，电话 13800138000",
+          "帮我去郑州人民医院陪诊挂号，电话 13900001111",
+          "查一下订单 UU123456789 现在送到哪了",
+          "帮我领一下UU跑腿的优惠券"
+        ],
+        "name": "UU跑腿",
+        "name_en": "UU Delivery"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "uupt",
+  "version": "1.1.0+wb.13e71740d4cdfadd"
+}

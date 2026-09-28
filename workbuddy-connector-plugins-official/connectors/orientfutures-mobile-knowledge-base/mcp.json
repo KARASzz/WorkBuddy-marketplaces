@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "orientfutures_mobile_knowledge_base": {
+      "type": "streamable-http",
+      "url": "https://commosmart.orientfutures.com/mcp/knowledge-base"
+    }
+  }
+}

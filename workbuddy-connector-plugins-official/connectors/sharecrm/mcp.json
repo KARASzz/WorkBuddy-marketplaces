@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "ShareCRM": {
+      "type": "streamable-http",
+      "url": "https://open.fxiaoke.com/mcp/connector?id=workbuddy"
+    }
+  }
+}

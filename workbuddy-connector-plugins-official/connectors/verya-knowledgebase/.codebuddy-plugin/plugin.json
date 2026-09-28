@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Search verya knowledge, explore entity relations, and uncover insights with its knowledge graph.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Search verya knowledge, explore entity relations, and uncover insights with its knowledge graph.",
+        "description_zh": "连接后支持搜索、读取和总结予非AI知识大脑中的知识资料，融合知识图谱关联分析，通过自然语言快速定位文档、洞察实体关系并梳理知识脉络。",
+        "examples_en": [
+          "Map key concepts, entities, and relationships using the knowledge base and knowledge graph",
+          "Analyze connections among organizations, products, and technologies, with cited sources",
+          "Review data security and access policies, then extract key requirements and actions",
+          "Compare product deployment options by use case, technical requirements, and risks"
+        ],
+        "examples_zh": [
+          "结合知识库与知识图谱，梳理目标领域的核心概念、实体关系和知识脉络",
+          "分析项目涉及的组织、产品与关键技术之间的关联，并标注信息来源",
+          "检索数据安全与权限管理相关制度，提炼关键要求和执行要点",
+          "对比不同产品部署方案的适用场景、技术要求与潜在风险"
+        ],
+        "name": "予非AI知识大脑",
+        "name_en": "verya"
+      },
+      "policy": {
+        "mcpServers": {
+          "knowledgebase": {
+            "disabledTools": [
+              "sync",
+              "upload_document",
+              "upload_document_content",
+              "upload_progress",
+              "my_recent_documents"
+            ],
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "verya-knowledgebase",
+  "version": "1.0.0+wb.3ac169c23db92e32"
+}

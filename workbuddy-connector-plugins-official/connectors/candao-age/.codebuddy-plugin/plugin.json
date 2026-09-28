@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Gain real-time visibility into restaurant delivery reputation with a single query: access authorized stores, reviews, key metrics, issue trends, and review reports.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Gain real-time visibility into restaurant delivery reputation with a single query: access authorized stores, reviews, key metrics, issue trends, and review reports.",
+        "description_zh": "一句话掌握餐厅外卖口碑：查询授权门店、评价指标、差评原因与趋势，快速生成评价分析报告。",
+        "examples_en": [
+          "Generate this week's nationwide store-level food-delivery reputation-health weekly report, highlighting week-over-week changes in positive and negative comment rates and the priority regions of concern.",
+          "Benchmark negative comment rates and 24-hour response SLA across Meituan, Taobao Instant, and JD Now to identify the underperforming platform.",
+          "List this week's top 10 stores by negative comment volume together with details of negative comments left unanswered within 24 hours, for regional inspection and follow-up.",
+          "Diagnose stores with a recent rebound in negative comments, and assign remediation priorities with recommended actions by risk tier.",
+          "Screen food-safety red-line negative comments involving foreign objects and hygiene, summarize by store, flag risk levels, and generate a dedicated food-safety report."
+        ],
+        "examples_zh": [
+          "生成本周全国门店外卖口碑健康度周报，标注好评率、差评率环比变化与重点关注区域。",
+          "横向对标美团、淘宝闪购、京东秒送三大渠道的差评率与回复时效，识别短板平台。",
+          "列出本周差评量TOP10门店及24小时未回复差评明细，用于区域巡检与督办。",
+          "诊断近期差评回升门店，按风险等级给出整改优先级与建议动作。",
+          "专项筛查异物、卫生类食安红线差评，按门店汇总并标记风险等级，生成食安专项报告。"
+        ],
+        "name": "餐道.数智经营",
+        "name_en": "CanDao.AGE"
+      },
+      "policy": {
+        "mcpServers": {
+          "candao-age": {
+            "timeout": 30000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "candao-age",
+  "version": "1.0.1+wb.e789f5420b3c0b7a"
+}

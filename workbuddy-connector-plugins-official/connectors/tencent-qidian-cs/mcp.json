@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "qidian-cs": {
+      "url": "https://sse.qidian.qq.com/qidian-cs/mcp",
+      "type": "sse"
+    }
+  }
+}

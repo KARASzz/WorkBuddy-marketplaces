@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connects with Lemon Cloud Finance, Inventory, Accounting, Cloud Accounting, and Invoicing systems, supporting various business scenarios such as account reconciliation, invoice generation, business inquiry, and operational analysis.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connects with Lemon Cloud Finance, Inventory, Accounting, Cloud Accounting, and Invoicing systems, supporting various business scenarios such as account reconciliation, invoice generation, business inquiry, and operational analysis.",
+        "description_zh": "连接柠檬云财务、进销存、业财、云代账和发票系统，支持查账、开票、业务查询、经营分析等企业经营场景。",
+        "examples_en": [
+          "Please help me check the list of Lemon Cloud software account sets and tell me what Lemon Cloud software can do."
+        ],
+        "examples_zh": [
+          "帮我查一下柠檬云软件账套列表，并告诉我柠檬云软件能做些什么"
+        ],
+        "name": "LemonClaw",
+        "name_en": "LemonClaw",
+        "name_zh": "柠檬云"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "lemonclaw",
+  "version": "0.0.0+wb.2ce21184d6652263"
+}

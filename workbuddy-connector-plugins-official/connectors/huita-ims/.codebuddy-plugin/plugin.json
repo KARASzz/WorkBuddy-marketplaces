@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Huita IMS MCP connector: products/inventory (multi-store, batch/expiry), sales & purchase orders, AR/AP, and business analytics. Provides 14 read + 6 analytics + 12 write tools (preview→commit two-phase writes). Data syncs in real time with the Huita desktop and POS clients.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Huita IMS MCP connector: products/inventory (multi-store, batch/expiry), sales & purchase orders, AR/AP, and business analytics. Provides 14 read + 6 analytics + 12 write tools (preview→commit two-phase writes). Data syncs in real time with the Huita desktop and POS clients.",
+        "description_zh": "慧獭进销存一体化 MCP 连接器：商品/库存（多店多仓、批号效期）、销售与采购开单、往来对账、经营分析。提供 14 个只读 + 6 个分析 + 12 个写工具（preview→commit 两阶段写），数据与慧獭桌面端/收银台实时同步。",
+        "examples_en": [
+          "Which products are low on stock today?",
+          "Create a sales order for 5 cases of cola for our regular customer",
+          "Give me a monthly business report for last month",
+          "Which batches are expiring soon?"
+        ],
+        "examples_zh": [
+          "今天哪些货要补？给我低库存清单",
+          "给老客户开一张 5 箱可乐的销售单",
+          "上月卖了多少？给我经营月报",
+          "有哪些批次快过期了？"
+        ],
+        "name": "慧獭进销存",
+        "name_en": "Huita IMS"
+      },
+      "policy": {
+        "mcpServers": {
+          "huita-ims": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "huita-ims",
+  "version": "1.0.1+wb.d1830c5a42ae5507"
+}

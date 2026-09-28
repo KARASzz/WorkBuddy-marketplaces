@@ -1,0 +1,58 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Enterprise data intelligence via ShangYiTong MCP: query company registry, equity, listed info and judicial risk.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query enterprise registry, shareholders, listed company info and judicial/legal risk via ShangYiTong MCP. Supports due diligence, risk screening and customer profiling.",
+        "description_zh": "通过商易通 MCP 查询企业工商、股权与人员、上市信息、司法风险等企业数据，用自然语言做企业尽调、风险核查、客户画像。",
+        "examples_en": [
+          "Look up the company registry basic info of a company",
+          "Who are the shareholders and actual controller of this company",
+          "Check whether this company has enforcement, dishonesty or lawsuit records",
+          "Query the listing status and exchange of this listed company"
+        ],
+        "examples_zh": [
+          "查一下「恒大海花岛」这家公司的工商基本信息",
+          "查一下某企业的股东和实控人是谁",
+          "查询这家公司有没有被执行、失信或诉讼记录",
+          "查一下这家公司上市情况，在哪个交易所上市"
+        ],
+        "name": "VZOOM商易通-企业信息查询",
+        "name_en": "VZOOM ShangYiTong - Enterprise Info Query",
+        "name_zh": "VZOOM商易通-企业信息查询"
+      },
+      "policy": {
+        "mcpServers": {
+          "vzoom-syt-mcp": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "vzoom-syt-mcp": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "SHANGYITONG_MCP_TOKEN",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "shangyitong",
+  "version": "1.0.1+wb.1f1162dc70b91997"
+}

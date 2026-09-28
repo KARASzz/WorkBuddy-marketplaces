@@ -1,0 +1,84 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Create, edit, and collaborate on Tencent Docs. Manage spreadsheets, documents, and slides with natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "injectionRules": [
+          {
+            "applies_to_connectors": [
+              "tencent-docs",
+              "tencent-docs-oa"
+            ],
+            "id": "tencent-docs-dual-token",
+            "inject": [
+              {
+                "from_connector": "tencent-docs",
+                "header": "Authorization",
+                "token_type": "mcp-oauth",
+                "value_template": "Bearer ${access_token}"
+              },
+              {
+                "from_connector": "tencent-docs-oa",
+                "header": "X-Oneid-Access-Token",
+                "token_type": "oneid-token",
+                "value_template": "${access_token}"
+              }
+            ],
+            "requires_connected_connectors": [
+              "tencent-docs",
+              "tencent-docs-oa"
+            ],
+            "timing": "request",
+            "when": {
+              "active_in": [
+                "iOA",
+                "plan:ultimate",
+                "plan:exclusive"
+              ]
+            }
+          }
+        ],
+        "mode": "oneid-token"
+      },
+      "display": {
+        "description_en": "Create, edit, and collaborate on Tencent Docs. Manage spreadsheets, documents, and slides with natural language.",
+        "description_zh": "创建、编辑和协作腾讯文档。用自然语言管理在线表格、文档和幻灯片，轻松完成内容查询、数据整理和团队协同。",
+        "examples_en": [
+          "Create a new spreadsheet in Tencent Docs with columns for name, department, and hire date, and fill in sample data",
+          "Open my recently edited Tencent Doc and summarize the main content and key points",
+          "Search the Tencent Docs spreadsheet for all records where sales exceed 100k, sorted by amount descending",
+          "Organize these meeting notes into a Tencent Doc, split by topic with owners and deadlines noted"
+        ],
+        "examples_zh": [
+          "帮我在腾讯文档里新建一个在线表格，包含姓名、部门、入职日期三列，并填入示例数据",
+          "打开我最近编辑的腾讯文档，帮我总结文档的主要内容和关键要点",
+          "在腾讯文档的表格里查找所有【销售额】大于 10 万的记录，按金额从高到低排序",
+          "帮我把这份会议纪要整理成腾讯文档，按议题分段并标注负责人和截止日期"
+        ],
+        "name": "腾讯文档企业版",
+        "name_en": "Tencent Docs Enterprise"
+      },
+      "policy": {
+        "mcpServers": {
+          "tencent-docs-oa": {
+            "timeout": 600
+          }
+        },
+        "minWorkbuddyVersion": "5.2.0",
+        "visible_in": [
+          "iOA",
+          "plan:ultimate",
+          "plan:exclusive",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "name": "tencent-docs-oa",
+  "version": "0.0.0+wb.298941b0a5778c20"
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to Zhangsanfeng (finance, inventory & sales, MES). Ask in natural language for income statements, balance sheets, receivables aging, purchase/sales bills, stock, work orders and reporting progress; draft vouchers and purchase-in bills from plain text and post them after confirmation.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to Zhangsanfeng (finance, inventory & sales, MES). Ask in natural language for income statements, balance sheets, receivables aging, purchase/sales bills, stock, work orders and reporting progress; draft vouchers and purchase-in bills from plain text and post them after confirmation.",
+        "description_zh": "连接账三丰（财务云 / 进销存 / MES）。用自然语言查利润表、资产负债表、往来账龄、采购销售单据、库存、工单与报工进度；也能一句话生成记账凭证或开采购入库单草稿，确认后入账。",
+        "examples_en": [
+          "Show this month's income statement",
+          "List purchase-in bills for August",
+          "Which customers have receivables aged over 90 days",
+          "Record a 2000 CNY travel expense paid in cash",
+          "Purchase 30 peaches from supplier XX at 20 each into warehouse 1"
+        ],
+        "examples_zh": [
+          "本月利润表怎么样",
+          "看一下 8 月的采购入库单",
+          "应收账款账龄超过 90 天的有哪些客户",
+          "记一笔管理费用差旅费 2000 元，现金付的",
+          "从 XX 供应商采购黄桃 30 个，单价 20，入 1 号仓"
+        ],
+        "name": "账三丰",
+        "name_en": "Zhangsanfeng",
+        "name_zh": "账三丰"
+      },
+      "policy": {
+        "mcpServers": {
+          "zhangsanfeng": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "zhangsanfeng",
+  "version": "1.0.0+wb.f44ab7f18eda3332"
+}

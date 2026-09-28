@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to Infimind Ecommerce Content with OAuth to create smart retouching, product main image, detail page, visual migration, KOC seeding, image-text commerce, video generation, and viral video copy tasks.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to Infimind Ecommerce Content with OAuth to create smart retouching, product main image, detail page, visual migration, KOC seeding, image-text commerce, video generation, and viral video copy tasks.",
+        "description_zh": "通过 OAuth 连接电商内容专家，创建智能精修、商品主图、商品详情页、爆款图复制、KOC 种草、图文带货、视频生成和爆款视频复制任务。",
+        "examples_en": [
+          "Retouch this product image while preserving the product appearance and improving the lighting",
+          "Create five e-commerce main images from these product assets",
+          "Generate a Chinese product detail page set for this product",
+          "Create a new product image using the visual structure of this reference",
+          "Create a KOC seeding collage from these product images",
+          "Create an image-text commerce note package for this product",
+          "Estimate the credits first, then create a five-second product video",
+          "Analyze this reference video and create a structurally similar new video for the target product"
+        ],
+        "examples_zh": [
+          "精修这张商品图，保留商品外观并改善光影",
+          "用这些商品素材生成 5 张电商主图",
+          "为这款产品生成一套中文详情页",
+          "参考这张爆款图的视觉结构生成新商品图",
+          "用这些商品图生成一张 KOC 种草拼图",
+          "为这款商品生成一个图文带货笔记包",
+          "先估算积分，再生成一条 5 秒的商品视频",
+          "分析这条参考视频，为目标商品生成结构同类的新视频"
+        ],
+        "name": "电商内容专家",
+        "name_en": "Infimind Ecommerce Content"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "infimind-ecommerce-content",
+  "version": "1.0.0+wb.a7f4d691e8bd94d6"
+}

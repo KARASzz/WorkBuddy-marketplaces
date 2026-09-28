@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Operate Yunzhijia (Kingdee) with natural language: docs, sheets, calendar, contacts, IM messages and files.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Operate Yunzhijia (Kingdee) with natural language: docs, sheets, calendar, contacts, IM messages and files.",
+        "description_zh": "通过自然语言操作云之家：知识库文档、多维表格、日历日程、通讯录、IM 消息与文件管理。",
+        "examples_en": [
+          "Show my recent Yunzhijia messages",
+          "Search docs about renewal in the workspace",
+          "What's on my calendar today",
+          "Send a meeting notice to the project group",
+          "Find my colleague Zhang San's contact info"
+        ],
+        "examples_zh": [
+          "看下我最近的云之家消息",
+          "帮我搜一下知识库里关于续费的文档",
+          "查一下今天的日程安排",
+          "给项目群发一条会议通知",
+          "查一下同事张三的联系方式"
+        ],
+        "name": "云之家",
+        "name_en": "CloudHub"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "cloudhub",
+  "version": "0.6.1+wb.0f8b28b923443289"
+}

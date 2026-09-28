@@ -1,0 +1,45 @@
+{
+  "description": "DCS CLI，连接后通过个人访问令牌（PAT）登录认证，即可操作 DCS 云平台：支持项目管理、组学数据检索与传输、离线分析任务投递与查询、工作流管理等。使用前需在云平台个人中心创建 PAT，并粘贴至连接器完成绑定。",
+  "extensions": {
+    "ai.workbuddy": {
+      "connector": {
+        "auth_mode": "token",
+        "description_en": "DCS CLI allows you to log in to the DCS cloud platform using a Personal Access Token (PAT). This platform supports features such as project management, group data retrieval and transmission, offline analysis task submission and query, and workflow management. Before using the platform, you must create a PAT in your personal account and paste it into the connector to complete the connection.",
+        "description_zh": "DCS CLI，连接后通过个人访问令牌（PAT）登录认证，即可操作 DCS 云平台：支持项目管理、组学数据检索与传输、离线分析任务投递与查询、工作流管理等。使用前需在云平台个人中心创建 PAT，并粘贴至连接器完成绑定。",
+        "examples_en": [
+          "List all my projects",
+          "Show current project and task list",
+          "Show details and logs of task W202606130053472",
+          "Cancel task W202606130053472",
+          "List data files under /Files"
+        ],
+        "examples_zh": [
+          "列出我所有的项目",
+          "查看当前项目和任务列表",
+          "查看任务 W202606130053472 的详情和日志",
+          "取消任务 W202606130053472",
+          "列出 /Files 目录下的数据文件"
+        ],
+        "minWorkbuddyVersion": "5.0.0",
+        "name": "DCS Cloud",
+        "name_en": "DCS Cloud",
+        "name_zh": "DCS Cloud",
+        "type": "mcp",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "legacyReason": "stdio-env-template",
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "connector",
+    "mcp"
+  ],
+  "name": "dcs-cloud",
+  "version": "0.0.0+wb.c147d7e1f535ad21"
+}

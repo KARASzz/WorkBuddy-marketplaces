@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query social insurance and housing fund contribution bases, rates, deadlines, minimum wages, average wages and maternity leave across China; search policy sources and read policy analysis reports with supporting links.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query social insurance and housing fund contribution bases, rates, deadlines, minimum wages, average wages and maternity leave across China; search policy sources and read policy analysis reports with supporting links.",
+        "description_zh": "查询各城市社保、公积金缴费基数、比例、办理截止日、最低工资、社平工资与产假天数，检索社保政策原文与政策分析报告，附政策依据原文链接。",
+        "examples_en": [
+          "What are Beijing's social insurance contribution limits for 2026?",
+          "Show the contribution rates for non-local residents under Shenzhen medical tier 2.",
+          "What is Shanghai's monthly social insurance processing deadline?",
+          "How many days of maternity leave does Chengdu grant?",
+          "Find the original policy text on overtime pay for Guangdong province."
+        ],
+        "examples_zh": [
+          "北京2026年社保缴费基数上下限是多少？",
+          "深圳非深户医疗二档的公司和个人缴费比例是多少？",
+          "上海社保每月最晚什么时候办理？",
+          "成都最新的生育产假是多少天？",
+          "帮我找广东省关于加班费的政策原文"
+        ],
+        "name": "51社保",
+        "name_en": "51Shebao"
+      },
+      "policy": {
+        "mcpServers": {
+          "51shebao-hr-tools": {
+            "disabledTools": [
+              "submit_service_request",
+              "list_policies",
+              "get_policy_config",
+              "get_template_file",
+              "verify_template"
+            ],
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "51shebao-hr-tools",
+  "version": "1.0.1+wb.049c312fb77bcadb"
+}

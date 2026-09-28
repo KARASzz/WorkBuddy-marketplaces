@@ -1,0 +1,57 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to Creative Rabbit Micro-Course to turn your target audience, customer pain points, offer, and unique strengths into a complete course plan, presentation, narration scripts, and publish-ready micro-course for knowledge-based lead generation, private-domain marketing, and corporate training.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to Creative Rabbit Micro-Course to turn your target audience, customer pain points, offer, and unique strengths into a complete course plan, presentation, narration scripts, and publish-ready micro-course for knowledge-based lead generation, private-domain marketing, and corporate training.",
+        "description_zh": "对接创意兔微课平台，输入目标人群、客户痛点、转化产品与自身优势，自动完成课程策划、PPT 制作、口播稿撰写，一键制作微课并发布上线，适用于知识获客、私域营销、企业内训等场景。",
+        "examples_en": [
+          "Create a course from this PPT",
+          "Check my course progress",
+          "Publish this course after preview"
+        ],
+        "examples_zh": [
+          "用这个 PPT 做一门微课",
+          "看看刚才的课程做好了吗",
+          "预览视频后发布这门课程"
+        ],
+        "name": "创意兔微课",
+        "name_en": "Creative Rabbit Micro-Course"
+      },
+      "policy": {
+        "mcpServers": {
+          "duoguan-course": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "duoguan-course": {
+            "auth": {
+              "headers": {
+                "X-Duoguan-Account": {
+                  "field": "DUOGUAN_ACCOUNT"
+                },
+                "X-Duoguan-Password": {
+                  "field": "DUOGUAN_PASSWORD"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "duoguan-course",
+  "version": "0.0.0+wb.afef859e8326d6e3"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "gfsecurities": {
+      "type": "streamable-http",
+      "url": "https://mcp-api.gf.com.cn/server/mcp/gfzq/mcp",
+      "headers": {
+        "x-gf-channel": "workbuddy-area"
+      }
+    }
+  }
+}

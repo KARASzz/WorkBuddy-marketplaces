@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "fenbeitong": {
+      "type": "streamable-http",
+      "url": "https://mcp.fenbeitong.com/mcp/source/workbuddy",
+      "headers": {
+        "X-FBT-Channel": "workbuddy"
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "KUKA official intelligent service: answer questions about KUKA industrial robots, cobots, automation solutions, product selection and specifications.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "KUKA official intelligent service: answer questions about KUKA industrial robots, cobots, automation solutions, product selection and specifications.",
+        "description_zh": "库卡官方智能客服：把用户关于库卡工业机器人、协作机器人、自动化方案、产品选型、型号参数等问题，转交库卡智能问答客服并返回解答。",
+        "examples_en": [
+          "What product series does KUKA have for industrial robots?",
+          "Recommend a cobot with 10kg payload",
+          "What are the specifications of the KR 600 series?"
+        ],
+        "examples_zh": [
+          "库卡有哪些工业机器人产品系列？",
+          "帮我推荐一款负载 10kg 的协作机器人",
+          "KR 600 系列机器人的参数是什么？"
+        ],
+        "name": "KUKA库卡专家",
+        "name_en": "KUKA Expert",
+        "name_zh": "KUKA库卡专家"
+      },
+      "insecureHttpMcpServers": {
+        "kuka-service": {
+          "type": "streamable-http",
+          "url": "http://47.114.32.85:9010/mcp"
+        }
+      },
+      "policy": {
+        "mcpServers": {
+          "kuka-service": {
+            "timeout": 30000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "kuka-service",
+  "version": "1.0.0+wb.38c2802b8c5c03b0"
+}

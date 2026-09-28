@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Browse and search your Plaud recordings, read transcripts and AI summaries, and turn meetings into digests, follow-up emails, and action items.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Browse and search your Plaud recordings, read transcripts and AI summaries, and turn meetings into digests, follow-up emails, and action items.",
+        "description_zh": "连接 Plaud 录音与 AI：浏览查找录音、读取转写和 AI 摘要、汇总会议纪要，并生成跟进邮件与待办事项。",
+        "examples_en": [
+          "Find the meeting where we discussed the Q2 budget",
+          "What were the action items from Monday's weekly sync?",
+          "Summarize my recordings from this week into a digest",
+          "Draft a follow-up email from yesterday's customer call"
+        ],
+        "examples_zh": [
+          "找到我们讨论 Q2 预算的那场会议",
+          "周一周会的待办事项有哪些？",
+          "把我这周的录音汇总成一份周报",
+          "根据昨天的客户电话起草一封跟进邮件"
+        ],
+        "name": "Plaud",
+        "name_en": "Plaud",
+        "name_zh": "Plaud"
+      },
+      "policy": {
+        "mcpServers": {
+          "plaud": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "plaud",
+  "version": "1.0.0+wb.9262912af53ceeb2"
+}

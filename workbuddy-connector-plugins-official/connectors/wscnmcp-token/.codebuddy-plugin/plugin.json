@@ -1,0 +1,62 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Wall Street CN MCP: query A-share surge stocks with attribution (surge reasons, related sectors, sector movement notes, auto-grouped by sector) and Wall Street CN global financial news lists and article details, covering the last two months to help you quickly grasp the day's market themes and track financial hotspots",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Wall Street CN MCP: query A-share surge stocks with attribution (surge reasons, related sectors, sector movement notes, auto-grouped by sector) and Wall Street CN global financial news lists and article details, covering the last two months to help you quickly grasp the day's market themes and track financial hotspots",
+        "description_zh": "华尔街见闻MCP —— 提供 A 股大涨股异动归因与华尔街见闻全球财经资讯查询能力。支持查询近两个月的大涨个股（含上涨原因、关联板块、板块异动描述，自动按板块归类），以及华尔街见闻全球资讯列表与文章详情，帮助快速抓住当日市场主线、追踪财经热点。",
+        "examples_en": [
+          "What are today's major financial news stories?",
+          "Which stocks surged the most today?",
+          "Why did CATL surge today?"
+        ],
+        "examples_zh": [
+          "今天有什么重要的财经资讯",
+          "今天有哪些大涨股",
+          "帮我查一下今天宁德时代为什么大涨"
+        ],
+        "name": "华尔街见闻",
+        "name_en": "Wall Street CN",
+        "name_zh": "华尔街见闻"
+      },
+      "policy": {
+        "mcpServers": {
+          "华尔街见闻MCP": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "华尔街见闻MCP": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "WSCN_API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "wscnmcp-token",
+  "version": "1.0.0+wb.d74638cb06c63da2"
+}

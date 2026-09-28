@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query your COROS workouts, sleep, heart rate, HRV, stress and fitness data in natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query your COROS workouts, sleep, heart rate, HRV, stress and fitness data in natural language.",
+        "description_zh": "用自然语言查询 COROS 运动与健康数据：训练记录、活动分析、睡眠、心率、HRV、压力、体能评估与训练日程。",
+        "examples_en": [
+          "How many runs did I do last week and what was the total distance?",
+          "Analyze my latest run with a focus on pace and heart rate",
+          "How did I sleep last night? Is my sleep HRV normal?",
+          "Show my resting heart rate and stress trend for the last 7 days",
+          "What is my current fitness level and predicted marathon time?"
+        ],
+        "examples_zh": [
+          "我最近一周跑了几次步？总里程是多少？",
+          "分析一下我最近一次跑步训练，重点看配速和心率",
+          "我昨晚睡得怎么样？睡眠 HRV 正常吗？",
+          "最近 7 天的静息心率和压力趋势怎么样？",
+          "我现在的体能怎么样？全马预测成绩是多少？"
+        ],
+        "name": "COROS",
+        "name_en": "COROS",
+        "name_zh": "COROS"
+      },
+      "policy": {
+        "mcpServers": {
+          "coros": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "coros",
+  "version": "1.0.0+wb.d95b606f535bda67"
+}

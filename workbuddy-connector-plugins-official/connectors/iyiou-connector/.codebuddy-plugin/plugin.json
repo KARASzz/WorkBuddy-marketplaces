@@ -1,0 +1,57 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to the Yiou Data MCP service and gain in-depth access to industrial data via natural language. Core datasets including corporate investment and financing, industrial chain upstream-downstream relationships, and industry research reports are readily available. You can also retrieve Yiou's published industrial perspectives, enterprise analyses and market insights at any time to support your efficient business decision-making.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to the Yiou Data MCP service and gain in-depth access to industrial data via natural language. Core datasets including corporate investment and financing, industrial chain upstream-downstream relationships, and industry research reports are readily available. You can also retrieve Yiou's published industrial perspectives, enterprise analyses and market insights at any time to support your efficient business decision-making.",
+        "description_zh": "接入亿欧数据MCP服务，用自然语言查透产业数据——企业投融资、产业链上下游、产业研报等核心数据一目了然，还能随时调阅亿欧发布的产业观点、企业解读与市场洞察，助力您高效进行商业决策。",
+        "examples_en": [
+          "Show ByteDance financing events in the past year",
+          "Batch query historical investment events for Xiaohongshu and Keep",
+          "Filter financing events invested by Tencent in the first half of 2025"
+        ],
+        "examples_zh": [
+          "查询字节跳动近一年的融资情况",
+          "对比下小红书和Keep的历史融资事件",
+          "筛选2025年上半年由腾讯投资的融资事件"
+        ],
+        "name": "亿欧数据MCP",
+        "name_en": "YiouData MCP"
+      },
+      "policy": {
+        "mcpServers": {
+          "iyiou-connector": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "iyiou-connector": {
+            "auth": {
+              "headers": {
+                "X-Client-Id": {
+                  "field": "CLIENT_ID"
+                },
+                "X-Client-Secret": {
+                  "field": "CLIENT_SECRET"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "iyiou-connector",
+  "version": "1.0.0+wb.6790b2b5b21c1693"
+}

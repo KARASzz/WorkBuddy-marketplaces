@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "mastergo": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mastergo/vibe-mcp",
+        "--url=http://localhost:50678"
+      ],
+      "env": {
+        "NO_PROXY": "localhost,127.0.0.1,::1"
+      }
+    }
+  }
+}

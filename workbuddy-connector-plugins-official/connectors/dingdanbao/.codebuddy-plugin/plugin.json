@@ -1,0 +1,62 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "DingDanBao assistant for wholesale sales reps, covering ordering on behalf of customers, customer operations, stock, purchasing, collections, and performance briefs.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "DingDanBao assistant for wholesale sales reps, covering ordering on behalf of customers, customer operations, stock, purchasing, collections, and performance briefs.",
+        "description_zh": "面向批发业务员的订单豹助手，覆盖代客下单、客户运营、库存、采购、催款与业绩简报。",
+        "examples_en": [
+          "Place an order for Mr. Wang: 5 barrels of soy sauce and 10 bottles of cooking wine",
+          "Search customers by mobile number 138",
+          "Show orders waiting for audit today",
+          "Check remaining stock of soy sauce",
+          "How is my sales performance this month"
+        ],
+        "examples_zh": [
+          "帮王老板下一单，酱油 5 桶料酒 10 瓶",
+          "搜一下手机号 138 的客户",
+          "今天有哪些待审核订单",
+          "查一下酱油还剩多少库存",
+          "本月我的业绩怎么样"
+        ],
+        "name": "订单豹",
+        "name_en": "DingDanBao",
+        "name_zh": "订单豹"
+      },
+      "policy": {
+        "mcpServers": {
+          "dingdanbao": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "dingdanbao": {
+            "auth": {
+              "headers": {
+                "X-DDB-Password": {
+                  "field": "DDB_PASSWORD"
+                },
+                "X-DDB-Username": {
+                  "field": "DDB_USERNAME"
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "dingdanbao",
+  "version": "1.0.0+wb.e427fa16d907b08f"
+}

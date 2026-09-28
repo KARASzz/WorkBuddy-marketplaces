@@ -1,0 +1,56 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to the Lemon AGI ability platform to query wholesale, warehouse, and retail business data with natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to the Lemon AGI ability platform to query wholesale, warehouse, and retail business data with natural language.",
+        "description_zh": "连接乐檬零售 AGI 能力平台，通过自然语言查询零售、批发、进销存、WMS、基础资料等业务数据。",
+        "examples_en": [
+          "Query retail sales orders for the past 7 days",
+          "Count wholesale orders and amounts by store for yesterday",
+          "Check warehouse inventory status"
+        ],
+        "examples_zh": [
+          "查询门店近 7 天的营业额",
+          "按门店统计昨天的批发销售客单数和金额",
+          "查询仓库的库存情况"
+        ],
+        "name": "乐檬零售",
+        "name_en": "Lemon AGI",
+        "name_zh": "乐檬零售"
+      },
+      "policy": {
+        "mcpServers": {
+          "lemon-agi": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "lemon-agi": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "LEMON_AGI_TOKEN",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "lemon-agi",
+  "version": "1.0.0+wb.2e90e298b8368817"
+}

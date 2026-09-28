@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "duoguan-course": {
+      "type": "streamable-http",
+      "url": "https://course.flashnet.cn/workbuddy/mcp"
+    }
+  }
+}

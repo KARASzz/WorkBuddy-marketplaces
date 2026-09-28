@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Turn sales training, kickoffs, and dealer conferences into AI-customized B2B sales simulations, with team practice, instructor facilitation, and evidence-backed debriefs.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Turn sales training, kickoffs, and dealer conferences into AI-customized B2B sales simulations, with team practice, instructor facilitation, and evidence-backed debriefs.",
+        "description_zh": "为销售内训、销售年会和经销商大会定制 AI 大客户销售沙盘，支持分组演练、讲师带教与证据化复盘，帮助销售、售前和交付团队练习客户决策链分析与协同推进。",
+        "examples_en": [
+          "Plan a half-day B2B sales simulation for a manufacturing sales team, focused on buying committees and teamwork",
+          "Design a team sales simulation for an 80-person sales kickoff instead of more presentations; start with the agenda, groups, and preparation",
+          "Plan an industry-specific sales simulation where manufacturers and dealers form mixed teams to practice winning accounts together",
+          "Design a customer-scenario simulation for sales, presales, and delivery teams to practice information sharing, resource tradeoffs, and coordinated next steps",
+          "Debrief this SalesNail simulation using each team's classroom action records: compare stakeholder coverage, resource allocation, and next-round improvements"
+        ],
+        "examples_zh": [
+          "给制造业销售团队设计半天的大客户销售沙盘培训，重点练习客户决策链分析和团队协同，先给我方案",
+          "80 人销售年会不想只听报告，帮我设计一场分组销售沙盘，先列出流程、分组和准备事项",
+          "经销商大会上想让厂家和经销商混编组队，练习联合攻单，帮我设计贴近行业的销售沙盘",
+          "销售、售前和交付总是配合不到一起，帮我设计客户情境沙盘，练习信息共享、资源取舍和推进节奏",
+          "复盘这次 SalesNail 销售沙盘，结合各组课堂行动记录，分析客户覆盖、资源分配和下一轮改进建议"
+        ],
+        "name": "SalesNail AI 销售沙盘",
+        "name_en": "SalesNail AI Sales Simulation",
+        "name_zh": "SalesNail AI 销售沙盘"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "salesnail-instructor",
+  "version": "0.6.7+wb.8c490566fe92ca8e"
+}

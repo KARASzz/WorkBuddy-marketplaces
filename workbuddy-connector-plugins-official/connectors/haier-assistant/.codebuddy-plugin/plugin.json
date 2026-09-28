@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Product recommendations, comparison shopping, and specification inquiries, purchase channel and store locator services, as well as after-sales support and knowledge-based Q&A for Haier, Casarte, and Leader.",
+  "extensions": {
+    "ai.workbuddy": {
+      "auth": {
+        "mode": "server-side",
+        "provider_id": "haier-assistant"
+      },
+      "display": {
+        "description_en": "Product recommendations, comparison shopping, and specification inquiries, purchase channel and store locator services, as well as after-sales support and knowledge-based Q&A for Haier, Casarte, and Leader.",
+        "description_zh": "海尔、卡萨帝、统帅家电的选购推荐、型号对比、参数与价格咨询、购买渠道与门店查询，以及售后服务知识解答。",
+        "examples_en": [
+          "A family of three looking for a fridge, budget around 5,000 yuan — any recommendations?",
+          "Can you compare two washing machines for me and tell me which one suits me better?",
+          "What's the energy rating and noise level of BCD-450WGCFDM4WNU1?",
+          "Where's the nearest store in Shinan District, Qingdao?",
+          "How long is the warranty for a Haier refrigerator?"
+        ],
+        "examples_zh": [
+          "三口之家想买台冰箱，预算五千左右，有什么推荐？",
+          "帮我对比两款洗衣机，哪个更适合我？",
+          "BCD-450WGCFDM4WNU1的能效等级和噪音是多少？",
+          "帮我查查青岛市市南区的专卖店。",
+          "海尔冰箱的整机保修期是多久？"
+        ],
+        "name": "海尔智能体",
+        "name_en": "Haier Agent",
+        "name_zh": "海尔智能体"
+      },
+      "policy": {
+        "mcpServers": {
+          "haier-smart-home-assistant": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "haier-assistant",
+  "version": "0.1.0+wb.e0b5310042b72e3d"
+}

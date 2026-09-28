@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Create, read, and edit Xmind online mind maps directly from AI conversations.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Create, read, and edit Xmind online mind maps directly from AI conversations.",
+        "description_zh": "通过 AI 对话创建、读取和编辑 Xmind 在线思维导图。",
+        "examples_en": [
+          "List my recently opened Xmind mind maps",
+          "Turn these meeting notes into an Xmind mind map",
+          "Add a Pricing Strategy branch to my Competitor Analysis mind map"
+        ],
+        "examples_zh": [
+          "列出我最近打开的 Xmind 导图",
+          "把这份会议纪要整理成一张 Xmind 思维导图",
+          "在“竞品分析”导图中新增“定价策略”分支"
+        ],
+        "name": "Xmind思维导图",
+        "name_en": "Xmind"
+      },
+      "policy": {
+        "mcpServers": {
+          "xmind": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "xmind",
+  "version": "1.0.0+wb.a0ae22ec617dd1a8"
+}

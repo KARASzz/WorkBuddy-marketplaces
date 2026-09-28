@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query enterprise business registration data for corporate due diligence.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query enterprise business registration data, support fuzzy enterprise search, company basic information, beneficial owners, shareholders, actual controllers, industrial-commercial changes, contact information, key personnel, branches, external investments, annual reports, listed-company related information and other enterprise due-diligence scenarios.",
+        "description_zh": "查询企业工商登记数据，支持企业模糊搜索、企业基本信息、受益所有人、股东、实际控制人、工商变更、联系方式、主要人员、分支机构、对外投资、年报、上市公司相关信息等企业尽职调查场景。",
+        "examples_en": [
+          "Query the legal representative information of Zhongshu Zhihui",
+          "Query the basic industrial and commercial information and shareholders of Zhongshu Zhihui",
+          "Query the external investments and senior management information of Zhongshu Zhihui"
+        ],
+        "examples_zh": [
+          "查询中数智汇的法人信息",
+          "查询中数智汇的工商基本信息和股东",
+          "查询中数智汇的对外投资以及高管信息"
+        ],
+        "name": "企百科",
+        "name_en": "qibook"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "qibook-mcp",
+  "version": "1.0.0+wb.edd72679caca51ed"
+}

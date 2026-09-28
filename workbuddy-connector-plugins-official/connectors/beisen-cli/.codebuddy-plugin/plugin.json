@@ -1,0 +1,55 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "依托北森HR SaaS平台，把审批、招聘进展、员工档案、绩效履历、考勤假期、组织架构和企业制度等近百个人力场景装进Workbuddy，一句话查询人力数据、办理HR业务。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Relying on the Beisen HR SaaS platform, we have integrated nearly a hundred HR scenarios—including approvals, recruitment progress, employee profiles, performance records, attendance and leave, organizational structure, and corporate policies—into Workbuddy. This enables you to query HR data and handle HR tasks with just a single sentence.",
+        "description_zh": "依托北森HR SaaS平台，把审批、招聘进展、员工档案、绩效履历、考勤假期、组织架构和企业制度等近百个人力场景装进Workbuddy，一句话查询人力数据、办理HR业务。",
+        "examples_en": [
+          "Can you help me check my pending or completed tasks?",
+          "Was I late or did I miss any clock-ins last month?",
+          "Team's business travel & out‑of‑office trips last month?",
+          "Need a certificate",
+          "Housing fund withdrawal policy?",
+          "Search for knowledge documents about the annual leave policy.",
+          "How's the overall progress on the open positions I own right now?",
+          "How many interviews do I have today, and what time are they?",
+          "Find me a batch of candidates with 3-5 years of experience, a bachelor's degree or above, and B2B product experience.",
+          "View the approval processes I have completed."
+        ],
+        "examples_zh": [
+          "帮我查下我有哪些待办/已办？",
+          "我上个月有没有迟到，或者忘记打卡？",
+          "我团队上月的公出、出差情况",
+          "我要开证明",
+          "公积金提取政策是什么？",
+          "搜索一下关于年假制度的知识文档",
+          "我负责的在招职位现在整体进展怎么样？",
+          "我今天有几场面试？都是几点？",
+          "帮我找一批 3-5 年经验、本科以上、有B端产品经验的候选人",
+          "查看我已办的审批流程"
+        ],
+        "name": "北森AI · HR专家",
+        "name_en": "Beisen AI·HR Expert",
+        "name_zh": "北森AI · HR专家"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.3.10",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "beisen-cli",
+  "version": "1.0.0+wb.7f7835ea8bac4caa"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Securely query customers, orders, and other business data in ZXYGJ using natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Securely query customers, orders, and other business data in ZXYGJ using natural language.",
+        "description_zh": "通过自然语言安全查询装修云管家中的客户、订单及其他业务对象数据。",
+        "examples_en": [
+          "Show customers created today",
+          "Find orders over 100,000 this month",
+          "List the business objects available to my account"
+        ],
+        "examples_zh": [
+          "查询今天新增的客户",
+          "帮我统计本月金额超过十万元的订单",
+          "查看当前账号可以查询哪些业务对象"
+        ],
+        "name": "装修云管家",
+        "name_en": "ZXYGJ Business Data"
+      },
+      "policy": {
+        "mcpServers": {
+          "zxygj-business-data": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "zxygj-business-data",
+  "version": "0.0.0+wb.ec2de66be4ef601f"
+}

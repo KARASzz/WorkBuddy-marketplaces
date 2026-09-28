@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Query, organize, and analyze financial data across equities, futures, options, funds, macroeconomics, and quantitative factors.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Query, organize, and analyze financial data across Chinese, Hong Kong, and U.S. equities, futures, options, funds, macroeconomics, and quantitative factors.",
+        "description_zh": "查询、整理和分析 A 股、期货、期权、港美股、基金、宏观经济及量化因子等金融数据，支持统计比较与趋势归纳。",
+        "examples_en": [
+          "Get Kweichow Moutai's daily prices for the past year and calculate monthly returns",
+          "Compare the performance and volatility of the CSI 300 and CSI 500 over the past three years",
+          "Query the dominant rebar futures contract and summarize its recent price changes",
+          "Organize China's major macroeconomic indicators from the past five years and summarize the trends"
+        ],
+        "examples_zh": [
+          "查询贵州茅台过去一年的日线行情，并统计月度收益率",
+          "比较沪深 300 和中证 500 最近三年的表现与波动",
+          "查询螺纹钢期货主力合约及近期行情变化",
+          "整理最近五年中国主要宏观指标并归纳趋势"
+        ],
+        "name": "PandaData 金融数据",
+        "name_en": "PandaData"
+      },
+      "policy": {
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "pandadata",
+  "version": "0.0.0+wb.9731df99b484b642"
+}

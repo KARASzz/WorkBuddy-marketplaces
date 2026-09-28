@@ -1,0 +1,60 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Search and analyze products, reviews, posts, comments, creators, and trends across major global commerce and social platforms.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Search and analyze products, reviews, posts, comments, creators, and trends across major global commerce and social platforms.",
+        "description_zh": "查询与分析全球主流电商和社媒平台的商品、评论、内容、创作者与趋势数据。",
+        "examples_en": [
+          "Find the product details and first 20 Amazon US reviews for MacBook Air M4, then summarize the main pros and cons",
+          "Search TikTok for popular home energy storage videos and organize the topics users care about most",
+          "Compare prices, ratings, and review feedback for similar wireless earbuds on Walmart and Target",
+          "Find a brand's recent YouTube videos and analyze consumer opinions in the comments",
+          "Collect 500 reviews for an Amazon product and keep reporting the collection progress"
+        ],
+        "examples_zh": [
+          "查询 Amazon 美国站上 MacBook Air M4 的商品详情和前 20 条评论，总结主要优缺点",
+          "搜索 TikTok 上关于家用储能的热门视频，并整理用户最关注的话题",
+          "比较 Walmart 和 Target 上同类无线耳机的价格、评分和评论反馈",
+          "查找 YouTube 上某个品牌近期的视频，并分析评论中的消费者观点",
+          "采集某个 Amazon 商品的 500 条评论，并持续汇报采集任务进度"
+        ],
+        "name": "RealTrace 电商与社媒数据",
+        "name_en": "RealTrace Commerce & Social Data",
+        "name_zh": "RealTrace 电商与社媒数据"
+      },
+      "policy": {
+        "mcpServers": {
+          "realtrace": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "realtrace": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "REALTRACE_API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "realtrace",
+  "version": "1.0.1+wb.084c5a794751afc6"
+}

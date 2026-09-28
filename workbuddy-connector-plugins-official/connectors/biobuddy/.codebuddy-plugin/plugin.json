@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "BioBuddy intelligent biomedical research platform. Discover and attach authorized molecular design, translational research, target discovery, and data intelligence MCP tools through one Gateway connection.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "BioBuddy intelligent biomedical research platform. Discover and attach authorized molecular design, translational research, target discovery, and data intelligence MCP tools through one Gateway connection.",
+        "description_zh": "BioBuddy 生物医药智能研究平台：一次连接 Gateway，即可发现并挂载已获授权的分子设计、转化研究、靶点发现与数据智能 MCP 工具。",
+        "examples_en": [
+          "Predict the structure of this protein sequence with ESMFold and interpret the confidence",
+          "Rank the top 5 potential therapeutic targets for Alzheimer's disease with supporting evidence",
+          "Run a QC analysis on this pathology WSI file",
+          "What are the latest clinical advances for KRAS G12C?",
+          "What is the clinical significance of the TP53 p.Arg175His variant?"
+        ],
+        "examples_zh": [
+          "用 ESMFold 预测这条蛋白序列的结构并解读置信度",
+          "帮我分析阿尔茨海默病的潜在治疗靶点，给出 Top 5 排名与支持证据",
+          "对这个病理 WSI 文件做一次质控分析",
+          "KRAS G12C 最新的临床进展",
+          "TP53 p.Arg175His 这个变异的临床意义是什么"
+        ],
+        "name": "BioBuddy 生物医药研究助手",
+        "name_en": "BioBuddy Biomedical Research Assistant"
+      },
+      "policy": {
+        "mcpServers": {
+          "biobuddy": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "biobuddy",
+  "version": "1.0.3+wb.a8651175ae773e0c"
+}

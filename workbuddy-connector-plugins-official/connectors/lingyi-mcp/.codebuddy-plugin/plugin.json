@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Lingyi Ops exclusive knowledge base for viral WeChat Channels and private-traffic content.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Lingyi Ops exclusive knowledge base for viral WeChat Channels and private-traffic content. Case libraries across 7 industries, distilled from 3 million Lingyi hands-on operations documents.",
+        "description_zh": "零一运营独家知识库：7大行业的视频号/私域的爆款内容案例库 + 零一300万份运营实战文档萃取。",
+        "examples_en": [
+          "Quick-analyze a WeChat Channels account",
+          "Break down a WeChat Channels video",
+          "Give me today's trending topic ideas",
+          "Help me make this copy sound less AI-generated",
+          "Pre-check my content before publishing"
+        ],
+        "examples_zh": [
+          "帮我快拆一个视频号账号",
+          "帮我拆解一条视频号视频",
+          "帮我出一份今日热点选题",
+          "帮我把文案去一下 AI 味",
+          "发布前帮我预检一下内容"
+        ],
+        "name": "零一运营",
+        "name_en": "Lingyi Ops"
+      },
+      "policy": {
+        "mcpServers": {
+          "lingyi-mcp": {
+            "timeout": 30000
+          }
+        },
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "lingyi-mcp",
+  "version": "1.4.0+wb.db5957246455c555"
+}

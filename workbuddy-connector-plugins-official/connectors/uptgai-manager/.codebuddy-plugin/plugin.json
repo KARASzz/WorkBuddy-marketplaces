@@ -1,0 +1,35 @@
+{
+  "description": "Connect to the UPTG AI investment advisory workbench to query recommended stocks and advisory strategies, track watchlists and positions, and support stock screening, review and client service.",
+  "extensions": {
+    "ai.workbuddy": {
+      "connector": {
+        "description_en": "Connect to the UPTG AI investment advisory workbench to query recommended stocks and advisory strategies, track watchlists and positions, and support stock screening, review and client service.",
+        "description_zh": "连接优品・AI投顾工作台，查询推荐股票与投顾策略，跟踪自选股与持仓表现，辅助完成选股、复盘和客户服务。",
+        "examples_en": [
+          "Show today's recommended stocks",
+          "Explain why this stock is recommended and the latest view on it",
+          "Show the best performing stocks in my watchlist recently",
+          "Draft an investment reference summary for my client"
+        ],
+        "examples_zh": [
+          "查看今天推荐的股票",
+          "查询这只股票的推荐理由和最新观点",
+          "看看我自选股票里最近表现最好的几只",
+          "帮我整理一份给客户的投资参考摘要"
+        ],
+        "name": "优品・AI投顾工作台",
+        "name_en": "UPTG AI Advisor Workbench",
+        "name_zh": "优品・AI投顾工作台",
+        "type": "mcp"
+      },
+      "legacyReason": "unsupported-header-template",
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "connector",
+    "mcp"
+  ],
+  "name": "uptgai-manager",
+  "version": "1.0.0+wb.968655f53c7ca858"
+}

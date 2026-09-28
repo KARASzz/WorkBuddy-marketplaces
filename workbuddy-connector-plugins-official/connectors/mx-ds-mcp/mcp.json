@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "mx-ds-mcp": {
+      "type": "streamable-http",
+      "url": "https://mxapi.eastmoney.com/mxds/v2/mcp"
+    }
+  }
+}

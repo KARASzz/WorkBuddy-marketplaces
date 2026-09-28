@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "tencent-marketing": {
+      "type": "streamable-http",
+      "url": "https://miaowen.qq.com/miaowen_mcp_service/v1.0/workbuddy/mcp"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "linkfox": {
+      "type": "streamable-http",
+      "url": "https://mcp-tool-gateway.linkfox.com/mcp/any-tool"
+    }
+  }
+}

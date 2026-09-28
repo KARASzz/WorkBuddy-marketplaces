@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Connect to the V8 smart property cloud platform. Search owners/tenants, query archives, arrears, repair orders, and execute payment write-off for property customer-service and billing scenarios.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Connect to the V8 smart property cloud platform. Search owners/tenants, query archives, arrears, repair orders, and execute payment write-off for property customer-service and billing scenarios.",
+        "description_zh": "连接 V8 智慧物业云平台，提供业主/租户检索、档案查询、欠费查询、报修工单查询与缴费核销能力，服务物业客服与收费场景。",
+        "examples_en": [
+          "How much property fee does Gao Tingting in room 101 owe?",
+          "Find owners in this project who haven't paid",
+          "Show the recent repair work orders for unit 502, building 3",
+          "Show me the owner profile of Mr. Wang in building 2",
+          "Confirm before paying this month's property fee for Mr. Qian in room 102"
+        ],
+        "examples_zh": [
+          "查一下 101 房高婷婷的物业费欠了多少",
+          "找出这个项目还没交钱的业主",
+          "查询 3 栋 502 最近的报修工单",
+          "给我看 2 号楼王先生的业主档案",
+          "提醒我确认后再给 102 房的钱先生缴纳本月物业费"
+        ],
+        "name": "卓越智慧物业云平台",
+        "name_en": "Excellence Smart Property Cloud Platform",
+        "name_zh": "卓越智慧物业云平台"
+      },
+      "policy": {
+        "mcpServers": {
+          "property-saas": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "property-saas",
+  "version": "1.0.0+wb.850acb9d0b444a4a"
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "tdx-finance": {
+      "url": "https://txmcp.tdx.com.cn:3001/txmcp",
+      "type": "streamable-http"
+    }
+  }
+}

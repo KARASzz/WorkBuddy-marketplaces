@@ -1,0 +1,47 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "粉笔AI公考助手：专业查询、智能选岗、简历完善、考情科普与言语词汇练习。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Fenbi civil-service exam assistant: We assist you with major classification inquiries, resume optimization, intelligent position‑matching for national civil service exams including simulated position selection, exam overview and eligibility condition checks, as well as practice for confusing vocabulary and idiom accumulation. Our one‑stop civil service exam preparation service enables more targeted and efficient study.",
+        "description_zh": "粉笔AI公考助手，帮你查专业分类、完善报考简历、智能选岗与国考模拟选岗、了解考情与报考条件，还能练易混词与成语辨析积累，提供一站式公考备考服务，让备考更精准、更高效。",
+        "examples_en": [
+          "I hold a bachelor's degree in Computer Science and Technology — which discipline category does it belong to?",
+          "I'm a bachelor in Computer Science and a party member — which positions can I apply for in Shandong? Recommend a few.",
+          "The new national civil service position list isn't out yet — help me pre-select positions based on the past three years' data.",
+          "Help me complete my application profile; my major is Computer Science.",
+          "When are the registration and written exam for the 2026 Shandong provincial exam, and what are the eligibility requirements?",
+          "What's the difference between 「截止」 and 「截至」? Give me a few confusable-word drills.",
+          "Help me build vocabulary — a few Chinese idioms with definitions and real exam sentences."
+        ],
+        "examples_zh": [
+          "我是本科计算机科学与技术专业,属于什么学科大类?",
+          "我是本科计算机、党员,在山东能报哪些岗位?帮我推荐几个",
+          "今年国考职位表还没出,我能报什么岗?帮我按近三年国考数据提前选选岗",
+          "帮我完善一下报考简历,我的专业是计算机",
+          "2026 年山东省考什么时候报名和笔试?报考条件是什么?",
+          "「截止」和「截至」怎么区分?给我来几组易混词辨析练习",
+          "帮我积累几个成语,要带释义和真题例句的"
+        ],
+        "name": "粉笔",
+        "name_en": "Fenbi"
+      },
+      "policy": {
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "fenbi-baokao-decision",
+  "version": "0.0.0+wb.bde69e76bb559fb2"
+}

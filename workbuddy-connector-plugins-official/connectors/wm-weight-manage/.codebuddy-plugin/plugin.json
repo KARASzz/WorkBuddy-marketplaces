@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Generate a personalized adult weight-management plan and render it as a standalone interactive HTML page with phased goals, nutrition and exercise guidance, meal photo analysis, and a local weight tracker.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Generate a personalized adult weight-management plan and render it as a standalone interactive HTML page with phased goals, nutrition and exercise guidance, meal photo analysis, and a local weight tracker.",
+        "description_zh": "生成个性化成人体重管理方案，渲染为可打卡的独立 HTML 页面：分阶段目标、饮食运动建议、餐食照片热量分析、本地体重记录。",
+        "examples_en": [
+          "Current weight 53 kg, target 50 kg, height 160 cm, 28 years old, female, sedentary. Create a weight management plan for me.",
+          "Male, 35, current weight 100 kg, goal 89 kg, height 180 cm, sedentary, smoker. Create a weight management plan for me.",
+          "Analyze this lunch photo's calories and include it in my weight management plan."
+        ],
+        "examples_zh": [
+          "当前体重53kg，目标50kg，身高160，28岁，女性，久坐，帮我制定一份体重管理方案",
+          "男，35岁，当前体重100kg，要减到89kg，身高180，久坐，吸烟，帮我制定一份体重管理方案",
+          "分析这张午餐照片的热量，并纳入我的体重管理方案"
+        ],
+        "name": "微脉体重管理",
+        "name_en": "Weimai Weight Management",
+        "name_zh": "微脉体重管理"
+      },
+      "policy": {
+        "mcpServers": {
+          "wm-weight-manage": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "wm-weight-manage",
+  "version": "1.0.1+wb.d55ec06015448ca5"
+}

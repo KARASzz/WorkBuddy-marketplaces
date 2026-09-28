@@ -1,0 +1,62 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Announcements, news and policy data, including stock news, sector news, hot topics, news search, bulk commodity flashes, forex flashes, stock flashes, announcement keyword search, and policy vector search.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Announcements, news and policy data, including stock news, sector news, hot topics, news search, bulk commodity flashes, forex flashes, stock flashes, announcement keyword search, and policy vector search.",
+        "description_zh": "公告、新闻、政策数据，包含股票资讯、板块资讯、热点新闻、资讯搜索、大宗快讯、外汇快讯、股票快讯、公告关键词检索、政策向量检索等",
+        "examples_en": [
+          "Find hot news about the new energy vehicle sector in the past week",
+          "Search for the latest shareholder meeting announcement of a listed company",
+          "Look up the latest national macroeconomic policy documents"
+        ],
+        "examples_zh": [
+          "查询最近一周关于新能源汽车板块的热点新闻",
+          "检索某上市公司最新发布的股东大会公告",
+          "查找最新的国家宏观经济政策文件"
+        ],
+        "name": "新华财经资讯MCP",
+        "name_en": "Xinhua Finance Announcements, News & Policy MCP",
+        "name_zh": "新华财经资讯MCP"
+      },
+      "policy": {
+        "mcpServers": {
+          "xhcj-mcp-announcements-news-policy": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "xhcj-mcp-announcements-news-policy": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "XHCJ_API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "xhcj-mcp-announcements-news-policy",
+  "version": "1.0.0+wb.c3cd2fc08b359142"
+}

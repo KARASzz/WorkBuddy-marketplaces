@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "tapd": {
+      "url": "https://websocket.tapd.cn/mcp/mcp",
+      "type": "streamable-http"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Access Tencent Future Classroom (aiclass) teaching services via MCP.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Access Tencent Future Classroom (aiclass): list your courses, publish AI-generated images as study check-in posts, and submit feedback on results.",
+        "description_zh": "接入腾讯未来教室（aiclass）：查询未来教室课程列表、把 AI 生成的图片以「教学打卡」发布到未来教室小程序、对输出结果提交反馈。",
+        "examples_en": [
+          "Show my Future Classroom courses",
+          "Publish these images as a study check-in to the course",
+          "I'm not satisfied with this result, submit feedback"
+        ],
+        "examples_zh": [
+          "查看我在未来教室的课程",
+          "把这几张图片发布到XX课程的教学打卡",
+          "对这个结果不满意，我要反馈"
+        ],
+        "name": "腾讯未来教室",
+        "name_en": "Tencent Future Classroom"
+      },
+      "policy": {
+        "mcpServers": {
+          "aiclass-teaching": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.20.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "aiclass-teaching",
+  "version": "0.1.0+wb.2bba849d4c4c92c2"
+}

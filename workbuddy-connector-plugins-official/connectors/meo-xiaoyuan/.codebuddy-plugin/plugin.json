@@ -1,0 +1,60 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "面向中国外贸企业的 AI 出海助手：搜买家、盘客户、查同行、看市场数据，给出买家清单与跟进建议。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "AI export assistant for Chinese companies: find buyers, review customers, research peers and markets, and deliver buyer lists with follow-up advice.",
+        "description_zh": "面向中国外贸企业的 AI 出海助手：搜买家、盘客户、查同行、看市场数据，给出买家清单与跟进建议。",
+        "examples_en": [
+          "Find German buyers sourcing coffee machines and show their contacts",
+          "Look up this customer's company archive and export countries by company name",
+          "Which peer exhibitors in our category are in the United States?",
+          "Get China's HS 847130 export value to the US over the last three years",
+          "Find the sourcing decision-maker email at this US company"
+        ],
+        "examples_zh": [
+          "帮我找德国做咖啡机采购的买家，并看联系人",
+          "按公司名查一下这家客户的一客一档和出口国",
+          "我们类目在美国有哪些同行展商",
+          "查 HS 847130 近三年中国对美国的出口额",
+          "帮我找这家美国公司的采购决策人邮箱"
+        ],
+        "name": "出海精灵·小元",
+        "name_en": "Xiaoyuan AI",
+        "name_zh": "出海精灵·小元"
+      },
+      "policy": {
+        "mcpServers": {
+          "meo-xiaoyuan": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "meo-xiaoyuan": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "meo-xiaoyuan",
+  "version": "1.0.2+wb.387451d2dc835912"
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "charge-order-query": {
+      "type": "sse",
+      "url": "https://415ddd85be03483c99813a871365bae8.app-tencent.workbuddy.link/sse"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "description": "Use everyday language to check NVIDIA driver updates, launch games, choose supported graphics presets, record gameplay, take screenshots, save Instant Replay clips, or show FPS. You can also manage supported battery-saving and quiet-mode features. Requires Windows with a compatible NVIDIA App installed.",
+  "extensions": {
+    "ai.workbuddy": {
+      "connector": {
+        "auth_mode": "token",
+        "description_en": "Use everyday language to check NVIDIA driver updates, launch games, choose supported graphics presets, record gameplay, take screenshots, save Instant Replay clips, or show FPS. You can also manage supported battery-saving and quiet-mode features. Requires Windows with a compatible NVIDIA App installed.",
+        "description_zh": "用自然语言操作 NVIDIA App：查驱动更新、启动游戏、选择支持的画质与性能预设、录制游戏、截图、保存即时回放或显示帧率，也能管理支持的省电和静音功能。需在 Windows 上安装兼容的 NVIDIA App。",
+        "examples_en": [
+          "Which NVIDIA driver am I using, and is an update available? Just check; don't install anything.",
+          "Launch [game name] from NVIDIA App.",
+          "Set [game name]'s plugged-in settings to the Performance preset. If it isn't supported, let me know.",
+          "Start recording my gameplay.",
+          "Save the current Instant Replay clip.",
+          "Show my FPS and performance statistics while I play."
+        ],
+        "examples_zh": [
+          "我现在用的是哪个 NVIDIA 驱动？有可用更新吗？只检查，不要安装。",
+          "帮我启动 NVIDIA App 中的[游戏名称]。",
+          "将[游戏名称]的接电设置切换到性能（Performance）预设；如果不支持，请告诉我。",
+          "开始录制我的游戏画面。",
+          "保存当前的即时回放片段。",
+          "在游戏中显示帧率和性能统计。"
+        ],
+        "minWorkbuddyVersion": "4.24.0",
+        "name": "NVIDIA App 本地助手（Windows）",
+        "name_en": "NVIDIA App Local Assistant (Windows)",
+        "type": "mcp"
+      },
+      "legacyReason": "stdio-env-template",
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "connector",
+    "mcp"
+  ],
+  "name": "nvapp-windows-local",
+  "version": "0.0.0+wb.c12cdf77562c37aa"
+}

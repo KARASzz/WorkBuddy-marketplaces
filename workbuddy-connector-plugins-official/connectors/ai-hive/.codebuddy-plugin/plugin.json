@@ -1,0 +1,58 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "100+ top AI models (Seedance 2.5, H3 MiniMax, Happyhorse, GPT-image, Nano-Banana, Deepseek, Kimi). One config.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "100+ top AI models (Seedance 2.5, H3 MiniMax, Happyhorse, GPT-image, Nano-Banana, Deepseek, Kimi). One config.",
+        "description_zh": "连接全球 100+ 顶尖 AI 模型（Seedance 2.5、H3 (MiniMax)、Happyhorse、GPT-image、Nano-Banana、Deepseek、Kimi 等），一键搞定文本、图像、视频创作。",
+        "examples_en": [
+          "First search the web for a set of Song-dynasty aesthetic references (costume patterns, green-blue landscape, wooden architecture); from those, generate a hanfu-girl hero concept image. Then turn it into a 12s cinematic camera-move video: 0-4s slow dolly-in on the garment texture, 4-8s orbiting macro of the craftsmanship, 8-12s lateral pan pulling back to full scene, atmospheric light and a filmic grade, smooth and stable, facial features sharp and undeformed, no jitter no flicker.",
+          "Design a Japanese-anime battle-girl IP: silver long hair, heterochromia (left gold / right blue), mecha pauldrons, battle outfit. First search similar trending character designs for a color reference, then reuse a fixed character anchor 'silver-haired heterochromia girl, mecha pauldrons, battle stance, sharp gaze' verbatim to generate front / side / back three-view turnarounds with a consistent art style and palette, for a blind-box figure pitch.",
+          "Search this year's new-tea-drink summer marketing visual trends, then make a store-opening promo poster: bold headline 'Buy One Get One Free', warm orange palette, 40% left negative space, cinematic side light, 3:4 vertical, fit for WeChat Moments and Xiaohongshu; also output a minimal cool-tone alternate.",
+          "Build a lemon-yellow teddy-bear blind-box figure series: first a base Q-version three-view (round face, big eyes, figure proportions), then iteratively derive 5 variants with different outfits and accessories (astronaut / chef / qipao / sporty / steampunk), keeping the same character anchor and blind-box proportions, unified soft ceramic lighting.",
+          "Search a set of 'professional elite realistic portrait' lighting and composition references, generate a business-formal ID photo: natural window light, shallow depth of field, clean grey-gradient backdrop, 8K, symmetric framing, for résumé and LinkedIn avatar; then generate a hanfu portrait of the same person as a style contrast.",
+          "Make a 20s product concept short themed 'cyberpunk rainy Tokyo': first search visual references, then three shots — 0-7s aerial crane down into the alley, 7-14s orbit macro on the product, 14-20s handheld tracking walking out through neon; continuous camera, no cut jumps, native stereo ambient sound + Synthwave 124 BPM, stable frame, character undeformed."
+        ],
+        "examples_zh": [
+          "先联网搜一组宋代美学参考（服饰纹样、青绿山水、木构建筑），据此生成一张汉服少女主视觉概念图；再把这张图做成 12 秒电影感运镜视频：0-4s 缓慢推进特写衣纹、4-8s 环绕微距工艺、8-12s 横移拉远见全景，带氛围光与影视级色调，画面流畅稳定、面部五官清晰不变形、无抖动无闪烁。",
+          "帮我设计一个日漫风战斗少女 IP：银白长发、异色瞳（左金右蓝）、机甲肩甲、战斗服。先搜同类热门人设找配色参考，再用固定角色锚点『银发异色瞳少女，机甲肩甲，战斗姿态，锐利眼神』原样复用，生成正面/侧面/背面的三视图，统一画风与配色，用于盲盒手办立项。",
+          "搜一下今年新茶饮夏季营销主视觉趋势，据此做一张门店开业促销海报：主标题大字『买一送一』、暖橙色调、左侧 40% 留白、电影感侧光、3:4 竖版，适合朋友圈与小红书投放；另出一张极简冷调备选。",
+          "做一个柠檬黄泰迪熊盲盒手办系列：先出基础款 Q 版三视图（圆脸大眼、公仔比例），再连续迭代 5 款不同穿搭与配饰的衍生款（宇航员/厨师/旗袍/运动/蒸汽朋克），保持同一角色锚点与盲盒比例，统一柔光陶瓷质感。",
+          "搜一组『职场精英写实肖像』布光与构图参考，生成一张商务正装职业照：自然窗光、浅景深、干净灰渐变背景、8K、对称构图，用于简历与领英头像；再生成一张同人物的汉服写真做风格对比。",
+          "以『赛博朋克雨夜东京』为主题做一条 20 秒产品概念短片：先搜视觉参考，分三镜——0-7s 俯冲入巷（Aerial Crane Down）、7-14s 环绕产品特写（Orbit）、14-20s 手持跟随走出霓虹（Handheld Tracking）；运镜连续不跳切，原生立体声环境音+Synthwave 124BPM，画面稳定、角色不变形。"
+        ],
+        "name": "AI-HIVE",
+        "name_en": "AI-HIVE"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "5.0.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "ai-hive": {
+            "preAuth": "cli",
+            "runtime": {
+              "type": "node",
+              "version": ">=20.19.0"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills",
+    "cli"
+  ],
+  "name": "ai-hive",
+  "version": "0.0.0+wb.11a5a77a46ac0129"
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "pkulaw": {
+      "type": "streamable-http",
+      "url": "https://apim-gateway.pkulaw.com/mcp-law-agg/1.0.0/mcp"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "xrxs": {
+      "type": "streamable-http",
+      "url": "https://mcp-xrxs.xinrenxinshi.com/mcp"
+    }
+  }
+}

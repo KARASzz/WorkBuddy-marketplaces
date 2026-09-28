@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "用自然语言直接操作中望CAD（ZWCAD）二维平台与中望机械CAD，自动绘制、查询、标注和管理 DWG 图纸。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Drive ZWCAD 2D platform and ZWCAD Mechanical CAD with natural language: draw, query, annotate, and manage DWG drawings.",
+        "description_zh": "用自然语言直接操作中望CAD（ZWCAD）二维平台与中望机械CAD，自动绘制、查询、标注和管理 DWG 图纸。",
+        "examples_en": [
+          "Draw a 100-unit horizontal line from the origin",
+          "Move all red circles to a new layer and recolor them blue",
+          "Insert an A3 frame with a filled title block into the current DWG",
+          "Generate a parts list (BOM) for the current assembly"
+        ],
+        "examples_zh": [
+          "在图纸原点画一条长 100 的水平直线",
+          "把图纸中所有红色圆改成蓝色，并移到新图层",
+          "在当前 DWG 中插入 A3 图框并填写标题栏",
+          "生成当前装配的零件明细表（BOM）"
+        ],
+        "name": "中望CAD MCP",
+        "name_en": "ZWCAD MCP",
+        "name_zh": "中望CAD MCP"
+      },
+      "policy": {
+        "mcpServers": {
+          "zwcad-mcp": {
+            "timeout": 60000
+          }
+        },
+        "minWorkbuddyVersion": "4.22.12"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "zwcad-mcp",
+  "version": "0.0.0+wb.0187b9d2b9dc8fcc"
+}

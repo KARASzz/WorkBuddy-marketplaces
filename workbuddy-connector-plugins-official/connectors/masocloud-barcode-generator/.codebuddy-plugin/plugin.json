@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Generate 1D barcodes, 2D codes and label previews, covering CODE128, QR, DataMatrix, PDF417 and more, plus .alb label template preview.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Generate 1D barcodes, 2D codes and label previews, covering CODE128, QR, DataMatrix, PDF417 and more, plus .alb label template preview.",
+        "description_zh": "生成一维条形码、二维码与标签预览图，支持 CODE128、QR、DataMatrix、PDF417 等 9 种条码与 .alb 标签模板预览，可自定义尺寸、DPI、容错等级与是否显示文字。",
+        "examples_en": [
+          "Generate a CODE128 barcode for ABC-123456",
+          "Generate a 30mm x 20mm barcode for 987654 without text",
+          "Generate a GS1-128 (01)06974592890018(11)260602(10)M0101(21)100001",
+          "Generate a QR code for https://example.com",
+          "Generate a high error-correction QR code with eclevel H"
+        ],
+        "examples_zh": [
+          "生成一个 CODE128 条码 ABC-123456",
+          "生成 30mm 宽、20mm 高、不显示文字的条码 987654",
+          "生成 GS1-128 (01)06974592890018(11)260602(10)M0101(21)100001",
+          "把这个网址生成二维码 https://example.com",
+          "生成高容错二维码，eclevel 用 H"
+        ],
+        "name": "条码生成器",
+        "name_en": "Barcode Generator"
+      },
+      "policy": {
+        "mcpServers": {
+          "barcode-generator": {
+            "timeout": 30000
+          }
+        }
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "masocloud-barcode-generator",
+  "version": "1.0.0+wb.0e5b6fde76b00ec7"
+}

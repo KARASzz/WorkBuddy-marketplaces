@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "WPS/zhishi knowledge base CLI: list spaces, file trees, ask (SSE), share links, and skills_hub file CRUD.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Operate WPS/zhishi cloud knowledge bases with natural language: list spaces, browse file trees, ask questions, share links, and manage files.",
+        "description_zh": "通过自然语言操作 WPS/zhishi 云端知识库：列出知识库、浏览文件树、智能问答、分享链接，以及文件/文件夹增删改查。",
+        "examples_en": [
+          "List my knowledge bases",
+          "Show the file tree of my personal knowledge base",
+          "Ask the knowledge base: summarize last week's project progress",
+          "Create a share link for this knowledge base file",
+          "Create a folder named Meeting Notes in the knowledge base"
+        ],
+        "examples_zh": [
+          "列出我的知识库",
+          "打开个人知识库看文件树",
+          "在知识库里问：上周项目进度总结",
+          "给这个知识库文件生成分享链接",
+          "在知识库里新建一个文件夹叫会议纪要"
+        ],
+        "name": "WPS知识库",
+        "name_en": "WPS Knowledge Base"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.22.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "wps-knowledgebase",
+  "version": "0.0.0+wb.728013b59fd92e31"
+}

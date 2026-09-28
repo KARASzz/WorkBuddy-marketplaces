@@ -1,0 +1,65 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Access Dun & Bradstreet global business intelligence such as company profile, financial data, risk insights, corporate linkages and UBO through natural language.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Access Dun & Bradstreet global business intelligence such as company profile, financial data, risk insights, corporate linkages and UBO through natural language.",
+        "description_zh": "通过自然语言查询邓白氏全球企业档案、财务数据、风险洞察、企业关联及最终受益人（UBO）等商业洞察。",
+        "examples_en": [
+          "Get company profile of Microsoft Corporation",
+          "Show credit memo for Apple Inc.",
+          "Search for companies named Chow Tai Fook in Hong Kong",
+          "Retrieve principals and contacts for Tesla",
+          "Identify the shareholder and beneficial owner of Apple Inc."
+        ],
+        "examples_zh": [
+          "查询 Microsoft Corporation 的企业档案",
+          "查看 Apple Inc. 的信用备忘录",
+          "搜索香港地区名为Chow Tai Fook的企业",
+          "查询 Tesla 的公司负责人与联系人",
+          "识别Apple Inc.的股东及受益人"
+        ],
+        "name": "邓白氏查全球",
+        "name_en": "D&B Global Search"
+      },
+      "policy": {
+        "mcpServers": {
+          "dnb-global-data": {
+            "timeout": 86400000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "dnb-global-data": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "DNB_ACCESS_TOKEN",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "dnb-global-data",
+  "version": "0.0.0+wb.4ecc4fdfbb288917"
+}

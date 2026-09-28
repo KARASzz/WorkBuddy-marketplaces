@@ -1,0 +1,66 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "中英文学术检索: 搜索期刊论文、专著、政策文件；查阅最新基金招投标信息；核实参考文献真伪、追溯引用；推荐投稿期刊与审稿人。",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Chinese & English academic search: find journal articles, books, and policy documents; check latest grant and funding opportunities; verify references, trace citations; get journal and reviewer recommendations.",
+        "description_zh": "中英文学术检索: 搜索期刊论文、专著、政策文件；查阅最新基金招投标信息；核实参考文献真伪、追溯引用；推荐投稿期刊与审稿人。",
+        "examples_en": [
+          "Find Chinese journal articles on digital transformation in grassroots governance from the past five years",
+          "Verify whether these references actually exist and flag any fabricated ones",
+          "Which Chinese journals should I submit this manuscript to, and who could review it?",
+          "Search central and local government policy documents on common prosperity",
+          "Show recently funded projects on digital governance from the National Social Science Fund"
+        ],
+        "examples_zh": [
+          "检索近五年关于基层治理数字化转型的中文期刊论文",
+          "核实这几条参考文献是不是真实存在的，有没有编造",
+          "这篇稿子适合投哪些中文期刊？再推荐几位合适的审稿人",
+          "找一下共同富裕相关的中央和地方政策文件",
+          "查一下国家社科基金里数字治理方向近三年的立项情况"
+        ],
+        "name": "百晓智能",
+        "name_en": "Baixiao AI",
+        "name_zh": "百晓智能"
+      },
+      "policy": {
+        "mcpServers": {
+          "baixiao-mcp": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.23.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "baixiao-mcp": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "BAIXIAO_API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "baixiao-mcp",
+  "version": "1.0.0+wb.a93b0475e5ca738b"
+}

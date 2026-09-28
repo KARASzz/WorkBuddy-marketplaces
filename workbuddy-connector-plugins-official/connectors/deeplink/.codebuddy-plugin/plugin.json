@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "CRIC Data provides AI-powered access to nearly 20 years of CRIC-licensed China real estate data. Wenshu supports natural-language queries, rankings, trends, and city comparisons across nine domains, while Wenzhi answers professional questions about real estate, property management, and senior care.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "CRIC Data provides AI-powered access to nearly 20 years of CRIC-licensed China real estate data. Wenshu supports natural-language queries, rankings, trends, and city comparisons across nine domains, while Wenzhi answers professional questions about real estate, property management, and senior care.",
+        "description_zh": "克而瑞地产数据依托经克而瑞授权、积累近 20 年的中国不动产数据。「问数」覆盖新房、二手房、土地、企业、宏观、长租公寓、产城、康养、商办九大领域，支持自然语言查询、排行、趋势与多城对比；「问知」提供地产、物业、银发领域的政策、研究、企业、法规和运营知识问答。",
+        "examples_en": [
+          "Show new home transactions in Shanghai for the last month",
+          "Compare resale listing prices across Beijing, Shanghai, and Shenzhen",
+          "Top 10 land deals by value in Hangzhou this year",
+          "Interpret the latest real estate regulation policy direction",
+          "What are the standard practices for property management complaint handling"
+        ],
+        "examples_zh": [
+          "查一下上海最近一个月的新房成交情况",
+          "对比北京、上海、深圳的二手房挂牌均价",
+          "杭州今年土地成交金额 TOP10 的地块",
+          "解读一下最近的房地产调控政策方向",
+          "物业客诉处理有哪些规范做法"
+        ],
+        "name": "克而瑞地产数据",
+        "name_en": "CRIC Data"
+      },
+      "policy": {
+        "mcpServers": {
+          "deeplink": {
+            "timeout": 600000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0",
+        "visible_in": [
+          "internal",
+          "iOA",
+          "cloudhosted",
+          "selfhosted"
+        ]
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "deeplink",
+  "version": "4.0.2+wb.eed93bb3dcbdc7df"
+}

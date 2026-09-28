@@ -1,0 +1,59 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Convert between OFD, PDF, Word and images, and extract OFD text, powered by ofdh.cn.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Convert between OFD, PDF, Word and images via the ofdh.cn online service, and extract text from OFD documents for government, enterprise and other Chinese e-document scenarios.",
+        "description_zh": "调用 ofdh.cn 在线转换服务，支持 OFD 与 PDF、Word、图片互转，并可提取 OFD 正文文本，适用于政务、企业等国产版式文档场景。",
+        "examples_en": [
+          "Convert this OFD file to PDF",
+          "Export each page of this OFD as images",
+          "Extract all text from this OFD document",
+          "Convert this PDF to the Chinese OFD format",
+          "Turn this OFD into an editable Word document"
+        ],
+        "examples_zh": [
+          "把这份 OFD 文件转成 PDF",
+          "帮我提取这份 OFD 文档里的全部文字",
+          "把这个 PDF 转换成国产 OFD 格式",
+          "把 OFD 转成 Word 方便我编辑",
+          "把这份 OFD 逐页导出成图片"
+        ],
+        "name": "OFD 文档转换",
+        "name_en": "OFD Document Converter"
+      },
+      "policy": {
+        "mcpServers": {
+          "ofdh-doc-convert": {
+            "timeout": 30000
+          }
+        },
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0",
+      "setup": {
+        "mcpServers": {
+          "ofdh-doc-convert": {
+            "auth": {
+              "headers": {
+                "Authorization": {
+                  "field": "API_KEY",
+                  "prefix": "Bearer "
+                }
+              },
+              "schema": "./ai.workbuddy/token-schema.json",
+              "type": "token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "keywords": [
+    "mcp",
+    "skills"
+  ],
+  "name": "ofdh-doc-convert",
+  "version": "1.2.2+wb.bb989a6aae78a6ca"
+}

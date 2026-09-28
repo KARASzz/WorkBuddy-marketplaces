@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Use the tuniu CLI to access Tuniu Open Platform travel services, including flights, hotels, attraction tickets, trains, cruises, holiday products, and package booking.",
+  "extensions": {
+    "ai.workbuddy": {
+      "display": {
+        "description_en": "Use the tuniu CLI to access Tuniu Open Platform travel services, including flights, hotels, attraction tickets, trains, cruises, holiday products, and package booking.",
+        "description_zh": "通过 tuniu CLI 调用途牛开放平台旅行服务，支持机票、酒店、门票、火车票、邮轮、度假产品和打包订。",
+        "examples_en": [
+          "Find tickets for Sun Yat-sen Mausoleum in Nanjing",
+          "Search flights from Beijing to Shanghai tomorrow",
+          "Find hotels in Sanya from September 1 to September 3",
+          "Recommend a holiday product for Xinjiang in October",
+          "Create a flight and hotel package from Shanghai to Sanya"
+        ],
+        "examples_zh": [
+          "帮我查南京中山陵门票",
+          "查一下明天北京到上海的机票",
+          "帮我找三亚 9 月 1 日入住、9 月 3 日离店的酒店",
+          "帮我推荐国庆去新疆的度假产品",
+          "帮我搭一套上海到三亚的机酒方案"
+        ],
+        "name": "途牛旅行",
+        "name_en": "Tuniu Travel",
+        "name_zh": "途牛旅行"
+      },
+      "policy": {
+        "minWorkbuddyVersion": "4.24.0"
+      },
+      "schemaVersion": "1.0.0"
+    }
+  },
+  "keywords": [
+    "skills",
+    "cli"
+  ],
+  "name": "tuniu-travel",
+  "version": "0.0.0+wb.5f502bb0025687e2"
+}
